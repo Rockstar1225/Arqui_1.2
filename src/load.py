@@ -1,6 +1,7 @@
 import pandas as pd
 import os
 import re
+import numpy as np
 
 # paths usados
 pwd = os.getcwd()
@@ -17,6 +18,9 @@ for item in os.listdir(dataset_dir):
         file_name = item.split('.')[0]
         temp_db = pd.read_csv(f"{dataset_dir}/{item}")
         db[file_name] = temp_db
-print(db.values())
+
+
+
+
 
     
