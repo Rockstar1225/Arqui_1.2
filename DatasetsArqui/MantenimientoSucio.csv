@@ -137,7 +137,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-136,00 MNT",2024-04-14,Correctivo,Regular,Malo,5240867,preventivo,Comentario sobre el mantenimiento 136
 "-137,00 MNT",2024-01-01,Preventivo,Regular,Bueno,58294,preventivo,Comentario sobre el mantenimiento 137
 "-138,00 MNT",08/01/2024,Preventivo,Malo,Bueno,60060,preventivo,Comentario sobre el mantenimiento 138
-"-139,00 MNT",14-06-2024,Preventivo,Malo,Regular,7792012,queja_usuario,
+"-139,00 MNT",14-06-2024,Preventivo,Malo,Regular,7792012,queja_usuario,Comentario sobre el mantenimiento 139
 "-140,00 MNT",2024-01-30,Preventivo,Regular,Bueno,33703,preventivo,Comentario sobre el mantenimiento 140
 "-141,00 MNT",2023/11/16,Correctivo,Bueno,Bueno,7802478,preventivo,Comentario sobre el mantenimiento 141
 "-142,00 MNT",02-11-2023,Preventivo,Regular,Bueno,24922,queja_usuario,Comentario sobre el mantenimiento 142
@@ -483,7 +483,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-482,00 MNT",05-25-2024,Correctivo,Malo,Regular,59760,preventivo,Comentario sobre el mantenimiento 482
 "-483,00 MNT",2023/10/22,Correctivo,Regular,Malo,32870,queja_usuario,Comentario sobre el mantenimiento 483
 "-484,00 MNT",2024/05/30,Correctivo,Malo,Malo,53048,preventivo,Comentario sobre el mantenimiento 484
-"-485,00 MNT",23/08/2024,Emergencia,Bueno,Bueno,58137,preventivo,
+"-485,00 MNT",23/08/2024,Emergencia,Bueno,Bueno,58137,preventivo,Comentario sobre el mantenimiento 485
 "-486,00 MNT",10-17-2023,Preventivo,Regular,Regular,9183118,preventivo,Comentario sobre el mantenimiento 486
 "-487,00 MNT",30-07-2024,Correctivo,Bueno,Bueno,9391444,queja_usuario,Comentario sobre el mantenimiento 487
 "-488,00 MNT",2024-03-14,Correctivo,Bueno,Bueno,34234,preventivo,Comentario sobre el mantenimiento 488
@@ -549,7 +549,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-548,00 MNT",2023-10-31,Emergencia,Regular,Regular,3567957,preventivo,Comentario sobre el mantenimiento 548
 "-549,00 MNT",29-11-2023,Preventivo,Bueno,Regular,8888427,preventivo,Comentario sobre el mantenimiento 549
 "-550,00 MNT",2024-08-19,Correctivo,Bueno,Regular,7862151,preventivo,Comentario sobre el mantenimiento 550
-"-551,00 MNT",2024/08/10,Emergencia,Bueno,Bueno,20076,preventivo,
+"-551,00 MNT",2024/08/10,Emergencia,Bueno,Bueno,20076,preventivo,Comentario sobre el mantenimiento 551
 "-552,00 MNT",2024/04/15,Correctivo,Malo,Regular,20245,queja_usuario,Comentario sobre el mantenimiento 552
 "-553,00 MNT",2024-08-31,Emergencia,Bueno,Bueno,9179386,preventivo,Comentario sobre el mantenimiento 553
 "-554,00 MNT",06-08-2024,Preventivo,Malo,Bueno,9181849,preventivo,Comentario sobre el mantenimiento 554
@@ -1181,7 +1181,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-1180,00 MNT",12-22-2023,Correctivo,Regular,Malo,22232,preventivo,Comentario sobre el mantenimiento 1180
 "-1181,00 MNT",2024/05/20,Preventivo,Regular,Regular,20088,preventivo,Comentario sobre el mantenimiento 1181
 "-1182,00 MNT",23-08-2024,Correctivo,Malo,Regular,60005,queja_usuario,Comentario sobre el mantenimiento 1182
-"-1183,00 MNT",30-12-2023,Correctivo,Regular,Regular,52906,preventivo,
+"-1183,00 MNT",30-12-2023,Correctivo,Regular,Regular,52906,preventivo,Comentario sobre el mantenimiento 1183
 "-1184,00 MNT",2024-04-12,Preventivo,Bueno,Bueno,5657912,preventivo,Comentario sobre el mantenimiento 1184
 "-1185,00 MNT",01-24-2024,Correctivo,Malo,Regular,9493024,queja_usuario,Comentario sobre el mantenimiento 1185
 "-1186,00 MNT",2024/10/05,Correctivo,Bueno,Bueno,9391783,queja_usuario,Comentario sobre el mantenimiento 1186
@@ -1231,7 +1231,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-1230,00 MNT",2024-08-12,Emergencia,Malo,Malo,7588206,queja_usuario,Comentario sobre el mantenimiento 1230
 "-1231,00 MNT",25/02/2024,Correctivo,Bueno,Bueno,52977,queja_usuario,Comentario sobre el mantenimiento 1231
 "-1232,00 MNT",2024/02/24,Emergencia,Malo,Malo,7126510,queja_usuario,Comentario sobre el mantenimiento 1232
-"-1233,00 MNT",16/06/2024,Correctivo,Regular,Regular,5240831,preventivo,
+"-1233,00 MNT",16/06/2024,Correctivo,Regular,Regular,5240831,preventivo,Comentario sobre el mantenimiento 1233
 "-1234,00 MNT",2024-03-30,Correctivo,Malo,Malo,5178977,queja_usuario,Comentario sobre el mantenimiento 1234
 "-1235,00 MNT",2024/03/05,Preventivo,Malo,Bueno,59774,preventivo,Comentario sobre el mantenimiento 1235
 "-1236,00 MNT",2024/03/03,Correctivo,Malo,Bueno,7859240,queja_usuario,Comentario sobre el mantenimiento 1236
@@ -1302,7 +1302,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-1301,00 MNT",07-04-2024,Emergencia,Regular,Malo,6905545,queja_usuario,Comentario sobre el mantenimiento 1301
 "-1302,00 MNT",01-15-2024,Emergencia,Regular,Regular,33795,preventivo,Comentario sobre el mantenimiento 1302
 "-1303,00 MNT",07-12-2024,Preventivo,Malo,Bueno,19287,queja_usuario,Comentario sobre el mantenimiento 1303
-"-1304,00 MNT",2023/11/18,Preventivo,Bueno,Malo,52968,preventivo,
+"-1304,00 MNT",2023/11/18,Preventivo,Bueno,Malo,52968,preventivo,Comentario sobre el mantenimiento 1304
 "-1305,00 MNT",01-03-2024,Emergencia,Regular,Bueno,25753,queja_usuario,Comentario sobre el mantenimiento 1305
 "-1306,00 MNT",17/06/2024,Emergencia,Bueno,Bueno,5158852,preventivo,Comentario sobre el mantenimiento 1306
 "-1307,00 MNT",2024-08-21,Emergencia,Malo,Bueno,3581472,queja_usuario,Comentario sobre el mantenimiento 1307
@@ -1966,7 +1966,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-1965,00 MNT",14/07/2024,Emergencia,Bueno,Malo,9433316,queja_usuario,Comentario sobre el mantenimiento 1965
 "-1966,00 MNT",01-02-2024,Emergencia,Regular,Malo,4987761,preventivo,Comentario sobre el mantenimiento 1966
 "-1967,00 MNT",27-07-2024,Correctivo,Bueno,Malo,3566301,queja_usuario,Comentario sobre el mantenimiento 1967
-"-1968,00 MNT",2024-07-09,Preventivo,Malo,Malo,59556,preventivo,
+"-1968,00 MNT",2024-07-09,Preventivo,Malo,Malo,59556,preventivo,Comentario sobre el mantenimiento 1068
 "-1969,00 MNT",2024/05/07,Emergencia,Bueno,Regular,21493,preventivo,Comentario sobre el mantenimiento 1969
 "-1970,00 MNT",08-08-2024,Emergencia,Bueno,Regular,7239579,queja_usuario,Comentario sobre el mantenimiento 1970
 "-1971,00 MNT",23-12-2023,Emergencia,Bueno,Regular,32536,preventivo,Comentario sobre el mantenimiento 1971
@@ -2398,8 +2398,8 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-2397,00 MNT",2024-03-09,Correctivo,Malo,Malo,3845315,queja_usuario,Comentario sobre el mantenimiento 2397
 "-2398,00 MNT",2024-02-25,Emergencia,Malo,Malo,3963370,preventivo,Comentario sobre el mantenimiento 2398
 "-2399,00 MNT",2024-03-20,Correctivo,Bueno,Bueno,9397993,queja_usuario,Comentario sobre el mantenimiento 2399
-"-2400,00 MNT",2024-04-29,Correctivo,Malo,Malo,21629,preventivo,
-"-2401,00 MNT",2024/06/11,Emergencia,Bueno,Malo,7896553,preventivo,
+"-2400,00 MNT",2024-04-29,Correctivo,Malo,Malo,21629,preventivo,Comentario sobre el mantenimiento 2400
+"-2401,00 MNT",2024/06/11,Emergencia,Bueno,Malo,7896553,preventivo,Comentario sobre el mantenimiento 2401
 "-2402,00 MNT",02-18-2024,Correctivo,Malo,Regular,34155,preventivo,Comentario sobre el mantenimiento 2402
 "-2403,00 MNT",23-01-2024,Correctivo,Regular,Regular,33546,preventivo,Comentario sobre el mantenimiento 2403
 "-2404,00 MNT",2024-05-03,Emergencia,Malo,Regular,7862172,preventivo,Comentario sobre el mantenimiento 2404
@@ -2515,7 +2515,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-2514,00 MNT",09-09-2024,Emergencia,Bueno,Bueno,5249150,preventivo,Comentario sobre el mantenimiento 2514
 "-2515,00 MNT",06/12/2023,Correctivo,Malo,Malo,5245394,queja_usuario,Comentario sobre el mantenimiento 2515
 "-2516,00 MNT",2024/03/28,Preventivo,Malo,Regular,9427006,preventivo,Comentario sobre el mantenimiento 2516
-"-2517,00 MNT",2024-04-14,Emergencia,Bueno,Bueno,9274927,queja_usuario,
+"-2517,00 MNT",2024-04-14,Emergencia,Bueno,Bueno,9274927,queja_usuario,Comentario sobre el mantenimiento 2517
 "-2518,00 MNT",06-06-2024,Emergencia,Regular,Regular,20084,preventivo,Comentario sobre el mantenimiento 2518
 "-2519,00 MNT",2024-05-08,Emergencia,Regular,Bueno,52884,queja_usuario,Comentario sobre el mantenimiento 2519
 "-2520,00 MNT",11/07/2024,Emergencia,Bueno,Bueno,20173,queja_usuario,Comentario sobre el mantenimiento 2520
@@ -3004,7 +3004,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-3003,00 MNT",06-23-2024,Emergencia,Bueno,Malo,5174731,preventivo,Comentario sobre el mantenimiento 3003
 "-3004,00 MNT",09-10-2024,Correctivo,Bueno,Malo,7840410,preventivo,Comentario sobre el mantenimiento 3004
 "-3005,00 MNT",2024/07/18,Correctivo,Regular,Malo,3568624,queja_usuario,Comentario sobre el mantenimiento 3005
-"-3006,00 MNT",17/10/2023,Preventivo,Regular,Bueno,33314,queja_usuario,
+"-3006,00 MNT",17/10/2023,Preventivo,Regular,Bueno,33314,queja_usuario,Comentario sobre el mantenimiento 3006
 "-3007,00 MNT",01-06-2024,Emergencia,Bueno,Regular,4987684,queja_usuario,Comentario sobre el mantenimiento 3007
 "-3008,00 MNT",06-12-2023,Preventivo,Malo,Regular,3580772,preventivo,Comentario sobre el mantenimiento 3008
 "-3009,00 MNT",2023-10-24,Emergencia,Bueno,Bueno,5658316,preventivo,Comentario sobre el mantenimiento 3009
@@ -3183,7 +3183,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-3182,00 MNT",2023-12-16,Emergencia,Bueno,Bueno,7240136,preventivo,Comentario sobre el mantenimiento 3182
 "-3183,00 MNT",2024/02/25,Emergencia,Regular,Bueno,20791,preventivo,Comentario sobre el mantenimiento 3183
 "-3184,00 MNT",08-11-2024,Preventivo,Bueno,Malo,52977,preventivo,Comentario sobre el mantenimiento 3184
-"-3185,00 MNT",27/05/2024,Emergencia,Bueno,Bueno,7107108,preventivo,
+"-3185,00 MNT",27/05/2024,Emergencia,Bueno,Bueno,7107108,preventivo,Comentario sobre el mantenimiento 3185
 "-3186,00 MNT",2024/06/26,Emergencia,Bueno,Malo,33727,preventivo,Comentario sobre el mantenimiento 3186
 "-3187,00 MNT",13-08-2024,Emergencia,Malo,Regular,21006,queja_usuario,Comentario sobre el mantenimiento 3187
 "-3188,00 MNT",02/12/2023,Emergencia,Regular,Regular,9294589,queja_usuario,Comentario sobre el mantenimiento 3188
@@ -3485,7 +3485,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-3484,00 MNT",2024-06-09,Emergencia,Bueno,Bueno,7887285,queja_usuario,Comentario sobre el mantenimiento 3484
 "-3485,00 MNT",04/05/2024,Correctivo,Bueno,Bueno,9290998,queja_usuario,Comentario sobre el mantenimiento 3485
 "-3486,00 MNT",03-05-2024,Correctivo,Malo,Regular,5211205,queja_usuario,Comentario sobre el mantenimiento 3486
-"-3487,00 MNT",27-09-2024,Correctivo,Regular,Malo,5173930,preventivo,
+"-3487,00 MNT",27-09-2024,Correctivo,Regular,Malo,5173930,preventivo,Comentario sobre el mantenimiento 3487
 "-3488,00 MNT",2024/09/27,Correctivo,Regular,Malo,5178821,preventivo,Comentario sobre el mantenimiento 3488
 "-3489,00 MNT",26-04-2024,Correctivo,Malo,Bueno,9220321,queja_usuario,Comentario sobre el mantenimiento 3489
 "-3490,00 MNT",06/01/2024,Preventivo,Regular,Malo,5178809,queja_usuario,Comentario sobre el mantenimiento 3490
@@ -3860,7 +3860,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-3859,00 MNT",2024-04-16,Emergencia,Bueno,Malo,6878778,preventivo,Comentario sobre el mantenimiento 3859
 "-3860,00 MNT",23/05/2024,Correctivo,Malo,Regular,22262,preventivo,Comentario sobre el mantenimiento 3860
 "-3861,00 MNT",29/03/2024,Correctivo,Bueno,Regular,8888417,queja_usuario,Comentario sobre el mantenimiento 3861
-"-3862,00 MNT",02-16-2024,Correctivo,Regular,Malo,9182072,preventivo,
+"-3862,00 MNT",02-16-2024,Correctivo,Regular,Malo,9182072,preventivo,Comentario sobre el mantenimiento 3862
 "-3863,00 MNT",10-09-2024,Preventivo,Regular,Malo,35006,preventivo,Comentario sobre el mantenimiento 3863
 "-3864,00 MNT",04-28-2024,Emergencia,Regular,Malo,9427405,queja_usuario,Comentario sobre el mantenimiento 3864
 "-3865,00 MNT",2024/06/07,Emergencia,Regular,Malo,3580681,preventivo,Comentario sobre el mantenimiento 3865
@@ -4375,7 +4375,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-4374,00 MNT",14-07-2024,Preventivo,Bueno,Regular,7889432,queja_usuario,Comentario sobre el mantenimiento 4374
 "-4375,00 MNT",24/03/2024,Correctivo,Malo,Bueno,25655,queja_usuario,Comentario sobre el mantenimiento 4375
 "-4376,00 MNT",23/05/2024,Correctivo,Regular,Regular,5659197,queja_usuario,Comentario sobre el mantenimiento 4376
-"-4377,00 MNT",2024-07-05,Preventivo,Regular,Bueno,9223715,preventivo,
+"-4377,00 MNT",2024-07-05,Preventivo,Regular,Bueno,9223715,preventivo,Comentario sobre el mantenimiento 4377
 "-4378,00 MNT",2024-09-09,Emergencia,Regular,Bueno,59518,queja_usuario,Comentario sobre el mantenimiento 4378
 "-4379,00 MNT",03-26-2024,Correctivo,Regular,Bueno,24763,preventivo,Comentario sobre el mantenimiento 4379
 "-4380,00 MNT",16-02-2024,Correctivo,Bueno,Bueno,35039,preventivo,Comentario sobre el mantenimiento 4380
@@ -5090,7 +5090,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-5089,00 MNT",07-12-2024,Correctivo,Regular,Bueno,9050885,queja_usuario,Comentario sobre el mantenimiento 5089
 "-5090,00 MNT",2024-05-30,Preventivo,Malo,Regular,19435,preventivo,Comentario sobre el mantenimiento 5090
 "-5091,00 MNT",2023-11-17,Emergencia,Regular,Malo,21023,queja_usuario,Comentario sobre el mantenimiento 5091
-"-5092,00 MNT",05-04-2024,Emergencia,Bueno,Bueno,7840615,queja_usuario,
+"-5092,00 MNT",05-04-2024,Emergencia,Bueno,Bueno,7840615,queja_usuario,Comentario sobre el mantenimiento 5092
 "-5093,00 MNT",04-03-2024,Emergencia,Malo,Regular,9256437,preventivo,Comentario sobre el mantenimiento 5093
 "-5094,00 MNT",2024/06/03,Preventivo,Bueno,Bueno,53086,queja_usuario,Comentario sobre el mantenimiento 5094
 "-5095,00 MNT",2023/12/11,Preventivo,Malo,Regular,20402,preventivo,Comentario sobre el mantenimiento 5095
@@ -5356,7 +5356,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-5355,00 MNT",05-10-2024,Preventivo,Regular,Regular,58218,preventivo,Comentario sobre el mantenimiento 5355
 "-5356,00 MNT",02/05/2024,Preventivo,Bueno,Regular,9288508,queja_usuario,Comentario sobre el mantenimiento 5356
 "-5357,00 MNT",2024-03-10,Preventivo,Bueno,Bueno,59488,queja_usuario,Comentario sobre el mantenimiento 5357
-"-5358,00 MNT",16/06/2024,Emergencia,Bueno,Regular,7144285,queja_usuario,
+"-5358,00 MNT",16/06/2024,Emergencia,Bueno,Regular,7144285,queja_usuario,Comentario sobre el mantenimiento 5358
 "-5359,00 MNT",2024-03-10,Preventivo,Bueno,Malo,451324,preventivo,Comentario sobre el mantenimiento 5359
 "-5360,00 MNT",2024-05-11,Emergencia,Bueno,Regular,25087,queja_usuario,Comentario sobre el mantenimiento 5360
 "-5361,00 MNT",01/06/2024,Emergencia,Bueno,Malo,53081,preventivo,Comentario sobre el mantenimiento 5361
@@ -5549,7 +5549,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-5548,00 MNT",2024-01-09,Correctivo,Bueno,Regular,22485,queja_usuario,Comentario sobre el mantenimiento 5548
 "-5549,00 MNT",09-05-2024,Correctivo,Regular,Regular,58025,queja_usuario,Comentario sobre el mantenimiento 5549
 "-5550,00 MNT",2023/11/30,Preventivo,Bueno,Malo,33950,preventivo,Comentario sobre el mantenimiento 5550
-"-5551,00 MNT",2023/12/26,Preventivo,Regular,Malo,5174745,queja_usuario,
+"-5551,00 MNT",2023/12/26,Preventivo,Regular,Malo,5174745,queja_usuario,Comentario sobre el mantenimiento 5551
 "-5552,00 MNT",06-10-2024,Correctivo,Malo,Malo,3569232,queja_usuario,Comentario sobre el mantenimiento 5552
 "-5553,00 MNT",24/01/2024,Preventivo,Bueno,Bueno,20762,queja_usuario,Comentario sobre el mantenimiento 5553
 "-5554,00 MNT",2024-10-03,Emergencia,Malo,Bueno,5658823,queja_usuario,Comentario sobre el mantenimiento 5554
@@ -5829,7 +5829,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-5828,00 MNT",04-09-2024,Correctivo,Regular,Malo,20005,queja_usuario,Comentario sobre el mantenimiento 5828
 "-5829,00 MNT",2023/11/09,Correctivo,Bueno,Bueno,22202,preventivo,Comentario sobre el mantenimiento 5829
 "-5830,00 MNT",04/03/2024,Emergencia,Malo,Regular,34118,queja_usuario,Comentario sobre el mantenimiento 5830
-"-5831,00 MNT",11-01-2024,Emergencia,Bueno,Malo,19479,queja_usuario,
+"-5831,00 MNT",11-01-2024,Emergencia,Bueno,Malo,19479,queja_usuario,Comentario sobre el mantenimiento 5831
 "-5832,00 MNT",21-07-2024,Emergencia,Malo,Bueno,7898756,preventivo,Comentario sobre el mantenimiento 5832
 "-5833,00 MNT",2023/11/06,Preventivo,Malo,Regular,58716,queja_usuario,Comentario sobre el mantenimiento 5833
 "-5834,00 MNT",06-11-2024,Correctivo,Bueno,Bueno,9157640,queja_usuario,Comentario sobre el mantenimiento 5834
@@ -6132,7 +6132,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-6131,00 MNT",12-19-2023,Preventivo,Regular,Malo,4732018,preventivo,Comentario sobre el mantenimiento 6131
 "-6132,00 MNT",17-07-2024,Preventivo,Bueno,Regular,8943961,preventivo,Comentario sobre el mantenimiento 6132
 "-6133,00 MNT",24/06/2024,Emergencia,Regular,Malo,22513,preventivo,Comentario sobre el mantenimiento 6133
-"-6134,00 MNT",2023/11/17,Emergencia,Bueno,Bueno,3530788,preventivo,
+"-6134,00 MNT",2023/11/17,Emergencia,Bueno,Bueno,3530788,preventivo,Comentario sobre el mantenimiento 6134
 "-6135,00 MNT",04/11/2023,Emergencia,Bueno,Malo,4737964,preventivo,Comentario sobre el mantenimiento 6135
 "-6136,00 MNT",2024-05-10,Preventivo,Malo,Malo,60012,queja_usuario,Comentario sobre el mantenimiento 6136
 "-6137,00 MNT",01-25-2024,Correctivo,Bueno,Bueno,7903920,queja_usuario,Comentario sobre el mantenimiento 6137
@@ -6568,7 +6568,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-6567,00 MNT",2023/12/31,Preventivo,Bueno,Regular,7870216,queja_usuario,Comentario sobre el mantenimiento 6567
 "-6568,00 MNT",2024/03/24,Preventivo,Regular,Regular,33678,queja_usuario,Comentario sobre el mantenimiento 6568
 "-6569,00 MNT",12-06-2023,Correctivo,Bueno,Bueno,8909783,preventivo,Comentario sobre el mantenimiento 6569
-"-6570,00 MNT",22-09-2024,Emergencia,Malo,Regular,21644,preventivo,
+"-6570,00 MNT",22-09-2024,Emergencia,Malo,Regular,21644,preventivo,Comentario sobre el mantenimiento 6570
 "-6571,00 MNT",05-24-2024,Correctivo,Bueno,Bueno,9156176,queja_usuario,Comentario sobre el mantenimiento 6571
 "-6572,00 MNT",2024/09/18,Preventivo,Malo,Bueno,32970,queja_usuario,Comentario sobre el mantenimiento 6572
 "-6573,00 MNT",03-29-2024,Emergencia,Regular,Bueno,58925,preventivo,Comentario sobre el mantenimiento 6573
@@ -6634,7 +6634,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-6633,00 MNT",2023/10/25,Correctivo,Regular,Regular,24915,queja_usuario,Comentario sobre el mantenimiento 6633
 "-6634,00 MNT",2024/01/04,Emergencia,Bueno,Regular,3573390,queja_usuario,Comentario sobre el mantenimiento 6634
 "-6635,00 MNT",11-10-2023,Emergencia,Bueno,Regular,9048978,preventivo,Comentario sobre el mantenimiento 6635
-"-6636,00 MNT",08-10-2024,Preventivo,Bueno,Regular,5220909,preventivo,
+"-6636,00 MNT",08-10-2024,Preventivo,Bueno,Regular,5220909,preventivo,Comentario sobre el mantenimiento 6636
 "-6637,00 MNT",06/04/2024,Preventivo,Bueno,Bueno,3566878,queja_usuario,Comentario sobre el mantenimiento 6637
 "-6638,00 MNT",04-22-2024,Preventivo,Regular,Malo,33426,queja_usuario,Comentario sobre el mantenimiento 6638
 "-6639,00 MNT",27-02-2024,Correctivo,Regular,Regular,8933982,preventivo,Comentario sobre el mantenimiento 6639
@@ -6748,7 +6748,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-6747,00 MNT",2024/06/15,Correctivo,Regular,Bueno,9288665,queja_usuario,Comentario sobre el mantenimiento 6747
 "-6748,00 MNT",2024-05-13,Preventivo,Bueno,Malo,23840,queja_usuario,Comentario sobre el mantenimiento 6748
 "-6749,00 MNT",18-11-2023,Preventivo,Bueno,Malo,9494956,preventivo,Comentario sobre el mantenimiento 6749
-"-6750,00 MNT",10-29-2023,Correctivo,Malo,Regular,59580,queja_usuario,
+"-6750,00 MNT",10-29-2023,Correctivo,Malo,Regular,59580,queja_usuario,Comentario sobre el mantenimiento 6750
 "-6751,00 MNT",01-14-2024,Emergencia,Regular,Malo,24994,preventivo,Comentario sobre el mantenimiento 6751
 "-6752,00 MNT",12-26-2023,Correctivo,Regular,Regular,5492443,queja_usuario,Comentario sobre el mantenimiento 6752
 "-6753,00 MNT",09/10/2024,Preventivo,Malo,Bueno,34167,queja_usuario,Comentario sobre el mantenimiento 6753
@@ -7613,7 +7613,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-7612,00 MNT",2024/09/09,Emergencia,Regular,Bueno,25544,queja_usuario,Comentario sobre el mantenimiento 7612
 "-7613,00 MNT",04-05-2024,Preventivo,Bueno,Regular,59173,preventivo,Comentario sobre el mantenimiento 7613
 "-7614,00 MNT",04-27-2024,Correctivo,Malo,Bueno,9182189,preventivo,Comentario sobre el mantenimiento 7614
-"-7615,00 MNT",2023-11-09,Emergencia,Bueno,Regular,18712,preventivo,
+"-7615,00 MNT",2023-11-09,Emergencia,Bueno,Regular,18712,preventivo,Comentario sobre el mantenimiento 7615
 "-7616,00 MNT",26-03-2024,Preventivo,Regular,Malo,58295,queja_usuario,Comentario sobre el mantenimiento 7616
 "-7617,00 MNT",07-11-2023,Emergencia,Bueno,Malo,7794490,preventivo,Comentario sobre el mantenimiento 7617
 "-7618,00 MNT",2023/11/07,Correctivo,Bueno,Malo,33201,preventivo,Comentario sobre el mantenimiento 7618
@@ -7874,7 +7874,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-7873,00 MNT",2024/04/05,Emergencia,Regular,Regular,4992823,queja_usuario,Comentario sobre el mantenimiento 7873
 "-7874,00 MNT",2024/05/18,Correctivo,Malo,Bueno,7128414,queja_usuario,Comentario sobre el mantenimiento 7874
 "-7875,00 MNT",2024/06/19,Correctivo,Bueno,Bueno,33964,queja_usuario,Comentario sobre el mantenimiento 7875
-"-7876,00 MNT",2024-09-27,Emergencia,Bueno,Regular,33186,preventivo,
+"-7876,00 MNT",2024-09-27,Emergencia,Bueno,Regular,33186,preventivo,Comentario sobre el mantenimiento 7876
 "-7877,00 MNT",03-05-2024,Emergencia,Regular,Bueno,59492,queja_usuario,Comentario sobre el mantenimiento 7877
 "-7878,00 MNT",30-04-2024,Preventivo,Bueno,Malo,7889435,preventivo,Comentario sobre el mantenimiento 7878
 "-7879,00 MNT",2023/12/02,Preventivo,Malo,Malo,20517,preventivo,Comentario sobre el mantenimiento 7879
@@ -8120,7 +8120,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-8119,00 MNT",2023/11/28,Correctivo,Bueno,Regular,5209100,preventivo,Comentario sobre el mantenimiento 8119
 "-8120,00 MNT",2024-09-21,Emergencia,Malo,Malo,18741,preventivo,Comentario sobre el mantenimiento 8120
 "-8121,00 MNT",2024-02-22,Emergencia,Regular,Bueno,7890623,preventivo,Comentario sobre el mantenimiento 8121
-"-8122,00 MNT",08-05-2024,Preventivo,Bueno,Bueno,22522,preventivo,
+"-8122,00 MNT",08-05-2024,Preventivo,Bueno,Bueno,22522,preventivo,Comentario sobre el mantenimiento 8122
 "-8123,00 MNT",23-09-2024,Emergencia,Regular,Bueno,9294731,preventivo,Comentario sobre el mantenimiento 8123
 "-8124,00 MNT",01-29-2024,Preventivo,Regular,Bueno,9223719,preventivo,Comentario sobre el mantenimiento 8124
 "-8125,00 MNT",2024-04-30,Preventivo,Regular,Bueno,3531007,preventivo,Comentario sobre el mantenimiento 8125
@@ -8242,7 +8242,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-8241,00 MNT",19/01/2024,Preventivo,Bueno,Malo,3581469,preventivo,Comentario sobre el mantenimiento 8241
 "-8242,00 MNT",01/10/2024,Preventivo,Bueno,Malo,7928123,queja_usuario,Comentario sobre el mantenimiento 8242
 "-8243,00 MNT",2024/06/17,Emergencia,Regular,Regular,7741935,preventivo,Comentario sobre el mantenimiento 8243
-"-8244,00 MNT",2024/02/28,Correctivo,Regular,Regular,20180,preventivo,
+"-8244,00 MNT",2024/02/28,Correctivo,Regular,Regular,20180,preventivo,Comentario sobre el mantenimiento 8244
 "-8245,00 MNT",2024/06/04,Emergencia,Bueno,Regular,9497947,queja_usuario,Comentario sobre el mantenimiento 8245
 "-8246,00 MNT",2024/01/26,Emergencia,Bueno,Regular,9225693,preventivo,Comentario sobre el mantenimiento 8246
 "-8247,00 MNT",2024-04-30,Preventivo,Regular,Regular,33157,queja_usuario,Comentario sobre el mantenimiento 8247
@@ -8511,7 +8511,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-8510,00 MNT",2024/07/06,Correctivo,Regular,Regular,22383,queja_usuario,Comentario sobre el mantenimiento 8510
 "-8511,00 MNT",2024/04/15,Emergencia,Regular,Malo,5228966,preventivo,Comentario sobre el mantenimiento 8511
 "-8512,00 MNT",2024-04-27,Emergencia,Malo,Malo,9291635,preventivo,Comentario sobre el mantenimiento 8512
-"-8513,00 MNT",2024-08-19,Preventivo,Malo,Malo,35005,preventivo,
+"-8513,00 MNT",2024-08-19,Preventivo,Malo,Malo,35005,preventivo,Comentario sobre el mantenimiento 8513
 "-8514,00 MNT",28/12/2023,Correctivo,Regular,Regular,34174,queja_usuario,Comentario sobre el mantenimiento 8514
 "-8515,00 MNT",09/07/2024,Preventivo,Regular,Bueno,24920,preventivo,Comentario sobre el mantenimiento 8515
 "-8516,00 MNT",21-07-2024,Emergencia,Malo,Regular,33592,queja_usuario,Comentario sobre el mantenimiento 8516
@@ -8532,7 +8532,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-8531,00 MNT",06-08-2024,Preventivo,Regular,Regular,5158894,preventivo,Comentario sobre el mantenimiento 8531
 "-8532,00 MNT",2024-05-03,Preventivo,Bueno,Bueno,59414,preventivo,Comentario sobre el mantenimiento 8532
 "-8533,00 MNT",2024-05-20,Correctivo,Regular,Malo,9407941,queja_usuario,Comentario sobre el mantenimiento 8533
-"-8534,00 MNT",08-09-2024,Correctivo,Regular,Regular,5239325,preventivo,
+"-8534,00 MNT",08-09-2024,Correctivo,Regular,Regular,5239325,preventivo,Comentario sobre el mantenimiento 8534
 "-8535,00 MNT",04/09/2024,Correctivo,Regular,Malo,59898,preventivo,Comentario sobre el mantenimiento 8535
 "-8536,00 MNT",24/12/2023,Preventivo,Malo,Regular,3568702,preventivo,Comentario sobre el mantenimiento 8536
 "-8537,00 MNT",13-10-2024,Correctivo,Malo,Malo,5218684,queja_usuario,Comentario sobre el mantenimiento 8537
@@ -9064,7 +9064,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-9063,00 MNT",19-07-2024,Preventivo,Malo,Bueno,20754,queja_usuario,Comentario sobre el mantenimiento 9063
 "-9064,00 MNT",27-11-2023,Correctivo,Malo,Malo,3576570,preventivo,Comentario sobre el mantenimiento 9064
 "-9065,00 MNT",2024-10-05,Emergencia,Regular,Regular,7546129,preventivo,Comentario sobre el mantenimiento 9065
-"-9066,00 MNT",07/12/2023,Emergencia,Bueno,Regular,5241046,queja_usuario,
+"-9066,00 MNT",07/12/2023,Emergencia,Bueno,Regular,5241046,queja_usuario,Comentario sobre el mantenimiento 9066
 "-9067,00 MNT",06-07-2024,Preventivo,Malo,Bueno,21220,queja_usuario,Comentario sobre el mantenimiento 9067
 "-9068,00 MNT",13-04-2024,Preventivo,Malo,Regular,33311,queja_usuario,Comentario sobre el mantenimiento 9068
 "-9069,00 MNT",2024/02/25,Preventivo,Bueno,Regular,22072,preventivo,Comentario sobre el mantenimiento 9069
@@ -9145,7 +9145,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-9144,00 MNT",05/11/2023,Preventivo,Malo,Malo,9288656,queja_usuario,Comentario sobre el mantenimiento 9144
 "-9145,00 MNT",12-10-2024,Emergencia,Regular,Malo,6878893,preventivo,Comentario sobre el mantenimiento 9145
 "-9146,00 MNT",08-20-2024,Preventivo,Regular,Malo,59314,preventivo,Comentario sobre el mantenimiento 9146
-"-9147,00 MNT",2024/03/10,Correctivo,Regular,Regular,4794567,preventivo,
+"-9147,00 MNT",2024/03/10,Correctivo,Regular,Regular,4794567,preventivo,Comentario sobre el mantenimiento 9147
 "-9148,00 MNT",19-09-2024,Emergencia,Bueno,Regular,9260078,preventivo,Comentario sobre el mantenimiento 9148
 "-9149,00 MNT",2024/10/06,Correctivo,Malo,Malo,7897721,queja_usuario,Comentario sobre el mantenimiento 9149
 "-9150,00 MNT",03-19-2024,Correctivo,Bueno,Regular,5220726,queja_usuario,Comentario sobre el mantenimiento 9150
@@ -9243,7 +9243,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-9242,00 MNT",06/11/2023,Correctivo,Bueno,Regular,4961109,preventivo,Comentario sobre el mantenimiento 9242
 "-9243,00 MNT",16/12/2023,Emergencia,Malo,Bueno,57987,queja_usuario,Comentario sobre el mantenimiento 9243
 "-9244,00 MNT",2024-02-14,Preventivo,Malo,Bueno,25284,preventivo,Comentario sobre el mantenimiento 9244
-"-9245,00 MNT",2023/12/28,Preventivo,Regular,Malo,7741332,queja_usuario,
+"-9245,00 MNT",2023/12/28,Preventivo,Regular,Malo,7741332,queja_usuario,Comentario sobre el mantenimiento 9245
 "-9246,00 MNT",16/08/2024,Preventivo,Bueno,Malo,9276785,preventivo,Comentario sobre el mantenimiento 9246
 "-9247,00 MNT",13-05-2024,Preventivo,Regular,Malo,4730864,preventivo,Comentario sobre el mantenimiento 9247
 "-9248,00 MNT",23-12-2023,Correctivo,Bueno,Bueno,9497309,queja_usuario,Comentario sobre el mantenimiento 9248
@@ -9514,7 +9514,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-9513,00 MNT",18-01-2024,Correctivo,Bueno,Bueno,9446279,preventivo,Comentario sobre el mantenimiento 9513
 "-9514,00 MNT",2024/09/20,Preventivo,Bueno,Malo,21227,queja_usuario,Comentario sobre el mantenimiento 9514
 "-9515,00 MNT",2024-05-14,Emergencia,Bueno,Bueno,3566750,preventivo,Comentario sobre el mantenimiento 9515
-"-9516,00 MNT",2024/08/17,Correctivo,Bueno,Bueno,4991259,queja_usuario,
+"-9516,00 MNT",2024/08/17,Correctivo,Bueno,Bueno,4991259,queja_usuario,Comentario sobre el mantenimiento 9516
 "-9517,00 MNT",29/09/2024,Correctivo,Malo,Malo,5107844,preventivo,Comentario sobre el mantenimiento 9517
 "-9518,00 MNT",20/05/2024,Correctivo,Regular,Malo,5263920,preventivo,Comentario sobre el mantenimiento 9518
 "-9519,00 MNT",04/06/2024,Correctivo,Regular,Bueno,9424490,preventivo,Comentario sobre el mantenimiento 9519
@@ -9663,7 +9663,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-9662,00 MNT",08-12-2023,Emergencia,Bueno,Bueno,34139,queja_usuario,Comentario sobre el mantenimiento 9662
 "-9663,00 MNT",11-03-2024,Correctivo,Regular,Bueno,7243276,queja_usuario,Comentario sobre el mantenimiento 9663
 "-9664,00 MNT",2024/03/11,Emergencia,Regular,Malo,20760,queja_usuario,Comentario sobre el mantenimiento 9664
-"-9665,00 MNT",03-05-2024,Preventivo,Regular,Regular,9433288,preventivo,
+"-9665,00 MNT",03-05-2024,Preventivo,Regular,Regular,9433288,preventivo,Comentario sobre el mantenimiento 9665
 "-9666,00 MNT",28-03-2024,Correctivo,Bueno,Bueno,8914020,preventivo,Comentario sobre el mantenimiento 9666
 "-9667,00 MNT",2024-04-03,Preventivo,Regular,Regular,9407759,queja_usuario,Comentario sobre el mantenimiento 9667
 "-9668,00 MNT",07-04-2024,Correctivo,Bueno,Bueno,20136,queja_usuario,Comentario sobre el mantenimiento 9668
@@ -9676,7 +9676,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-9675,00 MNT",02-05-2024,Emergencia,Bueno,Regular,58057,preventivo,Comentario sobre el mantenimiento 9675
 "-9676,00 MNT",18-05-2024,Correctivo,Regular,Malo,21964,queja_usuario,Comentario sobre el mantenimiento 9676
 "-9677,00 MNT",18/03/2024,Emergencia,Malo,Regular,9285422,preventivo,Comentario sobre el mantenimiento 9677
-"-9678,00 MNT",2024/06/10,Correctivo,Bueno,Regular,25609,queja_usuario,
+"-9678,00 MNT",2024/06/10,Correctivo,Bueno,Regular,25609,queja_usuario,Comentario sobre el mantenimiento 9678
 "-9679,00 MNT",2024-05-19,Emergencia,Malo,Bueno,34819,queja_usuario,Comentario sobre el mantenimiento 9679
 "-9680,00 MNT",06-16-2024,Emergencia,Regular,Malo,9194970,preventivo,Comentario sobre el mantenimiento 9680
 "-9681,00 MNT",2024/01/25,Preventivo,Malo,Regular,3573910,queja_usuario,Comentario sobre el mantenimiento 9681
@@ -9877,7 +9877,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-9876,00 MNT",07/11/2023,Correctivo,Bueno,Malo,5270772,queja_usuario,Comentario sobre el mantenimiento 9876
 "-9877,00 MNT",26-12-2023,Correctivo,Regular,Regular,7839112,preventivo,Comentario sobre el mantenimiento 9877
 "-9878,00 MNT",24/01/2024,Emergencia,Bueno,Bueno,8891596,queja_usuario,Comentario sobre el mantenimiento 9878
-"-9879,00 MNT",2024/05/21,Emergencia,Malo,Malo,6761234,,
+"-9879,00 MNT",2024/05/21,Emergencia,Malo,Malo,6761234,,Comentario sobre el mantenimiento 9879
 "-9880,00 MNT",05-18-2024,Emergencia,Bueno,Regular,19954,queja_usuario,Comentario sobre el mantenimiento 9880
 "-9881,00 MNT",2023-12-26,Emergencia,Malo,Regular,21142,preventivo,Comentario sobre el mantenimiento 9881
 "-9882,00 MNT",22/02/2024,Correctivo,Malo,Bueno,9312944,preventivo,Comentario sobre el mantenimiento 9882
@@ -10058,7 +10058,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-10057,00 MNT",06-04-2024,Preventivo,Bueno,Regular,9186803,queja_usuario,Comentario sobre el mantenimiento 10057
 "-10058,00 MNT",2024-01-14,Emergencia,Regular,Regular,7855040,queja_usuario,Comentario sobre el mantenimiento 10058
 "-10059,00 MNT",2024-02-22,Emergencia,Malo,Bueno,7125606,queja_usuario,Comentario sobre el mantenimiento 10059
-"-10060,00 MNT",09/09/2024,Preventivo,Malo,Regular,58592,queja_usuario,
+"-10060,00 MNT",09/09/2024,Preventivo,Malo,Regular,58592,queja_usuario,Comentario sobre el mantenimiento 10060
 "-10061,00 MNT",30-03-2024,Preventivo,Bueno,Regular,59895,preventivo,Comentario sobre el mantenimiento 10061
 "-10062,00 MNT",24-11-2023,Preventivo,Regular,Malo,3581570,queja_usuario,Comentario sobre el mantenimiento 10062
 "-10063,00 MNT",11-02-2023,Preventivo,Regular,Regular,19110,queja_usuario,Comentario sobre el mantenimiento 10063
@@ -10647,7 +10647,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-10646,00 MNT",07/02/2024,Emergencia,Malo,Bueno,21378,preventivo,Comentario sobre el mantenimiento 10646
 "-10647,00 MNT",16/07/2024,Emergencia,Malo,Regular,5268587,preventivo,Comentario sobre el mantenimiento 10647
 "-10648,00 MNT",04-03-2024,Emergencia,Malo,Regular,5219516,preventivo,Comentario sobre el mantenimiento 10648
-"-10649,00 MNT",21-10-2023,Emergencia,Regular,Malo,35154,preventivo,
+"-10649,00 MNT",21-10-2023,Emergencia,Regular,Malo,35154,preventivo,Comentario sobre el mantenimiento 10649
 "-10650,00 MNT",2024-01-07,Emergencia,Regular,Malo,24930,preventivo,Comentario sobre el mantenimiento 10650
 "-10651,00 MNT",21-11-2023,Emergencia,Bueno,Malo,3962734,preventivo,Comentario sobre el mantenimiento 10651
 "-10652,00 MNT",2024-08-10,Emergencia,Malo,Bueno,8927971,preventivo,Comentario sobre el mantenimiento 10652
@@ -10964,7 +10964,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-10963,00 MNT",2024/09/16,Correctivo,Bueno,Regular,4749299,queja_usuario,Comentario sobre el mantenimiento 10963
 "-10964,00 MNT",02-15-2024,Emergencia,Bueno,Regular,34897,preventivo,Comentario sobre el mantenimiento 10964
 "-10965,00 MNT",04/02/2024,Correctivo,Bueno,Bueno,4984514,preventivo,Comentario sobre el mantenimiento 10965
-"-10966,00 MNT",07-21-2024,Preventivo,Regular,Bueno,34093,queja_usuario,
+"-10966,00 MNT",07-21-2024,Preventivo,Regular,Bueno,34093,queja_usuario,Comentario sobre el mantenimiento 10966
 "-10967,00 MNT",2024/01/12,Emergencia,Malo,Regular,9177753,queja_usuario,Comentario sobre el mantenimiento 10967
 "-10968,00 MNT",2024/06/11,Correctivo,Malo,Bueno,7128836,queja_usuario,Comentario sobre el mantenimiento 10968
 "-10969,00 MNT",12-20-2023,Preventivo,Bueno,Bueno,3581612,queja_usuario,Comentario sobre el mantenimiento 10969
@@ -11796,7 +11796,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-11795,00 MNT",07-03-2024,Correctivo,Regular,Bueno,34166,queja_usuario,Comentario sobre el mantenimiento 11795
 "-11796,00 MNT",25/10/2023,Emergencia,Bueno,Regular,24978,preventivo,Comentario sobre el mantenimiento 11796
 "-11797,00 MNT",10/11/2023,Correctivo,Bueno,Bueno,7841700,preventivo,Comentario sobre el mantenimiento 11797
-"-11798,00 MNT",07-05-2024,Emergencia,Bueno,Malo,25067,preventivo,
+"-11798,00 MNT",07-05-2024,Emergencia,Bueno,Malo,25067,preventivo,Comentario sobre el mantenimiento 11798
 "-11799,00 MNT",2024/09/04,Emergencia,Malo,Malo,5197227,queja_usuario,Comentario sobre el mantenimiento 11799
 "-11800,00 MNT",14/05/2024,Emergencia,Regular,Bueno,21392,preventivo,Comentario sobre el mantenimiento 11800
 "-11801,00 MNT",2023/10/27,Emergencia,Malo,Malo,52268,preventivo,Comentario sobre el mantenimiento 11801
@@ -11838,7 +11838,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-11837,00 MNT",2024/06/28,Emergencia,Bueno,Malo,5199536,preventivo,Comentario sobre el mantenimiento 11837
 "-11838,00 MNT",02-16-2024,Correctivo,Regular,Bueno,5195673,queja_usuario,Comentario sobre el mantenimiento 11838
 "-11839,00 MNT",2024-08-28,Emergencia,Bueno,Bueno,7526995,queja_usuario,Comentario sobre el mantenimiento 11839
-"-11840,00 MNT",2024-03-30,Correctivo,Regular,Bueno,4823200,preventivo,
+"-11840,00 MNT",2024-03-30,Correctivo,Regular,Bueno,4823200,preventivo,Comentario sobre el mantenimiento 11840
 "-11841,00 MNT",22/12/2023,Preventivo,Malo,Regular,60195,preventivo,Comentario sobre el mantenimiento 11841
 "-11842,00 MNT",2024/02/25,Preventivo,Bueno,Malo,7591517,queja_usuario,Comentario sobre el mantenimiento 11842
 "-11843,00 MNT",2024/02/12,Emergencia,Bueno,Malo,32696,queja_usuario,Comentario sobre el mantenimiento 11843
@@ -12129,7 +12129,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-12128,00 MNT",2024/01/08,Preventivo,Bueno,Bueno,9180717,preventivo,Comentario sobre el mantenimiento 12128
 "-12129,00 MNT",08-29-2024,Correctivo,Regular,Bueno,9294345,preventivo,Comentario sobre el mantenimiento 12129
 "-12130,00 MNT",2023-12-07,Correctivo,Malo,Bueno,5220641,preventivo,Comentario sobre el mantenimiento 12130
-"-12131,00 MNT",02-23-2024,Correctivo,Malo,Malo,451537,preventivo,
+"-12131,00 MNT",02-23-2024,Correctivo,Malo,Malo,451537,preventivo,Comentario sobre el mantenimiento 12131
 "-12132,00 MNT",27-03-2024,Correctivo,Malo,Bueno,5659424,queja_usuario,Comentario sobre el mantenimiento 12132
 "-12133,00 MNT",01-06-2024,Emergencia,Regular,Malo,7928060,preventivo,Comentario sobre el mantenimiento 12133
 "-12134,00 MNT",04-02-2024,Emergencia,Regular,Malo,20504,queja_usuario,Comentario sobre el mantenimiento 12134
@@ -12224,7 +12224,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-12223,00 MNT",11-06-2024,Correctivo,Malo,Bueno,9159036,preventivo,Comentario sobre el mantenimiento 12223
 "-12224,00 MNT",09-19-2024,Correctivo,Bueno,Regular,9291635,queja_usuario,Comentario sobre el mantenimiento 12224
 "-12225,00 MNT",11/06/2024,Correctivo,Regular,Regular,21890,queja_usuario,Comentario sobre el mantenimiento 12225
-"-12226,00 MNT",01-16-2024,Correctivo,Malo,Regular,5658065,preventivo,
+"-12226,00 MNT",01-16-2024,Correctivo,Malo,Regular,5658065,preventivo,Comentario sobre el mantenimiento 12226
 "-12227,00 MNT",20/11/2023,Correctivo,Regular,Malo,25712,queja_usuario,Comentario sobre el mantenimiento 12227
 "-12228,00 MNT",07-27-2024,Correctivo,Bueno,Malo,21965,queja_usuario,Comentario sobre el mantenimiento 12228
 "-12229,00 MNT",2024/08/27,Emergencia,Malo,Malo,21573,queja_usuario,Comentario sobre el mantenimiento 12229
@@ -12261,7 +12261,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-12260,00 MNT",2024-03-04,Correctivo,Malo,Bueno,57937,queja_usuario,Comentario sobre el mantenimiento 12260
 "-12261,00 MNT",2024-02-20,Preventivo,Regular,Malo,4796517,queja_usuario,Comentario sobre el mantenimiento 12261
 "-12262,00 MNT",12-10-2023,Correctivo,Regular,Bueno,3581611,preventivo,Comentario sobre el mantenimiento 12262
-"-12263,00 MNT",06/01/2024,Correctivo,Regular,Bueno,59655,queja_usuario,
+"-12263,00 MNT",06/01/2024,Correctivo,Regular,Bueno,59655,queja_usuario,Comentario sobre el mantenimiento 12263
 "-12264,00 MNT",2024/10/06,Preventivo,Regular,Malo,58513,preventivo,Comentario sobre el mantenimiento 12264
 "-12265,00 MNT",19/09/2024,Preventivo,Bueno,Malo,21963,preventivo,Comentario sobre el mantenimiento 12265
 "-12266,00 MNT",2023/11/05,Preventivo,Bueno,Bueno,33453,preventivo,Comentario sobre el mantenimiento 12266
@@ -12353,7 +12353,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-12352,00 MNT",2023/12/05,Emergencia,Regular,Regular,7247852,preventivo,Comentario sobre el mantenimiento 12352
 "-12353,00 MNT",21-08-2024,Preventivo,Regular,Malo,4949971,preventivo,Comentario sobre el mantenimiento 12353
 "-12354,00 MNT",2024-04-13,Correctivo,Regular,Bueno,3997033,queja_usuario,Comentario sobre el mantenimiento 12354
-"-12355,00 MNT",06-17-2024,Emergencia,Malo,Regular,5195673,preventivo,
+"-12355,00 MNT",06-17-2024,Emergencia,Malo,Regular,5195673,preventivo,Comentario sobre el mantenimiento 12355
 "-12356,00 MNT",2023/11/29,Preventivo,Bueno,Malo,33993,preventivo,Comentario sobre el mantenimiento 12356
 "-12357,00 MNT",12-02-2023,Correctivo,Malo,Bueno,7872670,queja_usuario,Comentario sobre el mantenimiento 12357
 "-12358,00 MNT",2024/02/03,Emergencia,Regular,Malo,52934,queja_usuario,Comentario sobre el mantenimiento 12358
@@ -12603,7 +12603,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-12602,00 MNT",29/07/2024,Correctivo,Regular,Regular,20789,preventivo,Comentario sobre el mantenimiento 12602
 "-12603,00 MNT",18-09-2024,Emergencia,Bueno,Regular,32514,queja_usuario,Comentario sobre el mantenimiento 12603
 "-12604,00 MNT",2024/08/17,Preventivo,Malo,Regular,24827,preventivo,Comentario sobre el mantenimiento 12604
-"-12605,00 MNT",01-04-2024,Preventivo,Regular,Regular,3575586,queja_usuario,
+"-12605,00 MNT",01-04-2024,Preventivo,Regular,Regular,3575586,queja_usuario,Comentario sobre el mantenimiento 12605
 "-12606,00 MNT",2023/10/19,Preventivo,Malo,Bueno,9435358,queja_usuario,Comentario sobre el mantenimiento 12606
 "-12607,00 MNT",24/03/2024,Preventivo,Regular,Bueno,7248153,preventivo,Comentario sobre el mantenimiento 12607
 "-12608,00 MNT",08/10/2024,Preventivo,Regular,Bueno,7927330,queja_usuario,Comentario sobre el mantenimiento 12608
@@ -13212,14 +13212,14 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-13211,00 MNT",26/05/2024,Correctivo,Bueno,Regular,4949779,preventivo,Comentario sobre el mantenimiento 13211
 "-13212,00 MNT",01-15-2024,Correctivo,Malo,Bueno,8800082,preventivo,Comentario sobre el mantenimiento 13212
 "-13213,00 MNT",08-07-2024,Correctivo,Malo,Bueno,9158779,queja_usuario,Comentario sobre el mantenimiento 13213
-"-13214,00 MNT",02-03-2024,Emergencia,Malo,Bueno,22015,queja_usuario,
+"-13214,00 MNT",02-03-2024,Emergencia,Malo,Bueno,22015,queja_usuario,Comentario sobre el mantenimiento 13214
 "-13215,00 MNT",27-02-2024,Correctivo,Bueno,Bueno,21964,preventivo,Comentario sobre el mantenimiento 13215
 "-13216,00 MNT",21/09/2024,Correctivo,Bueno,Bueno,9264106,queja_usuario,Comentario sobre el mantenimiento 13216
 "-13217,00 MNT",08-21-2024,Emergencia,Regular,Regular,22072,preventivo,Comentario sobre el mantenimiento 13217
 "-13218,00 MNT",2023/12/15,Emergencia,Regular,Bueno,9187095,preventivo,Comentario sobre el mantenimiento 13218
 "-13219,00 MNT",2024/06/10,Correctivo,Regular,Bueno,7794405,preventivo,Comentario sobre el mantenimiento 13219
 "-13220,00 MNT",2024-05-20,Preventivo,Bueno,Bueno,3568522,queja_usuario,Comentario sobre el mantenimiento 13220
-"-13221,00 MNT",23-12-2023,Emergencia,Malo,Regular,9052588,preventivo,
+"-13221,00 MNT",23-12-2023,Emergencia,Malo,Regular,9052588,preventivo,Comentario sobre el mantenimiento 13221
 "-13222,00 MNT",2024/10/07,Emergencia,Malo,Regular,7527048,preventivo,Comentario sobre el mantenimiento 13222
 "-13223,00 MNT",2024-04-16,Correctivo,Bueno,Malo,9407916,queja_usuario,Comentario sobre el mantenimiento 13223
 "-13224,00 MNT",2023/12/11,Emergencia,Bueno,Malo,4738010,queja_usuario,Comentario sobre el mantenimiento 13224
@@ -13764,7 +13764,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-13763,00 MNT",02/07/2024,Emergencia,Malo,Bueno,4987193,queja_usuario,Comentario sobre el mantenimiento 13763
 "-13764,00 MNT",2024/01/26,Emergencia,Bueno,Bueno,9294044,queja_usuario,Comentario sobre el mantenimiento 13764
 "-13765,00 MNT",06-02-2024,Correctivo,Regular,Malo,21927,preventivo,Comentario sobre el mantenimiento 13765
-"-13766,00 MNT",2024-05-28,Correctivo,Regular,Malo,9205241,preventivo,
+"-13766,00 MNT",2024-05-28,Correctivo,Regular,Malo,9205241,preventivo,Comentario sobre el mantenimiento 13766
 "-13767,00 MNT",10/11/2023,Preventivo,Regular,Malo,33686,preventivo,Comentario sobre el mantenimiento 13767
 "-13768,00 MNT",29-03-2024,Preventivo,Bueno,Regular,4995134,preventivo,Comentario sobre el mantenimiento 13768
 "-13769,00 MNT",2024-08-03,Preventivo,Malo,Malo,34954,queja_usuario,Comentario sobre el mantenimiento 13769
@@ -14178,7 +14178,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-14177,00 MNT",08-25-2024,Emergencia,Bueno,Malo,25538,queja_usuario,Comentario sobre el mantenimiento 14177
 "-14178,00 MNT",08-08-2024,Emergencia,Regular,Malo,33300,queja_usuario,Comentario sobre el mantenimiento 14178
 "-14179,00 MNT",14/04/2024,Correctivo,Malo,Malo,22529,queja_usuario,Comentario sobre el mantenimiento 14179
-"-14180,00 MNT",04-10-2024,Preventivo,Regular,Malo,21460,queja_usuario,
+"-14180,00 MNT",04-10-2024,Preventivo,Regular,Malo,21460,queja_usuario,Comentario sobre el mantenimiento 14180
 "-14181,00 MNT",2024-10-07,Correctivo,Regular,Regular,8930912,preventivo,Comentario sobre el mantenimiento 14181
 "-14182,00 MNT",02-17-2024,Emergencia,Bueno,Bueno,59533,queja_usuario,Comentario sobre el mantenimiento 14182
 "-14183,00 MNT",23-03-2024,Preventivo,Malo,Bueno,5658233,preventivo,Comentario sobre el mantenimiento 14183
@@ -14307,7 +14307,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-14306,00 MNT",2024/08/04,Correctivo,Malo,Regular,3736633,queja_usuario,Comentario sobre el mantenimiento 14306
 "-14307,00 MNT",2024/03/16,Correctivo,Malo,Malo,25600,preventivo,Comentario sobre el mantenimiento 14307
 "-14308,00 MNT",01-07-2024,Preventivo,Bueno,Bueno,34795,queja_usuario,Comentario sobre el mantenimiento 14308
-"-14309,00 MNT",09/03/2024,Preventivo,Malo,Regular,3576456,queja_usuario,
+"-14309,00 MNT",09/03/2024,Preventivo,Malo,Regular,3576456,queja_usuario,Comentario sobre el mantenimiento 14309
 "-14310,00 MNT",06-01-2024,Correctivo,Regular,Malo,3580717,preventivo,Comentario sobre el mantenimiento 14310
 "-14311,00 MNT",03-01-2024,Preventivo,Bueno,Regular,4963705,queja_usuario,Comentario sobre el mantenimiento 14311
 "-14312,00 MNT",2024/04/14,Emergencia,Malo,Regular,5240962,queja_usuario,Comentario sobre el mantenimiento 14312
@@ -14437,7 +14437,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-14436,00 MNT",2023-10-16,Correctivo,Bueno,Regular,6907800,queja_usuario,Comentario sobre el mantenimiento 14436
 "-14437,00 MNT",2024-06-11,Preventivo,Malo,Malo,33848,preventivo,Comentario sobre el mantenimiento 14437
 "-14438,00 MNT",2024/06/14,Preventivo,Malo,Regular,60005,queja_usuario,Comentario sobre el mantenimiento 14438
-"-14439,00 MNT",12-04-2024,Emergencia,Malo,Malo,19354,preventivo,
+"-14439,00 MNT",12-04-2024,Emergencia,Malo,Malo,19354,preventivo,Comentario sobre el mantenimiento 14439
 "-14440,00 MNT",2023-11-10,Correctivo,Malo,Malo,5158895,preventivo,Comentario sobre el mantenimiento 14440
 "-14441,00 MNT",03/10/2024,Emergencia,Bueno,Regular,19496,queja_usuario,Comentario sobre el mantenimiento 14441
 "-14442,00 MNT",2024-05-29,Preventivo,Regular,Bueno,59987,queja_usuario,Comentario sobre el mantenimiento 14442
@@ -14448,7 +14448,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-14447,00 MNT",14-01-2024,Emergencia,Malo,Malo,9496463,queja_usuario,Comentario sobre el mantenimiento 14447
 "-14448,00 MNT",2024/06/26,Preventivo,Malo,Regular,5238960,queja_usuario,Comentario sobre el mantenimiento 14448
 "-14449,00 MNT",02-09-2024,Preventivo,Bueno,Malo,32970,queja_usuario,Comentario sobre el mantenimiento 14449
-"-14450,00 MNT",20/11/2023,Correctivo,Regular,Regular,19928,queja_usuario,
+"-14450,00 MNT",20/11/2023,Correctivo,Regular,Regular,19928,queja_usuario,Comentario sobre el mantenimiento 14450
 "-14451,00 MNT",15/06/2024,Correctivo,Malo,Regular,9177703,queja_usuario,Comentario sobre el mantenimiento 14451
 "-14452,00 MNT",04-02-2024,Preventivo,Bueno,Regular,3573257,queja_usuario,Comentario sobre el mantenimiento 14452
 "-14453,00 MNT",2024-04-23,Correctivo,Malo,Bueno,5241056,queja_usuario,Comentario sobre el mantenimiento 14453
@@ -14770,7 +14770,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-14769,00 MNT",2024/07/19,Preventivo,Regular,Bueno,59161,queja_usuario,Comentario sobre el mantenimiento 14769
 "-14770,00 MNT",2024/09/01,Correctivo,Bueno,Regular,8888550,queja_usuario,Comentario sobre el mantenimiento 14770
 "-14771,00 MNT",10-06-2024,Correctivo,Bueno,Regular,59813,preventivo,Comentario sobre el mantenimiento 14771
-"-14772,00 MNT",2023-11-27,Emergencia,Malo,Bueno,7526872,queja_usuario,
+"-14772,00 MNT",2023-11-27,Emergencia,Malo,Bueno,7526872,queja_usuario,Comentario sobre el mantenimiento 14772
 "-14773,00 MNT",2023-10-30,Preventivo,Bueno,Malo,8804640,preventivo,Comentario sobre el mantenimiento 14773
 "-14774,00 MNT",2023/11/05,Correctivo,Regular,Regular,21933,queja_usuario,Comentario sobre el mantenimiento 14774
 "-14775,00 MNT",13/08/2024,Correctivo,Bueno,Regular,5658534,preventivo,Comentario sobre el mantenimiento 14775
@@ -14791,7 +14791,7 @@ ID,FECHA_INTERVENCION,TIPO_INTERVENCION,ESTADO_PREVIO,ESTADO_POSTERIOR,JuegoID,T
 "-14790,00 MNT",29/05/2024,Preventivo,Bueno,Malo,5025116,preventivo,Comentario sobre el mantenimiento 14790
 "-14791,00 MNT",02-28-2024,Correctivo,Bueno,Bueno,33809,preventivo,Comentario sobre el mantenimiento 14791
 "-14792,00 MNT",2023/11/18,Emergencia,Bueno,Malo,32988,preventivo,Comentario sobre el mantenimiento 14792
-"-14793,00 MNT",11/08/2024,Emergencia,Regular,Regular,7896586,queja_usuario,
+"-14793,00 MNT",11/08/2024,Emergencia,Regular,Regular,7896586,queja_usuario,Comentario sobre el mantenimiento 14793
 "-14794,00 MNT",2024-02-15,Correctivo,Regular,Malo,7128840,queja_usuario,Comentario sobre el mantenimiento 14794
 "-14795,00 MNT",22-11-2023,Emergencia,Bueno,Malo,3558524,queja_usuario,Comentario sobre el mantenimiento 14795
 "-14796,00 MNT",2024-08-10,Correctivo,Regular,Malo,6778225,queja_usuario,Comentario sobre el mantenimiento 14796
