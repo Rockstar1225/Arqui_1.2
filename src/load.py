@@ -19,11 +19,5 @@ def load_db():
         except IndexError:
             file_name = item.split('.')[0]
             temp_db = pd.read_csv(f"{dataset_dir}/{item}")
-            db[file_name] = temp_db
+            db[file_name] = temp_db       
     return db
-
-
-
-
-
-    
