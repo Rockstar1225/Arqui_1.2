@@ -1,4 +1,5 @@
 import pandas as pd
+pd.options.mode.chained_assignment = None  # default='warn', de StackOverflow
 import load
 
 # capitalizar una columna entera
@@ -25,8 +26,14 @@ def find_table_by_column(db: pd.DataFrame, tablas_tachadas: list, column:str)-> 
                 return tabla
     return None
 
-def find_id(db:pd.DataFrame, tabla: str, fila: int):
-    return db[tabla]["ID"][fila]
+def find_id(db: pd.DataFrame, tabla: str, fila: int):
+    archivo = db[tabla]
+    if tabla == "Usuarios":
+        return archivo["NIF"][fila]
+    elif tabla == "meteo24":
+        return archivo["PROVINCIA"][fila]
+    else:
+        return archivo["ID"][fila]
 
 #Rellenar filas vacias
 def empty_data(db: pd.DataFrame):
@@ -35,13 +42,13 @@ def empty_data(db: pd.DataFrame):
         for columna in tabla:
             lista = tabla[columna]
             for i in range(len(columna)):
-                if lista[i] is None:
+                if pd.isna(lista[i]): #Función para detectar los nan. Me la ha dado Chat gpt
                     print("None encontrado")
                     whilebreaker = False
-                    tachadas = [tabla]
+                    tachadas = [tabla_name]
                     new_tab = None
                     while not whilebreaker:
-                        id = find_id(db, tabla, i)
+                        id = find_id(db, tabla_name, i)
                         new_tab = find_table_by_column(db, tachadas, columna)
                         if new_tab is None:
                             lista[i] = str(id) + "-" + columna + "-desconocido"
