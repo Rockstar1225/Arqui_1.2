@@ -1,7 +1,6 @@
 import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn', de StackOverflow
 import load
-import datetime
 from dateutil import parser
 
 # capitalizar una columna entera
@@ -56,14 +55,14 @@ def empty_data(db: pd.DataFrame):
                             whilebreaker = True
                         else:
                             valor = take_atribute(db, tabla_name, columna, id)
-                            if valor is None:
+                            if pd.isna(valor):
                                 tachadas.append(new_tab)
                             else:
                                 lista[i] = valor
                                 whilebreaker = True
 
 
-def reformatear_fecha(db: pd.DataFrame, table_name: str, column_name: str):
+def reformatear_fecha(db: pd.DataFrame, table_name: str, column_name: str): #ChatGPT
     archivo = db[table_name]
     fechas_nuevas = []
     for fecha in archivo[column_name]:
@@ -74,12 +73,28 @@ def reformatear_fecha(db: pd.DataFrame, table_name: str, column_name: str):
             f_formt = pd.NaT
         fechas_nuevas.append(f_formt)
     archivo[column_name] = fechas_nuevas
-    
+    empty_data(db)
 
+def no_duplicates(db: pd.DataFrame, table_name: str, id_column: str):
+    tabla = db[table_name]
+    columna = tabla[id_column]
+    fila_unicos = []
+    fila_repetidos = []
+    for i in range(len(columna)):
+        valor = columna[i]
+        if valor in fila_unicos:
+            fila_repetidos.append(i)
+        else:
+            fila_unicos.append(valor)
+    dominio = len(fila_repetidos)
+    for j in range(dominio):
+        db[table_name].drop(dominio -1 -j)
 # Pruebas
 base = load.load_db()
 print(find_table_by_column(base, ["Areas"], "DISTRITO"))
 print(take_atribute(base, "Areas", "DISTRITO", 3573005))
 empty_data(base)
 reformatear_fecha(base, "Mantenimiento", "FECHA_INTERVENCION")
-print(base["Mantenimiento"]["FECHA_INTERVENCION"])
+print(base["Areas"])
+no_duplicates(base, "Areas", "ID")
+print(base["Areas"])
