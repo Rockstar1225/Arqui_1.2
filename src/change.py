@@ -36,30 +36,42 @@ def find_id(db: pd.DataFrame, tabla: str, fila: int):
     else:
         return archivo["ID"][fila]
 
+def compare_columnas(c1,c2):
+    repetidos = []
+    for i in c1:
+        for j in c2:
+            if i == j:
+                repetidos.append(c2)
+    return repetidos
+
 #Rellenar filas vacias
 def empty_data(db: pd.DataFrame):
     for tabla_name in db:
         tabla = base[tabla_name]
         for columna in tabla:
             lista = tabla[columna]
-            for i in range(len(columna)):
+            for i in range(len(lista)):
                 if pd.isna(lista[i]): #Función para detectar los nan. Me la ha dado Chat gpt
-                    whilebreaker = False
-                    tachadas = [tabla_name]
-                    new_tab = None
-                    while not whilebreaker:
-                        id = find_id(db, tabla_name, i)
-                        new_tab = find_table_by_column(db, tachadas, columna)
-                        if new_tab is None:
-                            lista[i] = str(id) + "-" + columna + "-desconocido"
-                            whilebreaker = True
-                        else:
-                            valor = take_atribute(db, tabla_name, columna, id)
-                            if pd.isna(valor):
-                                tachadas.append(new_tab)
-                            else:
-                                lista[i] = valor
+                    if tabla_name in ["Areas", "Juegos"] and not pd.isna(tabla["DIRECCION_AUX"][i]):
+                        lista[i] = tabla["DIRECCION_AUX"][i]
+                    else:
+                        whilebreaker = False
+                        tachadas = [tabla_name]
+                        new_tab = None
+                        while not whilebreaker:
+                            id = find_id(db, tabla_name, i)
+                            new_tab = find_table_by_column(db, tachadas, columna)
+                            if new_tab is None:
+                                lista[i] = str(id) + "-" + columna + "-ausente"
                                 whilebreaker = True
+                            else:
+                                valor = take_atribute(db, new_tab, columna, id)
+                                if valor is None:
+                                    tachadas.append(new_tab)
+                                else:
+                                    lista[i] = valor
+                                    whilebreaker = True      
+
 
 
 def reformatear_fecha(db: pd.DataFrame, table_name: str, column_name: str): #ChatGPT
@@ -93,8 +105,7 @@ def no_duplicates(db: pd.DataFrame, table_name: str, id_column: str):
 base = load.load_db()
 print(find_table_by_column(base, ["Areas"], "DISTRITO"))
 print(take_atribute(base, "Areas", "DISTRITO", 3573005))
+# no_duplicates(base, "Areas", "ID")
 empty_data(base)
-reformatear_fecha(base, "Mantenimiento", "FECHA_INTERVENCION")
-print(base["Areas"])
-no_duplicates(base, "Areas", "ID")
-print(base["Areas"])
+print(base)
+# reformatear_fecha(base, "Mantenimiento", "FECHA_INTERVENCION")
