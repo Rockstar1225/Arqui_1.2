@@ -36,13 +36,7 @@ def find_id(db: pd.DataFrame, tabla: str, fila: int):
     else:
         return archivo["ID"][fila]
 
-def compare_columnas(c1,c2):
-    repetidos = []
-    for i in c1:
-        for j in c2:
-            if i == j:
-                repetidos.append(c2)
-    return repetidos
+
 
 #Rellenar filas vacias
 def empty_data(db: pd.DataFrame):
@@ -98,14 +92,13 @@ def no_duplicates(db: pd.DataFrame, table_name: str, id_column: str):
             fila_repetidos.append(i)
         else:
             fila_unicos.append(valor)
+    print(fila_repetidos)
     dominio = len(fila_repetidos)
     for j in range(dominio):
-        db[table_name].drop(dominio -1 -j)
+        db[table_name].drop(fila_repetidos[dominio-1-j])
 # Pruebas
 base = load.load_db()
-print(find_table_by_column(base, ["Areas"], "DISTRITO"))
-print(take_atribute(base, "Areas", "DISTRITO", 3573005))
-# no_duplicates(base, "Areas", "ID")
+no_duplicates(base, "Juegos", "ID")
 empty_data(base)
+reformatear_fecha(base, "Mantenimiento", "FECHA_INTERVENCION")
 print(base)
-# reformatear_fecha(base, "Mantenimiento", "FECHA_INTERVENCION")
