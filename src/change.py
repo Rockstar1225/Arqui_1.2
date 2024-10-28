@@ -1,6 +1,8 @@
 import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn', de StackOverflow
 import load
+import datetime
+from dateutil import parser
 
 # capitalizar una columna entera
 def capitalize_column(db: pd.DataFrame, colname: str) -> pd.DataFrame:
@@ -43,7 +45,6 @@ def empty_data(db: pd.DataFrame):
             lista = tabla[columna]
             for i in range(len(columna)):
                 if pd.isna(lista[i]): #Función para detectar los nan. Me la ha dado Chat gpt
-                    print("None encontrado")
                     whilebreaker = False
                     tachadas = [tabla_name]
                     new_tab = None
@@ -60,12 +61,25 @@ def empty_data(db: pd.DataFrame):
                             else:
                                 lista[i] = valor
                                 whilebreaker = True
-            
 
 
+def reformatear_fecha(db: pd.DataFrame, table_name: str, column_name: str):
+    archivo = db[table_name]
+    fechas_nuevas = []
+    for fecha in archivo[column_name]:
+        try:
+            f_adapt = parser.parse(fecha)
+            f_formt = f_adapt.strftime('%Y-%m-%d %H:%M:%S')
+        except (ValueError, TypeError):
+            f_formt = pd.NaT
+        fechas_nuevas.append(f_formt)
+    archivo[column_name] = fechas_nuevas
+    
 
 # Pruebas
 base = load.load_db()
 print(find_table_by_column(base, ["Areas"], "DISTRITO"))
 print(take_atribute(base, "Areas", "DISTRITO", 3573005))
 empty_data(base)
+reformatear_fecha(base, "Mantenimiento", "FECHA_INTERVENCION")
+print(base["Mantenimiento"]["FECHA_INTERVENCION"])
