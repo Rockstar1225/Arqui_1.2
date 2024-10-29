@@ -1,6 +1,7 @@
 import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn', de StackOverflow
 import load
+import unicodedata
 from dateutil import parser
 
 # capitalizar una columna entera
@@ -81,6 +82,18 @@ def reformatear_fecha(db: pd.DataFrame, table_name: str, column_name: str): #Cha
     archivo[column_name] = fechas_nuevas
     empty_data(db)
 
+def check_tildes(db: pd.DataFrame):
+    for tabla_n in db:
+        tabla = db[tabla_n]
+        for columna in tabla:
+            for n in range(len(tabla[columna])):
+                elemento = tabla[columna][n]
+                if isinstance(elemento, str) and not elemento.isdigit():
+                    elemento = ''.join(c for c in unicodedata.normalize('NFD', elemento) if unicodedata.category(c) != 'Mn')
+                    tabla[columna][n] = str(elemento)
+
+
+
 def no_duplicates(db: pd.DataFrame, table_name: str, id_column: str):
     tabla = db[table_name]
     columna = tabla[id_column]
@@ -98,7 +111,8 @@ def no_duplicates(db: pd.DataFrame, table_name: str, id_column: str):
         db[table_name].drop(fila_repetidos[dominio-1-j])
 # Pruebas
 base = load.load_db()
-no_duplicates(base, "Juegos", "ID")
-empty_data(base)
-reformatear_fecha(base, "Mantenimiento", "FECHA_INTERVENCION")
+check_tildes(base)
 print(base)
+"""no_duplicates(base, "Juegos", "ID")
+reformatear_fecha(base, "Mantenimiento", "FECHA_INTERVENCION")
+print(base)"""
