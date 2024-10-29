@@ -1,5 +1,6 @@
 import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn', de StackOverflow
+pd.options.mode.copy_on_write = True
 import load
 import unicodedata
 from dateutil import parser
@@ -82,14 +83,17 @@ def reformatear_fecha(db: pd.DataFrame, table_name: str, column_name: str): #Cha
     archivo[column_name] = fechas_nuevas
     empty_data(db)
 
-def check_tildes(db: pd.DataFrame):
+def delete_special(db: pd.DataFrame):
+    lista_columnas = ["DESC_CLASIFICACION", "BARRIO", "DISTRITO"]
     for tabla_n in db:
         tabla = db[tabla_n]
         for columna in tabla:
             for n in range(len(tabla[columna])):
                 elemento = tabla[columna][n]
                 if isinstance(elemento, str) and not elemento.isdigit():
-                    elemento = ''.join(c for c in unicodedata.normalize('NFD', elemento) if unicodedata.category(c) != 'Mn')
+                    elemento = ''.join(c for c in unicodedata.normalize('NFD', elemento) if unicodedata.category(c) != 'Mn') #Tildes
+                    if ".com" not in elemento and ".es" not in elemento and ".org" not in elemento:
+                        elemento = "".join(char for char in elemento if char.isalnum()) # Caracter especial
                     tabla[columna][n] = str(elemento)
 
 
@@ -111,7 +115,8 @@ def no_duplicates(db: pd.DataFrame, table_name: str, id_column: str):
         db[table_name].drop(fila_repetidos[dominio-1-j])
 # Pruebas
 base = load.load_db()
-check_tildes(base)
+empty_data(base)
+delete_special(base)
 print(base)
 """no_duplicates(base, "Juegos", "ID")
 reformatear_fecha(base, "Mantenimiento", "FECHA_INTERVENCION")
