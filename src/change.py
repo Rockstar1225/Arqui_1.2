@@ -113,21 +113,17 @@ def formato_tlf(db:pd.DataFrame):
     print("Tlf terminado")
 
 
-def no_duplicates(db: pd.DataFrame, table_name: str, id_column: str):
-    tabla = db[table_name]
-    columna = tabla[id_column]
-    fila_unicos = []
-    fila_repetidos = []
-    for i in range(len(columna)):
-        valor = columna[i]
-        if valor in fila_unicos:
-            fila_repetidos.append(i)
+def no_duplicates(db: pd.DataFrame):
+    for tabla_n in db:
+        if tabla_n == "meteo24":
+            continue
         else:
-            fila_unicos.append(valor)
-    print(fila_repetidos)
-    dominio = len(fila_repetidos)
-    for j in range(dominio):
-        db[table_name].drop(fila_repetidos[dominio-1-j])
+            columnas_sin_primary = list(db[tabla_n].columns)
+            primary_key = columnas_sin_primary.pop(0)
+            # quitar las filas que repitan todo menos la primary key
+            db[tabla_n] = db[tabla_n].drop_duplicates(subset=columnas_sin_primary, keep="first")
+            # quitar las filas que repitan la primary key
+            db[tabla_n] = db[tabla_n].drop_duplicates(subset=[primary_key], keep="first")
 # Pruebas
 base = load.load_db()
 empty_data(base)
