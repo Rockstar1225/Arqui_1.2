@@ -1,6 +1,5 @@
 import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn', de StackOverflow
-pd.options.mode.copy_on_write = True
 import load
 import unicodedata
 from dateutil import parser
@@ -45,28 +44,26 @@ def empty_data(db: pd.DataFrame):
     for tabla_name in db:
         tabla = base[tabla_name]
         for columna in tabla:
+            tabla[columna] = tabla[columna].astype(object)
             lista = tabla[columna]
             for i in range(len(lista)):
                 if pd.isna(lista[i]): #Función para detectar los nan. Me la ha dado Chat gpt
-                    if tabla_name in ["Areas", "Juegos"] and not pd.isna(tabla["DIRECCION_AUX"][i]):
-                        lista[i] = tabla["DIRECCION_AUX"][i]
-                    else:
-                        whilebreaker = False
-                        tachadas = [tabla_name]
-                        new_tab = None
-                        while not whilebreaker:
-                            id = find_id(db, tabla_name, i)
-                            new_tab = find_table_by_column(db, tachadas, columna)
-                            if new_tab is None:
-                                lista[i] = str(id) + "-" + columna + "-ausente"
-                                whilebreaker = True
+                    whilebreaker = False
+                    tachadas = [tabla_name]
+                    while not whilebreaker:
+                        id = find_id(db, tabla_name, i)
+                        new_tab = find_table_by_column(db, tachadas, columna)
+                        if new_tab is None:
+                            tabla.loc[i, columna] =  f"{id}-{columna}-ausente"
+                            whilebreaker = True
+                        else:
+                            valor = take_atribute(db, new_tab, columna, id)
+                            if valor is None:
+                                tachadas.append(new_tab)
                             else:
-                                valor = take_atribute(db, new_tab, columna, id)
-                                if valor is None:
-                                    tachadas.append(new_tab)
-                                else:
-                                    lista[i] = valor
-                                    whilebreaker = True      
+                                lista[i] = valor
+                                whilebreaker = True
+    print("Emp terminado")
 
 
 
@@ -84,18 +81,36 @@ def reformatear_fecha(db: pd.DataFrame, table_name: str, column_name: str): #Cha
     empty_data(db)
 
 def delete_special(db: pd.DataFrame):
-    lista_columnas = ["DESC_CLASIFICACION", "BARRIO", "DISTRITO"]
+    lista_tildes = ["DESC_CLASIFICACION", "BARRIO", "DISTRITO", "NOMBRE", "TIPO_INCIDENTE"]
     for tabla_n in db:
         tabla = db[tabla_n]
         for columna in tabla:
-            for n in range(len(tabla[columna])):
-                elemento = tabla[columna][n]
-                if isinstance(elemento, str) and not elemento.isdigit():
+            if columna in lista_tildes:
+                for n in range(len(tabla[columna])):
+                    elemento = tabla[columna][n]
                     elemento = ''.join(c for c in unicodedata.normalize('NFD', elemento) if unicodedata.category(c) != 'Mn') #Tildes
-                    if ".com" not in elemento and ".es" not in elemento and ".org" not in elemento:
-                        elemento = "".join(char for char in elemento if char.isalnum()) # Caracter especial
-                    tabla[columna][n] = str(elemento)
+                    elemento = "".join(char for char in elemento if char.isalnum() or char == " ") # Caracter especial
+                    tabla.loc[n, columna] = str(elemento)
+    print("Sp terminado")
 
+
+def formato_tlf(db:pd.DataFrame):
+    columna = db["Usuarios"]["TELEFONO"]
+    for i in range (len(columna)):
+        valor = columna[i]
+        if " " or "+" in valor:
+            espacio = ""
+            j = 0
+            while "34" not in espacio:
+                espacio += valor[j]
+                j += 1
+            numero = valor[j:]
+            lista = numero.split(" ")
+            new_tlf = "34"
+            for x in lista:
+                new_tlf += x
+            columna[i] = new_tlf
+    print("Tlf terminado")
 
 
 def no_duplicates(db: pd.DataFrame, table_name: str, id_column: str):
@@ -117,7 +132,6 @@ def no_duplicates(db: pd.DataFrame, table_name: str, id_column: str):
 base = load.load_db()
 empty_data(base)
 delete_special(base)
-print(base)
-"""no_duplicates(base, "Juegos", "ID")
+formato_tlf(base)
 reformatear_fecha(base, "Mantenimiento", "FECHA_INTERVENCION")
-print(base)"""
+print(base)
