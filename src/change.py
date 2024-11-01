@@ -133,7 +133,7 @@ def adjust_gps(db: pd.DataFrame)-> pd.DataFrame:
     long_area = db["Areas"]["LONGITUD"]
     lat_juego = db["Juegos"]["LATITUD"]
     long_juego = db["Juegos"]["LONGITUD"]
-    # si el valor esta mal se rellena con la mediana
+    # if value is wrong the value chosen is the median
     for i in range(len(lat_area)):
         if abs(lat_area[i]) > 90:
             lat_area[i] = lat_area.median() 
