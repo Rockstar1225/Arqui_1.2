@@ -6,8 +6,8 @@ from dateutil import parser
 
 
 # capitalizar una columna entera
-def capitalize_column(df: pd.DataFrame, colname: str) -> pd.DataFrame:
-    df[colname] =  df[colname].apply(lambda x: x.upper())
+def capitalize_column(df: pd.DataFrame, table_name:str, colname: str) -> pd.DataFrame:
+    df[table_name][colname] =  df[table_name][colname].apply(lambda x: x.upper())
 
 # Encontrar un dato en una tabla
 def take_atribute(df: pd.DataFrame, tabla: str,  columna: str, id: int) -> str:
@@ -42,30 +42,38 @@ def find_id(df: pd.DataFrame, tabla: str, fila: int):
 
 
 
-#Rellenar filas vacias
-def empty_data(df: pd.DataFrame):
-    for tabla_name in df:
-        tabla = base[tabla_name]
-        for columna in tabla:
-            tabla[columna] = tabla[columna].astype(object)
-            lista = tabla[columna]
-            for i in range(len(lista)):
-                if pd.isna(lista[i]): #Función para detectar los nan. Me la ha dado Chat gpt
-                    whilebreaker = False
-                    tachadas = [tabla_name]
-                    while not whilebreaker:
-                        id = find_id(df, tabla_name, i)
-                        new_tab = find_table_by_column(df, tachadas, columna)
-                        if new_tab is None:
-                            tabla.loc[i, columna] =  f"{id}-{columna}-ausente"
-                            whilebreaker = True
-                        else:
-                            valor = take_atribute(df, new_tab, columna, id)
-                            if valor is None:
-                                tachadas.append(new_tab)
-                            else:
-                                lista[i] = valor
-                                whilebreaker = True
+def empty_data(df_dict):
+    for tabla_name, tabla in df_dict.items():
+        # Convertimos todas las columnas al tipo object una sola vez por tabla
+        tabla = tabla.astype(object)
+
+        # Identificamos las filas y columnas con valores NaN
+        nan_positions = tabla.isna()
+
+        # Iteramos solo sobre las posiciones con valores NaN
+        for columna in nan_positions.columns:
+            nan_indices = nan_positions.index[nan_positions[columna]]
+
+            for i in nan_indices:
+                # Evitamos el bucle while innecesario llamando solo cuando sea necesario
+                tachadas = [tabla_name]
+                id = find_id(df_dict, tabla_name, i)
+
+                while True:
+                    new_tab = find_table_by_column(df_dict, tachadas, columna)
+                    if new_tab is None:
+                        tabla.loc[i, columna] = f"{id}-{columna}-ausente"
+                        break
+                    valor = take_atribute(df_dict, new_tab, columna, id)
+                    if valor is None:
+                        tachadas.append(new_tab)
+                    else:
+                        tabla.loc[i, columna] = valor
+                        break
+
+        # Actualizamos la tabla en el diccionario original (si no es una copia)
+        df_dict[tabla_name] = tabla
+
     print("Emp terminado")
 
 
@@ -174,30 +182,74 @@ def adjust_ETRS89(df: pd.DataFrame)-> None:
             print(item)
 
 def enum_checker(db: pd.DataFrame):
-    posiciones_borrar = []
     for n_tabla in db:
         tabla = db[n_tabla]
         for n_columna in tabla:
-            if n_tabla == "Juegos" and n_columna == "ESTADO":
+            posiciones_borrar = []
+            if n_tabla == "Areas" and n_columna == "ESTADO":
                 columna = tabla[n_columna]
                 for i in range (len(columna)):
-                    if tabla[columna[i]] != "OPERATIVO":
-                        posiciones_borrar.append[i]
-            elif n_tabla == "Areas" and n_columna == "ESTADO":
+                    if tabla[n_columna][i] != "OPERATIVO":
+                        posiciones_borrar.append(i)
+            elif n_tabla == "Juegos" and n_columna == "ESTADO":
                 columna = tabla[n_columna]
                 for i in range (len(columna)):
-                    if tabla[columna[i]] != "OPERATIVO":
-                        posiciones_borrar.append[i]
+                    if tabla[n_columna][i] != "OPERATIVO" and tabla[n_columna][i] != "REPARACION":
+                        posiciones_borrar.append(i)
+            elif n_tabla == "Incidencias" and n_columna == "TIPO_INCIDENCIA":
+                columna = tabla[n_columna]
+                for i in range (len(columna)):
+                    if tabla[n_columna][i] != "DESGASTE" and tabla[n_columna][i] != "ROTURA" and tabla[n_columna][i] != "VANDALISMO" and tabla[n_columna][i] != "MAL FUNCIONAMIENTO":
+                        posiciones_borrar.append(i)
+            elif n_tabla == "Incidencias" and n_columna == "ESTADO":
+                columna = tabla[n_columna]
+                for i in range (len(columna)):
+                    if tabla[n_columna][i] != "ABIERTA" and tabla[n_columna][i] != "CERRADA":
+                        posiciones_borrar.append(i)
+            elif n_tabla == "Mantenimiento" and n_columna == "TIPO_INTERVENCION":
+                columna = tabla[n_columna]
+                for i in range (len(columna)):
+                    if tabla[n_columna][i] != "CORRECTIVO" and tabla[n_columna][i] != "EMERGENCIA"  and tabla[n_columna][i] != "PREVENTIVO" :
+                        posiciones_borrar.append(i)
+            elif n_tabla == "Mantenimiento" and n_columna in ["ESTADO_PREVIO", "ESTADO_POSTERIOR"]:
+                columna = tabla[n_columna]
+                for i in range (len(columna)):
+                    if tabla[n_columna][i] != "MALO" and tabla[n_columna][i] != "REGULAR"  and tabla[n_columna][i] != "BUENO" :
+                        posiciones_borrar.append(i)
+            elif n_tabla == "Incidentes" and n_columna == "TIPO_INCIDENTE":
+                columna = tabla[n_columna]
+                for i in range (len(columna)):
+                    if tabla[n_columna][i] != "ROBO" and tabla[n_columna][i] != "CAIDA" and tabla[n_columna][i] != "VANDALISMO" and tabla[n_columna][i] != "ACCIDENTE" and tabla[n_columna][i] != "ROBO ESTRUCTURAL":
+                        posiciones_borrar.append(i)
+            elif n_tabla == "Incidentes" and n_columna == "GRAVEDAD":
+                columna = tabla[n_columna]
+                for i in range (len(columna)):
+                    if tabla[n_columna][i] != "ALTA" and tabla[n_columna][i] != "BAJA" and tabla[n_columna][i] != "MEDIA" and tabla[n_columna][i] != "CRITICA":
+                        posiciones_borrar.append(i)
+            total_falsas = len(posiciones_borrar)
+            if total_falsas > 0:
+                print(total_falsas)
+                for n in range(total_falsas):
+                    posicion = posiciones_borrar[total_falsas - n -1]
+                    tabla.drop(posicion)
         
     
 # Pruebas
 base = load.load_db()
-print(base)
-
+capitalize_column(base, "Areas", "ESTADO")
+capitalize_column(base, "Juegos", "ESTADO")
+capitalize_column(base, "Incidencias", "TIPO_INCIDENCIA")
+capitalize_column(base, "Incidencias", "ESTADO")
+capitalize_column(base, "Mantenimiento", "ESTADO_PREVIO")
+capitalize_column(base, "Mantenimiento", "ESTADO_POSTERIOR")
+capitalize_column(base, "Incidentes", "TIPO_INCIDENTE")
+capitalize_column(base, "Incidentes", "GRAVEDAD")
 empty_data(base)
-# delete_special(base)
+delete_special(base)
+print(base["Juegos"]["ESTADO"])
+enum_checker(base)
 # formato_tlf(base)
 # reformatear_fecha(base, "Mantenimiento", "FECHA_INTERVENCION")
 # adjust_gps(base)
 # adjust_ETRS89(base)
-# print(base)
+print(base)
