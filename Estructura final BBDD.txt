@@ -1,0 +1,15 @@
+- Agregado "AreaRecreativa_Clima":
+	- Colección "AreaRecreativa" // no representada como colección aparte al ser la raíz
+	- Colección "IncidenteSeguridad"
+	- Colección "EncuestaSatisfacción"
+	- Colección "RegistroClima"
+	- Colección "Juego" // no representada como colección aparte por estar en otro agregado
+
+- Agregado "Juego":
+	- Colección "Juego" // no representada como colección aparte al ser la raíz
+	- Colección "Mantenimiento"
+	- Colección "Incidencia" // no representada como colección aparte por estar en otro agregado
+
+- Agregado "Incidencia":
+	- Colección "incidencia" // no representada como colección aparte al ser la raíz
+	- Colección "Usuario"

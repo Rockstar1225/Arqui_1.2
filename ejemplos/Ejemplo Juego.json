@@ -1,0 +1,31 @@
+{
+	// Juego (Raíz)
+	"id": "2342423", // Clave primaria
+	"nombre": "string",
+	"modelo": "v1",
+	"estadoOperativo": "Operativo", // enum
+	"accesibilidad": true | false,
+	"fechaInstalacion": DATE(),
+	"tipo": "salto", // enum
+	"desgasteAcumulado": 10,
+	"indicadorExposicion": "Medio", // enum
+	"ultimaFechaMantenimiento": DATE(),
+	
+	// Mantenimiento
+	"mantenimientos": [
+		{ 
+			"id": "10210101", // clave primaria
+		}, // ...
+	],
+
+	// Incidente de Seguridad
+	"incidencias": [
+		{
+			"id": "4234324234", // Clave primaria
+			"tipo": "usabilidad", // enum
+			"fechaReporte": DATE(),
+			"estado": "resuelta" // enum
+		}, // ...
+	]
+
+}

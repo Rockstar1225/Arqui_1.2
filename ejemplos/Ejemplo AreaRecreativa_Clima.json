@@ -1,0 +1,48 @@
+{
+	// Area (Raíz)
+	"nombre": "string", // Clave primaria
+	"coordenadasGPS": [ -10.23, 463.83 ], // Latitud y Longitud
+	"barrio": "string",
+	"distrito": "string",
+	"fechaInstalacion": DATE(),
+	"estadoGlobalArea": "Operativo", // enum
+	"capacidadMax": 10,
+	"CantidadJuegosTipo": [
+		{
+			"tipo": "string", // enum
+			"valor": 12312
+		}, // ...
+	],
+
+	// Juegos
+	"juegos": [
+		{ 
+			"id": "10210101", // clave primaria	
+		}, // ...
+	],
+
+	// Incidente de Seguridad
+	"incidentesSeguridad": [
+		{
+			"id": "123213123", // Clave primaria
+			"tipo": "Usabilidad", // enum
+			"gravedad": "Urgente", // enum
+			"fechaDeReporte": DATE(),
+		}, // ...
+	], 
+
+	// Registros de clima
+	"registrosClima": [
+		{
+			"id": "24324234" // clave primaria
+		},	// ...
+	],
+
+	// Encuesta Satisfacción
+	"encuestas": [
+		{
+			"id": "10231312", // clave primaria
+		}, // ...
+	]
+
+}
