@@ -58,7 +58,7 @@ SCHEME={
                      "tipo": {
                         "bsonType": "string",
                         "description": "tipo de juegos a contar",
-                        "enum": ["saltos",""] // TODO tipos de juegos
+                        "enum": ["deportivas","infantiles","mayores"]
                      },
                      "valor": {
                         "bsonType": "number",
@@ -98,12 +98,12 @@ SCHEME={
                      "tipo": {
                         "bsonType": "string",
                         "description": "tipo de incidencia de seguridad",
-                        "enum": ["Usabilidad", ] // TODO tipos de incidentes de seguridad
+                        "enum": ["Robo", "Caida","Accidente","Vandalismo","Daño estructural" ]
                      },
                      "gravedad": {
                         "bsonType": "string",
                         "description": "gravedad del incidente",
-                        "enum": ["Usabilidad", ] // TODO tipos de gravedad de un incidente de seguridad
+                        "enum": [ "Baja","Media","Alta","Crítica" ]
                      },
                      "fechaDeReporte": {
                         "bsonType": "date",

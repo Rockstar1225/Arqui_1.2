@@ -15,7 +15,7 @@ SCHEME={
             "tipo": {
                 "bsonType": "string",
                 "description": "tipo de incidencia al juego",
-                "enum": ["usabilidad", ] // TODO tipos de incidencias
+                "enum": ["Desgaste","Mal funcionamiento","Rotura","Vandalismo"]
             },
             "fechaReporte": {
                 "bsonType": "date",
@@ -24,7 +24,7 @@ SCHEME={
             "estado": {
                 "bsonType": "string",
                 "description": "estado de la inicidencia",
-                "enum": ["resuelta", ] // TODO tipos de estados de incidencia
+                "enum": ["Abierta","Cerrada"]
             },
             "tiempoResolucion": {
                "bsonType": "double",

@@ -36,7 +36,7 @@ SCHEME={
            "tipo": {
                "bsonType": "string",
                "description": "Tipo de juego",
-               "enum": ["Salto", ] // TODO tipos de juegos
+               "enum": ["deportivas","infantiles","mayores"]
            },
            "desgasteAcumulado": {
                "bsonType": "number",
@@ -86,7 +86,7 @@ SCHEME={
                      "estado": {
                         "bsonType": "string",
                         "description": "estado de la inicidencia",
-                        "enum": ["resuelta", ] // TODO tipos de estados de incidencia
+                        "enum": [ "Abierta","Cerrada" ]
                      }
                   }
                }
