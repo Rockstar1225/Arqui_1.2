@@ -147,12 +147,30 @@ def adjust_gps(df: pd.DataFrame)-> None:
         if abs(long_juego[i]) > 180:
             long_juego[i] = long_juego.median()            
     # adjust areas
-    lat_area = lat_area.apply(lambda x: "{:3.7f}".format(x))
-    long_area = long_area.apply(lambda x: "{:3.7f}".format(x))
+    lat_area = lat_area.apply(lambda x: "{:3.6f}".format(x))
+    long_area = long_area.apply(lambda x: "{:3.6f}".format(x))
     # adjust Juegos
-    lat_juego = lat_juego.apply(lambda x: "{:3.7f}".format(x))
-    long_juego = long_juego.apply(lambda x: "{:3.7f}".format(x))
-      
+    lat_juego = lat_juego.apply(lambda x: "{:3.6f}".format(x))
+    long_juego = long_juego.apply(lambda x: "{:3.6f}".format(x))
+
+def adjust_ETRS89(df: pd.DataFrame)-> None:
+        """This function converts the ETRS89 data to GPS coordinates. """
+        x_coord_area = df["Areas"]["COORD_GIS_X"]
+        y_coord_area = df ["Areas"]["COORD_GIS_Y"]
+        x_coord_juegos = df["Juegos"]["COORD_GIS_X"]
+        y_coord_juegos= df ["Juegos"]["COORD_GIS_Y"]
+        
+        # adjust area
+        x_coord_area = x_coord_area.apply(lambda x: "{:3.3f}".format(x % 180))
+        y_coord_area = y_coord_area.apply(lambda x: "{:3.3f}".format(x % 90))
+        
+        #adjust juegos
+        x_coord_juegos = x_coord_juegos.apply(lambda x: "{:3.3f}".format(x % 180))
+        y_coord_juegos = y_coord_juegos.apply(lambda x: "{:3.3f}".format(x % 90))
+        
+        for item in y_coord_juegos:
+            print(item)
+        
     
 # Pruebas
 base = load.load_db()
@@ -162,5 +180,6 @@ base = load.load_db()
 # delete_special(base)
 # formato_tlf(base)
 # reformatear_fecha(base, "Mantenimiento", "FECHA_INTERVENCION")
-adjust_gps(base)
-print(base)
+# adjust_gps(base)
+adjust_ETRS89(base)
+# print(base)
