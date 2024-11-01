@@ -35,6 +35,8 @@ def find_id(df: pd.DataFrame, tabla: str, fila: int):
         return archivo["NIF"][fila]
     elif tabla == "meteo24":
         return archivo["PROVINCIA"][fila]
+    elif tabla == "Codigo":
+        return archivo["CÓDIGO"][fila]
     else:
         return archivo["ID"][fila]
 
@@ -170,16 +172,32 @@ def adjust_ETRS89(df: pd.DataFrame)-> None:
         
         for item in y_coord_juegos:
             print(item)
+
+def enum_checker(db: pd.DataFrame):
+    posiciones_borrar = []
+    for n_tabla in db:
+        tabla = db[n_tabla]
+        for n_columna in tabla:
+            if n_tabla == "Juegos" and n_columna == "ESTADO":
+                columna = tabla[n_columna]
+                for i in range (len(columna)):
+                    if tabla[columna[i]] != "OPERATIVO":
+                        posiciones_borrar.append[i]
+            elif n_tabla == "Areas" and n_columna == "ESTADO":
+                columna = tabla[n_columna]
+                for i in range (len(columna)):
+                    if tabla[columna[i]] != "OPERATIVO":
+                        posiciones_borrar.append[i]
         
     
 # Pruebas
 base = load.load_db()
+print(base)
 
-
-# empty_data(base)
+empty_data(base)
 # delete_special(base)
 # formato_tlf(base)
 # reformatear_fecha(base, "Mantenimiento", "FECHA_INTERVENCION")
 # adjust_gps(base)
-adjust_ETRS89(base)
+# adjust_ETRS89(base)
 # print(base)
