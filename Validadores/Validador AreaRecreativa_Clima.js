@@ -77,7 +77,7 @@ SCHEME={
                   "required": ["id"],
                   "properties": {
                      "id": {
-                        "bsonType": "string" // Clave primaria
+                        "bsonType": "string"
                      }
                   }
                }
@@ -92,18 +92,8 @@ SCHEME={
                   "required": ["id","tipo","gravedad","fechaDeReporte"],
                   "properties": {
                      "id": {
-                        "bsonType": "string" // clave primaria
+                        "bsonType": "string",
                         "description": "id del incidente de seguridad"
-                     },
-                     "tipo": {
-                        "bsonType": "string",
-                        "description": "tipo de incidencia de seguridad",
-                        "enum": ["Robo", "Caida","Accidente","Vandalismo","Daño estructural" ]
-                     },
-                     "gravedad": {
-                        "bsonType": "string",
-                        "description": "gravedad del incidente",
-                        "enum": [ "Baja","Media","Alta","Crítica" ]
                      },
                      "fechaDeReporte": {
                         "bsonType": "date",
