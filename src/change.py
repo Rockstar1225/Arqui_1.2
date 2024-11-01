@@ -124,10 +124,23 @@ def no_duplicates(db: pd.DataFrame):
             db[tabla_n] = db[tabla_n].drop_duplicates(subset=columnas_sin_primary, keep="first")
             # quitar las filas que repitan la primary key
             db[tabla_n] = db[tabla_n].drop_duplicates(subset=[primary_key], keep="first")
+        
+def adjust_gps(db: pd.DataFrame)-> pd.DataFrame:
+    """ Function that rounds the LATITUD and LONGITUD atributes to 7 decimal places. To keep precision the values where converted to Str."""
+    # adjust areas
+    db["Areas"]["LATITUD"] = db["Areas"]["LATITUD"].apply(lambda x: "{:3.7f}".format(x))
+    db["Areas"]["LONGITUD"] = db["Areas"]["LONGITUD"].apply(lambda x: "{:3.7f}".format(x))
+    # adjust Juegos
+    db["Juegos"]["LATITUD"] = db["Juegos"]["LATITUD"].apply(lambda x: "{:3.7f}".format(x))
+    db["Juegos"]["LONGITUD"] = db["Juegos"]["LONGITUD"].apply(lambda x: "{:3.7f}".format(x))
+    
 # Pruebas
 base = load.load_db()
-empty_data(base)
-delete_special(base)
-formato_tlf(base)
-reformatear_fecha(base, "Mantenimiento", "FECHA_INTERVENCION")
+
+
+# empty_data(base)
+# delete_special(base)
+# formato_tlf(base)
+# reformatear_fecha(base, "Mantenimiento", "FECHA_INTERVENCION")
+adjust_gps(base)
 print(base)
