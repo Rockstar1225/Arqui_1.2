@@ -157,29 +157,26 @@ def adjust_gps(df: pd.DataFrame)-> None:
         if abs(long_juego[i]) > 180:
             long_juego[i] = long_juego.median()            
     # adjust areas
-    lat_area = lat_area.apply(lambda x: "{:3.6f}".format(x))
-    long_area = long_area.apply(lambda x: "{:3.6f}".format(x))
+    # with too much precisions games can never belong to an area
+    df["Areas"]["LATITUD"] = df["Areas"]["LATITUD"].apply(lambda x: "{:3.3f}".format(x))
+    df["Areas"]["LONGITUD"] = df["Areas"]["LONGITUD"].apply(lambda x: "{:3.3f}".format(x))
     # adjust Juegos
-    lat_juego = lat_juego.apply(lambda x: "{:3.6f}".format(x))
-    long_juego = long_juego.apply(lambda x: "{:3.6f}".format(x))
+    df["Juegos"]["LATITUD"] = df["Juegos"]["LATITUD"].apply(lambda x: "{:3.3f}".format(x))
+    df["Juegos"]["LONGITUD"] = df["Juegos"]["LONGITUD"].apply(lambda x: "{:3.3f}".format(x))
+    
+    print("Adjust GPS completed")
 
 def adjust_ETRS89(df: pd.DataFrame)-> None:
         """This function converts the ETRS89 data to GPS coordinates. """
-        x_coord_area = df["Areas"]["COORD_GIS_X"]
-        y_coord_area = df ["Areas"]["COORD_GIS_Y"]
-        x_coord_juegos = df["Juegos"]["COORD_GIS_X"]
-        y_coord_juegos= df ["Juegos"]["COORD_GIS_Y"]
         
         # adjust area
-        x_coord_area = x_coord_area.apply(lambda x: "{:3.3f}".format(x % 180))
-        y_coord_area = y_coord_area.apply(lambda x: "{:3.3f}".format(x % 90))
+        df["Areas"]["COORD_GIS_X"] = df["Areas"]["COORD_GIS_X"].apply(lambda x: "{:3.3f}".format(x % 180))
+        df["Areas"]["COORD_GIS_Y"] = df["Areas"]["COORD_GIS_Y"].apply(lambda x: "{:3.3f}".format(x % 90))
         
         #adjust juegos
-        x_coord_juegos = x_coord_juegos.apply(lambda x: "{:3.3f}".format(x % 180))
-        y_coord_juegos = y_coord_juegos.apply(lambda x: "{:3.3f}".format(x % 90))
+        df["Juegos"]["COORD_GIS_X"] = df["Juegos"]["COORD_GIS_X"].apply(lambda x: "{:3.3f}".format(x % 180))
+        df["Juegos"]["COORD_GIS_Y"] = df["Juegos"]["COORD_GIS_Y"].apply(lambda x: "{:3.3f}".format(x % 90))
         
-        for item in y_coord_juegos:
-            print(item)
 
 def enum_checker(db: pd.DataFrame):
     for n_tabla in db:
@@ -235,21 +232,21 @@ def enum_checker(db: pd.DataFrame):
         
     
 # Pruebas
-base = load.load_db()
-capitalize_column(base, "Areas", "ESTADO")
-capitalize_column(base, "Juegos", "ESTADO")
-capitalize_column(base, "Incidencias", "TIPO_INCIDENCIA")
-capitalize_column(base, "Incidencias", "ESTADO")
-capitalize_column(base, "Mantenimiento", "ESTADO_PREVIO")
-capitalize_column(base, "Mantenimiento", "ESTADO_POSTERIOR")
-capitalize_column(base, "Incidentes", "TIPO_INCIDENTE")
-capitalize_column(base, "Incidentes", "GRAVEDAD")
-empty_data(base)
-delete_special(base)
-print(base["Juegos"]["ESTADO"])
-enum_checker(base)
+# base = load.load_db()
+# capitalize_column(base, "Areas", "ESTADO")
+# capitalize_column(base, "Juegos", "ESTADO")
+# capitalize_column(base, "Incidencias", "TIPO_INCIDENCIA")
+# capitalize_column(base, "Incidencias", "ESTADO")
+# capitalize_column(base, "Mantenimiento", "ESTADO_PREVIO")
+# capitalize_column(base, "Mantenimiento", "ESTADO_POSTERIOR")
+# capitalize_column(base, "Incidentes", "TIPO_INCIDENTE")
+# capitalize_column(base, "Incidentes", "GRAVEDAD")
+# empty_data(base)
+# delete_special(base)
+# print(base["Juegos"]["ESTADO"])
+# enum_checker(base)
 # formato_tlf(base)
 # reformatear_fecha(base, "Mantenimiento", "FECHA_INTERVENCION")
 # adjust_gps(base)
 # adjust_ETRS89(base)
-print(base)
+# print(base)

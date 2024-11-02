@@ -1,5 +1,7 @@
 import pandas as pd
 import load
+import change
+import numpy as np
 
 def check_list(elemento: str, codes) -> list:
     if "_" not in elemento:
@@ -76,10 +78,49 @@ def new_meteo(db:pd.DataFrame):
     nuevo.loc[:, "VIENTO"] = viento
     nuevo.loc[:, "DISTRITO"] = distritos
     db["meteo24"] = nuevo
+    
+def area_new_atributes(df: pd.DataFrame)-> None:
+    """Method used for adding the atribute capacidadMax in Areas."""
+    # Add column with capacidadMax atribute
+    df["Areas"]["capacidadMax"] = None
+    """ for lat_area in df["Areas"]["LATITUD"]:
+        index = 0
+        games = 0
+        for long_area in df["Areas"]["LONGITUD"]:
+            for lat_juego in df["Juegos"]["LATITUD"]:
+                for long_juego in df["Juegos"]["LONGITUD"]:
+                    if lat_area == lat_juego and long_area == long_juego:
+                        games += 1
+        # add atribute to row
+        df["Areas"].insert(index, "capacidadMax", games)
+        index += 1 """
+        
+    index = 0
+    for area in df["Areas"].to_numpy():
+        games = 0
+        lat_area = area[10]
+        long_area = area[11]
+        for juego in df["Juegos"].to_numpy():
+            lat_juego = juego[10]
+            long_juego = juego[11]
+            if lat_area == lat_juego and long_area == long_juego:
+                print("Juego in Area!")
+                games += 1
+        df["Areas"].loc[index, "capacidadMax"] = games
+        index += 1
+    # for item in df["Areas"]["capacidadMax"]:
+    #     print(item)
+    print(df["Areas"]["capacidadMax"].mean())
+    print("added new atribute completed")
+                    
+             
 
-
+# prueabs
 base = load.load_db()
-new_meteo(base)
-for i in range(len(base["meteo24"]["FECHA"])):
-    print(base["meteo24"]["FECHA"][i], " ", base["meteo24"]["TEMPERATURA"][i], " ", base["meteo24"]["PRECIPITACION"][i],
-           " ", base["meteo24"]["VIENTO"][i], " ", base["meteo24"]["DISTRITO"][i])
+# new_meteo(base)
+# for i in range(len(base["meteo24"]["FECHA"])):
+#     print(base["meteo24"]["FECHA"][i], " ", base["meteo24"]["TEMPERATURA"][i], " ", base["meteo24"]["PRECIPITACION"][i],
+#            " ", base["meteo24"]["VIENTO"][i], " ", base["meteo24"]["DISTRITO"][i])
+change.adjust_gps(base) # run this so that the GPS are adjusted
+area_new_atributes(base)
+# print(base)
