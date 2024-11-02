@@ -1,7 +1,7 @@
 import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn', de StackOverflow
 import load
-import unicodedata
+from datetime import datetime
 from dateutil import parser
 
 
@@ -42,39 +42,52 @@ def find_id(df: pd.DataFrame, tabla: str, fila: int):
 
 
 
+import pandas as pd
+
+# Optimización para rellenar filas vacías
 def empty_data(df_dict):
     for tabla_name, tabla in df_dict.items():
-        # Convertimos todas las columnas al tipo object una sola vez por tabla
+        # Convertir a tipo 'object' una vez
         tabla = tabla.astype(object)
 
-        # Identificamos las filas y columnas con valores NaN
+        # Identificar posiciones NaN
         nan_positions = tabla.isna()
 
-        # Iteramos solo sobre las posiciones con valores NaN
+        # Diccionario para almacenar asignaciones
+        assignment_dict = {}
+
         for columna in nan_positions.columns:
             nan_indices = nan_positions.index[nan_positions[columna]]
 
             for i in nan_indices:
-                # Evitamos el bucle while innecesario llamando solo cuando sea necesario
                 tachadas = [tabla_name]
-                id = find_id(df_dict, tabla_name, i)
-
+                id_val = find_id(df_dict, tabla_name, i)  # Obtener una vez el id
+                valor = None
+                
                 while True:
                     new_tab = find_table_by_column(df_dict, tachadas, columna)
                     if new_tab is None:
-                        tabla.loc[i, columna] = f"{id}-{columna}-ausente"
+                        valor = f"{id_val}-{columna}-ausente"
                         break
-                    valor = take_atribute(df_dict, new_tab, columna, id)
-                    if valor is None:
-                        tachadas.append(new_tab)
-                    else:
-                        tabla.loc[i, columna] = valor
+                    valor = take_atribute(df_dict, new_tab, columna, id_val)
+                    if valor is not None:
                         break
+                    tachadas.append(new_tab)
 
-        # Actualizamos la tabla en el diccionario original (si no es una copia)
+                # Añadir al diccionario de asignación
+                if columna not in assignment_dict:
+                    assignment_dict[columna] = {}
+                assignment_dict[columna][i] = valor
+
+        # Realizar las asignaciones en bloque usando el diccionario de asignación
+        for columna, valores in assignment_dict.items():
+            tabla.loc[valores.keys(), columna] = list(valores.values())
+
+        # Actualizar la tabla en el diccionario original (si no es una copia)
         df_dict[tabla_name] = tabla
 
     print("Emp terminado")
+
 
 
 
@@ -83,25 +96,23 @@ def reformatear_fecha(df: pd.DataFrame, table_name: str, column_name: str): #Cha
     fechas_nuevas = []
     for fecha in archivo[column_name]:
         try:
-            f_adapt = parser.parse(fecha)
-            f_formt = f_adapt.strftime('%Y-%m-%d %H:%M:%S')
+            f_formt = parser.parse(fecha)
         except (ValueError, TypeError):
             f_formt = pd.NaT
         fechas_nuevas.append(f_formt)
     archivo[column_name] = fechas_nuevas
-    empty_data(df)
 
 def delete_special(df: pd.DataFrame):
-    lista_tildes = ["DESC_CLASIFICACION", "BARRIO", "DISTRITO", "NOMBRE", "TIPO_INCIDENTE"]
+    lista_tildes = ["DESC_CLASIFICACION", "BARRIO", "DISTRITO", "NOMBRE", "TIPO_INCIDENTE", "GRAVEDAD", "TIPO_INTERVENCION"]
+    # Diccionario para reemplazar letras con tildes
+    replacements = {'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u', 'Á': 'A', 'É': 'E', 'Í': 'I', 'Ó': 'O', 'Ú': 'U'}
     for tabla_n in df:
         tabla = df[tabla_n]
         for columna in tabla:
             if columna in lista_tildes:
-                for n in range(len(tabla[columna])):
-                    elemento = tabla[columna][n]
-                    elemento = ''.join(c for c in unicodedata.normalize('NFD', elemento) if unicodedata.category(c) != 'Mn') #Tildes
-                    elemento = "".join(char for char in elemento if char.isalnum() or char == " ") # Caracter especial
-                    tabla.loc[n, columna] = str(elemento)
+                for accented_char, unaccented_char in replacements.items():
+                    tabla[columna] = tabla[columna].str.replace(accented_char, unaccented_char)
+                tabla[columna] = tabla[columna].str.replace(r'[^a-zA-Z0-9 ñÑ-]', '', regex=True)
     print("Sp terminado")
 
 
@@ -212,41 +223,71 @@ def enum_checker(db: pd.DataFrame):
                 columna = tabla[n_columna]
                 for i in range (len(columna)):
                     if tabla[n_columna][i] != "MALO" and tabla[n_columna][i] != "REGULAR"  and tabla[n_columna][i] != "BUENO" :
+                        print("f")
                         posiciones_borrar.append(i)
             elif n_tabla == "Incidentes" and n_columna == "TIPO_INCIDENTE":
                 columna = tabla[n_columna]
                 for i in range (len(columna)):
-                    if tabla[n_columna][i] != "ROBO" and tabla[n_columna][i] != "CAIDA" and tabla[n_columna][i] != "VANDALISMO" and tabla[n_columna][i] != "ACCIDENTE" and tabla[n_columna][i] != "ROBO ESTRUCTURAL":
+                    if tabla[n_columna][i] != "ROBO" and tabla[n_columna][i] != "CAIDA" and tabla[n_columna][i] != "VANDALISMO" and tabla[n_columna][i] != "ACCIDENTE" and tabla[n_columna][i] != "DAÑO ESTRUCTURAL":
                         posiciones_borrar.append(i)
             elif n_tabla == "Incidentes" and n_columna == "GRAVEDAD":
                 columna = tabla[n_columna]
                 for i in range (len(columna)):
                     if tabla[n_columna][i] != "ALTA" and tabla[n_columna][i] != "BAJA" and tabla[n_columna][i] != "MEDIA" and tabla[n_columna][i] != "CRITICA":
                         posiciones_borrar.append(i)
-            total_falsas = len(posiciones_borrar)
-            if total_falsas > 0:
-                print(total_falsas)
-                for n in range(total_falsas):
-                    posicion = posiciones_borrar[total_falsas - n -1]
-                    tabla.drop(posicion)
-        
+            tabla.drop(posiciones_borrar)
+
+def nif_status(db:pd.DataFrame):
+    columna = db["Usuarios"]["NIF"]
+    posiciones_borrar = []
+    for i in range(len(columna)):
+        elemento = columna[i]
+        if "-" not in elemento:
+            posiciones_borrar.append(i)
+        else:
+            lista = elemento.split("-")
+            if len(lista) != 3:
+                posiciones_borrar.append(i)
+            else:
+                if not lista[0].isdigit() or lista[1].isdigit() or lista[2].isdigit():
+                    posiciones_borrar.append(i)
+    db["Usuarios"].drop(posiciones_borrar)
+
+def check_id(db: pd.DataFrame):
+    lista = ["Areas", "Juegos", "Encuestas", "Incidencias", "Incidentes", "Mantenimiento"]
+    for nombre in lista:
+        columna = db[nombre]["ID"]
+        posiciones_borrar = []
+        if nombre == "Mantenimiento":
+            for n in range(len(columna)):
+                expected = '"-' + str(n+1) + ',00 MNT"'
+                if expected != columna[n]:
+                    posiciones_borrar.append(n)
+        else:
+            for n in range(len(columna)):
+                if not isinstance(columna[n], int):
+                    posiciones_borrar.append(n)
+        db[nombre].drop(posiciones_borrar)
+ 
     
 # Pruebas
-# base = load.load_db()
-# capitalize_column(base, "Areas", "ESTADO")
-# capitalize_column(base, "Juegos", "ESTADO")
-# capitalize_column(base, "Incidencias", "TIPO_INCIDENCIA")
-# capitalize_column(base, "Incidencias", "ESTADO")
-# capitalize_column(base, "Mantenimiento", "ESTADO_PREVIO")
-# capitalize_column(base, "Mantenimiento", "ESTADO_POSTERIOR")
-# capitalize_column(base, "Incidentes", "TIPO_INCIDENTE")
-# capitalize_column(base, "Incidentes", "GRAVEDAD")
-# empty_data(base)
-# delete_special(base)
-# print(base["Juegos"]["ESTADO"])
-# enum_checker(base)
-# formato_tlf(base)
-# reformatear_fecha(base, "Mantenimiento", "FECHA_INTERVENCION")
+base = load.load_db()
+capitalize_column(base, "Areas", "ESTADO")
+capitalize_column(base, "Juegos", "ESTADO")
+capitalize_column(base, "Incidencias", "TIPO_INCIDENCIA")
+capitalize_column(base, "Incidencias", "ESTADO")
+capitalize_column(base, "Mantenimiento", "TIPO_INTERVENCION")
+capitalize_column(base, "Mantenimiento", "ESTADO_PREVIO")
+capitalize_column(base, "Mantenimiento", "ESTADO_POSTERIOR")
+capitalize_column(base, "Incidentes", "TIPO_INCIDENTE")
+capitalize_column(base, "Incidentes", "GRAVEDAD")
+empty_data(base)
+delete_special(base)
+enum_checker(base)
+formato_tlf(base)
+check_id(base)
+nif_status(base)
+reformatear_fecha(base, "Mantenimiento", "FECHA_INTERVENCION")
 # adjust_gps(base)
 # adjust_ETRS89(base)
-# print(base)
+print(base)
