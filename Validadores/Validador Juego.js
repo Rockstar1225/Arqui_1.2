@@ -15,7 +15,7 @@ SCHEME={
            "nombre": {
                "bsonType": "string",
                "description": "nombre del juego"
-           }
+           },
            "modelo": {
                "bsonType": "string",
                "description": "Modelo de fabricacion del juego"
@@ -52,8 +52,7 @@ SCHEME={
            "ultimaFechaMantenimiento": {
                "bsonType": "date",
                "description": "ultima fecha de mantenimiento del juego"
-           }
-
+           },
            "mantenimientos": {
                "bsonType": "array",
                "description": "array de referencias a registros de mantenimiento del juego",

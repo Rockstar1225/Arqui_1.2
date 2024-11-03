@@ -67,4 +67,4 @@ SCHEME={
     },
 }
 
-db.runCommand({ "collMod": "Juego", "validator": { $jsonSchema: SCHEME } })
+db.runCommand({ "collMod": "Incidencia", "validator": { $jsonSchema: SCHEME } })
