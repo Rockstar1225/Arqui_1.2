@@ -88,9 +88,6 @@ def empty_data(df_dict):
 
     print("Emp terminado")
 
-
-
-
 def reformatear_fecha(df: pd.DataFrame, table_name: str, column_name: str): #ChatGPT
     archivo = df[table_name]
     fechas_nuevas = []
@@ -103,7 +100,7 @@ def reformatear_fecha(df: pd.DataFrame, table_name: str, column_name: str): #Cha
     archivo[column_name] = fechas_nuevas
 
 def delete_special(df: pd.DataFrame):
-    lista_tildes = ["DESC_CLASIFICACION", "BARRIO", "DISTRITO", "NOMBRE", "TIPO_INCIDENTE", "GRAVEDAD", "TIPO_INTERVENCION"]
+    lista_tildes = ["DESC_CLASIFICACION", "BARRIO", "DISTRITO", "NOMBRE", "TIPO_INCIDENTE", "GRAVEDAD", "TIPO_INTERVENCION", "DIRECCION_AUX"]
     # Diccionario para reemplazar letras con tildes
     replacements = {'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u', 'Á': 'A', 'É': 'E', 'Í': 'I', 'Ó': 'O', 'Ú': 'U'}
     for tabla_n in df:
@@ -193,81 +190,150 @@ def enum_checker(db: pd.DataFrame):
     for n_tabla in db:
         tabla = db[n_tabla]
         for n_columna in tabla:
-            posiciones_borrar = []
+            new_columna = []
+            columna = tabla[n_columna]
+
             if n_tabla == "Areas" and n_columna == "ESTADO":
-                columna = tabla[n_columna]
-                for i in range (len(columna)):
-                    if tabla[n_columna][i] != "OPERATIVO":
-                        posiciones_borrar.append(i)
+                for valor in columna:
+                    if valor != "OPERATIVO": new_columna.append(None)
+                    else: new_columna.append(valor)
+
             elif n_tabla == "Juegos" and n_columna == "ESTADO":
-                columna = tabla[n_columna]
-                for i in range (len(columna)):
-                    if tabla[n_columna][i] != "OPERATIVO" and tabla[n_columna][i] != "REPARACION":
-                        posiciones_borrar.append(i)
+                for valor in columna:
+                    if valor not in ["OPERATIVO, REPARACION"]: new_columna.append(None)
+                    else: new_columna.append(valor)
+
             elif n_tabla == "Incidencias" and n_columna == "TIPO_INCIDENCIA":
-                columna = tabla[n_columna]
-                for i in range (len(columna)):
-                    if tabla[n_columna][i] != "DESGASTE" and tabla[n_columna][i] != "ROTURA" and tabla[n_columna][i] != "VANDALISMO" and tabla[n_columna][i] != "MAL FUNCIONAMIENTO":
-                        posiciones_borrar.append(i)
+                for valor in columna:
+                    if valor not in ["DESGASTE","ROTURA", "VANDALISMO", "MAL FUNCIONAMIENTO"]: new_columna.append(None)
+                    else: new_columna.append(valor)
+
             elif n_tabla == "Incidencias" and n_columna == "ESTADO":
-                columna = tabla[n_columna]
-                for i in range (len(columna)):
-                    if tabla[n_columna][i] != "ABIERTA" and tabla[n_columna][i] != "CERRADA":
-                        posiciones_borrar.append(i)
+                for valor in columna:
+                    if valor not in ["ABIERTA", "CERRADA"]: new_columna.append(None)
+                    else: new_columna.append(valor)
+
             elif n_tabla == "Mantenimiento" and n_columna == "TIPO_INTERVENCION":
-                columna = tabla[n_columna]
-                for i in range (len(columna)):
-                    if tabla[n_columna][i] != "CORRECTIVO" and tabla[n_columna][i] != "EMERGENCIA"  and tabla[n_columna][i] != "PREVENTIVO" :
-                        posiciones_borrar.append(i)
+                for valor in columna:
+                    if valor not in ["CORRECTIVO", "EMERGENCIA", "PREVENTIVO"]: new_columna.append(None)
+                    else: new_columna.append(valor)
+
             elif n_tabla == "Mantenimiento" and n_columna in ["ESTADO_PREVIO", "ESTADO_POSTERIOR"]:
-                columna = tabla[n_columna]
-                for i in range (len(columna)):
-                    if tabla[n_columna][i] != "MALO" and tabla[n_columna][i] != "REGULAR"  and tabla[n_columna][i] != "BUENO" :
-                        print("f")
-                        posiciones_borrar.append(i)
+                for valor in columna:
+                    if valor not in ["MALO", "REGULAR", "BUENO"]: new_columna.append(None)
+                    else: new_columna.append(valor)
+
             elif n_tabla == "Incidentes" and n_columna == "TIPO_INCIDENTE":
-                columna = tabla[n_columna]
-                for i in range (len(columna)):
-                    if tabla[n_columna][i] != "ROBO" and tabla[n_columna][i] != "CAIDA" and tabla[n_columna][i] != "VANDALISMO" and tabla[n_columna][i] != "ACCIDENTE" and tabla[n_columna][i] != "DAÑO ESTRUCTURAL":
-                        posiciones_borrar.append(i)
+                for valor in columna:
+                    if valor not in ["ROBO", "CAIDA", "VANDALISMO", "ACCIDENTE", "DAÑO ESTRUCTURAL"]: new_columna.append(None)
+                    else: new_columna.append(valor)
+
             elif n_tabla == "Incidentes" and n_columna == "GRAVEDAD":
-                columna = tabla[n_columna]
-                for i in range (len(columna)):
-                    if tabla[n_columna][i] != "ALTA" and tabla[n_columna][i] != "BAJA" and tabla[n_columna][i] != "MEDIA" and tabla[n_columna][i] != "CRITICA":
-                        posiciones_borrar.append(i)
-            tabla.drop(posiciones_borrar)
+                for valor in columna:
+                    if valor not in  ["ALTA", "BAJA", "MEDIA", "CRITICA"]: new_columna.append(None)
+                    else: new_columna.append(valor)
+            
+            if len(new_columna) > 0:
+                tabla[n_columna] = new_columna
+                tabla.dropna(subset= n_columna)
 
 def nif_status(db:pd.DataFrame):
     columna = db["Usuarios"]["NIF"]
-    posiciones_borrar = []
-    for i in range(len(columna)):
-        elemento = columna[i]
+    new_columna = []
+    for elemento in columna:
         if "-" not in elemento:
-            posiciones_borrar.append(i)
+            new_columna.append(None)
         else:
             lista = elemento.split("-")
             if len(lista) != 3:
-                posiciones_borrar.append(i)
+                new_columna.append(None)
             else:
-                if not lista[0].isdigit() or lista[1].isdigit() or lista[2].isdigit():
-                    posiciones_borrar.append(i)
-    db["Usuarios"].drop(posiciones_borrar)
+                if not lista[0].isdigit() or not lista[1].isdigit() or not lista[2].isdigit():
+                    new_columna.append(None)
+                else: new_columna.append(elemento)
+    db["Usuarios"]["NIF"] = new_columna
+    db["Usuarios"].dropna(subset=["NIF"])
 
 def check_id(db: pd.DataFrame):
     lista = ["Areas", "Juegos", "Encuestas", "Incidencias", "Incidentes", "Mantenimiento"]
     for nombre in lista:
         columna = db[nombre]["ID"]
-        posiciones_borrar = []
+        new_columna = []
         if nombre == "Mantenimiento":
-            for n in range(len(columna)):
-                expected = '"-' + str(n+1) + ',00 MNT"'
-                if expected != columna[n]:
-                    posiciones_borrar.append(n)
+            n = 1
+            for valor in columna:
+                expected = f'-{n},00\xa0MNT'
+                if expected != valor:
+                    new_columna.append(None)
+                else:
+                    new_columna.append(valor)
+                n += 1
         else:
-            for n in range(len(columna)):
-                if not isinstance(columna[n], int):
-                    posiciones_borrar.append(n)
-        db[nombre].drop(posiciones_borrar)
+            for valor in columna:
+                if not isinstance(valor, int):
+                    new_columna.append(None)
+                else:
+                    new_columna.append(valor)
+        db[nombre]["ID"] = new_columna
+        db[nombre].dropna(subset=["ID"])
+
+def incidencias_status(db: pd.DataFrame):
+    # Crear copias de los conjuntos de búsqueda para optimizar el acceso
+    ids = set(db["Mantenimiento"]["ID"])
+    nifs = set(db["Usuarios"]["NIF"])
+    
+    # Crear una copia del DataFrame "Incidencias"
+    tabla = db["Incidencias"].copy()
+
+    # Procesar la columna "MantenimientoID"
+    mantenimiento_ids = []
+    for valor in tabla["MantenimientoID"]:
+        if valor.startswith("[") and valor.endswith("]"):
+            contenido = valor[1:-1]
+            partes = contenido.split(", ")
+            partes_filtradas = []
+            for parte in partes:
+                if parte.startswith("'MNT-") and parte.endswith("'") and parte[5:-1].isdigit():
+                    numero = str(int(parte[5:-1]))  # Convertir a entero y luego a cadena para quitar ceros iniciales
+                    expected = f"-{numero},00\xa0MNT"
+                    if expected in ids:
+                        partes_filtradas.append(parte)
+            if partes_filtradas:
+                mantenimiento_ids.append(f"[{', '.join(partes_filtradas)}]")
+            else:
+                mantenimiento_ids.append(None)
+        else:
+            mantenimiento_ids.append(None)
+
+    # Asignar los valores filtrados a la columna "MantenimientoID"
+    tabla["MantenimientoID"] = mantenimiento_ids
+
+    # Eliminar las filas con valores None en "MantenimientoID"
+    tabla = tabla.dropna(subset=["MantenimientoID"])
+
+    # Procesar la columna "UsuarioID"
+    usuario_ids = []
+    for valor in tabla["UsuarioID"]:
+        if valor.startswith("[") and valor.endswith("]"):
+            contenido = valor[1:-1]
+            partes = contenido.split(", ")
+            partes_filtradas = [parte for parte in partes if parte[1:-1] in nifs]
+            if partes_filtradas:
+                usuario_ids.append(f"[{', '.join(partes_filtradas)}]")
+            else:
+                usuario_ids.append(None)
+        else:
+            usuario_ids.append(None)
+
+    # Asignar los valores filtrados a la columna "UsuarioID"
+    tabla["UsuarioID"] = usuario_ids
+
+    # Eliminar las filas con valores None en "UsuarioID"
+    tabla = tabla.dropna(subset=["UsuarioID"])
+
+    # Asignar el DataFrame modificado de nuevo en el DataFrame original
+    db["Incidencias"] = tabla
+
  
     
 # Pruebas
@@ -288,6 +354,7 @@ formato_tlf(base)
 check_id(base)
 nif_status(base)
 reformatear_fecha(base, "Mantenimiento", "FECHA_INTERVENCION")
+incidencias_status(base)
 # adjust_gps(base)
 # adjust_ETRS89(base)
 print(base)
