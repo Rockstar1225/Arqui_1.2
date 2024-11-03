@@ -36,22 +36,29 @@ def new_meteo(db:pd.DataFrame):
              "28079039":"FUENCARRAL-EL PARDO","28079054": "VILLA DE VALLECAS", "28079056": "CARABANCHEL", "28079058": "FUENCARRAL-EL PARDO",
              "28079059": "BARAJAS"}
     meses = {"1": 31, "2": 28, "3": 31, "4": 30, "5": 31, "6": 30, "7": 31, "8": 31, "9": 30, "10": 31, "11": 30, "12": 31}
+    ids = []
     distritos = []
     temperaturas = []
     precipitaciones = []
     viento = []
     fechas = []
+    id = 1
     for i in range(len(meteo["PUNTO_MUESTREO"])):
         elemento = meteo["PUNTO_MUESTREO"][i]
         data = check_list(elemento, codes)
         if data is not None and str(meteo["MES"][i]) in meses.keys():
             for j in range(meteo["MES"][i]):
                 dia =str(j+1)
+                mes = str(meteo["MES"][i])
                 if j < 9:
                     dia = "0" + dia
-                fecha = str(meteo["ANO"][i]) + "-" + str(meteo["MES"][i]) + "-" + dia
+                if int(mes) < 10:
+                    mes = "0" + mes
+                fecha = str(meteo["ANO"][i]) + "-" +  mes + "-" + dia
                 linea = same_line(fecha, codes[data[0]], fechas, distritos)
                 if linea == -1:
+                    ids.append(id)
+                    id += 1
                     distritos.append(codes[data[0]])
                     fechas.append(fecha)
                     temperaturas.append(float("NaN"))
@@ -73,6 +80,7 @@ def new_meteo(db:pd.DataFrame):
                         precipitaciones[linea] = meteo[valor][i]
             
     nuevo = pd.DataFrame()
+    nuevo.loc[:, "ID"] = ids
     nuevo.loc[:, "FECHA"] = fechas
     nuevo.loc[:, "TEMPERATURA"] = temperaturas
     nuevo.loc[:, "PRECIPITACION"] = precipitaciones
@@ -133,12 +141,12 @@ def adjust_range(values: list, new_min: int, new_max: int, index: int) -> int:
 
 
 # prueabs
-base = load.load_db()
-# new_meteo(base)
+"""base = load.load_db()
+new_meteo(base)
 # for i in range(len(base["meteo24"]["FECHA"])):
 #     print(base["meteo24"]["FECHA"][i], " ", base["meteo24"]["TEMPERATURA"][i], " ", base["meteo24"]["PRECIPITACION"][i],
 #            " ", base["meteo24"]["VIENTO"][i], " ", base["meteo24"]["DISTRITO"][i])
 change.adjust_gps(base) 
 area_new_atribute(base)
 juegos_new_atributes(base)
-print(base)
+print(base)"""

@@ -1,9 +1,7 @@
 import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn', de StackOverflow
 import load
-from datetime import datetime
 from dateutil import parser
-
 
 # capitalizar una columna entera
 def capitalize_column(df: pd.DataFrame, table_name:str, colname: str) -> pd.DataFrame:
@@ -60,19 +58,20 @@ def empty_data(df_dict):
             nan_indices = nan_positions.index[nan_positions[columna]]
 
             for i in nan_indices:
-                tachadas = [tabla_name]
-                id_val = find_id(df_dict, tabla_name, i)  # Obtener una vez el id
-                valor = None
-                
-                while True:
-                    new_tab = find_table_by_column(df_dict, tachadas, columna)
-                    if new_tab is None:
-                        valor = f"{id_val}-{columna}-ausente"
-                        break
-                    valor = take_atribute(df_dict, new_tab, columna, id_val)
-                    if valor is not None:
-                        break
-                    tachadas.append(new_tab)
+                valor =  aux_dir(tabla_name, tabla, columna, i)
+                if valor is None:
+                    tachadas = [tabla_name]
+                    id_val = find_id(df_dict, tabla_name, i)  # Obtener una vez el id
+                    
+                    while True:
+                        new_tab = find_table_by_column(df_dict, tachadas, columna)
+                        if new_tab is None:
+                            valor = f"{id_val}-{columna}-ausente"
+                            break
+                        valor = take_atribute(df_dict, new_tab, columna, id_val)
+                        if valor is not None:
+                            break
+                        tachadas.append(new_tab)
 
                 # Añadir al diccionario de asignación
                 if columna not in assignment_dict:
@@ -88,16 +87,47 @@ def empty_data(df_dict):
 
     print("Emp terminado")
 
-def reformatear_fecha(df: pd.DataFrame, table_name: str, column_name: str): #ChatGPT
-    archivo = df[table_name]
-    fechas_nuevas = []
-    for fecha in archivo[column_name]:
-        try:
-            f_formt = parser.parse(fecha)
-        except (ValueError, TypeError):
-            f_formt = pd.NaT
-        fechas_nuevas.append(f_formt)
-    archivo[column_name] = fechas_nuevas
+def aux_dir(tabla_name, tabla, columna, i):
+    if tabla_name in ["Areas", "Juegos"] and columna in ["TIPO_VIA", "NOM_VIA", "NUM_VIA"]:
+        if not pd.isna(tabla["DIRECCION_AUX"][i]):
+            lista = tabla["DIRECCION_AUX"][i].split(" ")
+            via = None
+            n = 0
+            if "·" in lista:
+                via = lista[2]
+                n = 3
+            else:
+                via = lista[0]
+            nombre, numero = "", ""
+            while n < len(lista):
+                if lista[n].isdigit():
+                    numero = lista[n]
+                    break
+                if lista[n] == ",":
+                    break
+                nombre+= lista[n]
+                n += 1
+            if columna == "TIPO_VIA":
+                return via
+            elif columna == "NOM_VIA":
+                return nombre
+            else:
+                return numero
+    return None
+
+def reformatear_fecha(df: pd.DataFrame, table_name: str, column_name: str):
+    tablas = ["Areas", "Encuestas", "Incidencias", "Incidentes", "Juegos", "Mantenimiento", "meteo24"]
+    columnas = ["FECHA_INSTALACION", "FECHA", "FECHA_REPORTE", "FECHA_INTERVENCION"]
+    if table_name in tablas and column_name in columnas:
+        archivo = df[table_name]
+        fechas_nuevas = []
+        for fecha in archivo[column_name]:
+            try:
+                f_formt = parser.parse(fecha)
+            except (ValueError, TypeError):
+                f_formt = pd.NaT
+            fechas_nuevas.append(f_formt)
+        archivo[column_name] = fechas_nuevas
 
 def delete_special(df: pd.DataFrame):
     lista_tildes = ["DESC_CLASIFICACION", "BARRIO", "DISTRITO", "NOMBRE", "TIPO_INCIDENTE", "GRAVEDAD", "TIPO_INTERVENCION", "DIRECCION_AUX"]
@@ -337,7 +367,7 @@ def incidencias_status(db: pd.DataFrame):
  
     
 # Pruebas
-base = load.load_db()
+"""base = load.load_db()
 capitalize_column(base, "Areas", "ESTADO")
 capitalize_column(base, "Juegos", "ESTADO")
 capitalize_column(base, "Incidencias", "TIPO_INCIDENCIA")
@@ -357,4 +387,4 @@ reformatear_fecha(base, "Mantenimiento", "FECHA_INTERVENCION")
 incidencias_status(base)
 # adjust_gps(base)
 # adjust_ETRS89(base)
-print(base)
+print(base)"""
