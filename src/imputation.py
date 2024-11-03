@@ -1,5 +1,8 @@
 import pandas as pd
 import load
+import change
+import numpy as np
+import random
 
 def check_list(elemento: str, codes) -> list:
     if "_" not in elemento:
@@ -76,10 +79,66 @@ def new_meteo(db:pd.DataFrame):
     nuevo.loc[:, "VIENTO"] = viento
     nuevo.loc[:, "DISTRITO"] = distritos
     db["meteo24"] = nuevo
+    
+def area_new_atribute(df: pd.DataFrame)-> None:
+    """Method used for adding the atribute capacidadMax in Areas."""
+    index = 0
+    # calculate number of games per area using lat and long
+    for area in df["Areas"].to_numpy():
+        games = 0
+        lat_area = area[10]
+        long_area = area[11]
+        for juego in df["Juegos"].to_numpy():
+            lat_juego = juego[10]
+            long_juego = juego[11]
+            if lat_area == lat_juego and long_area == long_juego:
+                games += 1
+        df["Areas"].loc[index, "capacidadMax"] = games
+        index += 1
+    print("New atribute Areas completed")
+                    
+def juegos_new_atributes(df: pd.DataFrame)-> None:
+    """This function will add indicadorExposicion and desgasteAcumulado to juegos"""  
+    # insert indicador exposicion value   
+    indicador_options = {"BAJO":100, "MEDIO":200, "ALTO":300}
+    for i in range(len(df["Juegos"])):   
+        selected_option = random.randint(0, 2)
+        df["Juegos"].loc[i, "indicadorExposicion"] = list(indicador_options.keys())[selected_option]
+    # calculate desgasteAcumulado value
+    index = 0
+    wear_values = []
+    for juego in df["Juegos"].to_numpy():
+        # number of maintenance to game
+        num_mant_juego = 0
+        # random usage time between 1 and 15 years
+        use_time = random.randint(1, 15)
+        for maintenance in df["Mantenimiento"].to_numpy():
+            if juego[0] == maintenance[5]:
+                num_mant_juego+= 1
+        # adding wear value to a list to change its range
+        wear_value = (use_time * indicador_options[df["Juegos"]["indicadorExposicion"][index]]) - (num_mant_juego * 100)
+        wear_values.append(wear_value)
+        index += 1
+    # insert desgasteAcumulado value
+    for i in range(len(df["Juegos"])):
+        df["Juegos"].loc[i, "desgasteAcumulado"] = adjust_range(wear_values, 1, 100, i) # changing the range of values
+    print("New atributes Juegos completed")
 
 
+def adjust_range(values: list, new_min: int, new_max: int, index: int) -> int:
+    old_min = min(values)
+    old_max = max(values)
+    new_value = int((((values[index] - old_min) * (new_max - new_min)) / (old_max - old_min)) + new_min)
+    return new_value 
+
+
+# prueabs
 base = load.load_db()
-new_meteo(base)
-for i in range(len(base["meteo24"]["FECHA"])):
-    print(base["meteo24"]["FECHA"][i], " ", base["meteo24"]["TEMPERATURA"][i], " ", base["meteo24"]["PRECIPITACION"][i],
-           " ", base["meteo24"]["VIENTO"][i], " ", base["meteo24"]["DISTRITO"][i])
+# new_meteo(base)
+# for i in range(len(base["meteo24"]["FECHA"])):
+#     print(base["meteo24"]["FECHA"][i], " ", base["meteo24"]["TEMPERATURA"][i], " ", base["meteo24"]["PRECIPITACION"][i],
+#            " ", base["meteo24"]["VIENTO"][i], " ", base["meteo24"]["DISTRITO"][i])
+change.adjust_gps(base) 
+area_new_atribute(base)
+juegos_new_atributes(base)
+print(base)
