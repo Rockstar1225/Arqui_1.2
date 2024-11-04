@@ -7,7 +7,7 @@ import numpy as np
 def load_db():
     # paths usados
     pwd = os.getcwd()
-    dataset_dir = f"{pwd}/DatasetsArqui"
+    dataset_dir = f"{pwd}/DatasetsArquiViejos"
 
     # leer datasets y guardarlos en un diccionario
     df = {} 
