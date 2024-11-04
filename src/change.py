@@ -1,6 +1,6 @@
 import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn', de StackOverflow
-import load
+import datetime as dt
 from dateutil import parser
 
 # capitalizar una columna entera
@@ -66,7 +66,9 @@ def empty_data(df_dict):
                     while True:
                         new_tab = find_table_by_column(df_dict, tachadas, columna)
                         if new_tab is None:
-                            valor = f"{id_val}-{columna}-ausente"
+                            if columna in ["FECHA_INSTALACION", "FECHA", "FECHA_REPORTE", "FECHA_INTERVENCION"]:
+                                valor = dt.datetime.strptime("2023-12-31 00:00:00", "%Y-%m-%d %H:%M:%S")
+                            else: valor = f"{id_val}-{columna}-ausente"
                             break
                         valor = take_atribute(df_dict, new_tab, columna, id_val)
                         if valor is not None:

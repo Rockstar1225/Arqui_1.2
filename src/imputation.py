@@ -137,7 +137,10 @@ def adjust_range(values: list, new_min: int, new_max: int, index: int) -> int:
     old_min = min(values)
     old_max = max(values)
     new_value = int((((values[index] - old_min) * (new_max - new_min)) / (old_max - old_min)) + new_min)
-    return new_value 
+    return new_value
+
+def tiempoResolucion(base: pd.DataFrame):
+    print("hola")
 
 
 # prueabs

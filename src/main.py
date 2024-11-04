@@ -1,4 +1,5 @@
 import pandas as pd
+import datetime 
 import load as ld
 import change as ch
 import imputation as im
@@ -14,9 +15,9 @@ def main():
     ch.no_duplicates(base)
     for tab_name in base:
         for column_name in base[tab_name]:
-            if isinstance(base[tab_name][column_name][0], str):
-                ch.capitalize_column(base, tab_name, column_name)
             ch.reformatear_fecha(base, tab_name, column_name)
+            if type(base[tab_name][column_name][0]) == str:
+                ch.capitalize_column(base, tab_name, column_name)
     ch.delete_special(base)
     ch.enum_checker(base)
     ch.formato_tlf(base)
