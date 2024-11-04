@@ -296,6 +296,7 @@ def check_id(db: pd.DataFrame):
                 if expected != valor:
                     new_columna.append(None)
                 else:
+                    valor = f'-{n} MNT'
                     new_columna.append(valor)
                 n += 1
         else:
@@ -325,9 +326,9 @@ def incidencias_status(db: pd.DataFrame):
             for parte in partes:
                 if parte.startswith("'MNT-") and parte.endswith("'") and parte[5:-1].isdigit():
                     numero = str(int(parte[5:-1]))  # Convertir a entero y luego a cadena para quitar ceros iniciales
-                    expected = f"-{numero},00\xa0MNT"
+                    expected = f"-{numero} MNT"
                     if expected in ids:
-                        partes_filtradas.append(parte)
+                        partes_filtradas.append(expected)
             if partes_filtradas:
                 mantenimiento_ids.append(f"[{', '.join(partes_filtradas)}]")
             else:

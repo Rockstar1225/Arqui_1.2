@@ -5,6 +5,8 @@ import imputation as im
 
 def main():
     base = ld.load_db()
+    ch.adjust_gps(base)
+    ch.adjust_ETRS89(base)
     ch.empty_data(base)
     im.area_new_atribute(base)
     im.juegos_new_atributes(base)
@@ -20,7 +22,6 @@ def main():
     ch.formato_tlf(base)
     ch.check_id(base)
     ch.nif_status(base)
-    ch.adjust_gps(base)
-    ch.adjust_ETRS89(base)
+    ch.incidencias_status(base)
     print(base)
 main()
