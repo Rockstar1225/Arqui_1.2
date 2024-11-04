@@ -92,17 +92,28 @@ def area_new_atribute(df: pd.DataFrame)-> None:
     """Method used for adding the atribute capacidadMax in Areas."""
     index = 0
     # calculate number of games per area using lat and long
+    # create column
     for area in df["Areas"].to_numpy():
+        # number of games
         games = 0
+        # serch by GPS
         lat_area = area[10]
         long_area = area[11]
+        index_juego = 0
         for juego in df["Juegos"].to_numpy():
             lat_juego = juego[10]
             long_juego = juego[11]
+            # match area, juego            
             if lat_area == lat_juego and long_area == long_juego:
+                # add games
                 games += 1
+                # insert areaID to Juegos
+                df["Juegos"].loc[index_juego, "areaID"] = area[0]
+            index_juego += 1
+        # create columns
         df["Areas"].loc[index, "capacidadMax"] = games
         index += 1
+     
     print("New atribute Areas completed")
                     
 def juegos_new_atributes(df: pd.DataFrame)-> None:
@@ -129,7 +140,7 @@ def juegos_new_atributes(df: pd.DataFrame)-> None:
         index += 1
     # insert desgasteAcumulado value
     for i in range(len(df["Juegos"])):
-        df["Juegos"].loc[i, "desgasteAcumulado"] = adjust_range(wear_values, 1, 100, i) # changing the range of values
+        df["Juegos"].loc[i, "desgasteAcumulado"] = adjust_range(wear_values, 0, 100, i) # changing the range of values
     print("New atributes Juegos completed")
 
 
@@ -144,12 +155,12 @@ def tiempoResolucion(base: pd.DataFrame):
 
 
 # prueabs
-"""base = load.load_db()
-new_meteo(base)
+# base = load.load_db()
+# new_meteo(base)
 # for i in range(len(base["meteo24"]["FECHA"])):
 #     print(base["meteo24"]["FECHA"][i], " ", base["meteo24"]["TEMPERATURA"][i], " ", base["meteo24"]["PRECIPITACION"][i],
 #            " ", base["meteo24"]["VIENTO"][i], " ", base["meteo24"]["DISTRITO"][i])
-change.adjust_gps(base) 
-area_new_atribute(base)
-juegos_new_atributes(base)
-print(base)"""
+# change.adjust_gps(base) 
+# area_new_atribute(base)
+# juegos_new_atributes(base)
+# print(base)
