@@ -1,0 +1,23 @@
+Atributos necesarios para las relaciones entre los datos:
+  - Relación area juegos:
+   
+    - Registros de clima:
+      - Area a la que pertenece.
+    - Encuesta:
+      - Area a la que pertenece.
+
+    - Incidente de seguridad:
+      - Coluumna acon el área a la que pertenece.
+
+    - incidencias:
+      - columna con juego a la que pertenece
+      - columna con mantenimiento a la que pertenece
+
+    - juego:
+      - ids de mantenimientos
+      - id y estados de incidencias
+      - columna de area a la que pertenece "areaID"
+    
+    - usuario:
+      - columna de incidencia a la que pertenece.
+
