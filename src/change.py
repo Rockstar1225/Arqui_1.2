@@ -67,7 +67,7 @@ def empty_data(df_dict):
                         new_tab = find_table_by_column(df_dict, tachadas, columna)
                         if new_tab is None:
                             if columna in ["FECHA_INSTALACION", "FECHA", "FECHA_REPORTE", "FECHA_INTERVENCION"]:
-                                valor = dt.datetime.strptime("2023-12-31 00:00:00", "%Y-%m-%d %H:%M:%S")
+                                valor = dt.datetime.strptime("2018-12-31 00:00:00", "%Y-%m-%d %H:%M:%S")
                             else: valor = f"{id_val}-{columna}-ausente"
                             break
                         valor = take_atribute(df_dict, new_tab, columna, id_val)
@@ -126,8 +126,9 @@ def reformatear_fecha(df: pd.DataFrame, table_name: str, column_name: str):
         for fecha in archivo[column_name]:
             try:
                 f_formt = parser.parse(fecha)
+                f_formt.strftime("%Y-%m-%d %H:%M:%S")
             except (ValueError, TypeError):
-                f_formt = pd.NaT
+                f_formt = dt.datetime.strptime("2018-12-31 00:00:00", "%Y-%m-%d %H:%M:%S")
             fechas_nuevas.append(f_formt)
         archivo[column_name] = fechas_nuevas
 

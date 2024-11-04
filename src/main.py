@@ -19,6 +19,7 @@ def main():
             if type(base[tab_name][column_name][0]) == str:
                 ch.capitalize_column(base, tab_name, column_name)
     ch.delete_special(base)
+    im.tiempoResolucion(base)
     ch.enum_checker(base)
     ch.formato_tlf(base)
     ch.check_id(base)

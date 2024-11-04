@@ -151,7 +151,29 @@ def adjust_range(values: list, new_min: int, new_max: int, index: int) -> int:
     return new_value
 
 def tiempoResolucion(base: pd.DataFrame):
-    print("hola")
+    # Expandimos la columna de IDs en listas para que cada ID esté en una fila única
+    incidencias_exp = base["Incidencias"].explode("MantenimientoID").reset_index()
+    
+    # Realizamos un merge para unir las filas coincidentes entre Incidencias y Mantenimiento
+    merged_data = pd.merge(
+        incidencias_exp,
+        base["Mantenimiento"],
+        left_on="MantenimientoID",
+        right_on="ID",
+        suffixes=('_inc', '_mant')
+    )
+    
+    # Calculamos la diferencia de fechas
+    merged_data["TIEMPO_RESOLUCION"] = merged_data["FECHA_INTERVENCION"] - merged_data["FECHA_REPORTE"]
+    
+    # Obtenemos el mayor tiempo de resolución por cada incidencia usando el índice original
+    max_tiempo_resolucion = merged_data.groupby("index")["TIEMPO_RESOLUCION"].max()
+    
+    # Agregamos el resultado final a la tabla original de "Incidencias"
+    base["Incidencias"] = base["Incidencias"].assign(TIEMPO_RESOLUCION=base["Incidencias"].index.map(max_tiempo_resolucion))
+    
+            
+            
 
 
 # prueabs
