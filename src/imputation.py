@@ -150,27 +150,40 @@ def adjust_range(values: list, new_min: int, new_max: int, index: int) -> int:
     new_value = int((((values[index] - old_min) * (new_max - new_min)) / (old_max - old_min)) + new_min)
     return new_value
 
+def takeTimebyID(base:pd.DataFrame, id: str):
+    numero = int(id[1:-4])
+    lista = base["Mantenimiento"]["ID"]
+    if numero < len(lista):
+        return base["Mantenimiento"]["FECHA_INTERVENCION"][numero]
+    return None
+
 def tiempoResolucion(base: pd.DataFrame):
-    # Expandimos la columna de IDs en listas para que cada ID esté en una fila única
-    incidencias_exp = base["Incidencias"].explode("MantenimientoID").reset_index()
-    
-    # Realizamos un merge para unir las filas coincidentes entre Incidencias y Mantenimiento
-    merged_data = pd.merge(
-        incidencias_exp,
-        base["Mantenimiento"],
-        left_on="MantenimientoID",
-        right_on="ID",
-        suffixes=('_inc', '_mant')
-    )
-    
-    # Calculamos la diferencia de fechas
-    merged_data["TIEMPO_RESOLUCION"] = merged_data["FECHA_INTERVENCION"] - merged_data["FECHA_REPORTE"]
-    
-    # Obtenemos el mayor tiempo de resolución por cada incidencia usando el índice original
-    max_tiempo_resolucion = merged_data.groupby("index")["TIEMPO_RESOLUCION"].max()
-    
-    # Agregamos el resultado final a la tabla original de "Incidencias"
-    base["Incidencias"] = base["Incidencias"].assign(TIEMPO_RESOLUCION=base["Incidencias"].index.map(max_tiempo_resolucion))
+    col_index = base["Incidencias"]["MantenimientoID"]
+    tiempos = []
+    for n in range (len(col_index)):
+        elemento = col_index[n]
+        conjunto = elemento[1: -1]
+        conjunto = conjunto.split(", ")
+        tiempo = float(0)
+        fecha_incidencia = base["Incidencias"]["FECHA_REPORTE"][n]
+        for valor in conjunto:
+            fecha_mat = takeTimebyID(base, valor)
+            if fecha_mat != None and fecha_mat > fecha_incidencia:
+                sub_t = fecha_mat - fecha_incidencia
+
+                # Convertir sub_t a segundos para poder compararlo con el valor float 'tiempo'
+                sub_t_seconds = sub_t.total_seconds()
+                print(sub_t_seconds)
+
+                if sub_t_seconds > tiempo:
+                    tiempo = sub_t_seconds
+        tiempos.append(tiempo)
+    base["Incidencias"].loc[:, "TIEMPO_RESOLUCION"] = tiempos
+                
+
+
+
+
     
             
             
