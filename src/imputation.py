@@ -88,7 +88,7 @@ def new_meteo(db:pd.DataFrame):
     nuevo.loc[:, "DISTRITO"] = distritos
     db["meteo24"] = nuevo
     
-def area_new_atribute(df: pd.DataFrame)-> None:
+def area_new_atribute(df: pd.DataFrame,new_coll: str):
     """Method used for adding the atribute capacidadMax in Areas."""
     index = 0
     # calculate number of games per area using lat and long
@@ -108,7 +108,7 @@ def area_new_atribute(df: pd.DataFrame)-> None:
                 # add games
                 games += 1
                 # insert areaID to Juegos
-                df["Juegos"].loc[index_juego, "areaID"] = area[0]
+                df["Juegos"].loc[index_juego, new_coll] = area[0]
             index_juego += 1
         # create columns
         df["Areas"].loc[index, "capacidadMax"] = games
@@ -116,7 +116,7 @@ def area_new_atribute(df: pd.DataFrame)-> None:
      
     print("New atribute Areas completed")
                     
-def juegos_new_atributes(df: pd.DataFrame)-> None:
+def juegos_new_atributes(df: pd.DataFrame):
     """This function will add indicadorExposicion and desgasteAcumulado to juegos"""  
     # insert indicador exposicion value   
     indicador_options = {"BAJO":100, "MEDIO":200, "ALTO":300}
@@ -183,6 +183,6 @@ def tiempoResolucion(base: pd.DataFrame):
 #     print(base["meteo24"]["FECHA"][i], " ", base["meteo24"]["TEMPERATURA"][i], " ", base["meteo24"]["PRECIPITACION"][i],
 #            " ", base["meteo24"]["VIENTO"][i], " ", base["meteo24"]["DISTRITO"][i])
 # change.adjust_gps(base) 
-# area_new_atribute(base)
+# area_new_atribute(base,"AreaRecreativaID")
 # juegos_new_atributes(base)
 # print(base)
