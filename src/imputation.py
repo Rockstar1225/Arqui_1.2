@@ -88,11 +88,12 @@ def new_meteo(db:pd.DataFrame):
     nuevo.loc[:, "DISTRITO"] = distritos
     db["meteo24"] = nuevo
     
-def area_new_atribute(df: pd.DataFrame,new_coll: str):
+def area_new_atribute(df: pd.DataFrame):
     """Method used for adding the atribute capacidadMax in Areas."""
     index = 0
     # calculate number of games per area using lat and long
     # create column
+    # df["Juegos"]["AreaRecreativaID"] = None
     for area in df["Areas"].to_numpy():
         # number of games
         games = 0
@@ -108,12 +109,12 @@ def area_new_atribute(df: pd.DataFrame,new_coll: str):
                 # add games
                 games += 1
                 # insert areaID to Juegos
-                df["Juegos"].loc[index_juego, new_coll] = area[0]
+                df["Juegos"].loc[index_juego, "AreaRecreativaID"] = area[0]
             index_juego += 1
         # create columns
         df["Areas"].loc[index, "capacidadMax"] = games
         index += 1
-     
+
     print("New atribute Areas completed")
                     
 def juegos_new_atributes(df: pd.DataFrame):
@@ -190,12 +191,12 @@ def tiempoResolucion(base: pd.DataFrame):
 
 
 # prueabs
-# base = load.load_db()
+base = load.load_db()
 # new_meteo(base)
 # for i in range(len(base["meteo24"]["FECHA"])):
 #     print(base["meteo24"]["FECHA"][i], " ", base["meteo24"]["TEMPERATURA"][i], " ", base["meteo24"]["PRECIPITACION"][i],
 #            " ", base["meteo24"]["VIENTO"][i], " ", base["meteo24"]["DISTRITO"][i])
-# change.adjust_gps(base) 
-# area_new_atribute(base,"AreaRecreativaID")
+change.adjust_gps(base) 
+area_new_atribute(base)
 # juegos_new_atributes(base)
 # print(base)
