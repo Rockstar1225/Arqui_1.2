@@ -174,14 +174,28 @@ def tiempoResolucion(base: pd.DataFrame):
 
                 # Convertir sub_t a segundos para poder compararlo con el valor float 'tiempo'
                 sub_t_seconds = sub_t.total_seconds()
-                print(sub_t_seconds)
-
                 if sub_t_seconds > tiempo:
                     tiempo = sub_t_seconds
+        if tiempo != 0:
+            tiempo = tiempo //(60*60*24)            
         tiempos.append(tiempo)
     base["Incidencias"].loc[:, "TIEMPO_RESOLUCION"] = tiempos
                 
-
+def lastFecha(db: pd.DataFrame):
+    # Seleccionamos el último mantenimiento para cada juego en la tabla de mantenimiento
+    max_mant = (
+        db["Mantenimiento"]
+        .groupby("JuegoID")["FECHA_INTERVENCION"]
+        .max()
+        .reset_index()
+        .rename(columns={"FECHA_INTERVENCION": "ULTIMA_FECHA_MANTENIMIENTO"})
+    )
+    
+    # Fusionamos las fechas de mantenimiento con la tabla de juegos
+    db["Juegos"] = db["Juegos"].merge(max_mant, left_on="ID", right_on="JuegoID", how="left")
+    
+    # Rellenamos con FECHA_INSTALACION en caso de que no haya mantenimientos
+    db["Juegos"]["ULTIMA_FECHA_MANTENIMIENTO"].fillna(db["Juegos"]["FECHA_INSTALACION"], inplace=True)
 
 
 
@@ -191,7 +205,7 @@ def tiempoResolucion(base: pd.DataFrame):
 
 
 # prueabs
-base = load.load_db()
+"""base = load.load_db()
 # new_meteo(base)
 # for i in range(len(base["meteo24"]["FECHA"])):
 #     print(base["meteo24"]["FECHA"][i], " ", base["meteo24"]["TEMPERATURA"][i], " ", base["meteo24"]["PRECIPITACION"][i],
@@ -199,4 +213,4 @@ base = load.load_db()
 change.adjust_gps(base) 
 area_new_atribute(base)
 # juegos_new_atributes(base)
-# print(base)
+# print(base)"""

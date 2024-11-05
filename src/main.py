@@ -25,5 +25,6 @@ def main():
     ch.nif_status(base)
     ch.incidencias_status(base)
     im.tiempoResolucion(base)
+    im.lastFecha(base)
     print(base)
 main()
