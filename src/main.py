@@ -1,5 +1,4 @@
 import pandas as pd
-import datetime 
 import load as ld
 import change as ch
 import imputation as im
@@ -10,6 +9,7 @@ def main():
     ch.adjust_ETRS89(base)
     ch.empty_data(base)
     #im.area_new_atribute(base)
+    print(base)
     im.juegos_new_atributes(base)
     im.new_meteo(base)
     ch.no_duplicates(base)

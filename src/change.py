@@ -167,7 +167,7 @@ def formato_tlf(df:pd.DataFrame):
 
 def no_duplicates(df: pd.DataFrame):
     for tabla_n in df:
-        if tabla_n == "meteo24":
+        if tabla_n == "meteo24" or tabla_n == "Codigo":
             continue
         else:
             columnas_sin_primary = list(df[tabla_n].columns)

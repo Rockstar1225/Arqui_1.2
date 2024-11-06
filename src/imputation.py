@@ -28,6 +28,7 @@ def same_line(fecha: str, distrito: str, list_f: list, list_d: list) -> int:
 
 def new_meteo(db:pd.DataFrame):
     meteo = db["meteo24"]
+    codigo_postal = db["Codigo"]["Codigo Postal"]
     codes = {"28079102": "MORATALAZ", "28079103": "VILLAVERDE", "28079104": "PUENTE DE VALLECAS", "28079106": "MONCLOA-ARAVACA",
              "28079107": "HORTALEZA", "28079108": "FUENCARRAL-EL PARDO", "28079109": "CHAMBERI", "28079110": "CENTRO", 
              "28079111": "CHAMARTIN", "28079112": "VILLA DE VALLECAS", "28079113": "VILLA DE VALLECAS", "28079114": "ARGANZUELA",
@@ -37,6 +38,7 @@ def new_meteo(db:pd.DataFrame):
              "28079059": "BARAJAS"}
     meses = {"1": 31, "2": 28, "3": 31, "4": 30, "5": 31, "6": 30, "7": 31, "8": 31, "9": 30, "10": 31, "11": 30, "12": 31}
     ids = []
+    codigo_postal = []
     distritos = []
     temperaturas = []
     precipitaciones = []
