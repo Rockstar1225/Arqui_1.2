@@ -31,7 +31,7 @@ def post_code(db: pd.DataFrame, codigo: int):
     code_id = db["Codigo"]["CÓDIGO"]
     for n in range(len(code_id)):
         if str(code_id[n]) == str(codigo):
-            print(n)
+            # print(n)
             return n
     return -1
 

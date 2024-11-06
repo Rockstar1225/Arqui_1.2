@@ -53,6 +53,7 @@ class Creator:
                 self.area_juegos[valor_area] = [valor_juego]
             else:
                 self.area_juegos[valor_area].append(valor_juego)
+        print("Area-Juegos Completado")
 
     def crear_juegos_tipo(self):
 
@@ -65,6 +66,7 @@ class Creator:
                 self.juego_tipo[valor_tipo] = 1
             else:
                 self.juego_tipo[valor_tipo] += 1
+        print("Juegos Tipo Completado")
 
     def crear_area_encuestas(self):
         tabla_encuestas = self.state["Encuestas"]
@@ -79,6 +81,7 @@ class Creator:
                 self.area_encuesta[valor_area] = [valor_id]
             else:
                 self.area_encuesta[valor_area].append(valor_id)
+        print("Area-Encuestas Completado")
 
     def crear_juego_incidencias(self):
 
@@ -140,6 +143,7 @@ class Creator:
                 self.area_incidente[id_area] = [id_incidendes_seg]
             else:
                 self.area_incidente[id_area].append(id_incidendes_seg)
+        print("Area-incidente Completado")
 
     def crear_incidencia_usuario(self) -> None:
         """Creating a reference for Usuario-Incidencias"""
@@ -156,3 +160,4 @@ class Creator:
                     self.incidencia_usuario[id_usuarios] = [int(id_incidencias)]
                 else:
                     self.incidencia_usuario[id_usuarios].append(int(id_incidencias))
+        print("Incidencia-Usuario Completado")
