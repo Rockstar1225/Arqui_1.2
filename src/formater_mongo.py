@@ -45,7 +45,11 @@ class Creator:
         for i in range(len(tabla_juegos["AreaRecreativaID"])):
             valor_area = tabla_juegos.loc[i, "AreaRecreativaID"]
             valor_juego = tabla_juegos.loc[i, "ID"]
-            if valor_area is not None and valor_area not in self.area_juegos:
+
+            if valor_area > 1000000:
+                continue
+
+            if valor_area not in self.area_juegos:
                 self.area_juegos[valor_area] = [valor_juego]
             else:
                 self.area_juegos[valor_area].append(valor_juego)
@@ -55,7 +59,7 @@ class Creator:
         tabla_juegos = self.state["Juegos"]
 
         # Extraer los tipos de la tabla de juegos
-        for i in range(len(tabla_juegos["juegos_tipo"])):
+        for i in range(len(tabla_juegos["tipo_juego"])):
             valor_tipo = tabla_juegos.loc[i, "tipo_juego"]
             if valor_tipo not in self.juego_tipo:
                 self.juego_tipo[valor_tipo] = 1
@@ -104,7 +108,7 @@ class Creator:
 
             if valor_id not in self.juego_mantenimientos:
                 # print("Tipo de valor de mantenimiento: ", type(valor_manten))
-                print("Valor a insertar", transform(valor_manten))
+                # print("Valor a insertar", transform(valor_manten))
                 self.juego_mantenimientos[valor_id] = [transform(valor_manten)]
             else:
                 self.juego_mantenimientos[valor_id].append(valor_manten)
@@ -136,16 +140,19 @@ class Creator:
                 self.area_incidente[id_area] = [id_incidendes_seg]
             else:
                 self.area_incidente[id_area].append(id_incidendes_seg)
-                
-    def crear_incidencia_usuario(self) ->None:
+
+    def crear_incidencia_usuario(self) -> None:
         """Creating a reference for Usuario-Incidencias"""
-        tabla_incidencias = self.state["Incidencias"]     
+        tabla_incidencias = self.state["Incidencias"]
         for i in range(len(tabla_incidencias["UsuarioID"])):
-            id_usuarios_str = tabla_incidencias.loc[i, "UsuarioID"].replace('\'', '"')
-            id_usuarios_list = json.loads(id_usuarios_str)             
+            id_usuarios_str = tabla_incidencias.loc[i, "UsuarioID"].replace("'", '"')
+            id_usuarios_list = json.loads(id_usuarios_str)
             id_incidencias = tabla_incidencias.loc[i, "ID"]
             for id_usuarios in id_usuarios_list:
-                if id_usuarios is not None and id_usuarios not in self.incidencia_usuario:
+                if (
+                    id_usuarios is not None
+                    and id_usuarios not in self.incidencia_usuario
+                ):
                     self.incidencia_usuario[id_usuarios] = [int(id_incidencias)]
                 else:
                     self.incidencia_usuario[id_usuarios].append(int(id_incidencias))

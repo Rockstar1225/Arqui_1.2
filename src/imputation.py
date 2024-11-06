@@ -40,7 +40,7 @@ def new_meteo(db: pd.DataFrame):
     meteo = db["meteo24"]
     m_postal = db["Codigo"]
     col_postal = m_postal["CodigoPostal"]
-    print(col_postal)
+    # print(col_postal)
     codes = {
         "28079102": "MORATALAZ",
         "28079103": "VILLAVERDE",
@@ -109,7 +109,7 @@ def new_meteo(db: pd.DataFrame):
                     if linea == -1:
                         ids.append(id)
                         id += 1
-                        print(codigo_postal)
+                        # print(codigo_postal)
                         pcode = col_postal[n_code]
                         codigo_postal.append(int(pcode))
                         distritos.append(codes[data[0]])
