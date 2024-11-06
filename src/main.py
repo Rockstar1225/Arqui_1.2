@@ -28,6 +28,7 @@ def main():
     im.tiempoResolucion(base)
     im.lastFecha(base)
     im.area_new_atribute(base)
+    im.area_meteo(base)
 
     # Extracción de incidencias
     extractor = mongo_creator.Creator(base)
@@ -38,6 +39,7 @@ def main():
     extractor.crear_area_juegos()
     extractor.crear_juegos_tipo()
     # print(base)
+    print(base["Areas"]["ID_METEO"])
 
 
 if __name__ == "__main__":

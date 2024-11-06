@@ -31,7 +31,6 @@ def post_code(db: pd.DataFrame, codigo: int):
     code_id = db["Codigo"]["CÓDIGO"]
     for n in range(len(code_id)):
         if str(code_id[n]) == str(codigo):
-            print(n)
             return n
     return -1
 
@@ -39,50 +38,15 @@ def post_code(db: pd.DataFrame, codigo: int):
 def new_meteo(db: pd.DataFrame):
     meteo = db["meteo24"]
     m_postal = db["Codigo"]
-    col_postal = m_postal["CodigoPostal"]
-    # print(col_postal)
-    codes = {
-        "28079102": "MORATALAZ",
-        "28079103": "VILLAVERDE",
-        "28079104": "PUENTE DE VALLECAS",
-        "28079106": "MONCLOA-ARAVACA",
-        "28079107": "HORTALEZA",
-        "28079108": "FUENCARRAL-EL PARDO",
-        "28079109": "CHAMBERI",
-        "28079110": "CENTRO",
-        "28079111": "CHAMARTIN",
-        "28079112": "VILLA DE VALLECAS",
-        "28079113": "VILLA DE VALLECAS",
-        "28079114": "ARGANZUELA",
-        "28079115": "ARGANZUELA",
-        "28079004": "MONCLOA-ARAVACA",
-        "28079008": "SALAMANCA",
-        "28079016": "CIUDAD LINEAL",
-        "28079018": "CARABANCHEL",
-        "28079024": "MONCLOA-ARAVACA",
-        "28079035": "CENTRO",
-        "28079036": "MORATALAZ",
-        "28079038": "TETUAN",
-        "28079039": "FUENCARRAL-EL PARDO",
-        "28079054": "VILLA DE VALLECAS",
-        "28079056": "CARABANCHEL",
-        "28079058": "FUENCARRAL-EL PARDO",
-        "28079059": "BARAJAS",
-    }
-    meses = {
-        "1": 31,
-        "2": 28,
-        "3": 31,
-        "4": 30,
-        "5": 31,
-        "6": 30,
-        "7": 31,
-        "8": 31,
-        "9": 30,
-        "10": 31,
-        "11": 30,
-        "12": 31,
-    }
+    col_postal  = m_postal["CodigoPostal"]
+    codes = {"28079102": "MORATALAZ", "28079103": "VILLAVERDE", "28079104": "PUENTE DE VALLECAS", "28079106": "MONCLOA-ARAVACA",
+             "28079107": "HORTALEZA", "28079108": "FUENCARRAL-EL PARDO", "28079109": "CHAMBERI", "28079110": "CENTRO", 
+             "28079111": "CHAMARTIN", "28079112": "VILLA DE VALLECAS", "28079113": "VILLA DE VALLECAS", "28079114": "ARGANZUELA",
+             "28079115": "ARGANZUELA", "28079004": "MONCLOA-ARAVACA", "28079008": "SALAMANCA", "28079016": "CIUDAD LINEAL", 
+             "28079018": "CARABANCHEL", "28079024": "MONCLOA-ARAVACA", "28079035": "CENTRO", "28079036": "MORATALAZ", "28079038": "TETUAN",
+             "28079039":"FUENCARRAL-EL PARDO","28079054": "VILLA DE VALLECAS", "28079056": "CARABANCHEL", "28079058": "FUENCARRAL-EL PARDO",
+             "28079059": "BARAJAS"}
+    meses = {"1": 31, "2": 28, "3": 31, "4": 30, "5": 31, "6": 30, "7": 31, "8": 31, "9": 30, "10": 31, "11": 30, "12": 31}
     ids = []
     codigo_postal = []
     distritos = []
@@ -109,7 +73,6 @@ def new_meteo(db: pd.DataFrame):
                     if linea == -1:
                         ids.append(id)
                         id += 1
-                        # print(codigo_postal)
                         pcode = col_postal[n_code]
                         codigo_postal.append(int(pcode))
                         distritos.append(codes[data[0]])
@@ -308,15 +271,29 @@ def area_meteo(db: pd.DataFrame):
     tabla_meteo = db["meteo24"]
     columna_cod_postal = tabla_area["COD_POSTAL"]
     columna_cod_meteo = tabla_meteo["CODIGO_POSTAL"]
-    for n in range(len(columna_cod_postal)):
-        valor = int(columna_cod_postal[n])
-        estacion = 00000  # Valor predeterminado
-        for m in range(len(columna_cod_meteo)):
-            valor2 = int(columna_cod_postal[m])
-            if valor == valor2:
-                estacion = db["meteo24"]["ID"]
-        lista_meteo.append(estacion)
-    db["Areas"].loc[:, "ID_METEO"] = lista_meteo
+    
+    # Crear un diccionario para el mapeo de códigos postales a ID
+    codigo_to_id = {columna_cod_meteo[i]: tabla_meteo["ID"][i] for i in range(len(columna_cod_meteo))}
+    print("Diccionario de códigos a ID:", codigo_to_id)  # Verificar el contenido del diccionario
+    
+    for valor in columna_cod_postal:
+        estacion = 0  # Valor predeterminado
+        
+        # Asegurarse de que ambos valores son enteros
+        if pd.notnull(valor) and type(valor) != str:  # Evita valores nulos
+            valor = int(valor) if not isinstance(valor, int) else valor
+            estacion = codigo_to_id.get(valor, estacion)  # Obtener el valor o usar predeterminado
+        
+        lista_meteo.append(int(estacion))
+    
+    # Asignar la lista resultante a una nueva columna "ID_METEO" en db["Areas"]
+    db["Areas"]["ID_METEO"] = lista_meteo
+    print(lista_meteo)
+
+
+
+
+
 
 
 # prueabs
