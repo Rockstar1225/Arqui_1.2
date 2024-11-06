@@ -2,6 +2,7 @@ import load
 import change
 import numpy as np
 import random
+import json
 
 
 class Creator:
@@ -25,6 +26,7 @@ class Creator:
         self.area_juegos = {}  # extraida mas o menos
         self.juego_mantenimientos = {}  # extraida
         self.mantenimiento_incidencias = {}  # extraida
+        self.incidencia_usuario = {}
 
     def extraer_columna(self, table: str, column: str) -> list:
         result = []
@@ -134,3 +136,16 @@ class Creator:
                 self.area_incidente[id_area] = [id_incidendes_seg]
             else:
                 self.area_incidente[id_area].append(id_incidendes_seg)
+                
+    def crear_incidencia_usuario(self) ->None:
+        """Creating a reference for Usuario-Incidencias"""
+        tabla_incidencias = self.state["Incidencias"]     
+        for i in range(len(tabla_incidencias["UsuarioID"])):
+            id_usuarios_str = tabla_incidencias.loc[i, "UsuarioID"].replace('\'', '"')
+            id_usuarios_list = json.loads(id_usuarios_str)             
+            id_incidencias = tabla_incidencias.loc[i, "ID"]
+            for id_usuarios in id_usuarios_list:
+                if id_usuarios is not None and id_usuarios not in self.incidencia_usuario:
+                    self.incidencia_usuario[id_usuarios] = [int(id_incidencias)]
+                else:
+                    self.incidencia_usuario[id_usuarios].append(int(id_incidencias))
