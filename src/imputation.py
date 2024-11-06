@@ -40,7 +40,6 @@ def new_meteo(db: pd.DataFrame):
     meteo = db["meteo24"]
     m_postal = db["Codigo"]
     col_postal = m_postal["CodigoPostal"]
-    # print(col_postal)
     codes = {
         "28079102": "MORATALAZ",
         "28079103": "VILLAVERDE",
@@ -109,7 +108,6 @@ def new_meteo(db: pd.DataFrame):
                     if linea == -1:
                         ids.append(id)
                         id += 1
-                        # print(codigo_postal)
                         pcode = col_postal[n_code]
                         codigo_postal.append(int(pcode))
                         distritos.append(codes[data[0]])
@@ -308,15 +306,31 @@ def area_meteo(db: pd.DataFrame):
     tabla_meteo = db["meteo24"]
     columna_cod_postal = tabla_area["COD_POSTAL"]
     columna_cod_meteo = tabla_meteo["CODIGO_POSTAL"]
-    for n in range(len(columna_cod_postal)):
-        valor = int(columna_cod_postal[n])
-        estacion = 00000  # Valor predeterminado
-        for m in range(len(columna_cod_meteo)):
-            valor2 = int(columna_cod_postal[m])
-            if valor == valor2:
-                estacion = db["meteo24"]["ID"]
-        lista_meteo.append(estacion)
-    db["Areas"].loc[:, "ID_METEO"] = lista_meteo
+
+    # Crear un diccionario para el mapeo de códigos postales a ID
+    codigo_to_id = {
+        columna_cod_meteo[i]: tabla_meteo["ID"][i]
+        for i in range(len(columna_cod_meteo))
+    }
+    print(
+        "Diccionario de códigos a ID:", codigo_to_id
+    )  # Verificar el contenido del diccionario
+
+    for valor in columna_cod_postal:
+        estacion = 0  # Valor predeterminado
+
+        # Asegurarse de que ambos valores son enteros
+        if pd.notnull(valor) and type(valor) != str:  # Evita valores nulos
+            valor = int(valor) if not isinstance(valor, int) else valor
+            estacion = codigo_to_id.get(
+                valor, estacion
+            )  # Obtener el valor o usar predeterminado
+
+        lista_meteo.append(int(estacion))
+
+    # Asignar la lista resultante a una nueva columna "ID_METEO" en db["Areas"]
+    db["Areas"]["ID_METEO"] = lista_meteo
+    print(lista_meteo)
 
 
 # prueabs
