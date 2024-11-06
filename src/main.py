@@ -9,7 +9,7 @@ def main():
     ch.adjust_gps(base)
     ch.adjust_ETRS89(base)
     ch.empty_data(base)
-    #im.area_new_atribute(base)
+    # im.area_new_atribute(base)
     im.juegos_new_atributes(base)
     im.new_meteo(base)
     ch.no_duplicates(base)
@@ -31,8 +31,12 @@ def main():
 
     # Extracción de incidencias
     extractor = mongo_creator.Creator(base)
-    extractor.crear_area_clima()
+    # extractor.crear_area_clima()
     extractor.crear_juego_incidencias()
+    extractor.crear_areas_incidentes()
+    extractor.crear_area_encuestas()
+    extractor.crear_area_juegos()
+    extractor.crear_juegos_tipo()
     # print(base)
 
 
