@@ -88,3 +88,14 @@ class Creator:
         print(
             "Relaciones de juego_mantenimientos, mantenimiento_incdencias, juego_incidencias"
         )
+    def crear_areas_incidentes(self) ->None:
+        """Creating reference for Areas-Incidentes"""
+        tabla_incidentes_seg = self.state["Incidentes"]     
+        for i in range(len(tabla_incidentes_seg["AreaRecreativaID"])):
+            id_area = tabla_incidentes_seg.loc[i, "AreaRecreativaID"]
+            id_incidendes_seg = tabla_incidentes_seg.loc[i, "ID"]
+            if id_area is not None and id_area not in self.area_incidente:
+                self.area_incidente[id_area] = [id_incidendes_seg]
+            else:
+                self.area_incidente[id_area].append(id_incidendes_seg)
+        

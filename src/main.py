@@ -27,4 +27,6 @@ def main():
     im.tiempoResolucion(base)
     im.lastFecha(base)
     print(base)
-main()
+    
+if __name__ == "__main__":    
+    main()
