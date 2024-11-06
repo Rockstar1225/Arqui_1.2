@@ -1,22 +1,22 @@
-import pandas as pd
 import load as ld
 import change as ch
 import imputation as im
+import formater_mongo as mongo_creator
+
 
 def main():
     base = ld.load_db()
     ch.adjust_gps(base)
     ch.adjust_ETRS89(base)
     ch.empty_data(base)
-    #im.area_new_atribute(base)
-    print(base)
+
     im.juegos_new_atributes(base)
     im.new_meteo(base)
     ch.no_duplicates(base)
     for tab_name in base:
         for column_name in base[tab_name]:
             ch.reformatear_fecha(base, tab_name, column_name)
-            if type(base[tab_name][column_name][0]) == str:
+            if type(base[tab_name][column_name][0]) is str:
                 ch.capitalize_column(base, tab_name, column_name)
     ch.delete_special(base)
     ch.enum_checker(base)
@@ -26,7 +26,14 @@ def main():
     ch.incidencias_status(base)
     im.tiempoResolucion(base)
     im.lastFecha(base)
-    print(base)
-    
-if __name__ == "__main__":    
+    im.area_new_atribute(base)
+
+    # Extracción de incidencias
+    extractor = mongo_creator.Creator(base)
+    extractor.crear_area_clima()
+    extractor.crear_juego_incidencias()
+    # print(base)
+
+
+if __name__ == "__main__":
     main()

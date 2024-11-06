@@ -19,7 +19,7 @@ class Creator:
         # relaciones entre sí
         self.juego_incidencias = {}  # extraida
         self.area_clima = {}
-        self.area_encuesta = {}
+        self.area_encuesta = {}  # extraida
         self.area_incidente = {}
         self.area_juegos = {}
         self.juego_mantenimientos = {}  # extraida
@@ -41,10 +41,23 @@ class Creator:
             else:
                 self.area_juegos[valor_area].append(valor_juego)
 
+    def crear_area_encuestas(self):
+        tabla_encuestas = self.state["Encuestas"]
+
+        # Extraer los mantenimientos de las incidencias. Mapa "AreaRecreativaID -> EncuestasID"
+        for i in range(len(tabla_encuestas["AreaRecreativaID"])):
+
+            valor_area = tabla_encuestas.loc[i, "AreaRecreativaID"]
+            valor_id = tabla_encuestas.loc[i, "ID"]
+
+            if valor_area not in self.area_encuesta:
+                self.area_encuesta[valor_area] = [valor_id]
+            else:
+                self.area_encuesta[valor_area].append(valor_id)
+
     def crear_juego_incidencias(self):
 
         # Tablas a utilizar
-        tabla_juegos = self.state["Juegos"]
         tabla_incidencias = self.state["Incidencias"]
         tabla_mantenimiento = self.state["Mantenimiento"]
 
@@ -65,10 +78,12 @@ class Creator:
         # Extraer los mantenimientos de los juegos. Mapa "JuegoID -> MantenimientoID"
         for i in range(len(tabla_mantenimiento["JuegoID"])):
 
-            valor_id = tabla_juegos.loc[i, "ID"]
-            valor_manten = tabla_mantenimiento.loc[i, "JuegoID"]
+            valor_id = tabla_mantenimiento.loc[i, "JuegoID"]
+            valor_manten = tabla_mantenimiento.loc[i, "ID"]
 
             if valor_id not in self.juego_mantenimientos:
+                # print("Tipo de valor de mantenimiento: ", type(valor_manten))
+                print("Valor a insertar", transform(valor_manten))
                 self.juego_mantenimientos[valor_id] = [transform(valor_manten)]
             else:
                 self.juego_mantenimientos[valor_id].append(valor_manten)
@@ -76,17 +91,18 @@ class Creator:
         # Deducir las relaciones de juegos e incidencias. Mapa "JuegoID -> IncidenciasID"
         for juego in self.juego_mantenimientos.keys():
             for incidencia in self.mantenimiento_incidencias.values():
-                if (
-                    self.mantenimiento_incidencias[self.juego_mantenimientos[juego]]
-                    == incidencia
-                ):
-                    if juego not in self.juego_incidencias:
-                        self.juego_incidencias[juego] = [incidencia]
-                    else:
-                        self.juego_incidencias[juego].append(incidencia)
+                # extraer todos los mantenimientos
+                for mantenimiento in self.juego_mantenimientos[juego]:
+                    if mantenimiento not in self.mantenimiento_incidencias:
+                        continue
+                    if self.mantenimiento_incidencias[mantenimiento] == incidencia:
+                        if juego not in self.juego_incidencias:
+                            self.juego_incidencias[juego] = [incidencia]
+                        else:
+                            self.juego_incidencias[juego].append(incidencia)
 
         print(
-            "Relaciones de juego_mantenimientos, mantenimiento_incdencias, juego_incidencias"
+            "Relaciones de juego_mantenimientos, mantenimiento_incdencias, juego_incidencias terminadas"
         )
     def crear_areas_incidentes(self) ->None:
         """Creating reference for Areas-Incidentes"""
