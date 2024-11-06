@@ -24,11 +24,19 @@ def same_line(fecha: str, distrito: str, list_f: list, list_d: list) -> int:
             return n
     return -1
 
-
+def post_code(db: pd.DataFrame, codigo: int):
+    code_id = db["Codigo"]["CÓDIGO"]
+    for n in range(len(code_id)):
+        if str(code_id[n]) == str(codigo):
+            print(n)
+            return n
+    return -1
 
 def new_meteo(db:pd.DataFrame):
     meteo = db["meteo24"]
-    codigo_postal = db["Codigo"]["Codigo Postal"]
+    m_postal = db["Codigo"]
+    col_postal  = m_postal["CodigoPostal"]
+    print(col_postal)
     codes = {"28079102": "MORATALAZ", "28079103": "VILLAVERDE", "28079104": "PUENTE DE VALLECAS", "28079106": "MONCLOA-ARAVACA",
              "28079107": "HORTALEZA", "28079108": "FUENCARRAL-EL PARDO", "28079109": "CHAMBERI", "28079110": "CENTRO", 
              "28079111": "CHAMARTIN", "28079112": "VILLA DE VALLECAS", "28079113": "VILLA DE VALLECAS", "28079114": "ARGANZUELA",
@@ -57,32 +65,56 @@ def new_meteo(db:pd.DataFrame):
                 if int(mes) < 10:
                     mes = "0" + mes
                 fecha = str(meteo["ANO"][i]) + "-" +  mes + "-" + dia
-                linea = same_line(fecha, codes[data[0]], fechas, distritos)
-                if linea == -1:
-                    ids.append(id)
-                    id += 1
-                    distritos.append(codes[data[0]])
-                    fechas.append(fecha)
-                    temperaturas.append(float("NaN"))
-                    precipitaciones.append(float("NaN"))
-                    viento.append(float("NaN"))
-                    linea = len(distritos) -1
-                booleano = "V" + dia
-                valor = "D" + dia
-                if data[1] == "81":
-                    if meteo[booleano][i] == "V" and int(meteo[valor][i]) >= 20:
-                        viento[linea] = True
+                n_code = post_code(db, data[0])
+                if n_code != -1:
+                    linea = same_line(fecha, codes[data[0]], fechas, distritos)
+                    if linea == -1:
+                        ids.append(id)
+                        id += 1
+                        print(codigo_postal)
+                        pcode = col_postal[n_code]
+                        codigo_postal.append(pcode)
+                        distritos.append(codes[data[0]])
+                        fechas.append(fecha)
+                        temperaturas.append(float("NaN"))
+                        precipitaciones.append(float("NaN"))
+                        viento.append(float("NaN"))
+                        linea = len(distritos) -1
+                        if data[0] == "28079004":
+                            ids.append(id)
+                            id += 1
+                            distritos.append(codes[data[0]])
+                            pcode = col_postal[n_code +1]
+                            codigo_postal.append(pcode)
+                            fechas.append(fecha)
+                            temperaturas.append(float("NaN"))
+                            precipitaciones.append(float("NaN"))
+                            viento.append(float("NaN"))
+                    booleano = "V" + dia
+                    valor = "D" + dia
+                    if data[1] == "81":
+                        if meteo[booleano][i] == "V" and int(meteo[valor][i]) >= 20:
+                            viento[linea] = True
+                            if data[0] == "28079004":
+                                viento[linea + 1] = True
+                        else:
+                            viento[linea] = False
+                            if data[0] == "28079004":
+                                viento[linea + 1] = False
+                    elif data[1] == "83":
+                        if meteo[booleano][i] == "V":
+                            temperaturas[linea] = meteo[valor][i]
+                            if data[0] == "28079004":
+                                temperaturas[linea + 1] = meteo[valor][i]
                     else:
-                        viento[linea] = False
-                elif data[1] == "83":
-                    if meteo[booleano][i] == "V":
-                        temperaturas[linea] = meteo[valor][i]
-                else:
-                    if meteo[booleano][i] == "V":
-                        precipitaciones[linea] = meteo[valor][i]
+                        if meteo[booleano][i] == "V":
+                            precipitaciones[linea] = meteo[valor][i]
+                            if data[0] == "28079004":
+                                precipitaciones[linea + 1] = meteo[valor][i]
             
     nuevo = pd.DataFrame()
     nuevo.loc[:, "ID"] = ids
+    nuevo.loc[:, "CODIGO_POSTAL"] = codigo_postal
     nuevo.loc[:, "FECHA"] = fechas
     nuevo.loc[:, "TEMPERATURA"] = temperaturas
     nuevo.loc[:, "PRECIPITACION"] = precipitaciones

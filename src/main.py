@@ -9,6 +9,7 @@ def main():
     ch.adjust_gps(base)
     ch.adjust_ETRS89(base)
     ch.empty_data(base)
+    #im.area_new_atribute(base)
 
     im.juegos_new_atributes(base)
     im.new_meteo(base)
