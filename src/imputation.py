@@ -73,7 +73,7 @@ def new_meteo(db:pd.DataFrame):
                         id += 1
                         print(codigo_postal)
                         pcode = col_postal[n_code]
-                        codigo_postal.append(pcode)
+                        codigo_postal.append(int(pcode))
                         distritos.append(codes[data[0]])
                         fechas.append(fecha)
                         temperaturas.append(float("NaN"))
@@ -85,7 +85,7 @@ def new_meteo(db:pd.DataFrame):
                             id += 1
                             distritos.append(codes[data[0]])
                             pcode = col_postal[n_code +1]
-                            codigo_postal.append(pcode)
+                            codigo_postal.append(int(pcode))
                             fechas.append(fecha)
                             temperaturas.append(float("NaN"))
                             precipitaciones.append(float("NaN"))
@@ -244,6 +244,23 @@ def lastFecha(db: pd.DataFrame):
     
     # Rellenamos con FECHA_INSTALACION en caso de que no haya mantenimientos
     db["Juegos"]["ULTIMA_FECHA_MANTENIMIENTO"].fillna(db["Juegos"]["FECHA_INSTALACION"], inplace=True)
+
+
+def area_meteo(db: pd.DataFrame):
+    lista_meteo = []
+    tabla_area = db["Areas"]
+    tabla_meteo = db["meteo24"]
+    columna_cod_postal = tabla_area["COD_POSTAL"]
+    columna_cod_meteo = tabla_meteo["CODIGO_POSTAL"]
+    for n in range(len(columna_cod_postal)):
+        valor = int(columna_cod_postal[n])
+        estacion = 00000 #Valor predeterminado
+        for m in range(len(columna_cod_meteo)):
+            valor2 = int(columna_cod_postal[m])
+            if valor == valor2:
+                estacion = db["meteo24"]["ID"]
+        lista_meteo.append(estacion)
+    db["Areas"].loc[:, "ID_METEO"] = lista_meteo
 
 
 

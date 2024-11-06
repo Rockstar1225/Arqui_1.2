@@ -10,10 +10,10 @@ def main():
     ch.adjust_ETRS89(base)
     ch.empty_data(base)
     #im.area_new_atribute(base)
-
     im.juegos_new_atributes(base)
     im.new_meteo(base)
     ch.no_duplicates(base)
+    im.area_meteo(base)
     for tab_name in base:
         for column_name in base[tab_name]:
             ch.reformatear_fecha(base, tab_name, column_name)
