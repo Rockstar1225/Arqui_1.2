@@ -92,10 +92,10 @@ def new_meteo(db:pd.DataFrame):
     
 def area_new_atribute(df: pd.DataFrame):
     """Method used for adding the atribute capacidadMax in Areas."""
+    df["Juegos"]["AreaRecreativaID"] = 0
     index = 0
     # calculate number of games per area using lat and long
     # create column
-    # df["Juegos"]["AreaRecreativaID"] = None
     for area in df["Areas"].to_numpy():
         # number of games
         games = 0
@@ -111,11 +111,25 @@ def area_new_atribute(df: pd.DataFrame):
                 # add games
                 games += 1
                 # insert areaID to Juegos
-                df["Juegos"].loc[index_juego, "AreaRecreativaID"] = area[0]
+                df["Juegos"].loc[index_juego, "AreaRecreativaID"] = area[0]    
             index_juego += 1
         # create columns
         df["Areas"].loc[index, "capacidadMax"] = games
         index += 1
+    # give values to all games without a reference to an area
+    index_juego = 0
+    for juego in df["Juegos"].to_numpy():
+        ref_area = juego[24]
+        # there is no reference to an area
+        if ref_area == 0:
+            in_column = True
+            while in_column:
+                # insert a random reference to juegos
+                rand_id = random.randint(1000000, 100000000)
+                if rand_id not in df["Juegos"]["AreaRecreativaID"]:
+                    df["Juegos"].loc[index_juego, "AreaRecreativaID"] = rand_id
+                    in_column = False
+        index_juego += 1
 
     print("New atribute Areas completed")
                     
