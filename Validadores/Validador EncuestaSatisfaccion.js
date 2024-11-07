@@ -29,7 +29,8 @@ SCHEME = {
     },
     "comentarios": {
       "bsonType": "string",
-      "description": "Lista de comentarios en formato string"
+      "description": "Lista de comentarios en formato string",
+      "enum": ["Aceptable", "Deficiente", "Excelente", "Muy bueno", "Regular"]
     }
   },
 }

@@ -57,6 +57,26 @@ class Creator:
             )
         print("Usuarios Generados")
 
+    def generar_encuestas(self):
+
+        id = self.extraer_columna("Encuestas", "ID")
+        fecha = self.extraer_columna("Encuestas", "FECHA")
+        accesibilidad = self.extraer_columna("Encuestas", "PUNTUACION_ACCESIBILIDAD")
+        calidad = self.extraer_columna("Encuestas", "PUNTUACION_CALIDAD")
+        comantarios = self.extraer_columna("Encuestas", "COMENTARIOS")
+
+        for i in range(len(id)):
+            self.encuestas.append(
+                {
+                    "id": int(id[i]),
+                    "fechaEncuesta": str(fecha[i]),
+                    "puntuacionAccesibilidad": accesibilidad[i],
+                    "puntuacionCalidad": calidad[i],
+                    "comentaraios": comantarios[i],
+                }
+            )
+        print("Encuestas generadas!!")
+
     def extraer_columna(self, table: str, column: str) -> list:
         result = []
         for i in range(len(self.state[table][column])):
