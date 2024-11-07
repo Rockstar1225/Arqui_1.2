@@ -35,50 +35,48 @@ def find_id(df: dict, tabla: str, fila: int):
     archivo = df[tabla]
     if tabla == "Usuarios": return archivo["NIF"][fila]
     elif tabla == "meteo24": return archivo["PROVINCIA"][fila]
-    elif tabla == "Codigo": return archivo["CÓDIGO"][fila]
     else: return archivo["ID"][fila]
 
 
-# Para rellenar filas vacías
+# Para rellenar filas vacias
 def empty_data(df_dict):
     for tabla_name, tabla in df_dict.items():
-        # Convertir a tipo 'object' para poder indicar los casos nulos que no se pueden modificar
-        tabla = tabla.astype(object)
-        nan_positions = tabla.isna() # Identificar posiciones NaN
-        assignment_dict = {} # Diccionario para almacenar asignaciones
+        if tabla_name != "Codigo":
+            # Convertir a tipo 'object' para poder indicar los casos nulos que no se pueden modificar
+            tabla = tabla.astype(object)
+            nan_positions = tabla.isna() # Identificar posiciones NaN
+            assignment_dict = {} # Diccionario para almacenar asignaciones
+            for columna in nan_positions.columns:
+                nan_indices = nan_positions.index[nan_positions[columna]] #Se cogen los indices con NaN de dicha columna
+                for i in nan_indices:
+                    valor = aux_dir(tabla_name, tabla, columna, i)# Caso de direccion auxiliar. Si funciona, se salta el resto
+                    if valor is None:
+                        tachadas = [tabla_name]
+                        id_val = find_id(df_dict, tabla_name, i)  # Obtener una vez el id
+                        while True:
+                            new_tab = find_table_by_column(df_dict, tachadas, columna) #Buscar una tabla con un valor no NaN en la posicion con el mismo 
+                                                                                        #id que el del elemento actual
+                            if new_tab is None: #Caso fallido -> cambiar NaN por valor predeterminado
+                                if columna in ["FECHA_INSTALACION", "FECHA", "FECHA_REPORTE", "FECHA_INTERVENCION"]: #Caso fecha
+                                    valor = dt.datetime.strptime( "2018-12-31 00:00:00", "%Y-%m-%d %H:%M:%S")
+                                else: #Otro caso
+                                    valor = f"{id_val}-{columna}-ausente"
+                                break
+                            valor = take_atribute(df_dict, new_tab, columna, id_val) #Se ecnuebtra la tabla y se checkea el valor
+                            if valor is not None: break #Caso exitoso
+                            tachadas.append(new_tab) #Valor NaN, asi que se repite el proceso sin contar con al tabla encontrada
 
-        for columna in nan_positions.columns:
-            nan_indices = nan_positions.index[nan_positions[columna]]
-            for i in nan_indices:
-                valor = aux_dir(tabla_name, tabla, columna, i)
-                if valor is None:
-                    tachadas = [tabla_name]
-                    id_val = find_id(df_dict, tabla_name, i)  # Obtener una vez el id
-                    while True:
-                        new_tab = find_table_by_column(df_dict, tachadas, columna)
-                        if new_tab is None:
-                            if columna in ["FECHA_INSTALACION", "FECHA", "FECHA_REPORTE", "FECHA_INTERVENCION"]:
-                                valor = dt.datetime.strptime( "2018-12-31 00:00:00", "%Y-%m-%d %H:%M:%S")
-                            else:
-                                valor = f"{id_val}-{columna}-ausente"
-                            break
-                        valor = take_atribute(df_dict, new_tab, columna, id_val)
-                        if valor is not None:
-                            break
-                        tachadas.append(new_tab)
+                    # Añadir al diccionario de asignación
+                    if columna not in assignment_dict:
+                        assignment_dict[columna] = {}
+                    assignment_dict[columna][i] = valor
 
-                # Añadir al diccionario de asignación
-                if columna not in assignment_dict:
-                    assignment_dict[columna] = {}
-                assignment_dict[columna][i] = valor
+            # Realizar las asignaciones en bloque usando el diccionario de asignación
+            for columna, valores in assignment_dict.items():
+                tabla.loc[valores.keys(), columna] = list(valores.values())
 
-        # Realizar las asignaciones en bloque usando el diccionario de asignación
-        for columna, valores in assignment_dict.items():
-            tabla.loc[valores.keys(), columna] = list(valores.values())
-
-        # Actualizar la tabla en el diccionario original (si no es una copia)
-        df_dict[tabla_name] = tabla
-
+            # Actualizar la tabla en el diccionario original (si no es una copia)
+            df_dict[tabla_name] = tabla
     print("Emp terminado")
 
 
