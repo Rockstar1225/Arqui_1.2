@@ -105,7 +105,6 @@ class Creator:
         escala = self.extraer_columna("Incidencias", "NIVEL_RECONOCIMIENTO")
         # nivel escalamiento
 
-        print("Llaves de relación incidencia-usuario", self.incidencia_usuario.keys())
         for i in range(len(id)):
             if id[i] in self.incidencia_usuario:
 
@@ -125,7 +124,7 @@ class Creator:
                         "tipo": tipo[i],
                         "estado": estado[i],
                         "tiempoResolucion": float(tiempo[i]),
-                        "nivel de escalamiento": escala[i],
+                        "nivel de escalamiento": int(escala[i]),
                         "usuarios": res_users,
                     }
                 )
@@ -278,5 +277,3 @@ class Creator:
                 else:
                     self.incidencia_usuario[int(id_incidencias)].append(id_usuarios)
         print("Incidencia-Usuario Completado")
-    
-    
