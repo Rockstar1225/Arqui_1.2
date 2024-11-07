@@ -30,12 +30,12 @@ class Creator:
 
         # objetos_extraidos
         self.areas = []
-        self.encuestas = []
+        self.encuestas = []  # generadoas
         self.registrosClima = []
-        self.icidentesSeguridad = []
+        self.incidentesSeguridad = []  # generados
         self.juegos = []
         self.incidencias = []
-        self.usuarios = []
+        self.usuarios = []  # generados
         self.mantenimientos = []
 
     def generar_usuarios(self):
@@ -73,6 +73,24 @@ class Creator:
                     "puntuacionAccesibilidad": accesibilidad[i],
                     "puntuacionCalidad": calidad[i],
                     "comentaraios": comantarios[i],
+                }
+            )
+        print("Encuestas generadas!!")
+
+    def generar_incidentes(self):
+
+        id = self.extraer_columna("Incidentes", "ID")
+        fecha = self.extraer_columna("Incidentes", "FECHA_REPORTE")
+        tipo = self.extraer_columna("Incidentes", "TIPO_INCIDENTE")
+        gravedad = self.extraer_columna("Incidentes", "GRAVEDAD")
+
+        for i in range(len(id)):
+            self.incidentesSeguridad.append(
+                {
+                    "id": int(id[i]),
+                    "fechaDeReporte": str(fecha[i]),
+                    "tipoIncidente": tipo[i],
+                    "gravedad": gravedad[i],
                 }
             )
         print("Encuestas generadas!!")

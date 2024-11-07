@@ -43,7 +43,8 @@ def main():
     # Generar datos
     extractor.generar_usuarios()
     extractor.generar_encuestas()
-    # print(extractor.encuestas)
+    extractor.generar_incidentes()
+    # print(extractor.incidentesSeguridad)
     # print(base)
     # print(base["Areas"]["MeteoID"])
 
