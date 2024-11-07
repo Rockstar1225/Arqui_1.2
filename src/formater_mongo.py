@@ -93,7 +93,42 @@ class Creator:
                     "gravedad": gravedad[i],
                 }
             )
-        print("Encuestas generadas!!")
+        print("Incidentes generados!!")
+
+    def generar_incidencias(self):
+
+        id = self.extraer_columna("Incidencias", "ID")
+        fecha = self.extraer_columna("Incidencias", "TIPO_INCIDENCIA")
+        tipo = self.extraer_columna("Incidencias", "FECHA_REPORTE")
+        estado = self.extraer_columna("Incidencias", "ESTADO")
+        tiempo = self.extraer_columna("Incidencias", "TIEMPO_RESOLUCION")
+        # nivel escalamiento
+
+        print("Llaves de relación incidencia-usuario", self.incidencia_usuario.keys())
+        for i in range(len(id)):
+            if id[i] in self.incidencia_usuario:
+
+                usuarios = self.incidencia_usuario[int(id[i])]
+
+                # encontrar usuarios en la relación incidencia-usuario
+                res_users = []
+                for user in self.usuarios:
+                    for usuarioID in usuarios:
+                        if user["NIF"] == usuarioID:
+                            res_users.append(user)
+
+                self.incidencias.append(
+                    {
+                        "id": int(id[i]),
+                        "fechaReporte": str(fecha[i]),
+                        "tipo": tipo[i],
+                        "estado": estado[i],
+                        "tiempoResolucion": float(tiempo[i]),
+                        # nivel de escalamiento
+                        "usuarios": res_users,
+                    }
+                )
+        print("Incidecias generadas!!")
 
     def extraer_columna(self, table: str, column: str) -> list:
         result = []
@@ -238,9 +273,9 @@ class Creator:
                     id_usuarios is not None
                     and id_usuarios not in self.incidencia_usuario
                 ):
-                    self.incidencia_usuario[id_usuarios] = [int(id_incidencias)]
+                    self.incidencia_usuario[int(id_incidencias)] = [id_usuarios]
                 else:
-                    self.incidencia_usuario[id_usuarios].append(int(id_incidencias))
+                    self.incidencia_usuario[int(id_incidencias)].append(id_usuarios)
         print("Incidencia-Usuario Completado")
     
     

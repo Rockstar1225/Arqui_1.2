@@ -40,12 +40,15 @@ def main():
     extractor.crear_area_juegos()
     extractor.crear_juegos_tipo()
     extractor.crear_area_clima()
-
+    extractor.crear_incidencia_usuario()
     # Generar datos
     extractor.generar_usuarios()
     extractor.generar_encuestas()
     extractor.generar_incidentes()
-    print(base)
+    extractor.generar_incidencias()
+    # print(extractor.incidencias)
+    # print(base)
+    # print(base["Areas"]["MeteoID"])
 
 
 if __name__ == "__main__":
