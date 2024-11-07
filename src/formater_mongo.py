@@ -102,6 +102,7 @@ class Creator:
         tipo = self.extraer_columna("Incidencias", "FECHA_REPORTE")
         estado = self.extraer_columna("Incidencias", "ESTADO")
         tiempo = self.extraer_columna("Incidencias", "TIEMPO_RESOLUCION")
+        escala = self.extraer_columna("Incidencias", "NIVEL_RECONOCIMIENTO")
         # nivel escalamiento
 
         print("Llaves de relación incidencia-usuario", self.incidencia_usuario.keys())
@@ -124,7 +125,7 @@ class Creator:
                         "tipo": tipo[i],
                         "estado": estado[i],
                         "tiempoResolucion": float(tiempo[i]),
-                        # nivel de escalamiento
+                        "nivel de escalamiento": escala[i],
                         "usuarios": res_users,
                     }
                 )
