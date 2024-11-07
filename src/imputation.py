@@ -312,25 +312,25 @@ def area_meteo(db: pd.DataFrame):
         columna_cod_meteo[i]: tabla_meteo["ID"][i]
         for i in range(len(columna_cod_meteo))
     }
-    print(
-        "Diccionario de códigos a ID:", codigo_to_id
-    )  # Verificar el contenido del diccionario
+    # print(
+    #     "Diccionario de códigos a ID:", codigo_to_id
+    # )  # Verificar el contenido del diccionario
 
     for valor in columna_cod_postal:
         estacion = 0  # Valor predeterminado
 
         # Asegurarse de que ambos valores son enteros
-        if pd.notnull(valor) and type(valor) != str:  # Evita valores nulos
+        if pd.notnull(valor) and type(valor) is not str:  # Evita valores nulos
             valor = int(valor) if not isinstance(valor, int) else valor
             estacion = codigo_to_id.get(
                 valor, estacion
             )  # Obtener el valor o usar predeterminado
 
-        lista_meteo.append(int(estacion))
+        lista_meteo.append(estacion)
 
     # Asignar la lista resultante a una nueva columna "ID_METEO" en db["Areas"]
-    db["Areas"]["ID_METEO"] = lista_meteo
-    print(lista_meteo)
+    db["Areas"]["MeteoID"] = lista_meteo
+    # print(lista_meteo)
 
 
 # prueabs

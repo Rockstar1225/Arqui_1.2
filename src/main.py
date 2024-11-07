@@ -38,8 +38,9 @@ def main():
     extractor.crear_area_encuestas()
     extractor.crear_area_juegos()
     extractor.crear_juegos_tipo()
+    extractor.crear_area_clima()
     # print(base)
-    print(base["Areas"]["ID_METEO"])
+    # print(base["Areas"]["MeteoID"])
 
 
 if __name__ == "__main__":

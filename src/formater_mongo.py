@@ -20,13 +20,13 @@ class Creator:
         # relaciones entre sí
         self.juego_tipo = {}  # extraida
         self.juego_incidencias = {}  # extraida
-        self.area_clima = {}
+        self.area_meteo = {}
         self.area_encuesta = {}  # extraida
         self.area_incidente = {}  # extraida
         self.area_juegos = {}  # extraida mas o menos
         self.juego_mantenimientos = {}  # extraida
         self.mantenimiento_incidencias = {}  # extraida
-        self.incidencia_usuario = {}
+        self.incidencia_usuario = {}  # extraida
 
     def extraer_columna(self, table: str, column: str) -> list:
         result = []
@@ -35,7 +35,21 @@ class Creator:
         return result
 
     def crear_area_clima(self):
-        print(len(self.state["Juegos"]["AreaRecreativaID"]))
+        tabla_areas = self.state["Areas"]
+
+        # Extraer las areas de la tabla de juegos
+        for i in range(len(tabla_areas["MeteoID"])):
+            valor_meteo = int(tabla_areas.loc[i, "MeteoID"])
+            valor_id = int(tabla_areas.loc[i, "ID"])
+
+            if valor_meteo == 0:
+                continue
+
+            if valor_meteo not in self.area_meteo:
+                self.area_meteo[valor_id] = [valor_meteo]
+            else:
+                self.area_meteo[valor_id].append(valor_meteo)
+        print("Area-Meteo Completado")
 
     def crear_area_juegos(self):
 
