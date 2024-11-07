@@ -301,8 +301,8 @@ def lastFecha(db: pd.DataFrame):
 
 
 def area_meteo(db: pd.DataFrame):
-    lista_meteo = []
-    tabla_area = db["Areas"]
+    lista_meteo = [] #Columna de los id de meteo
+    tabla_area = db["Areas"] 
     tabla_meteo = db["meteo24"]
     columna_cod_postal = tabla_area["COD_POSTAL"]
     columna_cod_meteo = tabla_meteo["CODIGO_POSTAL"]
@@ -312,9 +312,6 @@ def area_meteo(db: pd.DataFrame):
         columna_cod_meteo[i]: tabla_meteo["ID"][i]
         for i in range(len(columna_cod_meteo))
     }
-    # print(
-    #     "Diccionario de códigos a ID:", codigo_to_id
-    # )  # Verificar el contenido del diccionario
 
     for valor in columna_cod_postal:
         estacion = 0  # Valor predeterminado
@@ -330,16 +327,3 @@ def area_meteo(db: pd.DataFrame):
 
     # Asignar la lista resultante a una nueva columna "ID_METEO" en db["Areas"]
     db["Areas"]["MeteoID"] = lista_meteo
-    # print(lista_meteo)
-
-
-# prueabs
-"""base = load.load_db()
-# new_meteo(base)
-# for i in range(len(base["meteo24"]["FECHA"])):
-#     print(base["meteo24"]["FECHA"][i], " ", base["meteo24"]["TEMPERATURA"][i], " ", base["meteo24"]["PRECIPITACION"][i],
-#            " ", base["meteo24"]["VIENTO"][i], " ", base["meteo24"]["DISTRITO"][i])
-change.adjust_gps(base) 
-area_new_atribute(base)
-# juegos_new_atributes(base)
-# print(base)"""

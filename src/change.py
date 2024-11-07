@@ -1,6 +1,4 @@
 import pandas as pd
-
-pd.options.mode.chained_assignment = None  # default='warn', de StackOverflow
 import datetime as dt
 from dateutil import parser
 
@@ -10,7 +8,7 @@ def capitalize_column(df: dict, table_name: str, colname: str) -> None:
     df[table_name][colname] = df[table_name][colname].apply(lambda x: x.upper())
 
 
-# Encontrar un dato en una tabla
+# Encontrar un dato en una tabla si su id es igual al pasado por argumento
 def take_atribute(df: dict, tabla: str, columna: str, id: int) -> str | None:
     archivo = df[tabla]
     fila = None
