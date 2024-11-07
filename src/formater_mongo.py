@@ -28,6 +28,35 @@ class Creator:
         self.mantenimiento_incidencias = {}  # extraida
         self.incidencia_usuario = {}  # extraida
 
+        # objetos_extraidos
+        self.areas = []
+        self.encuestas = []
+        self.registrosClima = []
+        self.icidentesSeguridad = []
+        self.juegos = []
+        self.incidencias = []
+        self.usuarios = []
+        self.mantenimientos = []
+
+    def generar_usuarios(self):
+
+        # extraer columnas de datos usuarios
+        nifs = self.extraer_columna("Usuarios", "NIF")
+        nombre = self.extraer_columna("Usuarios", "NOMBRE")
+        email = self.extraer_columna("Usuarios", "EMAIL")
+        tlf = self.extraer_columna("Usuarios", "TELEFONO")
+
+        for i in range(len(nifs)):
+            self.usuarios.append(
+                {
+                    "NIF": nifs[i],
+                    "nombre": nombre[i],
+                    "email": email[i],
+                    "telefono": tlf[i],
+                }
+            )
+        print("Usuarios Generados")
+
     def extraer_columna(self, table: str, column: str) -> list:
         result = []
         for i in range(len(self.state[table][column])):
