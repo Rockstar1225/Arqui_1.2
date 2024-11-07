@@ -327,3 +327,15 @@ def area_meteo(db: pd.DataFrame):
 
     # Asignar la lista resultante a una nueva columna "ID_METEO" en db["Areas"]
     db["Areas"]["MeteoID"] = lista_meteo
+
+def nivelEscalamiento(db:pd.DataFrame):
+    incidencias = db["Incidencias"]
+    lista_rec = []
+    for n in range(len(incidencias["ESTADO"])):
+        if incidencias["ESTADO"][n] == "ABIERTO":
+            numero = random.randint(1, 10)
+            lista_rec.append(numero)
+        else:
+            lista_rec.append(1)
+
+    incidencias.loc[:, "NIVEL_RECONOCIMIENTO"] = lista_rec

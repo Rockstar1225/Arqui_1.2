@@ -30,51 +30,35 @@ def find_table_by_column(df: dict, tablas_tachadas: list, column: str) -> str | 
     return None
 
 
+#Encuentra un id según que tabla (hay columnas ID que no se llaman ID) y que fila
 def find_id(df: dict, tabla: str, fila: int):
     archivo = df[tabla]
-    if tabla == "Usuarios":
-        return archivo["NIF"][fila]
-    elif tabla == "meteo24":
-        return archivo["PROVINCIA"][fila]
-    elif tabla == "Codigo":
-        return archivo["CÓDIGO"][fila]
-    else:
-        return archivo["ID"][fila]
+    if tabla == "Usuarios": return archivo["NIF"][fila]
+    elif tabla == "meteo24": return archivo["PROVINCIA"][fila]
+    elif tabla == "Codigo": return archivo["CÓDIGO"][fila]
+    else: return archivo["ID"][fila]
 
 
-# Optimización para rellenar filas vacías
+# Para rellenar filas vacías
 def empty_data(df_dict):
     for tabla_name, tabla in df_dict.items():
-        # Convertir a tipo 'object' una vez
+        # Convertir a tipo 'object' para poder indicar los casos nulos que no se pueden modificar
         tabla = tabla.astype(object)
-
-        # Identificar posiciones NaN
-        nan_positions = tabla.isna()
-
-        # Diccionario para almacenar asignaciones
-        assignment_dict = {}
+        nan_positions = tabla.isna() # Identificar posiciones NaN
+        assignment_dict = {} # Diccionario para almacenar asignaciones
 
         for columna in nan_positions.columns:
             nan_indices = nan_positions.index[nan_positions[columna]]
-
             for i in nan_indices:
                 valor = aux_dir(tabla_name, tabla, columna, i)
                 if valor is None:
                     tachadas = [tabla_name]
                     id_val = find_id(df_dict, tabla_name, i)  # Obtener una vez el id
-
                     while True:
                         new_tab = find_table_by_column(df_dict, tachadas, columna)
                         if new_tab is None:
-                            if columna in [
-                                "FECHA_INSTALACION",
-                                "FECHA",
-                                "FECHA_REPORTE",
-                                "FECHA_INTERVENCION",
-                            ]:
-                                valor = dt.datetime.strptime(
-                                    "2018-12-31 00:00:00", "%Y-%m-%d %H:%M:%S"
-                                )
+                            if columna in ["FECHA_INSTALACION", "FECHA", "FECHA_REPORTE", "FECHA_INTERVENCION"]:
+                                valor = dt.datetime.strptime( "2018-12-31 00:00:00", "%Y-%m-%d %H:%M:%S")
                             else:
                                 valor = f"{id_val}-{columna}-ausente"
                             break

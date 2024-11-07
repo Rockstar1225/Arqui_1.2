@@ -29,6 +29,7 @@ def main():
     im.lastFecha(base)
     im.area_new_atribute(base)
     im.area_meteo(base)
+    im.nivelEscalamiento(base)
 
     # Extracción de incidencias
     extractor = mongo_creator.Creator(base)
@@ -44,9 +45,7 @@ def main():
     extractor.generar_usuarios()
     extractor.generar_encuestas()
     extractor.generar_incidentes()
-    # print(extractor.incidentesSeguridad)
-    # print(base)
-    # print(base["Areas"]["MeteoID"])
+    print(base)
 
 
 if __name__ == "__main__":
