@@ -80,12 +80,10 @@ def empty_data(df_dict):
     print("Emp terminado")
 
 
+# Para el caso de direccion auxiliar, descomponerla en TIPO_VIA, NOM_VIA y NUM_VIA e insertar la que se 
+# nombra como argumento
 def aux_dir(tabla_name, tabla, columna, i):
-    if tabla_name in ["Areas", "Juegos"] and columna in [
-        "TIPO_VIA",
-        "NOM_VIA",
-        "NUM_VIA",
-    ]:
+    if tabla_name in ["Areas", "Juegos"] and columna in [ "TIPO_VIA", "NOM_VIA", "NUM_VIA"]:
         if not pd.isna(tabla["DIRECCION_AUX"][i]):
             lista = tabla["DIRECCION_AUX"][i].split(" ")
             via = None
@@ -113,16 +111,10 @@ def aux_dir(tabla_name, tabla, columna, i):
     return None
 
 
+#Coge cualquier fecha y la pasa a formato %Y-%m-%d %H:%M:%S.
+#En caso de NaN se coloca la predeterminada (2018-12-31)
 def reformatear_fecha(df: dict, table_name: str, column_name: str):
-    tablas = [
-        "Areas",
-        "Encuestas",
-        "Incidencias",
-        "Incidentes",
-        "Juegos",
-        "Mantenimiento",
-        "meteo24",
-    ]
+    tablas = ["Areas", "Encuestas", "Incidencias", "Incidentes", "Juegos", "Mantenimiento", "meteo24"]
     columnas = ["FECHA_INSTALACION", "FECHA", "FECHA_REPORTE", "FECHA_INTERVENCION"]
     if table_name in tablas and column_name in columnas:
         archivo = df[table_name]
@@ -138,45 +130,23 @@ def reformatear_fecha(df: dict, table_name: str, column_name: str):
             fechas_nuevas.append(f_formt)
         archivo[column_name] = fechas_nuevas
 
-
+# Elimina tildes y caracteres especiales
 def delete_special(df: dict):
-    lista_tildes = [
-        "DESC_CLASIFICACION",
-        "BARRIO",
-        "DISTRITO",
-        "NOMBRE",
-        "TIPO_INCIDENTE",
-        "GRAVEDAD",
-        "TIPO_INTERVENCION",
-        "DIRECCION_AUX",
-    ]
+    #Columnas donde se eliminan los caracteres especiales
+    lista_tildes = ["DESC_CLASIFICACION", "BARRIO", "DISTRITO", "NOMBRE", "TIPO_INCIDENTE",
+                    "GRAVEDAD", "TIPO_INTERVENCION", "DIRECCION_AUX"]
     # Diccionario para reemplazar letras con tildes
-    replacements = {
-        "á": "a",
-        "é": "e",
-        "í": "i",
-        "ó": "o",
-        "ú": "u",
-        "Á": "A",
-        "É": "E",
-        "Í": "I",
-        "Ó": "O",
-        "Ú": "U",
-    }
+    replacements = {"á": "a", "é": "e", "í": "i", "ó": "o", "ú": "u", "Á": "A", "É": "E", "Í": "I", "Ó": "O", "Ú": "U",}
     for tabla_n in df:
         tabla = df[tabla_n]
         for columna in tabla:
             if columna in lista_tildes:
                 for accented_char, unaccented_char in replacements.items():
-                    tabla[columna] = tabla[columna].str.replace(
-                        accented_char, unaccented_char
-                    )
-                tabla[columna] = tabla[columna].str.replace(
-                    r"[^a-zA-Z0-9 ñÑ-]", "", regex=True
-                )
-    print("Sp terminado")
+                    tabla[columna] = tabla[columna].str.replace(accented_char, unaccented_char)
+                tabla[columna] = tabla[columna].str.replace( r"[^a-zA-Z0-9 ñÑ-]", "", regex=True)
 
 
+#Covierte todos los números de teléfono al formato int (número de 11 cifras)
 def formato_tlf(df: dict):
     columna = df["Usuarios"]["TELEFONO"]
     for i in range(len(columna)):
@@ -190,12 +160,10 @@ def formato_tlf(df: dict):
             numero = valor[j:]
             lista = numero.split(" ")
             new_tlf = "34"
-            for x in lista:
-                new_tlf += x
+            for x in lista: new_tlf += x
             columna[i] = new_tlf
-    print("Tlf terminado")
 
-
+#Elimina duplicados
 def no_duplicates(df: dict):
     for tabla_n in df:
         if tabla_n == "meteo24" or tabla_n == "Codigo":
@@ -214,13 +182,13 @@ def no_duplicates(df: dict):
 
 
 def adjust_gps(df: dict) -> None:
-    """Function that cleans GPS data."""
-    # check if lat in [-90, 90] and long in [-180, 180]
+    """Limpia los datos del GPS"""
+    # Comprueba que la latitud esta entre [-90, 90] y la longitud entre [-180, 180]
     lat_area = df["Areas"]["LATITUD"]
     long_area = df["Areas"]["LONGITUD"]
     lat_juego = df["Juegos"]["LATITUD"]
     long_juego = df["Juegos"]["LONGITUD"]
-    # if value is wrong the value chosen is the median
+    # si el valor es erroneo entonces coge la mediana
     for i in range(len(lat_area)):
         if abs(lat_area[i]) > 90:
             lat_area[i] = lat_area.median()
@@ -233,8 +201,7 @@ def adjust_gps(df: dict) -> None:
     for i in range(len(long_area)):
         if abs(long_juego[i]) > 180:
             long_juego[i] = long_juego.median()
-    # adjust areas
-    # with too much precisions games can never belong to an area
+    # Ajusta las áreas a 3 decimales para que los juegos puedan pertenecer a estas.
     df["Areas"]["LATITUD"] = df["Areas"]["LATITUD"].apply(lambda x: "{:3.3f}".format(x))
     df["Areas"]["LONGITUD"] = df["Areas"]["LONGITUD"].apply(
         lambda x: "{:3.3f}".format(x)
@@ -247,13 +214,11 @@ def adjust_gps(df: dict) -> None:
         lambda x: "{:3.3f}".format(x)
     )
 
-    print("Adjust GPS completed")
-
 
 def adjust_ETRS89(df: dict) -> None:
-    """This function converts the ETRS89 data to GPS coordinates."""
+    """Modifica los datos ETRS89 a GPS."""
 
-    # adjust area
+    # Ajusta áreas
     df["Areas"]["COORD_GIS_X"] = df["Areas"]["COORD_GIS_X"].apply(
         lambda x: "{:3.3f}".format(x % 180)
     )
@@ -261,7 +226,7 @@ def adjust_ETRS89(df: dict) -> None:
         lambda x: "{:3.3f}".format(x % 90)
     )
 
-    # adjust juegos
+    # Ajusta juegos
     df["Juegos"]["COORD_GIS_X"] = df["Juegos"]["COORD_GIS_X"].apply(
         lambda x: "{:3.3f}".format(x % 180)
     )
@@ -269,7 +234,7 @@ def adjust_ETRS89(df: dict) -> None:
         lambda x: "{:3.3f}".format(x % 90)
     )
 
-
+# Verifica los enum básicos
 def enum_checker(db: dict):
     for n_tabla in db:
         tabla = db[n_tabla]
@@ -352,6 +317,7 @@ def enum_checker(db: dict):
                 tabla.dropna(subset=n_columna)
 
 
+#Verifica el campo NIF
 def nif_status(db: dict):
     columna = db["Usuarios"]["NIF"]
     new_columna = []
@@ -374,7 +340,7 @@ def nif_status(db: dict):
     db["Usuarios"]["NIF"] = new_columna
     db["Usuarios"].dropna(subset=["NIF"])
 
-
+#Verifica los id en cada tabla
 def check_id(db: dict):
     lista = [
         "Areas",
@@ -406,7 +372,7 @@ def check_id(db: dict):
         db[nombre]["ID"] = new_columna
         db[nombre].dropna(subset=["ID"])
 
-
+# Verifica los ids y nif en incidencias
 def incidencias_status(db: dict):
     # Crear copias de los conjuntos de búsqueda para optimizar el acceso
     ids = set(db["Mantenimiento"]["ID"])
@@ -469,27 +435,3 @@ def incidencias_status(db: dict):
 
     # Asignar el DataFrame modificado de nuevo en el DataFrame original
     db["Incidencias"] = tabla
-
-
-# Pruebas
-"""base = load.load_db()
-capitalize_column(base, "Areas", "ESTADO")
-capitalize_column(base, "Juegos", "ESTADO")
-capitalize_column(base, "Incidencias", "TIPO_INCIDENCIA")
-capitalize_column(base, "Incidencias", "ESTADO")
-capitalize_column(base, "Mantenimiento", "TIPO_INTERVENCION")
-capitalize_column(base, "Mantenimiento", "ESTADO_PREVIO")
-capitalize_column(base, "Mantenimiento", "ESTADO_POSTERIOR")
-capitalize_column(base, "Incidentes", "TIPO_INCIDENTE")
-capitalize_column(base, "Incidentes", "GRAVEDAD")
-empty_data(base)
-delete_special(base)
-enum_checker(base)
-formato_tlf(base)
-check_id(base)
-nif_status(base)
-reformatear_fecha(base, "Mantenimiento", "FECHA_INTERVENCION")
-incidencias_status(base)
-# adjust_gps(base)
-# adjust_ETRS89(base)
-print(base)"""
