@@ -20,7 +20,7 @@ class Creator:
         # relaciones entre sí
         self.juego_tipo = {}  # extraida
         self.juego_incidencias = {}  # extraida
-        self.area_meteo = {}
+        self.area_meteo = {}  # extraida
         self.area_encuesta = {}  # extraida
         self.area_incidente = {}  # extraida
         self.area_juegos = {}  # extraida mas o menos
