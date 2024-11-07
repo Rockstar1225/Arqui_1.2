@@ -12,10 +12,6 @@ SCHEME = {
       "bsonType": "string",
       "description": "Tipo String. Clave Primaria"
     },
-    "nombre": {
-      "bsonType": "string",
-      "description": "nombre del juego"
-    },
     "modelo": {
       "bsonType": "string",
       "description": "Modelo de fabricacion del juego"
