@@ -372,7 +372,7 @@ def check_id(db: dict):
         db[nombre]["ID"] = new_columna
         db[nombre].dropna(subset=["ID"])
 
-
+# Verifica los ids y nif en incidencias
 def incidencias_status(db: dict):
     # Crear copias de los conjuntos de búsqueda para optimizar el acceso
     ids = set(db["Mantenimiento"]["ID"])
