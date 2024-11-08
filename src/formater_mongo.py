@@ -123,7 +123,7 @@ class Creator:
                         "tipo": tipo[i],
                         "estado": estado[i],
                         "tiempoResolucion": float(tiempo[i]),
-                        "nivel de escalamiento": int(escala[i]),
+                        "nivelEscalamiento": int(escala[i]),
                         "usuarios": res_users,
                     }
                 )
@@ -138,6 +138,7 @@ class Creator:
         prec = self.extraer_columna("meteo24", "PRECIPITACION")
         distr = self.extraer_columna("meteo24", "DISTRITO")
         for i in range(len(id)):
+            #Solo pasa a entero los valores numéricos, no los -
             if temp[i] != "-":
                 temp[i] = int(temp[i])
             if prec[i] != "-":
@@ -154,6 +155,64 @@ class Creator:
                 }
             )
         print("Climas generados!!")
+    
+    def generar_area(self):
+        id = self.extraer_columna("Areas", "ID")
+        clasificacion = self.extraer_columna("Areas", "DESC_CLASIFICACION")
+        cod_barrio = self.extraer_columna("Areas", "COD_BARRIO")
+        barrio = self.extraer_columna("Areas", "BARRIO")
+        cod_distr = self.extraer_columna("Areas", "COD_DISTRITO")
+        distr = self.extraer_columna("Areas", "DISTRITO")
+        estado = self.extraer_columna("Areas", "ESTADO")
+        coord_x = self.extraer_columna("Areas", "COORD_GIS_X")
+        coord_y = self.extraer_columna("Areas", "COORD_GIS_Y")
+        sist = self.extraer_columna("Areas", "SISTEMA_COORD")
+        lat = self.extraer_columna("Areas", "LATITUD")
+        long = self.extraer_columna("Areas", "LONGITUD")
+        t_via = self.extraer_columna("Areas", "TIPO_VIA")
+        nom_via = self.extraer_columna("Areas", "NOM_VIA")
+        num_via = self.extraer_columna("Areas", "NUM_VIA")
+        postal = self.extraer_columna("Areas", "COD_POSTAL")
+        aux = self.extraer_columna("Areas", "DIRECCION_AUX")
+        ndp = self.extraer_columna("Areas", "NDP")
+        fecha = self.extraer_columna("Areas", "FECHA_INSTALACION")
+        interno = self.extraer_columna("Areas", "CODIGO_INTERNO")
+        contrato = self.extraer_columna("Areas", "CONTRATO_COD")
+        total = self.extraer_columna("Areas", "TOTAL_ELEM")
+        tipo = self.extraer_columna("Areas", "tipo")
+        capmax = self.extraer_columna("Areas", "capacidadMax")
+        meteo = self.extraer_columna("Areas", "MeteoID")
+        for i in range(len(id)):
+            #Solo pasa a entero los valores numéricos, no los -
+            self.areas.append(
+                {
+                    "id": int(id[i]),
+                    "descClasificacion": clasificacion[i],
+                    "codBarrio": cod_barrio[i],
+                    "barrio": barrio[i],
+                    "codDistrito": cod_distr[i],
+                    "distrito": distr[i],
+                    "estado": estado[i],
+                    "coordX": coord_x[i],
+                    "coordY": coord_y[i],
+                    "sisCoordenadas": sist[i],
+                    "latitud": lat[i],
+                    "longitud": long[i],
+                    "tipoVia": t_via[i],
+                    "nombreVia": nom_via[i],
+                    "numeroVia": num_via[i],
+                    "codigoPostal": postal[i],
+                    "direccionAux": aux[i],
+                    "NDP": ndp[i],
+                    "fecha": fecha[i],
+                    "codInterno": interno[i],
+                    "contratoCodigo": contrato[i],
+                    "totalElementos": total[i],
+                    "tipo": tipo[i],
+                    "capacidadMaxima": float(capmax[i]),
+                    "meteoID": int(meteo[i])
+                }
+            )
 
     def extraer_columna(self, table: str, column: str) -> list:
         #Extrae las tablas definitivas completas, iterando por sus columnas
