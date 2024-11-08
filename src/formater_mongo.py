@@ -1,6 +1,7 @@
 import load
 import change
 import numpy as np
+import datetime as dt
 import random
 import json
 
@@ -127,6 +128,32 @@ class Creator:
                     }
                 )
         print("Incidecias generadas!!")
+    
+    def generar_clima(self):
+        id = self.extraer_columna("meteo24", "ID")
+        postal = self.extraer_columna("meteo24", "CODIGO_POSTAL")
+        fecha = self.extraer_columna("meteo24", "FECHA")
+        temp = self.extraer_columna("meteo24", "TEMPERATURA")
+        vent = self.extraer_columna("meteo24", "VIENTO")
+        prec = self.extraer_columna("meteo24", "PRECIPITACION")
+        distr = self.extraer_columna("meteo24", "DISTRITO")
+        for i in range(len(id)):
+            if temp[i] != "-":
+                temp[i] = int(temp[i])
+            if prec[i] != "-":
+                prec[i] = int(prec[i])
+            self.registrosClima.append(
+                {
+                    "id": int(id[i]),
+                    "codigoPostal": int(postal[i]),
+                    "fecha": fecha[i],
+                    "temperatura": temp[i],
+                    "fuerteViento": vent[i],
+                    "precipitacion": prec[i],
+                    "distrito": distr[i]
+                }
+            )
+        print("Climas generados!!")
 
     def extraer_columna(self, table: str, column: str) -> list:
         #Extrae las tablas definitivas completas, iterando por sus columnas

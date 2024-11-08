@@ -46,6 +46,8 @@ def main():
     extractor.generar_encuestas()
     extractor.generar_incidentes()
     extractor.generar_incidencias()
+    extractor.generar_clima()
+    print(extractor.registrosClima)
     # print(extractor.incidenciaas)
     # print(base)
     # print(base["Areas"]["MeteoID"])

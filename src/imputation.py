@@ -114,9 +114,9 @@ def new_meteo(db: pd.DataFrame):
                         codigo_postal.append(int(pcode))
                         distritos.append(codes[data[0]])
                         fechas.append(fecha)
-                        temperaturas.append(float("NaN"))
-                        precipitaciones.append(float("NaN"))
-                        viento.append(float("NaN"))
+                        temperaturas.append("-")
+                        precipitaciones.append("-")
+                        viento.append(False)
                         linea = len(distritos) - 1
                         if data[0] == "28079004": 
                             #Como Plaza de España tiene dos códigos postales, hay doble inserción
@@ -126,9 +126,9 @@ def new_meteo(db: pd.DataFrame):
                             pcode = col_postal[n_code + 1]
                             codigo_postal.append(int(pcode))
                             fechas.append(fecha)
-                            temperaturas.append(float("NaN"))
-                            precipitaciones.append(float("NaN"))
-                            viento.append(float("NaN"))
+                            temperaturas.append("-")
+                            precipitaciones.append("-")
+                            viento.append(False)
                             #Aquí se tiene en cuenta la línea anterior
                     booleano = "V" + dia #Para modificar el valor, el booleano debe ser igual a V
                     valor = "D" + dia #Datos a insertar
@@ -156,6 +156,7 @@ def new_meteo(db: pd.DataFrame):
     nuevo.loc[:, "ID"] = ids
     nuevo.loc[:, "CODIGO_POSTAL"] = codigo_postal
     nuevo.loc[:, "FECHA"] = fechas
+    pd.to_datetime(nuevo['FECHA']).apply(lambda x: x.date())
     nuevo.loc[:, "TEMPERATURA"] = temperaturas
     nuevo.loc[:, "PRECIPITACION"] = precipitaciones
     nuevo.loc[:, "VIENTO"] = viento
