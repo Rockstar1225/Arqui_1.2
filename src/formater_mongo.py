@@ -18,15 +18,15 @@ class Creator:
         }
 
         # relaciones entre sí
-        self.juego_tipo = {}  # extraida
-        self.juego_incidencias = {}  # extraida
-        self.area_meteo = {}  # extraida
-        self.area_encuesta = {}  # extraida
-        self.area_incidente = {}  # extraida
-        self.area_juegos = {}  # extraida mas o menos
-        self.juego_mantenimientos = {}  # extraida
-        self.mantenimiento_incidencias = {}  # extraida
-        self.incidencia_usuario = {}  # extraida
+        self.juego_tipo = {} 
+        self.juego_incidencias = {}
+        self.area_meteo = {} 
+        self.area_encuesta = {}
+        self.area_incidente = {}
+        self.area_juegos = {} 
+        self.juego_mantenimientos = {}
+        self.mantenimiento_incidencias = {}  
+        self.incidencia_usuario = {}
 
         # objetos_extraidos
         self.areas = []
@@ -55,7 +55,6 @@ class Creator:
                     "telefono": tlf[i],
                 }
             )
-        print("Usuarios Generados")
 
     def generar_encuestas(self):
 
@@ -103,7 +102,6 @@ class Creator:
         estado = self.extraer_columna("Incidencias", "ESTADO")
         tiempo = self.extraer_columna("Incidencias", "TIEMPO_RESOLUCION")
         escala = self.extraer_columna("Incidencias", "NIVEL_RECONOCIMIENTO")
-        # nivel escalamiento
 
         for i in range(len(id)):
             if id[i] in self.incidencia_usuario:
@@ -131,6 +129,7 @@ class Creator:
         print("Incidecias generadas!!")
 
     def extraer_columna(self, table: str, column: str) -> list:
+        #Extrae las tablas definitivas completas, iterando por sus columnas
         result = []
         for i in range(len(self.state[table][column])):
             result.append(self.state[table].loc[i, column])
