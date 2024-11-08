@@ -1,11 +1,9 @@
 import pandas as pd
-import load
-import change
-import numpy as np
 import random
 
 
 def check_list(elemento: str, codes) -> list | None:
+    # verifica si el punto muestreo es correcto
     if "_" not in elemento:
         return None
     data = elemento.split("_")
@@ -13,32 +11,35 @@ def check_list(elemento: str, codes) -> list | None:
         return None
     if not data[0].isdigit() or not data[1].isdigit():
         return None
+    #Sólo se sacan vientos (81), temperaturas (83) y precipitaciones (89)
     if data[0] not in codes.keys() or data[1] not in ["81", "83", "89"]:
         return None
     return data
 
 
 def same_line(fecha: str, distrito: str, list_f: list, list_d: list) -> int:
+    #Identifica una linea donde fecha sea su FECHA y distrito su DISTRITO.
     if fecha not in list_f or distrito not in list_d:
         return -1
     for n in range(0, len(list_f)):
         if list_f[n] == fecha and list_d[n] == distrito:
             return n
-    return -1
+    return -1 #Si no hay, devuelve -1
 
 
 def post_code(db: pd.DataFrame, codigo: int):
+    #Identifica si el código postal pasado es igual al de una estación meteorológica.
     code_id = db["Codigo"]["CÓDIGO"]
     for n in range(len(code_id)):
         if str(code_id[n]) == str(codigo):
-            # print(n)
-            return n
-    return -1
+            return n #Posición dentro de Código
+    return -1 #No existe
 
 
 def new_meteo(db: pd.DataFrame):
+    # Modifica totalmente la tabla de meteo24 para que muestre lo que pide el enunciado
     meteo = db["meteo24"]
-    m_postal = db["Codigo"]
+    m_postal = db["Codigo"] #Lista de códigos postales para la relación área-meteo
     col_postal = m_postal["CodigoPostal"]
     codes = {
         "28079102": "MORATALAZ",
@@ -67,7 +68,7 @@ def new_meteo(db: pd.DataFrame):
         "28079056": "CARABANCHEL",
         "28079058": "FUENCARRAL-EL PARDO",
         "28079059": "BARAJAS",
-    }
+    } #Diccionario de distritos
     meses = {
         "1": 31,
         "2": 28,
@@ -81,10 +82,10 @@ def new_meteo(db: pd.DataFrame):
         "10": 31,
         "11": 30,
         "12": 31,
-    }
-    ids = []
-    codigo_postal = []
-    distritos = []
+    } #Diccionario de meses (como la fecha es por día, se necesita saber qué días hay que coger)
+    ids = [] #Cada id representa la posición de la fila de forma ordenada
+    codigo_postal = [] 
+    distritos = [] 
     temperaturas = []
     precipitaciones = []
     viento = []
@@ -92,9 +93,9 @@ def new_meteo(db: pd.DataFrame):
     id = 1
     for i in range(len(meteo["PUNTO_MUESTREO"])):
         elemento = meteo["PUNTO_MUESTREO"][i]
-        data = check_list(elemento, codes)
+        data = check_list(elemento, codes) #Verifica el PUNTO MUESTREO y el MES
         if data is not None and str(meteo["MES"][i]) in meses.keys():
-            for j in range(meteo["MES"][i]):
+            for j in range(meteo["MES"][i]): #Por cada fecha y distrito, una fila distinta
                 dia = str(j + 1)
                 mes = str(meteo["MES"][i])
                 if j < 9:
@@ -102,8 +103,9 @@ def new_meteo(db: pd.DataFrame):
                 if int(mes) < 10:
                     mes = "0" + mes
                 fecha = str(meteo["ANO"][i]) + "-" + mes + "-" + dia
-                n_code = post_code(db, data[0])
+                n_code = post_code(db, data[0]) #Verifica el código postal
                 if n_code != -1:
+                    # Si no existe una fila con dicha fecha y distrito, se crea una nueva
                     linea = same_line(fecha, codes[data[0]], fechas, distritos)
                     if linea == -1:
                         ids.append(id)
@@ -116,7 +118,8 @@ def new_meteo(db: pd.DataFrame):
                         precipitaciones.append(float("NaN"))
                         viento.append(float("NaN"))
                         linea = len(distritos) - 1
-                        if data[0] == "28079004":
+                        if data[0] == "28079004": 
+                            #Como Plaza de España tiene dos códigos postales, hay doble inserción
                             ids.append(id)
                             id += 1
                             distritos.append(codes[data[0]])
@@ -126,29 +129,30 @@ def new_meteo(db: pd.DataFrame):
                             temperaturas.append(float("NaN"))
                             precipitaciones.append(float("NaN"))
                             viento.append(float("NaN"))
-                    booleano = "V" + dia
-                    valor = "D" + dia
+                            #Aquí se tiene en cuenta la línea anterior
+                    booleano = "V" + dia #Para modificar el valor, el booleano debe ser igual a V
+                    valor = "D" + dia #Datos a insertar
                     if data[1] == "81":
                         if meteo[booleano][i] == "V" and int(meteo[valor][i]) >= 20:
                             viento[linea] = True
-                            if data[0] == "28079004":
+                            if data[0] == "28079004": #Plaza de España -> Doble inserción
                                 viento[linea + 1] = True
                         else:
                             viento[linea] = False
-                            if data[0] == "28079004":
+                            if data[0] == "28079004": #Plaza de España -> Doble inserción
                                 viento[linea + 1] = False
                     elif data[1] == "83":
                         if meteo[booleano][i] == "V":
                             temperaturas[linea] = meteo[valor][i]
-                            if data[0] == "28079004":
+                            if data[0] == "28079004": #Plaza de España -> Doble inserción
                                 temperaturas[linea + 1] = meteo[valor][i]
                     else:
                         if meteo[booleano][i] == "V":
                             precipitaciones[linea] = meteo[valor][i]
-                            if data[0] == "28079004":
+                            if data[0] == "28079004": #Plaza de España -> Doble inserción
                                 precipitaciones[linea + 1] = meteo[valor][i]
 
-    nuevo = pd.DataFrame()
+    nuevo = pd.DataFrame() #Se crea la nueva tabla
     nuevo.loc[:, "ID"] = ids
     nuevo.loc[:, "CODIGO_POSTAL"] = codigo_postal
     nuevo.loc[:, "FECHA"] = fechas
@@ -160,84 +164,78 @@ def new_meteo(db: pd.DataFrame):
 
 
 def area_new_atribute(df: pd.DataFrame):
-    """Method used for adding the atribute capacidadMax in Areas."""
+    """Añade el atributo capacidadMax a Areas."""
     df["Juegos"]["AreaRecreativaID"] = 0
     index = 0
-    # calculate number of games per area using lat and long
-    # create column
-    for area in df["Areas"].to_numpy():
-        # number of games
-        games = 0
-        # serch by GPS
+    # Calcula el número de juegos por area con lat y long
+    for area in df["Areas"].to_numpy(): 
+        games = 0 # Número de juegos
+         # Buscar por GPS
         lat_area = area[10]
         long_area = area[11]
         index_juego = 0
         for juego in df["Juegos"].to_numpy():
             lat_juego = juego[10]
             long_juego = juego[11]
-            # match area, juego
+            # Si coinciden, se suma el núemrod e juegos y se añade el areaID a Juegos
             if lat_area == lat_juego and long_area == long_juego:
-                # add games
                 games += 1
-                # insert areaID to Juegos
                 df["Juegos"].loc[index_juego, "AreaRecreativaID"] = area[0]
             index_juego += 1
-        # create columns
+       # Aquí crea la columna
         df["Areas"].loc[index, "capacidadMax"] = games
         index += 1
-    # give values to all games without a reference to an area
+    # Añadir valor a los juegos sin áreas
     index_juego = 0
     for juego in df["Juegos"].to_numpy():
         ref_area = juego[24]
-        # there is no reference to an area
+        # Si no hay referencia del juego en área
         if ref_area == 0:
             in_column = True
             while in_column:
-                # insert a random reference to juegos
+                # Inserta un valor random no repetido
                 rand_id = random.randint(1000000, 100000000)
                 if rand_id not in df["Juegos"]["AreaRecreativaID"]:
                     df["Juegos"].loc[index_juego, "AreaRecreativaID"] = rand_id
                     in_column = False
         index_juego += 1
 
-    print("New atribute Areas completed")
-
 
 def juegos_new_atributes(df: pd.DataFrame):
-    """This function will add indicadorExposicion and desgasteAcumulado to juegos"""
-    # insert indicador exposicion value
+    """Añade las columnas indicadorExposicion y desgasteAcumulado a Juegos"""
+    # Inserta el valor de indicador exposicion
     indicador_options = {"BAJO": 100, "MEDIO": 200, "ALTO": 300}
     for i in range(len(df["Juegos"])):
         selected_option = random.randint(0, 2)
         df["Juegos"].loc[i, "indicadorExposicion"] = list(indicador_options.keys())[
             selected_option
         ]
-    # calculate desgasteAcumulado value
+    # Calcula el valor de desgasteAcumulado
     index = 0
     wear_values = []
     for juego in df["Juegos"].to_numpy():
-        # number of maintenance to game
+        # Número del mantenimiento al juego
         num_mant_juego = 0
-        # random usage time between 1 and 15 years
+        # Uso aleatorio puede ser un entero del 1 al 15
         use_time = random.randint(1, 15)
         for maintenance in df["Mantenimiento"].to_numpy():
             if juego[0] == maintenance[5]:
                 num_mant_juego += 1
-        # adding wear value to a list to change its range
+        # Añadir el wear value a una lista para cambiar su rango
         wear_value = (
             use_time * indicador_options[df["Juegos"]["indicadorExposicion"][index]]
         ) - (num_mant_juego * 100)
         wear_values.append(wear_value)
         index += 1
-    # insert desgasteAcumulado value
+    # Inserta desgasteAcumulado
     for i in range(len(df["Juegos"])):
         df["Juegos"].loc[i, "desgasteAcumulado"] = adjust_range(
             wear_values, 0, 100, i
-        )  # changing the range of values
-    print("New atributes Juegos completed")
+        )  # Cambia el rango de sus valores
 
 
 def adjust_range(values: list, new_min: int, new_max: int, index: int) -> int:
+    #Fórmula para ajustar un valor dentro de una lista a unos nuevos límites
     old_min = min(values)
     old_max = max(values)
     new_value = int(
@@ -248,6 +246,7 @@ def adjust_range(values: list, new_min: int, new_max: int, index: int) -> int:
 
 
 def takeTimebyID(base: pd.DataFrame, id: str):
+    #Coge una fecha de mantenimiento desde su id
     numero = int(id[1:-4])
     lista = base["Mantenimiento"]["ID"]
     if numero < len(lista):
@@ -256,16 +255,19 @@ def takeTimebyID(base: pd.DataFrame, id: str):
 
 
 def tiempoResolucion(base: pd.DataFrame):
-    col_index = base["Incidencias"]["MantenimientoID"]
+    #Calcula el tiempo entre la incidencia y el mantenimiento
+    col_index = base["Incidencias"]["MantenimientoID"] 
+    #Importante: La incidencia debe contener el id de dicho mantenimiento
     tiempos = []
     for n in range(len(col_index)):
         elemento = col_index[n]
         conjunto = elemento[1:-1]
         conjunto = conjunto.split(", ")
-        tiempo = float(0)
+        tiempo = float(0) #Tiempo predeterminado
         fecha_incidencia = base["Incidencias"]["FECHA_REPORTE"][n]
         for valor in conjunto:
             fecha_mat = takeTimebyID(base, valor)
+            # Al tener ambas fechas, se hace la resta si la de mantenimiento es más tardía que la de la incidencia
             if fecha_mat != None and fecha_mat > fecha_incidencia:
                 sub_t = fecha_mat - fecha_incidencia
 
@@ -274,7 +276,7 @@ def tiempoResolucion(base: pd.DataFrame):
                 if sub_t_seconds > tiempo:
                     tiempo = sub_t_seconds
         if tiempo != 0:
-            tiempo = tiempo // (60 * 60 * 24)
+            tiempo = tiempo // (60 * 60 * 24)#Pasar a días
         tiempos.append(tiempo)
     base["Incidencias"].loc[:, "TIEMPO_RESOLUCION"] = tiempos
 
@@ -301,6 +303,7 @@ def lastFecha(db: pd.DataFrame):
 
 
 def area_meteo(db: pd.DataFrame):
+    #Inserta en Áreas el id de la meteo24 que pertenece
     lista_meteo = [] #Columna de los id de meteo
     tabla_area = db["Areas"] 
     tabla_meteo = db["meteo24"]
@@ -325,10 +328,11 @@ def area_meteo(db: pd.DataFrame):
 
         lista_meteo.append(estacion)
 
-    # Asignar la lista resultante a una nueva columna "ID_METEO" en db["Areas"]
+    # Asignar la lista resultante a una nueva columna "MeteoID" en db["Areas"]
     db["Areas"]["MeteoID"] = lista_meteo
 
 def nivelEscalamiento(db:pd.DataFrame):
+    #Inserta el nivel de escalamiento. Si es abierto -> aleatorio del 1 al 10. Si no, es 1.
     incidencias = db["Incidencias"]
     lista_rec = []
     for n in range(len(incidencias["ESTADO"])):
