@@ -19,14 +19,14 @@ class Creator:
         }
 
         # relaciones entre sí
-        self.juego_tipo = {} 
+        self.juego_tipo = {}
         self.juego_incidencias = {}
-        self.area_meteo = {} 
+        self.area_meteo = {}
         self.area_encuesta = {}
         self.area_incidente = {}
-        self.area_juegos = {} 
+        self.area_juegos = {}
         self.juego_mantenimientos = {}
-        self.mantenimiento_incidencias = {}  
+        self.mantenimiento_incidencias = {}
         self.incidencia_usuario = {}
 
         # objetos_extraidos
@@ -56,6 +56,7 @@ class Creator:
                     "telefono": tlf[i],
                 }
             )
+        print("Generar Usuarios")
 
     def generar_encuestas(self):
 
@@ -128,17 +129,15 @@ class Creator:
                     }
                 )
         print("Incidecias generadas!!")
-    
+
     def generar_clima(self):
         id = self.extraer_columna("meteo24", "ID")
-        postal = self.extraer_columna("meteo24", "CODIGO_POSTAL")
         fecha = self.extraer_columna("meteo24", "FECHA")
         temp = self.extraer_columna("meteo24", "TEMPERATURA")
         vent = self.extraer_columna("meteo24", "VIENTO")
         prec = self.extraer_columna("meteo24", "PRECIPITACION")
-        distr = self.extraer_columna("meteo24", "DISTRITO")
         for i in range(len(id)):
-            #Solo pasa a entero los valores numéricos, no los -
+            # Solo pasa a entero los valores numéricos, no los -
             if temp[i] != "-":
                 temp[i] = int(temp[i])
             if prec[i] != "-":
@@ -146,76 +145,121 @@ class Creator:
             self.registrosClima.append(
                 {
                     "id": int(id[i]),
-                    "codigoPostal": int(postal[i]),
                     "fecha": fecha[i],
                     "temperatura": temp[i],
-                    "fuerteViento": vent[i],
+                    "vientosFuertes": vent[i],
                     "precipitacion": prec[i],
-                    "distrito": distr[i]
                 }
             )
         print("Climas generados!!")
-    
+
     def generar_area(self):
         id = self.extraer_columna("Areas", "ID")
-        clasificacion = self.extraer_columna("Areas", "DESC_CLASIFICACION")
-        cod_barrio = self.extraer_columna("Areas", "COD_BARRIO")
         barrio = self.extraer_columna("Areas", "BARRIO")
-        cod_distr = self.extraer_columna("Areas", "COD_DISTRITO")
         distr = self.extraer_columna("Areas", "DISTRITO")
         estado = self.extraer_columna("Areas", "ESTADO")
-        coord_x = self.extraer_columna("Areas", "COORD_GIS_X")
-        coord_y = self.extraer_columna("Areas", "COORD_GIS_Y")
-        sist = self.extraer_columna("Areas", "SISTEMA_COORD")
         lat = self.extraer_columna("Areas", "LATITUD")
         long = self.extraer_columna("Areas", "LONGITUD")
-        t_via = self.extraer_columna("Areas", "TIPO_VIA")
-        nom_via = self.extraer_columna("Areas", "NOM_VIA")
-        num_via = self.extraer_columna("Areas", "NUM_VIA")
-        postal = self.extraer_columna("Areas", "COD_POSTAL")
-        aux = self.extraer_columna("Areas", "DIRECCION_AUX")
-        ndp = self.extraer_columna("Areas", "NDP")
         fecha = self.extraer_columna("Areas", "FECHA_INSTALACION")
-        interno = self.extraer_columna("Areas", "CODIGO_INTERNO")
-        contrato = self.extraer_columna("Areas", "CONTRATO_COD")
-        total = self.extraer_columna("Areas", "TOTAL_ELEM")
-        tipo = self.extraer_columna("Areas", "tipo")
         capmax = self.extraer_columna("Areas", "capacidadMax")
-        meteo = self.extraer_columna("Areas", "MeteoID")
+
         for i in range(len(id)):
-            #Solo pasa a entero los valores numéricos, no los -
+            # Solo pasa a entero los valores numéricos, no los -
+
+            # extraer incidentes de seguridad de la relación
+            res_incidentes = []
+            if int(id[i]) in self.area_incidente:
+                incidentes = self.area_incidente[int(id[i])]
+                for inci in self.incidentesSeguridad:
+                    for incidentesID in incidentes:
+                        if inci["id"] == incidentesID:
+                            res_incidentes.append(int(incidentesID))
+
+            # extraer encuestas de la relación
+            res_encuestas = []
+            if int(id[i]) in self.area_encuesta:
+                encuestas = self.area_encuesta[int(id[i])]
+                for enc in self.encuestas:
+                    for encuestaID in encuestas:
+                        if enc["id"] == encuestaID:
+                            res_encuestas.append(int(encuestaID))
+
+            # extraer climas de la relación
+            res_climas = []
+            if int(id[i]) in self.area_meteo:
+                climas = self.area_meteo[int(id[i])]
+                for clima in self.registrosClima:
+                    for climaID in climas:
+                        if clima["id"] == climaID:
+                            res_climas.append(int(climaID))
+
+            # extraer juegos de la relación
+            res_juegos = []
+            if int(id[i]) in self.area_juegos:
+                juegos = self.area_juegos[int(id[i])]
+                for juego in self.juegos:
+                    for juegoID in juegos:
+                        if juego["id"] == juegoID:
+                            res_juegos.append(int(juegoID))
+
+            # extraer atributo juego_tipo
+            res_juegos_tipo_valor = []
+            for tipo in self.juego_tipo:
+                objeto = {"tipo": str(tipo), "valor": int(self.juego_tipo[tipo])}
+                res_juegos_tipo_valor.append(objeto)
+
             self.areas.append(
                 {
                     "id": int(id[i]),
-                    "descClasificacion": clasificacion[i],
-                    "codBarrio": cod_barrio[i],
                     "barrio": barrio[i],
-                    "codDistrito": cod_distr[i],
                     "distrito": distr[i],
-                    "estado": estado[i],
-                    "coordX": coord_x[i],
-                    "coordY": coord_y[i],
-                    "sisCoordenadas": sist[i],
-                    "latitud": lat[i],
-                    "longitud": long[i],
-                    "tipoVia": t_via[i],
-                    "nombreVia": nom_via[i],
-                    "numeroVia": num_via[i],
-                    "codigoPostal": postal[i],
-                    "direccionAux": aux[i],
-                    "NDP": ndp[i],
+                    "estadoGlobalArea": estado[i],
+                    "coordenadasGPS": [lat[i], long[i]],
                     "fecha": fecha[i],
-                    "codInterno": interno[i],
-                    "contratoCodigo": contrato[i],
-                    "totalElementos": total[i],
-                    "tipo": tipo[i],
                     "capacidadMaxima": float(capmax[i]),
-                    "meteoID": int(meteo[i])
+                    "incidentesSeguridad": res_incidentes,
+                    "encuestas": res_encuestas,
+                    "registrosClima": res_climas,
+                    "juegos": res_juegos,
+                    "cantidadJuegosTipo": res_juegos_tipo_valor,
                 }
             )
 
+    def generar_mantenimientos(self):
+
+        id = self.extraer_columna("Mantenimiento", "ID")
+        tipo = self.extraer_columna("Mantenimiento", "TIPO_INTERVENCION")
+        estado_previo = self.extraer_columna("Mantenimiento", "ESTADO_PREVIO")
+        estado_posterior = self.extraer_columna("Mantenimiento", "ESTADO_POSTERIOR")
+        fecha = self.extraer_columna("Mantenimiento", "FECHA_INTERVENCION")
+
+        transform = lambda x: f"{x.split(" ")[1]}-{int(x.split(" ")[0][1:])}"
+        for i in range(len(id)):
+
+            if transform(id[i]) in self.mantenimiento_incidencias:
+                incidencias = self.mantenimiento_incidencias[transform(id[i])]
+
+                # encontrar incidencias en la relación mantenimiento-incidencias
+                res_incidencias = []
+                for inci in self.incidencias:
+                    for incidenciasID in incidencias:
+                        if inci["id"] == incidenciasID:
+                            res_incidencias.append(int(incidenciasID))
+
+                self.mantenimientos.append(
+                    {
+                        "id": transform(id[i]),
+                        "tipoIntervención": str(tipo[i]),
+                        "estadoPrevio": estado_previo[i],
+                        "estadoPosterior": estado_posterior[i],
+                        "fechaIntervencion": fecha[i],
+                        "incidencias": res_incidencias,
+                    }
+                )
+        print("Mantenimientos generadas!!")
+
     def extraer_columna(self, table: str, column: str) -> list:
-        #Extrae las tablas definitivas completas, iterando por sus columnas
+        # Extrae las tablas definitivas completas, iterando por sus columnas
         result = []
         for i in range(len(self.state[table][column])):
             result.append(self.state[table].loc[i, column])
@@ -296,13 +340,17 @@ class Creator:
         # Extraer los mantenimientos de las incidencias. Mapa "MantenimientoID -> IncidenciaID"
         for i in range(len(tabla_incidencias["MantenimientoID"])):
 
-            valor_manten = tabla_incidencias.loc[i, "MantenimientoID"]
+            id_manten_str = tabla_incidencias.loc[i, "MantenimientoID"]
+            id_manten_list = id_manten_str[1:-1].split(", ")
             valor_id = tabla_incidencias.loc[i, "ID"]
 
-            if valor_manten not in self.mantenimiento_incidencias:
-                self.mantenimiento_incidencias[valor_manten] = [valor_id]
-            else:
-                self.mantenimiento_incidencias[valor_manten].append(valor_id)
+            for manten_id in id_manten_list:
+                if manten_id not in self.mantenimiento_incidencias:
+                    self.mantenimiento_incidencias[transform(manten_id)] = [valor_id]
+                else:
+                    self.mantenimiento_incidencias[transform(manten_id)].append(
+                        valor_id
+                    )
 
         # Extraer los mantenimientos de los juegos. Mapa "JuegoID -> MantenimientoID"
         for i in range(len(tabla_mantenimiento["JuegoID"])):

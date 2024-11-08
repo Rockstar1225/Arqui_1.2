@@ -20,10 +20,14 @@ SCHEME = {
       "bsonType": "array",
       "description": "Array que representa la latitud y la longitud",
       "minItems": 2,
-      "maxItems": 3,
+      "maxItems": 2,
       "items": {
         "bsonType": "double"
       }
+    },
+    "fecha": {
+      "bsonType": "date",
+      "description": "fecha de instalación del área"
     },
     "barrio": {
       "bsonType": "string",
@@ -46,7 +50,7 @@ SCHEME = {
       "bsonType": "number",
       "description": "Numero máximo de juegos que incluye el área",
     },
-    "CantidadJuegosTipo": {
+    "cantidadJuegosTipo": {
       "bsonType": "array",
       "description": "Conteo de cuantos juegos hay de cada tipo en el area actual",
       "minItems": 0,
