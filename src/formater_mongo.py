@@ -155,7 +155,7 @@ class Creator:
         desgaste = self.extraer_columna("Juegos", "desgasteAcumulado")
         indicador_exposicion = self.extraer_columna("Juegos", "indicadorExposicion")
         ultima_fecha_mant = self.extraer_columna("Juegos", "ULTIMA_FECHA_MANTENIMIENTO")
-        
+
         for i in range(len(id)):
             # si el juego no tiene incidencias
             if id[i] not in list(self.juego_incidencias.keys()):
@@ -182,7 +182,6 @@ class Creator:
                     "incidencias": incidencia,
                 }
             )
-                        
 
         print("Juegos generados!!")
 
@@ -429,10 +428,11 @@ class Creator:
                     if mantenimiento not in self.mantenimiento_incidencias:
                         continue
                     if self.mantenimiento_incidencias[mantenimiento] == incidencia:
-                        if juego not in self.juego_incidencias:
-                            self.juego_incidencias[juego] = [str(int(incidencia))]
-                        else:
-                            self.juego_incidencias[juego].append(str(int(incidencia)))
+                        for inc in incidencia:
+                            if juego not in self.juego_incidencias:
+                                self.juego_incidencias[juego] = [str(int(inc))]
+                            else:
+                                self.juego_incidencias[juego].append(str(int(inc)))
 
         print(
             "Relaciones de juego_mantenimientos, mantenimiento_incdencias, juego_incidencias terminadas"
