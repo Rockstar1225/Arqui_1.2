@@ -1,0 +1,51 @@
+
+use GameSystem;
+// Crear un indice para cada coleccion
+
+
+// Juegos
+// crear un indice de tipo hashed para ID
+db.createCollection("Juegos")
+db.Juegos.createIndex({ "id": "hashed" })
+sh.shardCollection("GameSystem.Juegos", { "id": "hashed" })
+// Areas
+// crear un indice de tipo hashed para ID
+db.createCollection("Areas")
+db.Areas.createIndex({ "id": "hashed" })
+sh.shardCollection("GameSystem.Areas", { "id": "hashed" })
+// IncidenteSeguridad
+// crear un indice de tipo hashed para ID
+db.createCollection("IncidenteSeguridad")
+db.IncidenteSeguridad.createIndex({ "id": "hashed" })
+sh.shardCollection("GameSystem.IncidenteSeguridad", { "id": "hashed" })
+// EncuestaSatisfaccion
+// crear un indice de tipo hashed para ID
+db.createCollection("EncuestaSatisfaccion")
+db.EncuestaSatisfaccion.createIndex({ "id": "hashed" })
+sh.shardCollection("GameSystem.EncuestaSatisfaccion", { "id": "hashed" })
+// EncuestaSatisfaccion
+// crear un indice de tipo hashed para ID
+db.createCollection("EncuestaSatisfaccion")
+db.EncuestaSatisfaccion.createIndex({ "id": "hashed" })
+sh.shardCollection("GameSystem.EncuestaSatisfaccion", { "id": "hashed" })
+// RegistroClima
+// crear un indice de tipo hashed para ID
+db.createCollection("RegistroClima")
+db.RegistroClima.createIndex({ "id": "hashed" })
+sh.shardCollection("GameSystem.RegistroClima", { "id": "hashed" })
+// Incidencia
+// crear un indice de tipo hashed para ID
+db.createCollection("Incidencia")
+db.Incidencia.createIndex({ "id": "hashed" })
+sh.shardCollection("GameSystem.Incidencia", { "id": "hashed" })
+// Usuario
+// crear un indice de tipo hashed para NIF
+db.createCollection("Usuario")
+db.Usuario.createIndex({ "NIF": "hashed" })
+sh.shardCollection("GameSystem.Usuario", { "NIF": "hashed" })
+// Mantenimiento
+// crear un indice de tipo hashed para ID
+db.createCollection("Mantenimiento")
+db.Mantenimiento.createIndex({ "id": "hashed" })
+sh.shardCollection("GameSystem.Mantenimiento", { "id": "hashed" })
+
