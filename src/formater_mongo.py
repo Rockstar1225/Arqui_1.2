@@ -44,6 +44,11 @@ class Creator:
                     obj[key] = (
                         f"{str(obj[key]).split(" ")[0]}T{str(obj[key]).split(" ")[1]}Z"
                     )
+                if key == "vientosFuertes":
+                    if obj[key]:
+                        obj[key] = "true"
+                    else:
+                        obj[key] = "false"
 
         # abrir fiechero y escribir datos
         with open(f"DatasetsNuevos/{collection_name}.js", "w") as file:
@@ -65,10 +70,10 @@ class Creator:
         for i in range(len(nifs)):
             self.usuarios.append(
                 {
-                    "NIF": nifs[i],
-                    "nombre": nombre[i],
-                    "email": email[i],
-                    "telefono": tlf[i],
+                    "NIF": str(nifs[i]),
+                    "nombre": str(nombre[i]),
+                    "email": str(email[i]),
+                    "telefono": str(tlf[i]),
                 }
             )
         print("Generar Usuarios")
@@ -114,8 +119,8 @@ class Creator:
     def generar_incidencias(self):
 
         id = self.extraer_columna("Incidencias", "ID")
-        fecha = self.extraer_columna("Incidencias", "TIPO_INCIDENCIA")
-        tipo = self.extraer_columna("Incidencias", "FECHA_REPORTE")
+        tipo = self.extraer_columna("Incidencias", "TIPO_INCIDENCIA")
+        fecha = self.extraer_columna("Incidencias", "FECHA_REPORTE")
         estado = self.extraer_columna("Incidencias", "ESTADO")
         tiempo = self.extraer_columna("Incidencias", "TIEMPO_RESOLUCION")
         escala = self.extraer_columna("Incidencias", "NIVEL_RECONOCIMIENTO")
@@ -213,20 +218,20 @@ class Creator:
                     )
                 else:
                     self.juegos.append(
-                    {
-                        "id": str(id[i]),
-                        "modelo": str(modelo[i]),
-                        "estadoOperativo": str(estado_op[i]),
-                        "accesibilidad": bool(accesibilidad[i]),
-                        "fechaInstalacion": str(fecha_instalacion[i]),
-                        "tipo": str(tipo[i]),
-                        "desgasteAcumulado": int(desgaste[i]),
-                        "indicadorExposicion": str(indicador_exposicion[i]),
-                        "ultimaFechaMantenimiento": str(ultima_fecha_mant[i]),
-                        "mantenimientos": [mantenimientos[str(id[i])]],
-                        "incidencias": incidencias_a_insertar[i],
-                    }
-                )
+                        {
+                            "id": str(id[i]),
+                            "modelo": str(modelo[i]),
+                            "estadoOperativo": str(estado_op[i]),
+                            "accesibilidad": bool(accesibilidad[i]),
+                            "fechaInstalacion": str(fecha_instalacion[i]),
+                            "tipo": str(tipo[i]),
+                            "desgasteAcumulado": int(desgaste[i]),
+                            "indicadorExposicion": str(indicador_exposicion[i]),
+                            "ultimaFechaMantenimiento": str(ultima_fecha_mant[i]),
+                            "mantenimientos": [mantenimientos[str(id[i])]],
+                            "incidencias": incidencias_a_insertar[i],
+                        }
+                    )
 
         print("Juegos generados!!")
 
