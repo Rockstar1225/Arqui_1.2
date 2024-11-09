@@ -1,12 +1,10 @@
 db.createCollection('Juego')
 db.Juego.createIndex({ "id": 1 }, { unique: 1 })
-db.Juego.createIndex({ "mantenimientos.id": 1 }, { unique: 1, sparse: true })
-db.Juego.createIndex({ "incidencias.id": 1 }, { unique: 1, sparse: true })
 
 SCHEME = {
   "bsonType": "object",
   "description": "Agregado de gestión del estado del juego, historial de mantenimiento y seguimiento de incidencias.",
-  "required": ["id", "nombre", "modelo", "estadoOperativo", "accesibilidad", "fechaInstalacion", "tipo", "desgasteAcumulado", "indicadorExposicion", "ultimaFechaMantenimiento", "mantenimientos", "incidencias"],
+  "required": ["id", "modelo", "estadoOperativo", "accesibilidad", "fechaInstalacion", "tipo", "desgasteAcumulado", "indicadorExposicion", "ultimaFechaMantenimiento", "mantenimientos", "incidencias"],
   "properties": {
     "id": {
       "bsonType": "string",
@@ -19,20 +17,20 @@ SCHEME = {
     "estadoOperativo": {
       "bsonType": "string",
       "description": "Estado del juego",
-      "enum": ["Operativo", "Indispuesto"]
+      "enum": ["OPERATIVO", "INDISPUESTO"]
     },
     "accesibilidad": {
       "bsonType": "bool",
       "description": "Si el juego es accesible por la gente o no"
     },
     "fechaInstalacion": {
-      "bsonType": "date",
+      "bsonType": "string",
       "description": "Fecha de instalacion del juego"
     },
     "tipo": {
       "bsonType": "string",
       "description": "Tipo de juego",
-      "enum": ["deportivas", "infantiles", "mayores"]
+      "enum": ["DEPORTIVAS", "INFANTILES", "MAYORES"]
     },
     "desgasteAcumulado": {
       "bsonType": "number",
@@ -43,10 +41,10 @@ SCHEME = {
     "indicadorExposicion": {
       "bsonType": "string",
       "description": "Indicador de exposición a temperaturas aridas",
-      "enum": ["intacto", "bajo", "medio", "alto"]
+      "enum": ["INTACTO", "BAJO", "MEDIO", "ALTO"]
     },
     "ultimaFechaMantenimiento": {
-      "bsonType": "date",
+      "bsonType": "string",
       "description": "ultima fecha de mantenimiento del juego"
     },
     "mantenimientos": {
@@ -54,15 +52,8 @@ SCHEME = {
       "description": "array de referencias a registros de mantenimiento del juego",
       "minItems": 0,
       "items": {
-        "bsonType": "object",
-        "description": "objeto de referencia de mantenimiento realizado",
-        "required": ["id"],
-        "properties": {
-          "id": {
-            "bsonType": "string",
-            "description": "id del mantenimiento realizado al juego",
-          },
-        }
+        "bsonType": "string",
+        "description": "objeto de referencia de mantenimiento realizado"
       }
     },
     "incidencias": {
@@ -70,20 +61,8 @@ SCHEME = {
       "description": "array de referencias a las incidencias reportadas para este juego",
       "minItems": 0,
       "items": {
-        "bsonType": "object",
-        "description": "objeto de referencia a la incidencia del juego",
-        "required": ["id", "estado"],
-        "properties": {
-          "id": {
-            "bsonType": "string", // Clave primaria
-            "description": "id de la incidencia"
-          },
-          "estado": {
-            "bsonType": "string",
-            "description": "estado de la inicidencia",
-            "enum": ["Abierta", "Cerrada"]
-          }
-        }
+        "bsonType": "string",
+        "description": "objeto de referencia a la incidencia del juego"
       }
     },
   },

@@ -69,7 +69,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 12,
         "fechaDeReporte": "2020-12-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -87,7 +87,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 15,
         "fechaDeReporte": "2019-11-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -105,7 +105,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 18,
         "fechaDeReporte": "2020-01-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -117,13 +117,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 20,
         "fechaDeReporte": "2021-08-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 21,
         "fechaDeReporte": "2020-10-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -165,7 +165,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 28,
         "fechaDeReporte": "2023-09-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -177,7 +177,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 30,
         "fechaDeReporte": "2020-08-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -231,7 +231,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 39,
         "fechaDeReporte": "2024-03-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -243,7 +243,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 41,
         "fechaDeReporte": "2023-09-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -255,13 +255,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 43,
         "fechaDeReporte": "2021-01-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 44,
         "fechaDeReporte": "2021-04-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -291,13 +291,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 49,
         "fechaDeReporte": "2023-11-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 50,
         "fechaDeReporte": "2020-07-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -321,7 +321,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 54,
         "fechaDeReporte": "2022-11-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -345,7 +345,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 58,
         "fechaDeReporte": "2022-07-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -357,7 +357,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 60,
         "fechaDeReporte": "2020-08-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -393,25 +393,25 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 66,
         "fechaDeReporte": "2024-01-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 67,
         "fechaDeReporte": "2021-12-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 68,
         "fechaDeReporte": "2020-02-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 69,
         "fechaDeReporte": "2021-04-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -423,19 +423,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 71,
         "fechaDeReporte": "2022-03-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 72,
         "fechaDeReporte": "2024-03-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 73,
         "fechaDeReporte": "2021-01-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -465,7 +465,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 78,
         "fechaDeReporte": "2024-05-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -513,7 +513,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 86,
         "fechaDeReporte": "2022-08-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -549,7 +549,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 92,
         "fechaDeReporte": "2022-12-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -567,7 +567,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 95,
         "fechaDeReporte": "2023-10-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -711,7 +711,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 119,
         "fechaDeReporte": "2023-01-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -729,7 +729,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 122,
         "fechaDeReporte": "2019-12-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -789,7 +789,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 132,
         "fechaDeReporte": "2022-12-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -825,7 +825,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 138,
         "fechaDeReporte": "2021-04-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -837,7 +837,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 140,
         "fechaDeReporte": "2021-06-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -849,7 +849,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 142,
         "fechaDeReporte": "2024-07-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -909,7 +909,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 152,
         "fechaDeReporte": "2022-09-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -921,7 +921,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 154,
         "fechaDeReporte": "2024-02-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -963,7 +963,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 161,
         "fechaDeReporte": "2023-04-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -1005,7 +1005,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 168,
         "fechaDeReporte": "2022-01-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -1047,13 +1047,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 175,
         "fechaDeReporte": "2024-02-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 176,
         "fechaDeReporte": "2021-10-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -1065,7 +1065,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 178,
         "fechaDeReporte": "2024-06-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -1143,13 +1143,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 191,
         "fechaDeReporte": "2020-08-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 192,
         "fechaDeReporte": "2020-12-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -1203,7 +1203,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 201,
         "fechaDeReporte": "2020-05-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -1245,7 +1245,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 208,
         "fechaDeReporte": "2022-08-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -1263,7 +1263,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 211,
         "fechaDeReporte": "2022-12-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -1275,7 +1275,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 213,
         "fechaDeReporte": "2024-08-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -1299,13 +1299,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 217,
         "fechaDeReporte": "2022-11-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 218,
         "fechaDeReporte": "2020-10-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -1359,7 +1359,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 227,
         "fechaDeReporte": "2022-09-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -1377,7 +1377,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 230,
         "fechaDeReporte": "2024-07-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -1401,13 +1401,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 234,
         "fechaDeReporte": "2024-04-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 235,
         "fechaDeReporte": "2020-11-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -1539,13 +1539,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 257,
         "fechaDeReporte": "2022-04-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 258,
         "fechaDeReporte": "2023-01-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -1557,7 +1557,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 260,
         "fechaDeReporte": "2022-12-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -1587,7 +1587,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 265,
         "fechaDeReporte": "2019-11-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -1659,7 +1659,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 277,
         "fechaDeReporte": "2022-10-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -1719,7 +1719,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 287,
         "fechaDeReporte": "2020-06-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -1731,7 +1731,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 289,
         "fechaDeReporte": "2024-09-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -1749,7 +1749,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 292,
         "fechaDeReporte": "2020-05-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -1767,7 +1767,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 295,
         "fechaDeReporte": "2023-05-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -1779,7 +1779,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 297,
         "fechaDeReporte": "2023-04-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -1791,19 +1791,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 299,
         "fechaDeReporte": "2021-07-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 300,
         "fechaDeReporte": "2020-08-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 301,
         "fechaDeReporte": "2023-08-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -1821,7 +1821,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 304,
         "fechaDeReporte": "2024-08-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -1839,13 +1839,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 307,
         "fechaDeReporte": "2023-11-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 308,
         "fechaDeReporte": "2022-08-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -1857,13 +1857,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 310,
         "fechaDeReporte": "2023-12-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 311,
         "fechaDeReporte": "2020-02-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -1881,7 +1881,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 314,
         "fechaDeReporte": "2020-09-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -1911,7 +1911,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 319,
         "fechaDeReporte": "2021-08-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -1929,7 +1929,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 322,
         "fechaDeReporte": "2023-07-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -1941,7 +1941,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 324,
         "fechaDeReporte": "2020-10-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -1953,7 +1953,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 326,
         "fechaDeReporte": "2020-05-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -1971,7 +1971,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 329,
         "fechaDeReporte": "2022-12-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -2007,7 +2007,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 335,
         "fechaDeReporte": "2024-04-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -2037,13 +2037,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 340,
         "fechaDeReporte": "2023-02-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 341,
         "fechaDeReporte": "2021-12-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -2127,7 +2127,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 355,
         "fechaDeReporte": "2021-12-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -2139,7 +2139,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 357,
         "fechaDeReporte": "2021-08-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -2157,7 +2157,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 360,
         "fechaDeReporte": "2022-04-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -2175,7 +2175,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 363,
         "fechaDeReporte": "2021-03-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -2229,7 +2229,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 372,
         "fechaDeReporte": "2020-08-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -2271,7 +2271,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 379,
         "fechaDeReporte": "2022-08-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -2319,7 +2319,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 387,
         "fechaDeReporte": "2024-01-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -2361,13 +2361,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 394,
         "fechaDeReporte": "2022-08-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 395,
         "fechaDeReporte": "2024-10-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -2379,13 +2379,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 397,
         "fechaDeReporte": "2021-10-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 398,
         "fechaDeReporte": "2019-11-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -2439,7 +2439,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 407,
         "fechaDeReporte": "2024-05-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -2475,7 +2475,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 413,
         "fechaDeReporte": "2021-10-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -2493,7 +2493,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 416,
         "fechaDeReporte": "2023-05-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -2505,13 +2505,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 418,
         "fechaDeReporte": "2021-06-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 419,
         "fechaDeReporte": "2024-07-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -2523,7 +2523,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 421,
         "fechaDeReporte": "2021-09-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -2535,7 +2535,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 423,
         "fechaDeReporte": "2021-04-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -2595,7 +2595,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 433,
         "fechaDeReporte": "2021-06-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -2643,7 +2643,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 441,
         "fechaDeReporte": "2021-09-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -2691,13 +2691,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 449,
         "fechaDeReporte": "2024-08-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 450,
         "fechaDeReporte": "2022-09-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -2715,7 +2715,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 453,
         "fechaDeReporte": "2024-03-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -2733,7 +2733,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 456,
         "fechaDeReporte": "2024-03-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -2775,7 +2775,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 463,
         "fechaDeReporte": "2022-10-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -2787,7 +2787,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 465,
         "fechaDeReporte": "2022-07-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -2817,7 +2817,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 470,
         "fechaDeReporte": "2023-05-31T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -2829,7 +2829,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 472,
         "fechaDeReporte": "2020-08-31T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -2847,7 +2847,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 475,
         "fechaDeReporte": "2020-07-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -2937,7 +2937,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 490,
         "fechaDeReporte": "2022-09-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -2949,7 +2949,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 492,
         "fechaDeReporte": "2024-04-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -2991,7 +2991,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 499,
         "fechaDeReporte": "2020-10-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -3003,7 +3003,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 501,
         "fechaDeReporte": "2020-09-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -3039,13 +3039,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 507,
         "fechaDeReporte": "2020-04-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 508,
         "fechaDeReporte": "2020-09-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -3081,7 +3081,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 514,
         "fechaDeReporte": "2024-12-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -3117,13 +3117,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 520,
         "fechaDeReporte": "2023-07-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 521,
         "fechaDeReporte": "2024-03-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -3159,7 +3159,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 527,
         "fechaDeReporte": "2022-06-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -3207,19 +3207,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 535,
         "fechaDeReporte": "2021-02-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 536,
         "fechaDeReporte": "2024-03-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 537,
         "fechaDeReporte": "2021-07-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -3231,7 +3231,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 539,
         "fechaDeReporte": "2022-04-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -3255,7 +3255,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 543,
         "fechaDeReporte": "2020-02-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -3273,7 +3273,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 546,
         "fechaDeReporte": "2022-01-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -3381,7 +3381,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 564,
         "fechaDeReporte": "2020-08-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -3423,13 +3423,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 571,
         "fechaDeReporte": "2021-12-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 572,
         "fechaDeReporte": "2021-04-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -3489,13 +3489,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 582,
         "fechaDeReporte": "2020-12-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 583,
         "fechaDeReporte": "2022-07-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -3513,7 +3513,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 586,
         "fechaDeReporte": "2024-05-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -3549,7 +3549,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 592,
         "fechaDeReporte": "2022-10-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -3567,7 +3567,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 595,
         "fechaDeReporte": "2022-07-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -3597,7 +3597,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 600,
         "fechaDeReporte": "2023-05-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -3609,7 +3609,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 602,
         "fechaDeReporte": "2020-09-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -3639,7 +3639,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 607,
         "fechaDeReporte": "2020-01-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -3687,7 +3687,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 615,
         "fechaDeReporte": "2022-10-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -3753,7 +3753,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 626,
         "fechaDeReporte": "2024-09-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -3771,7 +3771,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 629,
         "fechaDeReporte": "2021-07-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -3789,7 +3789,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 632,
         "fechaDeReporte": "2021-06-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -3807,7 +3807,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 635,
         "fechaDeReporte": "2021-08-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -3855,7 +3855,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 643,
         "fechaDeReporte": "2022-10-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -3909,7 +3909,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 652,
         "fechaDeReporte": "2021-10-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -3945,7 +3945,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 658,
         "fechaDeReporte": "2020-04-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -3975,7 +3975,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 663,
         "fechaDeReporte": "2022-08-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -4041,13 +4041,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 674,
         "fechaDeReporte": "2023-07-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 675,
         "fechaDeReporte": "2024-01-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -4095,7 +4095,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 683,
         "fechaDeReporte": "2021-09-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -4167,7 +4167,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 695,
         "fechaDeReporte": "2023-02-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -4179,7 +4179,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 697,
         "fechaDeReporte": "2024-09-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -4191,7 +4191,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 699,
         "fechaDeReporte": "2020-12-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -4257,19 +4257,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 710,
         "fechaDeReporte": "2021-08-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 711,
         "fechaDeReporte": "2023-08-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 712,
         "fechaDeReporte": "2024-08-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -4359,7 +4359,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 727,
         "fechaDeReporte": "2024-09-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -4437,13 +4437,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 740,
         "fechaDeReporte": "2023-10-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 741,
         "fechaDeReporte": "2023-03-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -4497,7 +4497,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 750,
         "fechaDeReporte": "2022-06-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -4533,7 +4533,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 756,
         "fechaDeReporte": "2023-09-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -4569,7 +4569,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 762,
         "fechaDeReporte": "2024-06-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -4605,7 +4605,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 768,
         "fechaDeReporte": "2022-11-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -4701,7 +4701,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 784,
         "fechaDeReporte": "2024-06-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -4755,7 +4755,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 793,
         "fechaDeReporte": "2023-12-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -4785,7 +4785,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 798,
         "fechaDeReporte": "2021-05-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -4797,7 +4797,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 800,
         "fechaDeReporte": "2024-02-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -4821,7 +4821,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 804,
         "fechaDeReporte": "2023-12-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -4833,7 +4833,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 806,
         "fechaDeReporte": "2022-06-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -4851,13 +4851,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 809,
         "fechaDeReporte": "2022-09-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 810,
         "fechaDeReporte": "2023-01-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -4965,19 +4965,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 828,
         "fechaDeReporte": "2020-07-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 829,
         "fechaDeReporte": "2023-01-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 830,
         "fechaDeReporte": "2024-02-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -5019,13 +5019,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 837,
         "fechaDeReporte": "2020-06-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 838,
         "fechaDeReporte": "2022-12-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -5091,7 +5091,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 849,
         "fechaDeReporte": "2022-06-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -5103,7 +5103,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 851,
         "fechaDeReporte": "2020-04-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -5121,13 +5121,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 854,
         "fechaDeReporte": "2022-11-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 855,
         "fechaDeReporte": "2020-11-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -5151,7 +5151,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 859,
         "fechaDeReporte": "2020-04-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -5193,7 +5193,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 866,
         "fechaDeReporte": "2024-09-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -5235,7 +5235,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 873,
         "fechaDeReporte": "2022-06-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -5307,7 +5307,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 885,
         "fechaDeReporte": "2020-10-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -5325,7 +5325,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 888,
         "fechaDeReporte": "2021-02-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -5373,7 +5373,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 896,
         "fechaDeReporte": "2024-03-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -5391,7 +5391,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 899,
         "fechaDeReporte": "2022-12-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -5409,7 +5409,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 902,
         "fechaDeReporte": "2020-08-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -5421,7 +5421,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 904,
         "fechaDeReporte": "2023-05-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -5499,7 +5499,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 917,
         "fechaDeReporte": "2022-12-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -5559,7 +5559,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 927,
         "fechaDeReporte": "2024-03-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -5637,7 +5637,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 940,
         "fechaDeReporte": "2021-06-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -5661,7 +5661,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 944,
         "fechaDeReporte": "2023-10-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -5679,7 +5679,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 947,
         "fechaDeReporte": "2023-04-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -5697,7 +5697,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 950,
         "fechaDeReporte": "2022-09-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -5709,7 +5709,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 952,
         "fechaDeReporte": "2023-05-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -5805,7 +5805,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 968,
         "fechaDeReporte": "2022-04-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -5853,7 +5853,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 976,
         "fechaDeReporte": "2020-04-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -5889,7 +5889,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 982,
         "fechaDeReporte": "2022-02-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -5919,7 +5919,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 987,
         "fechaDeReporte": "2023-09-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -5931,7 +5931,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 989,
         "fechaDeReporte": "2022-03-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -5955,7 +5955,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 993,
         "fechaDeReporte": "2020-08-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -6015,13 +6015,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1003,
         "fechaDeReporte": "2020-02-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 1004,
         "fechaDeReporte": "2021-12-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -6051,7 +6051,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1009,
         "fechaDeReporte": "2024-10-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -6111,7 +6111,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1019,
         "fechaDeReporte": "2022-07-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -6129,7 +6129,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1022,
         "fechaDeReporte": "2020-03-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -6141,13 +6141,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1024,
         "fechaDeReporte": "2022-09-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 1025,
         "fechaDeReporte": "2023-11-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -6183,7 +6183,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1031,
         "fechaDeReporte": "2021-05-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -6213,7 +6213,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1036,
         "fechaDeReporte": "2021-07-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -6225,7 +6225,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1038,
         "fechaDeReporte": "2022-02-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -6363,7 +6363,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1061,
         "fechaDeReporte": "2024-06-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -6375,7 +6375,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1063,
         "fechaDeReporte": "2021-10-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -6417,7 +6417,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1070,
         "fechaDeReporte": "2023-08-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -6453,7 +6453,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1076,
         "fechaDeReporte": "2023-10-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -6501,7 +6501,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1084,
         "fechaDeReporte": "2024-04-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -6537,7 +6537,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1090,
         "fechaDeReporte": "2022-10-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -6597,7 +6597,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1100,
         "fechaDeReporte": "2023-06-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -6645,7 +6645,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1108,
         "fechaDeReporte": "2021-10-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -6657,7 +6657,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1110,
         "fechaDeReporte": "2024-02-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -6687,7 +6687,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1115,
         "fechaDeReporte": "2024-12-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -6735,7 +6735,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1123,
         "fechaDeReporte": "2024-02-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -6759,13 +6759,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1127,
         "fechaDeReporte": "2021-01-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 1128,
         "fechaDeReporte": "2020-09-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -6777,13 +6777,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1130,
         "fechaDeReporte": "2021-03-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 1131,
         "fechaDeReporte": "2019-11-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -6849,7 +6849,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1142,
         "fechaDeReporte": "2022-07-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -6873,7 +6873,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1146,
         "fechaDeReporte": "2023-09-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -6885,7 +6885,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1148,
         "fechaDeReporte": "2021-06-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -6921,7 +6921,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1154,
         "fechaDeReporte": "2022-07-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -6939,7 +6939,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1157,
         "fechaDeReporte": "2021-06-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -6957,7 +6957,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1160,
         "fechaDeReporte": "2022-10-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -7005,13 +7005,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1168,
         "fechaDeReporte": "2021-08-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 1169,
         "fechaDeReporte": "2023-04-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -7047,7 +7047,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1175,
         "fechaDeReporte": "2023-05-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -7119,7 +7119,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1187,
         "fechaDeReporte": "2021-04-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -7155,7 +7155,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1193,
         "fechaDeReporte": "2021-03-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -7215,19 +7215,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1203,
         "fechaDeReporte": "2023-11-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 1204,
         "fechaDeReporte": "2021-02-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 1205,
         "fechaDeReporte": "2021-10-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -7245,7 +7245,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1208,
         "fechaDeReporte": "2024-09-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -7275,7 +7275,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1213,
         "fechaDeReporte": "2020-03-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -7287,7 +7287,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1215,
         "fechaDeReporte": "2020-10-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -7305,13 +7305,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1218,
         "fechaDeReporte": "2023-08-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 1219,
         "fechaDeReporte": "2023-05-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -7329,7 +7329,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1222,
         "fechaDeReporte": "2022-01-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -7371,7 +7371,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1229,
         "fechaDeReporte": "2024-10-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -7389,7 +7389,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1232,
         "fechaDeReporte": "2019-12-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -7413,7 +7413,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1236,
         "fechaDeReporte": "2020-10-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -7467,7 +7467,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1245,
         "fechaDeReporte": "2020-10-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -7527,19 +7527,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1255,
         "fechaDeReporte": "2023-01-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 1256,
         "fechaDeReporte": "2020-01-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 1257,
         "fechaDeReporte": "2020-10-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -7551,7 +7551,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1259,
         "fechaDeReporte": "2022-06-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -7563,7 +7563,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1261,
         "fechaDeReporte": "2022-10-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -7575,7 +7575,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1263,
         "fechaDeReporte": "2020-12-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -7617,19 +7617,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1270,
         "fechaDeReporte": "2020-06-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 1271,
         "fechaDeReporte": "2022-12-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 1272,
         "fechaDeReporte": "2022-02-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -7689,7 +7689,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1282,
         "fechaDeReporte": "2022-01-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -7707,13 +7707,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1285,
         "fechaDeReporte": "2024-01-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 1286,
         "fechaDeReporte": "2022-04-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -7749,7 +7749,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1292,
         "fechaDeReporte": "2024-05-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -7761,13 +7761,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1294,
         "fechaDeReporte": "2022-10-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 1295,
         "fechaDeReporte": "2024-07-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -7785,7 +7785,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1298,
         "fechaDeReporte": "2020-01-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -7797,7 +7797,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1300,
         "fechaDeReporte": "2021-04-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -7809,7 +7809,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1302,
         "fechaDeReporte": "2021-07-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -7857,7 +7857,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1310,
         "fechaDeReporte": "2021-06-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -7881,7 +7881,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1314,
         "fechaDeReporte": "2020-12-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -7917,7 +7917,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1320,
         "fechaDeReporte": "2022-09-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -7983,7 +7983,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1331,
         "fechaDeReporte": "2024-09-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -7995,7 +7995,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1333,
         "fechaDeReporte": "2021-02-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -8007,7 +8007,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1335,
         "fechaDeReporte": "2022-10-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -8025,7 +8025,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1338,
         "fechaDeReporte": "2020-10-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -8103,7 +8103,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1351,
         "fechaDeReporte": "2024-06-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -8133,7 +8133,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1356,
         "fechaDeReporte": "2023-08-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -8151,13 +8151,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1359,
         "fechaDeReporte": "2024-08-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 1360,
         "fechaDeReporte": "2021-04-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -8181,7 +8181,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1364,
         "fechaDeReporte": "2024-08-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -8223,7 +8223,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1371,
         "fechaDeReporte": "2024-01-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -8241,7 +8241,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1374,
         "fechaDeReporte": "2024-03-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -8265,7 +8265,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1378,
         "fechaDeReporte": "2021-06-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -8283,7 +8283,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1381,
         "fechaDeReporte": "2023-07-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -8319,13 +8319,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1387,
         "fechaDeReporte": "2024-03-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 1388,
         "fechaDeReporte": "2023-10-31T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -8349,7 +8349,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1392,
         "fechaDeReporte": "2020-07-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -8379,7 +8379,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1397,
         "fechaDeReporte": "2020-09-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -8415,7 +8415,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1403,
         "fechaDeReporte": "2020-06-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -8439,7 +8439,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1407,
         "fechaDeReporte": "2023-01-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -8463,7 +8463,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1411,
         "fechaDeReporte": "2024-08-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -8487,7 +8487,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1415,
         "fechaDeReporte": "2020-02-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -8559,19 +8559,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1427,
         "fechaDeReporte": "2023-06-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 1428,
         "fechaDeReporte": "2022-08-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 1429,
         "fechaDeReporte": "2021-08-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -8583,7 +8583,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1431,
         "fechaDeReporte": "2020-09-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -8601,7 +8601,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1434,
         "fechaDeReporte": "2023-06-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -8613,13 +8613,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1436,
         "fechaDeReporte": "2022-09-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 1437,
         "fechaDeReporte": "2020-06-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -8679,7 +8679,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1447,
         "fechaDeReporte": "2024-01-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -8691,13 +8691,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1449,
         "fechaDeReporte": "2020-06-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 1450,
         "fechaDeReporte": "2021-03-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -8721,13 +8721,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1454,
         "fechaDeReporte": "2021-04-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 1455,
         "fechaDeReporte": "2020-09-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -8739,7 +8739,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1457,
         "fechaDeReporte": "2020-05-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -8757,7 +8757,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1460,
         "fechaDeReporte": "2022-09-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -8775,7 +8775,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1463,
         "fechaDeReporte": "2022-08-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -8787,7 +8787,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1465,
         "fechaDeReporte": "2022-11-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -8799,7 +8799,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1467,
         "fechaDeReporte": "2023-02-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -8823,7 +8823,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1471,
         "fechaDeReporte": "2021-10-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -8841,7 +8841,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1474,
         "fechaDeReporte": "2021-10-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -8853,7 +8853,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1476,
         "fechaDeReporte": "2021-09-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -8883,7 +8883,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1481,
         "fechaDeReporte": "2023-01-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -8937,7 +8937,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1490,
         "fechaDeReporte": "2022-01-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -8985,7 +8985,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1498,
         "fechaDeReporte": "2022-01-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -9009,7 +9009,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1502,
         "fechaDeReporte": "2021-08-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -9027,7 +9027,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1505,
         "fechaDeReporte": "2021-08-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -9087,7 +9087,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1515,
         "fechaDeReporte": "2022-08-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -9147,7 +9147,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1525,
         "fechaDeReporte": "2024-03-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -9159,7 +9159,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1527,
         "fechaDeReporte": "2022-06-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -9231,7 +9231,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1539,
         "fechaDeReporte": "2021-03-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -9267,7 +9267,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1545,
         "fechaDeReporte": "2023-03-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -9309,7 +9309,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1552,
         "fechaDeReporte": "2021-01-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -9327,7 +9327,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1555,
         "fechaDeReporte": "2021-12-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -9339,7 +9339,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1557,
         "fechaDeReporte": "2023-05-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -9351,7 +9351,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1559,
         "fechaDeReporte": "2022-08-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -9369,13 +9369,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1562,
         "fechaDeReporte": "2020-03-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 1563,
         "fechaDeReporte": "2020-02-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -9387,7 +9387,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1565,
         "fechaDeReporte": "2020-04-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -9417,13 +9417,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1570,
         "fechaDeReporte": "2020-08-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 1571,
         "fechaDeReporte": "2022-04-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -9465,7 +9465,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1578,
         "fechaDeReporte": "2020-02-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -9501,7 +9501,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1584,
         "fechaDeReporte": "2023-03-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -9519,7 +9519,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1587,
         "fechaDeReporte": "2021-10-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -9585,7 +9585,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1598,
         "fechaDeReporte": "2023-11-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -9657,7 +9657,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1610,
         "fechaDeReporte": "2024-05-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -9675,7 +9675,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1613,
         "fechaDeReporte": "2022-08-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -9705,7 +9705,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1618,
         "fechaDeReporte": "2022-07-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -9741,7 +9741,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1624,
         "fechaDeReporte": "2024-07-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -9813,13 +9813,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1636,
         "fechaDeReporte": "2020-06-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 1637,
         "fechaDeReporte": "2020-08-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -9843,7 +9843,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1641,
         "fechaDeReporte": "2022-11-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -9861,7 +9861,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1644,
         "fechaDeReporte": "2023-01-31T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -9879,7 +9879,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1647,
         "fechaDeReporte": "2022-06-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -9903,7 +9903,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1651,
         "fechaDeReporte": "2020-12-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -9927,7 +9927,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1655,
         "fechaDeReporte": "2021-03-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -9975,7 +9975,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1663,
         "fechaDeReporte": "2023-12-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -10017,7 +10017,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1670,
         "fechaDeReporte": "2022-05-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -10029,19 +10029,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1672,
         "fechaDeReporte": "2020-04-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 1673,
         "fechaDeReporte": "2019-10-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 1674,
         "fechaDeReporte": "2020-09-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -10053,13 +10053,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1676,
         "fechaDeReporte": "2022-04-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 1677,
         "fechaDeReporte": "2021-01-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -10179,7 +10179,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1697,
         "fechaDeReporte": "2022-01-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -10203,7 +10203,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1701,
         "fechaDeReporte": "2021-05-31T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -10215,7 +10215,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1703,
         "fechaDeReporte": "2021-01-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -10245,7 +10245,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1708,
         "fechaDeReporte": "2020-06-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -10293,7 +10293,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1716,
         "fechaDeReporte": "2022-02-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -10383,7 +10383,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1731,
         "fechaDeReporte": "2022-10-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -10395,13 +10395,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1733,
         "fechaDeReporte": "2021-11-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 1734,
         "fechaDeReporte": "2023-03-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -10431,7 +10431,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1739,
         "fechaDeReporte": "2021-08-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -10443,7 +10443,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1741,
         "fechaDeReporte": "2024-05-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -10467,7 +10467,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1745,
         "fechaDeReporte": "2023-04-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -10485,7 +10485,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1748,
         "fechaDeReporte": "2023-01-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -10563,7 +10563,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1761,
         "fechaDeReporte": "2020-08-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -10581,7 +10581,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1764,
         "fechaDeReporte": "2021-09-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -10593,7 +10593,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1766,
         "fechaDeReporte": "2023-07-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -10611,7 +10611,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1769,
         "fechaDeReporte": "2021-05-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -10683,13 +10683,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1781,
         "fechaDeReporte": "2019-10-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 1782,
         "fechaDeReporte": "2020-09-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -10737,13 +10737,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1790,
         "fechaDeReporte": "2020-01-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 1791,
         "fechaDeReporte": "2020-12-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -10755,7 +10755,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1793,
         "fechaDeReporte": "2022-04-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -10773,7 +10773,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1796,
         "fechaDeReporte": "2021-08-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -10791,7 +10791,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1799,
         "fechaDeReporte": "2021-09-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -10803,7 +10803,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1801,
         "fechaDeReporte": "2020-08-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -10839,7 +10839,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1807,
         "fechaDeReporte": "2021-07-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -10929,7 +10929,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1822,
         "fechaDeReporte": "2023-03-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -10947,7 +10947,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1825,
         "fechaDeReporte": "2021-06-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -11055,13 +11055,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1843,
         "fechaDeReporte": "2022-03-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 1844,
         "fechaDeReporte": "2020-04-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -11097,7 +11097,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1850,
         "fechaDeReporte": "2022-11-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -11109,7 +11109,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1852,
         "fechaDeReporte": "2022-09-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -11127,7 +11127,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1855,
         "fechaDeReporte": "2023-06-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -11163,7 +11163,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1861,
         "fechaDeReporte": "2023-04-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -11181,7 +11181,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1864,
         "fechaDeReporte": "2022-08-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -11205,13 +11205,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1868,
         "fechaDeReporte": "2020-10-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 1869,
         "fechaDeReporte": "2022-07-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -11253,7 +11253,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1876,
         "fechaDeReporte": "2020-07-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -11265,13 +11265,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1878,
         "fechaDeReporte": "2022-04-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 1879,
         "fechaDeReporte": "2024-01-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -11307,7 +11307,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1885,
         "fechaDeReporte": "2021-10-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -11331,7 +11331,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1889,
         "fechaDeReporte": "2022-03-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -11391,7 +11391,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1899,
         "fechaDeReporte": "2023-01-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -11433,7 +11433,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1906,
         "fechaDeReporte": "2021-04-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -11463,7 +11463,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1911,
         "fechaDeReporte": "2021-02-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -11475,7 +11475,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1913,
         "fechaDeReporte": "2020-09-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -11511,7 +11511,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1919,
         "fechaDeReporte": "2022-05-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -11523,7 +11523,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1921,
         "fechaDeReporte": "2022-06-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -11571,7 +11571,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1929,
         "fechaDeReporte": "2023-11-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -11589,13 +11589,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1932,
         "fechaDeReporte": "2023-06-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 1933,
         "fechaDeReporte": "2021-03-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -11607,7 +11607,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1935,
         "fechaDeReporte": "2020-05-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -11631,13 +11631,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1939,
         "fechaDeReporte": "2021-07-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 1940,
         "fechaDeReporte": "2024-01-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -11655,13 +11655,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1943,
         "fechaDeReporte": "2022-07-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 1944,
         "fechaDeReporte": "2024-03-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -11679,19 +11679,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1947,
         "fechaDeReporte": "2022-09-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 1948,
         "fechaDeReporte": "2020-12-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 1949,
         "fechaDeReporte": "2022-11-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -11715,7 +11715,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1953,
         "fechaDeReporte": "2023-03-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -11745,13 +11745,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1958,
         "fechaDeReporte": "2021-04-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 1959,
         "fechaDeReporte": "2022-03-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -11763,13 +11763,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1961,
         "fechaDeReporte": "2022-08-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 1962,
         "fechaDeReporte": "2024-03-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -11799,7 +11799,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1967,
         "fechaDeReporte": "2020-12-31T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -11835,7 +11835,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1973,
         "fechaDeReporte": "2021-02-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -11913,7 +11913,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1986,
         "fechaDeReporte": "2023-03-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -11931,7 +11931,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1989,
         "fechaDeReporte": "2020-02-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -11961,7 +11961,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 1994,
         "fechaDeReporte": "2022-02-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -12021,7 +12021,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2004,
         "fechaDeReporte": "2022-05-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -12033,7 +12033,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2006,
         "fechaDeReporte": "2023-06-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -12057,7 +12057,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2010,
         "fechaDeReporte": "2023-08-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -12111,7 +12111,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2019,
         "fechaDeReporte": "2020-11-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -12159,7 +12159,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2027,
         "fechaDeReporte": "2024-02-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -12177,13 +12177,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2030,
         "fechaDeReporte": "2023-11-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 2031,
         "fechaDeReporte": "2019-11-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -12219,7 +12219,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2037,
         "fechaDeReporte": "2022-10-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -12321,7 +12321,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2054,
         "fechaDeReporte": "2022-01-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -12339,7 +12339,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2057,
         "fechaDeReporte": "2022-11-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -12381,7 +12381,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2064,
         "fechaDeReporte": "2020-04-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -12393,13 +12393,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2066,
         "fechaDeReporte": "2020-12-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 2067,
         "fechaDeReporte": "2021-08-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -12429,13 +12429,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2072,
         "fechaDeReporte": "2020-04-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 2073,
         "fechaDeReporte": "2024-08-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -12471,13 +12471,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2079,
         "fechaDeReporte": "2020-03-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 2080,
         "fechaDeReporte": "2022-05-31T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -12507,13 +12507,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2085,
         "fechaDeReporte": "2023-06-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 2086,
         "fechaDeReporte": "2023-06-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -12567,7 +12567,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2095,
         "fechaDeReporte": "2023-03-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -12651,13 +12651,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2109,
         "fechaDeReporte": "2023-04-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 2110,
         "fechaDeReporte": "2020-11-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -12699,7 +12699,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2117,
         "fechaDeReporte": "2022-01-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -12711,13 +12711,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2119,
         "fechaDeReporte": "2020-10-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 2120,
         "fechaDeReporte": "2023-07-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -12729,7 +12729,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2122,
         "fechaDeReporte": "2024-09-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -12765,13 +12765,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2128,
         "fechaDeReporte": "2019-12-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 2129,
         "fechaDeReporte": "2019-11-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -12789,7 +12789,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2132,
         "fechaDeReporte": "2021-11-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -12819,13 +12819,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2137,
         "fechaDeReporte": "2019-11-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 2138,
         "fechaDeReporte": "2024-08-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -12849,13 +12849,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2142,
         "fechaDeReporte": "2020-10-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 2143,
         "fechaDeReporte": "2023-07-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -12867,7 +12867,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2145,
         "fechaDeReporte": "2022-11-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -12933,7 +12933,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2156,
         "fechaDeReporte": "2020-06-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -12969,7 +12969,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2162,
         "fechaDeReporte": "2024-05-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -12987,13 +12987,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2165,
         "fechaDeReporte": "2021-05-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 2166,
         "fechaDeReporte": "2020-03-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -13011,7 +13011,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2169,
         "fechaDeReporte": "2020-02-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -13089,7 +13089,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2182,
         "fechaDeReporte": "2022-09-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -13137,7 +13137,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2190,
         "fechaDeReporte": "2023-10-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -13155,7 +13155,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2193,
         "fechaDeReporte": "2020-01-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -13203,13 +13203,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2201,
         "fechaDeReporte": "2024-01-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 2202,
         "fechaDeReporte": "2024-03-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -13233,7 +13233,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2206,
         "fechaDeReporte": "2020-03-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -13251,7 +13251,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2209,
         "fechaDeReporte": "2021-12-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -13263,7 +13263,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2211,
         "fechaDeReporte": "2024-05-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -13293,7 +13293,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2216,
         "fechaDeReporte": "2021-12-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -13305,31 +13305,31 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2218,
         "fechaDeReporte": "2024-07-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 2219,
         "fechaDeReporte": "2020-12-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 2220,
         "fechaDeReporte": "2022-09-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 2221,
         "fechaDeReporte": "2022-04-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 2222,
         "fechaDeReporte": "2024-01-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -13413,7 +13413,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2236,
         "fechaDeReporte": "2023-03-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -13425,7 +13425,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2238,
         "fechaDeReporte": "2022-10-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -13533,7 +13533,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2256,
         "fechaDeReporte": "2020-02-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -13545,13 +13545,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2258,
         "fechaDeReporte": "2021-09-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 2259,
         "fechaDeReporte": "2022-11-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -13581,7 +13581,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2264,
         "fechaDeReporte": "2024-09-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -13617,13 +13617,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2270,
         "fechaDeReporte": "2022-01-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 2271,
         "fechaDeReporte": "2020-12-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -13641,13 +13641,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2274,
         "fechaDeReporte": "2023-07-31T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 2275,
         "fechaDeReporte": "2020-05-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -13671,7 +13671,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2279,
         "fechaDeReporte": "2021-09-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -13713,7 +13713,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2286,
         "fechaDeReporte": "2020-12-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -13737,7 +13737,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2290,
         "fechaDeReporte": "2023-03-31T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -13797,7 +13797,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2300,
         "fechaDeReporte": "2020-05-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -13875,7 +13875,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2313,
         "fechaDeReporte": "2024-01-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -13887,7 +13887,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2315,
         "fechaDeReporte": "2022-02-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -13959,7 +13959,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2327,
         "fechaDeReporte": "2022-12-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -13971,7 +13971,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2329,
         "fechaDeReporte": "2021-05-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -13989,7 +13989,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2332,
         "fechaDeReporte": "2024-04-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -14085,13 +14085,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2348,
         "fechaDeReporte": "2024-07-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 2349,
         "fechaDeReporte": "2022-09-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -14121,7 +14121,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2354,
         "fechaDeReporte": "2024-06-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -14157,7 +14157,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2360,
         "fechaDeReporte": "2021-11-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -14169,7 +14169,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2362,
         "fechaDeReporte": "2020-11-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -14205,7 +14205,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2368,
         "fechaDeReporte": "2019-11-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -14217,7 +14217,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2370,
         "fechaDeReporte": "2021-02-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -14259,7 +14259,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2377,
         "fechaDeReporte": "2022-08-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -14283,7 +14283,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2381,
         "fechaDeReporte": "2023-12-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -14307,7 +14307,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2385,
         "fechaDeReporte": "2021-02-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -14349,7 +14349,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2392,
         "fechaDeReporte": "2024-08-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -14385,7 +14385,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2398,
         "fechaDeReporte": "2021-12-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -14403,7 +14403,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2401,
         "fechaDeReporte": "2021-08-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -14529,7 +14529,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2422,
         "fechaDeReporte": "2021-08-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -14589,7 +14589,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2432,
         "fechaDeReporte": "2023-02-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -14601,7 +14601,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2434,
         "fechaDeReporte": "2022-08-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -14619,7 +14619,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2437,
         "fechaDeReporte": "2020-08-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -14649,7 +14649,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2442,
         "fechaDeReporte": "2022-11-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -14661,13 +14661,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2444,
         "fechaDeReporte": "2024-10-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 2445,
         "fechaDeReporte": "2021-04-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -14685,7 +14685,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2448,
         "fechaDeReporte": "2021-03-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -14697,7 +14697,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2450,
         "fechaDeReporte": "2023-12-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -14715,7 +14715,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2453,
         "fechaDeReporte": "2021-02-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -14727,7 +14727,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2455,
         "fechaDeReporte": "2021-08-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -14763,7 +14763,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2461,
         "fechaDeReporte": "2021-05-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -14793,7 +14793,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2466,
         "fechaDeReporte": "2022-07-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -14841,7 +14841,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2474,
         "fechaDeReporte": "2021-07-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -14985,7 +14985,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2498,
         "fechaDeReporte": "2020-07-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -15009,7 +15009,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2502,
         "fechaDeReporte": "2020-11-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -15021,7 +15021,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2504,
         "fechaDeReporte": "2020-03-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -15141,7 +15141,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2524,
         "fechaDeReporte": "2022-05-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -15153,7 +15153,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2526,
         "fechaDeReporte": "2021-05-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -15171,7 +15171,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2529,
         "fechaDeReporte": "2022-06-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -15207,7 +15207,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2535,
         "fechaDeReporte": "2022-04-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -15225,7 +15225,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2538,
         "fechaDeReporte": "2021-02-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -15273,7 +15273,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2546,
         "fechaDeReporte": "2023-12-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -15297,7 +15297,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2550,
         "fechaDeReporte": "2020-07-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -15369,7 +15369,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2562,
         "fechaDeReporte": "2022-07-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -15411,7 +15411,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2569,
         "fechaDeReporte": "2021-07-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -15429,7 +15429,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2572,
         "fechaDeReporte": "2020-12-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -15447,7 +15447,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2575,
         "fechaDeReporte": "2020-12-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -15471,7 +15471,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2579,
         "fechaDeReporte": "2022-12-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -15525,7 +15525,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2588,
         "fechaDeReporte": "2020-06-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -15543,7 +15543,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2591,
         "fechaDeReporte": "2024-12-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -15555,7 +15555,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2593,
         "fechaDeReporte": "2020-12-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -15567,7 +15567,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2595,
         "fechaDeReporte": "2021-07-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -15579,13 +15579,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2597,
         "fechaDeReporte": "2019-12-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 2598,
         "fechaDeReporte": "2023-03-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -15609,7 +15609,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2602,
         "fechaDeReporte": "2020-05-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -15639,7 +15639,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2607,
         "fechaDeReporte": "2020-08-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -15663,7 +15663,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2611,
         "fechaDeReporte": "2024-10-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -15675,7 +15675,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2613,
         "fechaDeReporte": "2024-08-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -15705,7 +15705,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2618,
         "fechaDeReporte": "2024-05-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -15753,7 +15753,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2626,
         "fechaDeReporte": "2024-01-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -15795,7 +15795,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2633,
         "fechaDeReporte": "2024-01-31T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -15813,7 +15813,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2636,
         "fechaDeReporte": "2024-05-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -15825,13 +15825,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2638,
         "fechaDeReporte": "2020-08-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 2639,
         "fechaDeReporte": "2021-06-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -15855,7 +15855,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2643,
         "fechaDeReporte": "2023-05-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -15867,7 +15867,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2645,
         "fechaDeReporte": "2023-03-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -15885,7 +15885,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2648,
         "fechaDeReporte": "2021-08-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -15921,7 +15921,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2654,
         "fechaDeReporte": "2022-11-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -15963,7 +15963,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2661,
         "fechaDeReporte": "2022-12-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -15981,7 +15981,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2664,
         "fechaDeReporte": "2023-02-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -15999,7 +15999,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2667,
         "fechaDeReporte": "2022-08-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -16059,19 +16059,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2677,
         "fechaDeReporte": "2020-02-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 2678,
         "fechaDeReporte": "2019-12-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 2679,
         "fechaDeReporte": "2021-01-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -16083,7 +16083,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2681,
         "fechaDeReporte": "2023-04-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -16113,7 +16113,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2686,
         "fechaDeReporte": "2021-12-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -16143,7 +16143,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2691,
         "fechaDeReporte": "2022-05-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -16161,7 +16161,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2694,
         "fechaDeReporte": "2021-11-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -16245,7 +16245,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2708,
         "fechaDeReporte": "2022-09-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -16263,7 +16263,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2711,
         "fechaDeReporte": "2021-02-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -16287,7 +16287,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2715,
         "fechaDeReporte": "2022-02-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -16353,7 +16353,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2726,
         "fechaDeReporte": "2021-04-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -16365,13 +16365,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2728,
         "fechaDeReporte": "2024-01-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 2729,
         "fechaDeReporte": "2022-06-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -16383,13 +16383,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2731,
         "fechaDeReporte": "2022-07-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 2732,
         "fechaDeReporte": "2024-08-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -16467,7 +16467,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2745,
         "fechaDeReporte": "2023-05-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -16521,13 +16521,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2754,
         "fechaDeReporte": "2020-04-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 2755,
         "fechaDeReporte": "2024-08-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -16563,7 +16563,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2761,
         "fechaDeReporte": "2023-12-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -16587,7 +16587,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2765,
         "fechaDeReporte": "2020-12-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -16605,13 +16605,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2768,
         "fechaDeReporte": "2023-12-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 2769,
         "fechaDeReporte": "2021-09-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -16623,13 +16623,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2771,
         "fechaDeReporte": "2022-08-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 2772,
         "fechaDeReporte": "2022-09-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -16701,7 +16701,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2784,
         "fechaDeReporte": "2023-09-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -16737,7 +16737,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2790,
         "fechaDeReporte": "2024-03-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -16803,13 +16803,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2801,
         "fechaDeReporte": "2023-08-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 2802,
         "fechaDeReporte": "2023-11-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -16839,7 +16839,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2807,
         "fechaDeReporte": "2024-09-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -16923,7 +16923,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2821,
         "fechaDeReporte": "2024-06-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -16941,19 +16941,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2824,
         "fechaDeReporte": "2024-01-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 2825,
         "fechaDeReporte": "2023-03-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 2826,
         "fechaDeReporte": "2024-06-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -16971,7 +16971,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2829,
         "fechaDeReporte": "2020-11-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -17001,7 +17001,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2834,
         "fechaDeReporte": "2022-04-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -17079,7 +17079,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2847,
         "fechaDeReporte": "2022-01-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -17121,13 +17121,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2854,
         "fechaDeReporte": "2024-07-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 2855,
         "fechaDeReporte": "2022-10-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -17151,7 +17151,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2859,
         "fechaDeReporte": "2022-02-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -17241,7 +17241,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2874,
         "fechaDeReporte": "2023-11-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -17253,7 +17253,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2876,
         "fechaDeReporte": "2020-08-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -17265,19 +17265,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2878,
         "fechaDeReporte": "2020-02-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 2879,
         "fechaDeReporte": "2022-09-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 2880,
         "fechaDeReporte": "2023-07-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -17295,7 +17295,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2883,
         "fechaDeReporte": "2020-07-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -17307,7 +17307,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2885,
         "fechaDeReporte": "2020-07-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -17325,7 +17325,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2888,
         "fechaDeReporte": "2020-03-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -17361,7 +17361,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2894,
         "fechaDeReporte": "2022-10-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -17373,7 +17373,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2896,
         "fechaDeReporte": "2022-05-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -17391,13 +17391,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2899,
         "fechaDeReporte": "2021-10-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 2900,
         "fechaDeReporte": "2024-06-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -17409,7 +17409,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2902,
         "fechaDeReporte": "2023-08-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -17427,7 +17427,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2905,
         "fechaDeReporte": "2019-10-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -17463,7 +17463,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2911,
         "fechaDeReporte": "2022-05-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -17499,7 +17499,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2917,
         "fechaDeReporte": "2022-07-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -17541,7 +17541,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2924,
         "fechaDeReporte": "2024-07-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -17565,7 +17565,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2928,
         "fechaDeReporte": "2022-03-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -17643,7 +17643,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2941,
         "fechaDeReporte": "2022-02-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -17661,19 +17661,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2944,
         "fechaDeReporte": "2023-06-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 2945,
         "fechaDeReporte": "2023-11-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 2946,
         "fechaDeReporte": "2022-10-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -17685,13 +17685,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2948,
         "fechaDeReporte": "2023-06-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 2949,
         "fechaDeReporte": "2021-11-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -17787,7 +17787,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2965,
         "fechaDeReporte": "2024-06-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -17823,7 +17823,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2971,
         "fechaDeReporte": "2022-06-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -17871,13 +17871,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2979,
         "fechaDeReporte": "2022-10-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 2980,
         "fechaDeReporte": "2023-02-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -17901,7 +17901,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2984,
         "fechaDeReporte": "2022-10-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -17919,13 +17919,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2987,
         "fechaDeReporte": "2024-11-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 2988,
         "fechaDeReporte": "2023-10-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -17961,7 +17961,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 2994,
         "fechaDeReporte": "2022-01-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -18039,7 +18039,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3007,
         "fechaDeReporte": "2020-08-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -18057,7 +18057,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3010,
         "fechaDeReporte": "2023-12-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -18075,31 +18075,31 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3013,
         "fechaDeReporte": "2023-08-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 3014,
         "fechaDeReporte": "2020-07-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 3015,
         "fechaDeReporte": "2023-12-31T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 3016,
         "fechaDeReporte": "2022-04-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 3017,
         "fechaDeReporte": "2019-11-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -18117,7 +18117,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3020,
         "fechaDeReporte": "2024-05-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -18129,7 +18129,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3022,
         "fechaDeReporte": "2022-06-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -18177,13 +18177,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3030,
         "fechaDeReporte": "2023-02-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 3031,
         "fechaDeReporte": "2021-03-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -18267,13 +18267,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3045,
         "fechaDeReporte": "2020-04-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 3046,
         "fechaDeReporte": "2020-01-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -18309,13 +18309,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3052,
         "fechaDeReporte": "2020-05-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 3053,
         "fechaDeReporte": "2021-02-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -18339,13 +18339,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3057,
         "fechaDeReporte": "2021-07-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 3058,
         "fechaDeReporte": "2021-07-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -18375,7 +18375,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3063,
         "fechaDeReporte": "2024-02-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -18393,7 +18393,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3066,
         "fechaDeReporte": "2020-10-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -18429,7 +18429,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3072,
         "fechaDeReporte": "2020-07-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -18507,7 +18507,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3085,
         "fechaDeReporte": "2023-08-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -18531,7 +18531,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3089,
         "fechaDeReporte": "2021-12-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -18561,7 +18561,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3094,
         "fechaDeReporte": "2022-06-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -18627,13 +18627,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3105,
         "fechaDeReporte": "2022-03-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 3106,
         "fechaDeReporte": "2023-02-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -18681,7 +18681,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3114,
         "fechaDeReporte": "2021-11-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -18693,7 +18693,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3116,
         "fechaDeReporte": "2021-08-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -18735,7 +18735,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3123,
         "fechaDeReporte": "2019-04-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -18777,7 +18777,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3130,
         "fechaDeReporte": "2021-12-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -18789,7 +18789,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3132,
         "fechaDeReporte": "2022-11-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -18861,7 +18861,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3144,
         "fechaDeReporte": "2022-09-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -18927,7 +18927,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3155,
         "fechaDeReporte": "2020-04-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -18951,7 +18951,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3159,
         "fechaDeReporte": "2023-07-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -18999,7 +18999,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3167,
         "fechaDeReporte": "2023-01-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -19017,7 +19017,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3170,
         "fechaDeReporte": "2023-01-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -19041,7 +19041,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3174,
         "fechaDeReporte": "2024-09-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -19071,7 +19071,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3179,
         "fechaDeReporte": "2019-10-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -19107,7 +19107,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3185,
         "fechaDeReporte": "2023-02-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -19131,13 +19131,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3189,
         "fechaDeReporte": "2020-11-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 3190,
         "fechaDeReporte": "2022-02-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -19179,7 +19179,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3197,
         "fechaDeReporte": "2023-02-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -19191,7 +19191,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3199,
         "fechaDeReporte": "2023-06-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -19233,7 +19233,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3206,
         "fechaDeReporte": "2021-11-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -19251,7 +19251,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3209,
         "fechaDeReporte": "2022-11-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -19317,7 +19317,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3220,
         "fechaDeReporte": "2024-08-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -19395,7 +19395,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3233,
         "fechaDeReporte": "2023-09-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -19443,7 +19443,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3241,
         "fechaDeReporte": "2019-12-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -19455,7 +19455,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3243,
         "fechaDeReporte": "2021-02-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -19467,7 +19467,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3245,
         "fechaDeReporte": "2020-01-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -19497,7 +19497,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3250,
         "fechaDeReporte": "2021-04-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -19569,7 +19569,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3262,
         "fechaDeReporte": "2021-06-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -19581,7 +19581,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3264,
         "fechaDeReporte": "2024-06-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -19635,7 +19635,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3273,
         "fechaDeReporte": "2021-01-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -19677,7 +19677,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3280,
         "fechaDeReporte": "2022-11-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -19773,13 +19773,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3296,
         "fechaDeReporte": "2021-06-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 3297,
         "fechaDeReporte": "2021-02-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -19791,7 +19791,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3299,
         "fechaDeReporte": "2023-07-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -19863,7 +19863,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3311,
         "fechaDeReporte": "2024-06-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -20001,7 +20001,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3334,
         "fechaDeReporte": "2020-03-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -20079,7 +20079,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3347,
         "fechaDeReporte": "2023-07-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -20097,7 +20097,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3350,
         "fechaDeReporte": "2022-03-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -20133,13 +20133,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3356,
         "fechaDeReporte": "2021-04-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 3357,
         "fechaDeReporte": "2022-01-31T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -20151,7 +20151,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3359,
         "fechaDeReporte": "2022-05-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -20181,7 +20181,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3364,
         "fechaDeReporte": "2024-05-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -20205,7 +20205,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3368,
         "fechaDeReporte": "2022-07-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -20307,7 +20307,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3385,
         "fechaDeReporte": "2021-10-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -20373,7 +20373,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3396,
         "fechaDeReporte": "2023-10-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -20415,7 +20415,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3403,
         "fechaDeReporte": "2023-03-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -20469,7 +20469,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3412,
         "fechaDeReporte": "2019-10-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -20493,7 +20493,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3416,
         "fechaDeReporte": "2023-11-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -20517,7 +20517,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3420,
         "fechaDeReporte": "2024-03-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -20553,7 +20553,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3426,
         "fechaDeReporte": "2020-07-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -20571,13 +20571,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3429,
         "fechaDeReporte": "2023-09-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 3430,
         "fechaDeReporte": "2022-07-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -20601,7 +20601,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3434,
         "fechaDeReporte": "2021-06-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -20643,7 +20643,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3441,
         "fechaDeReporte": "2024-07-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -20655,7 +20655,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3443,
         "fechaDeReporte": "2021-12-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -20751,7 +20751,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3459,
         "fechaDeReporte": "2020-02-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -20793,7 +20793,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3466,
         "fechaDeReporte": "2023-09-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -20811,7 +20811,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3469,
         "fechaDeReporte": "2023-08-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -20871,19 +20871,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3479,
         "fechaDeReporte": "2023-02-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 3480,
         "fechaDeReporte": "2022-12-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 3481,
         "fechaDeReporte": "2020-05-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -20919,7 +20919,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3487,
         "fechaDeReporte": "2020-07-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -20931,7 +20931,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3489,
         "fechaDeReporte": "2021-12-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -20955,7 +20955,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3493,
         "fechaDeReporte": "2020-10-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -21069,7 +21069,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3512,
         "fechaDeReporte": "2020-11-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -21105,7 +21105,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3518,
         "fechaDeReporte": "2020-07-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -21123,7 +21123,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3521,
         "fechaDeReporte": "2022-09-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -21141,7 +21141,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3524,
         "fechaDeReporte": "2021-11-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -21153,7 +21153,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3526,
         "fechaDeReporte": "2022-05-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -21165,7 +21165,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3528,
         "fechaDeReporte": "2021-04-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -21177,7 +21177,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3530,
         "fechaDeReporte": "2023-10-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -21189,7 +21189,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3532,
         "fechaDeReporte": "2023-07-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -21243,7 +21243,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3541,
         "fechaDeReporte": "2020-02-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -21267,7 +21267,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3545,
         "fechaDeReporte": "2020-09-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -21303,13 +21303,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3551,
         "fechaDeReporte": "2019-06-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 3552,
         "fechaDeReporte": "2024-09-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -21339,7 +21339,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3557,
         "fechaDeReporte": "2022-06-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -21369,7 +21369,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3562,
         "fechaDeReporte": "2020-06-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -21381,7 +21381,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3564,
         "fechaDeReporte": "2021-02-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -21411,13 +21411,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3569,
         "fechaDeReporte": "2021-07-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 3570,
         "fechaDeReporte": "2021-09-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -21435,7 +21435,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3573,
         "fechaDeReporte": "2021-11-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -21447,7 +21447,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3575,
         "fechaDeReporte": "2023-08-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -21501,7 +21501,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3584,
         "fechaDeReporte": "2023-02-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -21519,7 +21519,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3587,
         "fechaDeReporte": "2022-01-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -21567,7 +21567,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3595,
         "fechaDeReporte": "2023-11-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -21609,7 +21609,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3602,
         "fechaDeReporte": "2023-03-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -21645,7 +21645,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3608,
         "fechaDeReporte": "2024-09-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -21669,7 +21669,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3612,
         "fechaDeReporte": "2021-02-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -21687,7 +21687,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3615,
         "fechaDeReporte": "2021-04-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -21699,7 +21699,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3617,
         "fechaDeReporte": "2023-06-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -21717,7 +21717,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3620,
         "fechaDeReporte": "2019-02-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -21771,7 +21771,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3629,
         "fechaDeReporte": "2021-07-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -21783,7 +21783,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3631,
         "fechaDeReporte": "2020-12-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -21795,7 +21795,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3633,
         "fechaDeReporte": "2023-05-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -21873,7 +21873,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3646,
         "fechaDeReporte": "2021-06-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -21885,13 +21885,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3648,
         "fechaDeReporte": "2019-11-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 3649,
         "fechaDeReporte": "2020-09-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -21909,7 +21909,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3652,
         "fechaDeReporte": "2023-01-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -21939,7 +21939,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3657,
         "fechaDeReporte": "2023-04-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -21951,25 +21951,25 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3659,
         "fechaDeReporte": "2021-06-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 3660,
         "fechaDeReporte": "2023-02-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 3661,
         "fechaDeReporte": "2021-05-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 3662,
         "fechaDeReporte": "2022-04-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -22005,7 +22005,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3668,
         "fechaDeReporte": "2022-05-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -22035,19 +22035,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3673,
         "fechaDeReporte": "2022-05-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 3674,
         "fechaDeReporte": "2023-07-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 3675,
         "fechaDeReporte": "2021-04-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -22065,7 +22065,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3678,
         "fechaDeReporte": "2019-10-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -22137,7 +22137,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3690,
         "fechaDeReporte": "2024-10-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -22173,7 +22173,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3696,
         "fechaDeReporte": "2020-07-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -22215,7 +22215,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3703,
         "fechaDeReporte": "2021-11-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -22263,7 +22263,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3711,
         "fechaDeReporte": "2023-03-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -22305,7 +22305,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3718,
         "fechaDeReporte": "2022-11-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -22317,7 +22317,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3720,
         "fechaDeReporte": "2020-06-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -22329,7 +22329,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3722,
         "fechaDeReporte": "2021-02-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -22353,7 +22353,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3726,
         "fechaDeReporte": "2023-09-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -22365,7 +22365,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3728,
         "fechaDeReporte": "2024-04-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -22431,7 +22431,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3739,
         "fechaDeReporte": "2024-02-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -22533,7 +22533,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3756,
         "fechaDeReporte": "2023-07-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -22545,7 +22545,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3758,
         "fechaDeReporte": "2022-11-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -22557,7 +22557,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3760,
         "fechaDeReporte": "2023-07-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -22581,7 +22581,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3764,
         "fechaDeReporte": "2022-04-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -22593,7 +22593,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3766,
         "fechaDeReporte": "2024-09-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -22623,7 +22623,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3771,
         "fechaDeReporte": "2022-12-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -22695,7 +22695,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3783,
         "fechaDeReporte": "2024-03-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -22713,7 +22713,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3786,
         "fechaDeReporte": "2024-01-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -22761,7 +22761,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3794,
         "fechaDeReporte": "2020-04-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -22791,7 +22791,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3799,
         "fechaDeReporte": "2024-08-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -22809,7 +22809,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3802,
         "fechaDeReporte": "2023-03-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -22833,13 +22833,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3806,
         "fechaDeReporte": "2022-02-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 3807,
         "fechaDeReporte": "2020-02-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -22875,7 +22875,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3813,
         "fechaDeReporte": "2019-12-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -22905,7 +22905,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3818,
         "fechaDeReporte": "2022-06-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -22923,7 +22923,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3821,
         "fechaDeReporte": "2024-10-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -22947,7 +22947,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3825,
         "fechaDeReporte": "2024-09-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -22959,13 +22959,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3827,
         "fechaDeReporte": "2022-06-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 3828,
         "fechaDeReporte": "2024-04-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -22977,7 +22977,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3830,
         "fechaDeReporte": "2024-04-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -23001,7 +23001,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3834,
         "fechaDeReporte": "2020-10-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -23049,7 +23049,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3842,
         "fechaDeReporte": "2020-07-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -23097,13 +23097,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3850,
         "fechaDeReporte": "2024-04-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 3851,
         "fechaDeReporte": "2022-08-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -23133,7 +23133,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3856,
         "fechaDeReporte": "2022-06-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -23145,7 +23145,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3858,
         "fechaDeReporte": "2022-06-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -23187,7 +23187,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3865,
         "fechaDeReporte": "2021-07-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -23205,7 +23205,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3868,
         "fechaDeReporte": "2021-12-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -23217,7 +23217,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3870,
         "fechaDeReporte": "2020-09-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -23247,7 +23247,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3875,
         "fechaDeReporte": "2023-06-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -23259,7 +23259,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3877,
         "fechaDeReporte": "2021-01-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -23295,7 +23295,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3883,
         "fechaDeReporte": "2020-11-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -23325,7 +23325,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3888,
         "fechaDeReporte": "2023-08-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -23361,7 +23361,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3894,
         "fechaDeReporte": "2022-01-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -23391,7 +23391,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3899,
         "fechaDeReporte": "2020-12-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -23415,7 +23415,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3903,
         "fechaDeReporte": "2022-08-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -23427,7 +23427,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3905,
         "fechaDeReporte": "2021-05-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -23445,7 +23445,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3908,
         "fechaDeReporte": "2022-07-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -23469,7 +23469,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3912,
         "fechaDeReporte": "2022-06-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -23499,7 +23499,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3917,
         "fechaDeReporte": "2024-01-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -23523,7 +23523,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3921,
         "fechaDeReporte": "2023-10-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -23589,7 +23589,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3932,
         "fechaDeReporte": "2023-12-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -23637,7 +23637,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3940,
         "fechaDeReporte": "2024-08-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -23805,7 +23805,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3968,
         "fechaDeReporte": "2024-04-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -23835,7 +23835,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3973,
         "fechaDeReporte": "2021-04-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -23853,7 +23853,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3976,
         "fechaDeReporte": "2023-09-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -23883,7 +23883,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3981,
         "fechaDeReporte": "2023-10-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -23925,7 +23925,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3988,
         "fechaDeReporte": "2023-04-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -23943,7 +23943,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 3991,
         "fechaDeReporte": "2019-10-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -24015,7 +24015,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4003,
         "fechaDeReporte": "2024-02-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -24027,7 +24027,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4005,
         "fechaDeReporte": "2023-01-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -24045,7 +24045,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4008,
         "fechaDeReporte": "2024-10-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -24171,7 +24171,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4029,
         "fechaDeReporte": "2024-07-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -24219,13 +24219,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4037,
         "fechaDeReporte": "2021-04-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 4038,
         "fechaDeReporte": "2022-07-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -24243,7 +24243,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4041,
         "fechaDeReporte": "2021-05-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -24255,7 +24255,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4043,
         "fechaDeReporte": "2022-10-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -24279,7 +24279,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4047,
         "fechaDeReporte": "2022-05-31T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -24291,7 +24291,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4049,
         "fechaDeReporte": "2022-01-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -24309,7 +24309,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4052,
         "fechaDeReporte": "2022-08-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -24363,7 +24363,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4061,
         "fechaDeReporte": "2020-02-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -24399,7 +24399,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4067,
         "fechaDeReporte": "2021-10-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -24411,7 +24411,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4069,
         "fechaDeReporte": "2020-04-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -24543,7 +24543,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4091,
         "fechaDeReporte": "2020-09-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -24555,7 +24555,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4093,
         "fechaDeReporte": "2021-09-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -24603,13 +24603,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4101,
         "fechaDeReporte": "2023-09-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 4102,
         "fechaDeReporte": "2020-03-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -24633,7 +24633,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4106,
         "fechaDeReporte": "2021-12-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -24699,7 +24699,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4117,
         "fechaDeReporte": "2024-01-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -24729,7 +24729,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4122,
         "fechaDeReporte": "2024-07-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -24777,13 +24777,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4130,
         "fechaDeReporte": "2023-06-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 4131,
         "fechaDeReporte": "2021-01-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -24831,13 +24831,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4139,
         "fechaDeReporte": "2021-08-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 4140,
         "fechaDeReporte": "2023-03-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -24855,7 +24855,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4143,
         "fechaDeReporte": "2024-09-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -24897,7 +24897,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4150,
         "fechaDeReporte": "2023-12-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -24909,7 +24909,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4152,
         "fechaDeReporte": "2022-12-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -24945,7 +24945,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4158,
         "fechaDeReporte": "2022-10-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -24981,7 +24981,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4164,
         "fechaDeReporte": "2022-03-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -25023,13 +25023,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4171,
         "fechaDeReporte": "2020-02-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 4172,
         "fechaDeReporte": "2023-08-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -25053,7 +25053,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4176,
         "fechaDeReporte": "2022-09-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -25077,7 +25077,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4180,
         "fechaDeReporte": "2023-11-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -25119,7 +25119,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4187,
         "fechaDeReporte": "2020-10-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -25191,7 +25191,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4199,
         "fechaDeReporte": "2021-08-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -25215,7 +25215,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4203,
         "fechaDeReporte": "2022-02-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -25239,7 +25239,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4207,
         "fechaDeReporte": "2020-01-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -25311,7 +25311,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4219,
         "fechaDeReporte": "2021-06-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -25479,7 +25479,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4247,
         "fechaDeReporte": "2024-01-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -25527,7 +25527,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4255,
         "fechaDeReporte": "2020-09-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -25545,7 +25545,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4258,
         "fechaDeReporte": "2023-08-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -25563,7 +25563,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4261,
         "fechaDeReporte": "2023-06-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -25587,7 +25587,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4265,
         "fechaDeReporte": "2022-08-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -25623,7 +25623,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4271,
         "fechaDeReporte": "2020-03-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -25641,7 +25641,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4274,
         "fechaDeReporte": "2020-07-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -25653,7 +25653,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4276,
         "fechaDeReporte": "2021-10-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -25665,7 +25665,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4278,
         "fechaDeReporte": "2021-02-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -25677,7 +25677,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4280,
         "fechaDeReporte": "2020-08-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -25695,7 +25695,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4283,
         "fechaDeReporte": "2021-03-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -25713,7 +25713,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4286,
         "fechaDeReporte": "2022-12-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -25731,7 +25731,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4289,
         "fechaDeReporte": "2022-04-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -25749,7 +25749,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4292,
         "fechaDeReporte": "2023-09-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -25761,7 +25761,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4294,
         "fechaDeReporte": "2023-03-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -25797,7 +25797,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4300,
         "fechaDeReporte": "2020-08-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -25821,7 +25821,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4304,
         "fechaDeReporte": "2020-01-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -25845,7 +25845,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4308,
         "fechaDeReporte": "2023-07-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -25875,7 +25875,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4313,
         "fechaDeReporte": "2020-02-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -25893,19 +25893,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4316,
         "fechaDeReporte": "2023-05-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 4317,
         "fechaDeReporte": "2022-11-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 4318,
         "fechaDeReporte": "2022-09-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -25935,7 +25935,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4323,
         "fechaDeReporte": "2022-01-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -25953,7 +25953,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4326,
         "fechaDeReporte": "2022-06-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -26043,7 +26043,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4341,
         "fechaDeReporte": "2020-05-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -26085,7 +26085,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4348,
         "fechaDeReporte": "2023-05-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -26097,13 +26097,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4350,
         "fechaDeReporte": "2020-12-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 4351,
         "fechaDeReporte": "2024-10-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -26115,13 +26115,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4353,
         "fechaDeReporte": "2022-03-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 4354,
         "fechaDeReporte": "2021-07-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -26139,13 +26139,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4357,
         "fechaDeReporte": "2023-08-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 4358,
         "fechaDeReporte": "2021-07-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -26211,7 +26211,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4369,
         "fechaDeReporte": "2020-05-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -26229,7 +26229,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4372,
         "fechaDeReporte": "2021-01-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -26253,7 +26253,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4376,
         "fechaDeReporte": "2021-07-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -26265,7 +26265,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4378,
         "fechaDeReporte": "2024-08-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -26295,7 +26295,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4383,
         "fechaDeReporte": "2023-01-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -26379,13 +26379,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4397,
         "fechaDeReporte": "2024-09-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 4398,
         "fechaDeReporte": "2022-11-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -26499,13 +26499,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4417,
         "fechaDeReporte": "2019-04-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 4418,
         "fechaDeReporte": "2023-05-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -26571,7 +26571,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4429,
         "fechaDeReporte": "2023-07-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -26637,7 +26637,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4440,
         "fechaDeReporte": "2024-06-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -26661,7 +26661,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4444,
         "fechaDeReporte": "2020-06-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -26679,7 +26679,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4447,
         "fechaDeReporte": "2020-06-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -26727,7 +26727,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4455,
         "fechaDeReporte": "2023-11-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -26739,7 +26739,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4457,
         "fechaDeReporte": "2022-12-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -26763,7 +26763,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4461,
         "fechaDeReporte": "2022-06-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -26793,7 +26793,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4466,
         "fechaDeReporte": "2024-10-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -26811,7 +26811,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4469,
         "fechaDeReporte": "2022-11-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -26829,13 +26829,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4472,
         "fechaDeReporte": "2020-03-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 4473,
         "fechaDeReporte": "2023-08-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -26847,7 +26847,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4475,
         "fechaDeReporte": "2024-06-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -26859,7 +26859,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4477,
         "fechaDeReporte": "2024-05-02T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -26895,7 +26895,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4483,
         "fechaDeReporte": "2021-07-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -26961,7 +26961,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4494,
         "fechaDeReporte": "2021-09-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -26991,7 +26991,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4499,
         "fechaDeReporte": "2023-10-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -27009,7 +27009,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4502,
         "fechaDeReporte": "2024-06-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -27021,7 +27021,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4504,
         "fechaDeReporte": "2021-11-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -27039,7 +27039,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4507,
         "fechaDeReporte": "2021-03-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -27069,7 +27069,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4512,
         "fechaDeReporte": "2022-12-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -27081,7 +27081,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4514,
         "fechaDeReporte": "2023-05-31T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -27093,13 +27093,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4516,
         "fechaDeReporte": "2020-07-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 4517,
         "fechaDeReporte": "2023-01-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -27117,7 +27117,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4520,
         "fechaDeReporte": "2023-07-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -27141,7 +27141,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4524,
         "fechaDeReporte": "2021-05-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -27159,25 +27159,25 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4527,
         "fechaDeReporte": "2022-05-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 4528,
         "fechaDeReporte": "2023-11-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 4529,
         "fechaDeReporte": "2020-01-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 4530,
         "fechaDeReporte": "2021-03-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -27189,7 +27189,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4532,
         "fechaDeReporte": "2020-05-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -27225,7 +27225,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4538,
         "fechaDeReporte": "2020-03-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -27273,7 +27273,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4546,
         "fechaDeReporte": "2021-04-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -27303,7 +27303,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4551,
         "fechaDeReporte": "2021-01-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -27333,13 +27333,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4556,
         "fechaDeReporte": "2021-08-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 4557,
         "fechaDeReporte": "2024-04-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -27387,13 +27387,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4565,
         "fechaDeReporte": "2019-10-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 4566,
         "fechaDeReporte": "2021-10-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -27441,7 +27441,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4574,
         "fechaDeReporte": "2020-11-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -27489,7 +27489,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4582,
         "fechaDeReporte": "2023-08-06T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -27513,7 +27513,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4586,
         "fechaDeReporte": "2021-01-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -27555,7 +27555,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4593,
         "fechaDeReporte": "2023-11-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -27567,13 +27567,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4595,
         "fechaDeReporte": "2024-09-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 4596,
         "fechaDeReporte": "2021-10-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -27687,7 +27687,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4615,
         "fechaDeReporte": "2021-05-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -27705,7 +27705,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4618,
         "fechaDeReporte": "2022-10-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -27723,13 +27723,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4621,
         "fechaDeReporte": "2023-07-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 4622,
         "fechaDeReporte": "2023-04-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -27771,7 +27771,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4629,
         "fechaDeReporte": "2021-03-01T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -27789,7 +27789,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4632,
         "fechaDeReporte": "2020-08-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -27807,19 +27807,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4635,
         "fechaDeReporte": "2024-04-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 4636,
         "fechaDeReporte": "2021-05-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 4637,
         "fechaDeReporte": "2020-09-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -27855,7 +27855,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4643,
         "fechaDeReporte": "2021-07-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -27897,7 +27897,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4650,
         "fechaDeReporte": "2022-01-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -27945,7 +27945,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4658,
         "fechaDeReporte": "2020-12-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -27969,7 +27969,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4662,
         "fechaDeReporte": "2020-10-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -28017,7 +28017,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4670,
         "fechaDeReporte": "2021-10-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -28059,7 +28059,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4677,
         "fechaDeReporte": "2024-03-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -28155,7 +28155,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4693,
         "fechaDeReporte": "2021-05-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -28167,7 +28167,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4695,
         "fechaDeReporte": "2022-11-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -28185,19 +28185,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4698,
         "fechaDeReporte": "2020-12-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 4699,
         "fechaDeReporte": "2022-06-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 4700,
         "fechaDeReporte": "2020-07-31T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -28269,7 +28269,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4712,
         "fechaDeReporte": "2020-03-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -28287,7 +28287,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4715,
         "fechaDeReporte": "2020-07-23T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -28323,7 +28323,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4721,
         "fechaDeReporte": "2024-01-20T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -28335,7 +28335,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4723,
         "fechaDeReporte": "2021-07-26T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -28347,7 +28347,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4725,
         "fechaDeReporte": "2024-03-05T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -28371,7 +28371,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4729,
         "fechaDeReporte": "2021-08-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -28407,7 +28407,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4735,
         "fechaDeReporte": "2022-03-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -28443,13 +28443,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4741,
         "fechaDeReporte": "2023-12-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 4742,
         "fechaDeReporte": "2023-11-30T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -28467,13 +28467,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4745,
         "fechaDeReporte": "2021-10-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 4746,
         "fechaDeReporte": "2019-10-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -28503,7 +28503,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4751,
         "fechaDeReporte": "2022-08-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -28533,7 +28533,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4756,
         "fechaDeReporte": "2023-11-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -28647,7 +28647,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4775,
         "fechaDeReporte": "2023-04-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -28695,13 +28695,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4783,
         "fechaDeReporte": "2022-11-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 4784,
         "fechaDeReporte": "2021-10-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -28719,7 +28719,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4787,
         "fechaDeReporte": "2023-03-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -28737,7 +28737,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4790,
         "fechaDeReporte": "2021-01-07T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -28749,7 +28749,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4792,
         "fechaDeReporte": "2021-11-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -28767,7 +28767,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4795,
         "fechaDeReporte": "2021-04-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -28791,7 +28791,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4799,
         "fechaDeReporte": "2023-05-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -28809,7 +28809,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4802,
         "fechaDeReporte": "2022-10-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -28851,7 +28851,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4809,
         "fechaDeReporte": "2024-08-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -28869,7 +28869,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4812,
         "fechaDeReporte": "2021-01-15T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -28959,7 +28959,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4827,
         "fechaDeReporte": "2024-01-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -28983,7 +28983,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4831,
         "fechaDeReporte": "2021-12-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -29031,7 +29031,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4839,
         "fechaDeReporte": "2020-12-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -29049,13 +29049,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4842,
         "fechaDeReporte": "2022-11-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
         "id": 4843,
         "fechaDeReporte": "2023-01-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -29097,13 +29097,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4850,
         "fechaDeReporte": "2021-03-22T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 4851,
         "fechaDeReporte": "2021-08-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -29169,7 +29169,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4862,
         "fechaDeReporte": "2021-07-25T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -29181,7 +29181,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4864,
         "fechaDeReporte": "2022-10-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -29205,7 +29205,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4868,
         "fechaDeReporte": "2021-01-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -29259,13 +29259,13 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4877,
         "fechaDeReporte": "2021-01-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 4878,
         "fechaDeReporte": "2023-09-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -29367,7 +29367,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4895,
         "fechaDeReporte": "2020-11-09T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -29379,7 +29379,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4897,
         "fechaDeReporte": "2021-10-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -29391,19 +29391,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4899,
         "fechaDeReporte": "2023-04-18T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 4900,
         "fechaDeReporte": "2020-09-24T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
         "id": 4901,
         "fechaDeReporte": "2024-10-14T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -29487,7 +29487,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4915,
         "fechaDeReporte": "2021-11-10T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -29505,7 +29505,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4918,
         "fechaDeReporte": "2021-02-28T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -29517,7 +29517,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4920,
         "fechaDeReporte": "2024-03-21T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -29541,7 +29541,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4924,
         "fechaDeReporte": "2024-07-19T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -29571,7 +29571,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4929,
         "fechaDeReporte": "2021-10-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -29583,7 +29583,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4931,
         "fechaDeReporte": "2022-02-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -29697,7 +29697,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4950,
         "fechaDeReporte": "2020-10-13T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -29709,7 +29709,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4952,
         "fechaDeReporte": "2024-03-27T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -29757,7 +29757,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4960,
         "fechaDeReporte": "2023-12-12T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -29781,7 +29781,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4964,
         "fechaDeReporte": "2022-07-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -29805,7 +29805,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4968,
         "fechaDeReporte": "2023-05-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -29835,7 +29835,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4973,
         "fechaDeReporte": "2019-11-17T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
@@ -29895,7 +29895,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4983,
         "fechaDeReporte": "2023-04-08T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
@@ -29907,7 +29907,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4985,
         "fechaDeReporte": "2020-05-11T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -29919,7 +29919,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4987,
         "fechaDeReporte": "2020-02-16T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "CRITICA"
     },
     {
@@ -29955,19 +29955,19 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 4993,
         "fechaDeReporte": "2021-11-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "BAJA"
     },
     {
         "id": 4994,
         "fechaDeReporte": "2024-11-04T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     },
     {
         "id": 4995,
         "fechaDeReporte": "2020-06-29T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "ALTA"
     },
     {
@@ -29997,7 +29997,7 @@ db.IncidenteSeguridad.insertMany(
     {
         "id": 5000,
         "fechaDeReporte": "2021-06-03T00:00:00Z",
-        "tipoIncidente": "DA\u00d1O ESTRUCTURAL",
+        "tipoIncidente": "DAÑO ESTRUCTURAL",
         "gravedad": "MEDIA"
     }
 ]

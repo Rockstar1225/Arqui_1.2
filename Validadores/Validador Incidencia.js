@@ -1,7 +1,6 @@
 db.createCollection('Incidencia')
 
 db.Incidencia.createIndex( {"id":1}, {unique:1} )
-db.Incidencia.createIndex( {"usuarios.NIF":1}, {unique:1, sparse: true})
 
 SCHEME={
    "bsonType": "object",
@@ -9,25 +8,25 @@ SCHEME={
    "required": ["id","tipo","fechaReporte","estado","tiempoResolucion","nivelEscalamiento","usuarios"],
    "properties": {
             "id": {
-                "bsonType": "string", // Clave primaria
+                "bsonType": "number",
                 "description": "id de la incidencia"
             },
             "tipo": {
                 "bsonType": "string",
                 "description": "tipo de incidencia al juego",
-                "enum": ["Desgaste","Mal funcionamiento","Rotura","Vandalismo"]
+                "enum": ["DESGASTE","MAL FUNCIONAMIENTO","ROTURA","VANDALISMO"]
             },
             "fechaReporte": {
-                "bsonType": "date",
+                "bsonType": "string",
                 "description": "fecha de reporte de la incidencia"
             },
             "estado": {
                 "bsonType": "string",
                 "description": "estado de la inicidencia",
-                "enum": ["Abierta","Cerrada"]
+                "enum": ["ABIERTA","CERRADA"]
             },
             "tiempoResolucion": {
-               "bsonType": "double",
+               "bsonType": "number",
                "description": "tiempo en el que se resolverá la incidencia",
             },
             "nivelEscalamiento": {

@@ -8,19 +8,19 @@ SCHEME = {
   "required": ["id", "fecha", "temperatura", "precipitacion", "vientosFuertes"],
   "properties": {
     "id": {
-      "bsonType": "string",
+      "bsonType": "int",
       "description": "id del registro del clima"
     },
     "temperatura": {
-      "bsonType": "double",
+      "bsonType": "number",
       "description": "temperatura tomada en la zona del area recreativa",
     },
     "precipitacion": {
-      "bsonType": "double",
+      "bsonType": "number",
       "description": "precipitacion tomada en la zona del area recreativa",
     },
     "fecha": {
-      "bsonType": "date",
+      "bsonType": "string",
       "description": "fecha de la toma de muestras del clima"
     },
     "vientosFuertes": {

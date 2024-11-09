@@ -1,6 +1,5 @@
 db.createCollection('AreaRecreativaClima')
 
-db.AreaRecreativaClima.createIndex({ "nombre": 1 }, { unique: 1 })
 db.AreaRecreativaClima.createIndex({ "registrosClima.id": 1 }, { unique: 1, sparse: true })
 db.AreaRecreativaClima.createIndex({ "encuestas.id": 1 }, { unique: 1, sparse: true })
 db.AreaRecreativaClima.createIndex({ "incidentesSeguridad.id": 1 }, { unique: 1, sparse: true })
@@ -10,7 +9,7 @@ db.AreaRecreativaClima.createIndex({ "CantidadJuegosTipo.tipo": 1 }, { unique: 1
 SCHEME = {
   "bsonType": "object",
   "description": "Agregado de gestión del estado de las áreas recreativas, juegos, incidentes de seguridad y datos climáticos.",
-  "required": ["nombre", "coordenadasGPS", "barrio", "distrito", "fechaInstalacion", "estadoGlobalArea", "capacidadMax", "CantidadJuegosTipo", "juegos", "incidentesSeguridad", "registrosClima", "encuestas"],
+  "required": ["id", "coordenadasGPS", "barrio", "distrito", "fecha", "estadoGlobalArea", "capacidadMaxima", "cantidadJuegosTipo", "juegos", "incidentesSeguridad", "registrosClima", "encuestas"],
   "properties": {
     "id": {
       "bsonType": "number",
@@ -22,11 +21,11 @@ SCHEME = {
       "minItems": 2,
       "maxItems": 2,
       "items": {
-        "bsonType": "double"
+        "bsonType": "string"
       }
     },
     "fecha": {
-      "bsonType": "date",
+      "bsonType": "string",
       "description": "fecha de instalación del área"
     },
     "barrio": {
@@ -37,16 +36,12 @@ SCHEME = {
       "bsonType": "string",
       "description": "Distrito al que pertenece el area recreativa"
     },
-    "fechaInstalacion": {
-      "bsonType": "date",
-      "description": "Fecha de instalacion del area recreativa"
-    },
     "estadoGlobalArea": {
       "bsonType": "string",
       "description": "Estado global del area recreativa",
-      "enum": ["Operativa", "Cerrada", "Indispuesta"]
+      "enum": ["OPERATIVO", "CERRADO", "INDISPUESTO"]
     },
-    "capacidadMax": {
+    "capacidadMaxima": {
       "bsonType": "number",
       "description": "Numero máximo de juegos que incluye el área",
     },
@@ -62,7 +57,7 @@ SCHEME = {
           "tipo": {
             "bsonType": "string",
             "description": "tipo de juegos a contar",
-            "enum": ["deportivas", "infantiles", "mayores"]
+            "enum": ["DEPORTIVAS", "INFANTILES", "MAYORES"]
           },
           "valor": {
             "bsonType": "number",
@@ -91,19 +86,8 @@ SCHEME = {
       "description": "array de referencias a los incidentes de seguridad",
       "minItems": 0,
       "items": {
-        "bsonType": "object",
-        "description": "objeto de representacion de incidencias de seguridad",
-        "required": ["id", "tipo", "gravedad", "fechaDeReporte"],
-        "properties": {
-          "id": {
-            "bsonType": "string",
-            "description": "id del incidente de seguridad"
-          },
-          "fechaDeReporte": {
-            "bsonType": "date",
-            "description": "fecha de reporte de la incidencia de seguridad"
-          }
-        }
+        "bsonType": "number",
+        "description": "objeto de representacion de incidencias de seguridad"
       }
     },
     "registrosClima": {
@@ -111,15 +95,7 @@ SCHEME = {
       "description": "Array de referencias a los registros de clima para esta zona",
       "minItems": 0,
       "items": {
-        "bsonType": "object",
-        "description": "objeto referencia de un registro de clima",
-        "required": ["id"],
-        "properties": {
-          "id": {
-            "bsonType": "string",
-            "description": "id del registro de clima"
-          }
-        }
+        "bsonType": "number",
       }
     },
     "encuestas": {
@@ -127,15 +103,8 @@ SCHEME = {
       "description": "Array de referencias a las encuestas de satisfacción de una zona",
       "minItems": 0,
       "items": {
-        "bsonType": "object",
-        "description": "objeto referencia de una encuesta de satisfacción",
-        "required": ["id"],
-        "properties": {
-          "id": {
-            "bsonType": "string",
-            "description": "id de la encuesta"
-          }
-        }
+        "bsonType": "number",
+        "description": "objeto referencia de una encuesta de satisfacción"
       }
     },
   },

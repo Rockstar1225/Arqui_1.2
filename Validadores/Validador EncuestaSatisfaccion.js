@@ -8,11 +8,11 @@ SCHEME = {
   "required": ["id", "fechaEncuesta", "puntuacionAccesibilidad", "puntuacionCalidad", "comentarios"],
   "properties": {
     "id": {
-      "bsonType": "string",
+      "bsonType": "number",
       "description": "Tipo String. Clave Primaria"
     },
     "fechaEncuesta": {
-      "bsonType": "date",
+      "bsonType": "string",
       "description": "Fecha de realización de encuesta"
     },
     "puntuacionAccesibilidad": {
@@ -30,7 +30,7 @@ SCHEME = {
     "comentarios": {
       "bsonType": "string",
       "description": "Lista de comentarios en formato string",
-      "enum": ["Aceptable", "Deficiente", "Excelente", "Muy bueno", "Regular"]
+      "enum": ["ACEPTABLE", "DEFICIENTE", "EXCELENTE", "MUY BUENO", "REGULAR"]
     }
   },
 }

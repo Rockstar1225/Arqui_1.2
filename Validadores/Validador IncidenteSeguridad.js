@@ -5,24 +5,24 @@ db.IncidenteSeguridad.createIndex( {"id":1}, {unique:1} )
 SCHEME={
    "bsonType": "object",
    "description": "Objeto que representa un incidente de seguridad",
-   "required": ["id","fechaReporte","tipoIncidente","gravedad"],
+   "required": ["id","fechaDeReporte","tipoIncidente","gravedad"],
    "properties": {
         "id": {
-            "bsonType": "string",
+            "bsonType": "number",
             "description": "id del incidente de seguridad"
         },
         "tipoIncidente": {
             "bsonType": "string",
             "description": "tipo de incidencia de seguridad",
-            "enum": ["Robo", "Caida","Accidente","Vandalismo","Daño estructural" ]
+            "enum": ["ROBO", "CAIDA","ACCIDENTE","VANDALISMO","DAÑO ESTRUCTURAL" ]
         },
         "gravedad": {
             "bsonType": "string",
             "description": "gravedad del incidente",
-            "enum": [ "Baja","Media","Alta","Crítica" ]
+            "enum": [ "BAJA","MEDIA","ALTA","CRITICA" ]
         },
         "fechaDeReporte": {
-            "bsonType": "date",
+            "bsonType": "string",
             "description": "fecha de reporte de la incidencia de seguridad"
         }
     },

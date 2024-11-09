@@ -14,7 +14,7 @@ SCHEME = {
     "tipoIntervencion": {
       "bsonType": "string",
       "description": "tipo de intervencion",
-      "enum": ["Correctivo", "Emergencia", "Preventivo"]
+      "enum": ["CORRECTIVO", "EMERGENCIA", "PREVENTIVO"]
     },
     "estadoPrevio": {
       "bsonType": "string",
@@ -25,7 +25,7 @@ SCHEME = {
       "description": "estado posterior a la intervencion",
     },
     "fechaIntervencion": {
-      "bsonType": "date",
+      "bsonType": "string",
       "description": "fecha de intervencion de mantenimiento"
     },
     "incidencias": {
@@ -33,15 +33,8 @@ SCHEME = {
       "description": "incidencias que referencia un mantenimiento",
       "minItems": 0,
       "items": {
-        "bsonType": "object",
-        "description": "objeto de referencia de incidencias realizadas",
-        "required": ["id"],
-        "properties": {
-          "id": {
-            "bsonType": "string",
-            "description": "id del mantenimiento realizado al juego",
-          },
-        }
+        "bsonType": "number",
+        "description": "objeto de referencia de incidencias realizadas"
       }
     }
   },
