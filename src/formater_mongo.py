@@ -158,6 +158,7 @@ class Creator:
         ultima_fecha_mant = self.extraer_columna("Juegos", "ULTIMA_FECHA_MANTENIMIENTO")
         mantenimientos = self.juego_mantenimientos
         # generar resumen para la incidencia
+        nueva_incidencia = None
         incidencias_a_insertar = []
         for i in range(len(self.state["Juegos"]["ID"])):
             for item in self.juego_incidencias.keys():
@@ -184,43 +185,35 @@ class Creator:
                         "incidencias": incidencias_a_insertar[i],
                     }
                 )
-            # por si el juego no tiene ni incidencia ni mantenimiento
-            except IndexError and KeyError:
-                self.juegos.append(
-                    {
-                        "id": str(id[i]),
-                        "modelo": str(modelo[i]),
-                        "estadoOperativo": str(estado_op[i]),
-                        "accesibilidad": bool(accesibilidad[i]),
-                        "fechaInstalacion": str(fecha_instalacion[i]),
-                        "tipo": str(tipo[i]),
-                        "desgasteAcumulado": int(desgaste[i]),
-                        "indicadorExposicion": str(indicador_exposicion[i]),
-                        "ultimaFechaMantenimiento": str(ultima_fecha_mant[i]),
-                        "mantenimientos": [],
-                        "incidencias": [],
-                    }
-                )
+            # por si el juego no tiene ni mantenimiento ni incidencia
+            except (KeyError, IndexError):
+                mantenimientos[str(id[i])] = []
+                nueva_incidencia = []
             # por si el juego no tiene mantenimiento
             except KeyError:
-                self.juegos.append(
-                    {
-                        "id": str(id[i]),
-                        "modelo": str(modelo[i]),
-                        "estadoOperativo": str(estado_op[i]),
-                        "accesibilidad": bool(accesibilidad[i]),
-                        "fechaInstalacion": str(fecha_instalacion[i]),
-                        "tipo": str(tipo[i]),
-                        "desgasteAcumulado": int(desgaste[i]),
-                        "indicadorExposicion": str(indicador_exposicion[i]),
-                        "ultimaFechaMantenimiento": str(ultima_fecha_mant[i]),
-                        "mantenimientos": [],
-                        "incidencias": incidencias_a_insertar[i],
-                    }
-                )
+                mantenimientos[str(id[i])] = []
             # por si el juego no tiene incidencia
             except IndexError:
-                self.juegos.append(
+                nueva_incidencia = []
+            finally:
+                if nueva_incidencia != None:
+                    self.juegos.append(
+                        {
+                            "id": str(id[i]),
+                            "modelo": str(modelo[i]),
+                            "estadoOperativo": str(estado_op[i]),
+                            "accesibilidad": bool(accesibilidad[i]),
+                            "fechaInstalacion": str(fecha_instalacion[i]),
+                            "tipo": str(tipo[i]),
+                            "desgasteAcumulado": int(desgaste[i]),
+                            "indicadorExposicion": str(indicador_exposicion[i]),
+                            "ultimaFechaMantenimiento": str(ultima_fecha_mant[i]),
+                            "mantenimientos": mantenimientos[str(id[i])],
+                            "incidencias": nueva_incidencia,
+                        }
+                    )
+                else:
+                    self.juegos.append(
                     {
                         "id": str(id[i]),
                         "modelo": str(modelo[i]),
@@ -232,7 +225,7 @@ class Creator:
                         "indicadorExposicion": str(indicador_exposicion[i]),
                         "ultimaFechaMantenimiento": str(ultima_fecha_mant[i]),
                         "mantenimientos": [mantenimientos[str(id[i])]],
-                        "incidencias": [],
+                        "incidencias": incidencias_a_insertar[i],
                     }
                 )
 
