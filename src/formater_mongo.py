@@ -155,77 +155,34 @@ class Creator:
         desgaste = self.extraer_columna("Juegos", "desgasteAcumulado")
         indicador_exposicion = self.extraer_columna("Juegos", "indicadorExposicion")
         ultima_fecha_mant = self.extraer_columna("Juegos", "ULTIMA_FECHA_MANTENIMIENTO")
-        mantenimientos = self.juego_mantenimientos
-        # generar resumen para la incidencia
-        nueva_incidencia = None
-        incidencias_a_insertar = []
-        for i in range(len(self.state["Juegos"]["ID"])):
-            for item in self.juego_incidencias.keys():
-                if item == self.state["Juegos"].loc[i, "ID"]:
-                    for incidencia_id in self.juego_incidencias[item]:
-                        for incidencia in self.incidencias:
-                            if incidencia["id"] == incidencia_id:
-                                incidencias_a_insertar.append(incidencia)
-        print("Incidencias-juego: ", incidencias_a_insertar)
+        
         for i in range(len(id)):
-            try:
-                self.juegos.append(
-                    {
-                        "id": id[i],
-                        "modelo": modelo[i],
-                        "estadoOperativo": str(estado_op[i]),
-                        "accesibilidad": bool(accesibilidad[i]),
-                        "fechaInstalacion": fecha_instalacion[i],
-                        "tipo": tipo[i],
-                        "desgasteAcumulado": desgaste[i],
-                        "indicadorExposicion": indicador_exposicion[i],
-                        "ultimaFechaMantenimiento": str(ultima_fecha_mant[i]),
-                        "mantenimientos": [mantenimientos[str(id[i])]],
-                        "incidencias": incidencias_a_insertar[i],
-                    }
-                )
-            # por si el juego no tiene ni mantenimiento ni incidencia
-            except (KeyError, IndexError) as e:
-                if type(e) == KeyError:
-                    mantenimientos[str(id[i])] = []
-                elif type(e) == IndexError:
-                    nueva_incidencia = []
-                else:
-                    mantenimientos[str(id[i])] = []
-                    nueva_incidencia = []
-            finally:
-                if nueva_incidencia is None:
-                    self.juegos.append(
-                        {
-                            "id": str(id[i]),
-                            "modelo": str(modelo[i]),
-                            "estadoOperativo": estado_op[i],
-                            "accesibilidad": bool(accesibilidad[i]),
-                            "fechaInstalacion": str(fecha_instalacion[i]),
-                            "tipo": tipo[i],
-                            "desgasteAcumulado": int(desgaste[i]),
-                            "indicadorExposicion": indicador_exposicion[i],
-                            "ultimaFechaMantenimiento": str(ultima_fecha_mant[i]),
-                            "mantenimientos": mantenimientos[str(id[i])],
-                            "incidencias": nueva_incidencia,
-                        }
-                    )
-                else:
-                    self.juegos.append(
-                        {
-                            "id": str(id[i]),
-                            "modelo": str(modelo[i]),
-                            "estadoOperativo": str(estado_op[i]),
-                            "accesibilidad": bool(accesibilidad[i]),
-                            "fechaInstalacion": str(fecha_instalacion[i]),
-                            "tipo": str(tipo[i]),
-                            "desgasteAcumulado": int(desgaste[i]),
-                            "indicadorExposicion": str(indicador_exposicion[i]),
-                            "ultimaFechaMantenimiento": str(ultima_fecha_mant[i]),
-                            "mantenimientos": [mantenimientos[str(id[i])]],
-                            "incidencias": incidencias_a_insertar[i],
-                        }
-                    )
+            # si el juego no tiene incidencias
+            if id[i] not in list(self.juego_incidencias.keys()):
+                incidencia = [""]
+            else:
+                incidencia = self.juego_incidencias[id[i]]
+            # si el juego no tiene mantenimientos
+            if id[i] not in list(self.juego_mantenimientos.keys()):
+                mantenimiento = [""]
+            else:
+                mantenimiento = self.juego_mantenimientos[id[i]]
+            self.juegos.append(
+                {
+                    "id": str(id[i]),
+                    "modelo": str(modelo[i]),
+                    "estadoOperativo": str(estado_op[i]),
+                    "accesibilidad": bool(accesibilidad[i]),
+                    "fechaInstalacion": str(fecha_instalacion[i]),
+                    "tipo": str(tipo[i]),
+                    "desgasteAcumulado": int(desgaste[i]),
+                    "indicadorExposicion": str(indicador_exposicion[i]),
+                    "ultimaFechaMantenimiento": str(ultima_fecha_mant[i]),
+                    "mantenimientos": mantenimiento,
+                    "incidencias": incidencia,
+                }
+            )
+                        
 
         print("Juegos generados!!")
 
@@ -473,9 +430,9 @@ class Creator:
                         continue
                     if self.mantenimiento_incidencias[mantenimiento] == incidencia:
                         if juego not in self.juego_incidencias:
-                            self.juego_incidencias[juego] = [incidencia]
+                            self.juego_incidencias[juego] = [str(int(incidencia))]
                         else:
-                            self.juego_incidencias[juego].append(incidencia)
+                            self.juego_incidencias[juego].append(str(int(incidencia)))
 
         print(
             "Relaciones de juego_mantenimientos, mantenimiento_incdencias, juego_incidencias terminadas"
