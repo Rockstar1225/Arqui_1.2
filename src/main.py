@@ -49,6 +49,7 @@ def main():
     extractor.generar_clima()
     extractor.generar_area()
     extractor.generar_mantenimientos()
+    extractor.generar_juegos()
     # print(base)
     # print(base["Areas"]["MeteoID"])
 
