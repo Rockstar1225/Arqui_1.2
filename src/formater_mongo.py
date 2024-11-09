@@ -149,8 +149,6 @@ class Creator:
         id = self.extraer_columna("Juegos", "ID")
         modelo = self.extraer_columna("Juegos", "MODELO")
         estado_op = self.extraer_columna("Juegos", "ESTADO")
-        print("Estados: ", estado_op)
-        pass
         accesibilidad = self.extraer_columna("Juegos", "ACCESIBLE")
         fecha_instalacion = self.extraer_columna("Juegos", "FECHA_INSTALACION")
         tipo = self.extraer_columna("Juegos", "tipo_juego")
@@ -168,14 +166,14 @@ class Creator:
                         for incidencia in self.incidencias:
                             if incidencia["id"] == incidencia_id:
                                 incidencias_a_insertar.append(incidencia)
-
+        print("Incidencias-juego: ", incidencias_a_insertar)
         for i in range(len(id)):
             try:
                 self.juegos.append(
                     {
                         "id": id[i],
                         "modelo": modelo[i],
-                        "estadoOperativo": estado_op[i],
+                        "estadoOperativo": str(estado_op[i]),
                         "accesibilidad": bool(accesibilidad[i]),
                         "fechaInstalacion": fecha_instalacion[i],
                         "tipo": tipo[i],

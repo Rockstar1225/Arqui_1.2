@@ -30,12 +30,15 @@ def find_table_by_column(df: dict, tablas_tachadas: list, column: str) -> str | 
     return None
 
 
-#Encuentra un id según que tabla (hay columnas ID que no se llaman ID) y que fila
+# Encuentra un id según que tabla (hay columnas ID que no se llaman ID) y que fila
 def find_id(df: dict, tabla: str, fila: int):
     archivo = df[tabla]
-    if tabla == "Usuarios": return archivo["NIF"][fila]
-    elif tabla == "meteo24": return archivo["PROVINCIA"][fila]
-    else: return archivo["ID"][fila]
+    if tabla == "Usuarios":
+        return archivo["NIF"][fila]
+    elif tabla == "meteo24":
+        return archivo["PROVINCIA"][fila]
+    else:
+        return archivo["ID"][fila]
 
 
 # Para rellenar filas vacias
@@ -44,27 +47,49 @@ def empty_data(df_dict):
         if tabla_name != "Codigo":
             # Convertir a tipo 'object' para poder indicar los casos nulos que no se pueden modificar
             tabla = tabla.astype(object)
-            nan_positions = tabla.isna() # Identificar posiciones NaN
-            assignment_dict = {} # Diccionario para almacenar asignaciones
+            nan_positions = tabla.isna()  # Identificar posiciones NaN
+            assignment_dict = {}  # Diccionario para almacenar asignaciones
             for columna in nan_positions.columns:
-                nan_indices = nan_positions.index[nan_positions[columna]] #Se cogen los indices con NaN de dicha columna
+                nan_indices = nan_positions.index[
+                    nan_positions[columna]
+                ]  # Se cogen los indices con NaN de dicha columna
                 for i in nan_indices:
-                    valor = aux_dir(tabla_name, tabla, columna, i)# Caso de direccion auxiliar. Si funciona, se salta el resto
+                    valor = aux_dir(
+                        tabla_name, tabla, columna, i
+                    )  # Caso de direccion auxiliar. Si funciona, se salta el resto
                     if valor is None:
                         tachadas = [tabla_name]
-                        id_val = find_id(df_dict, tabla_name, i)  # Obtener una vez el id
+                        id_val = find_id(
+                            df_dict, tabla_name, i
+                        )  # Obtener una vez el id
                         while True:
-                            new_tab = find_table_by_column(df_dict, tachadas, columna) #Buscar una tabla con un valor no NaN en la posicion con el mismo 
-                                                                                        #id que el del elemento actual
-                            if new_tab is None: #Caso fallido -> cambiar NaN por valor predeterminado
-                                if columna in ["FECHA_INSTALACION", "FECHA", "FECHA_REPORTE", "FECHA_INTERVENCION"]: #Caso fecha
-                                    valor = dt.datetime.strptime( "2018-12-31 00:00:00", "%Y-%m-%d %H:%M:%S")
-                                else: #Otro caso
+                            new_tab = find_table_by_column(
+                                df_dict, tachadas, columna
+                            )  # Buscar una tabla con un valor no NaN en la posicion con el mismo
+                            # id que el del elemento actual
+                            if (
+                                new_tab is None
+                            ):  # Caso fallido -> cambiar NaN por valor predeterminado
+                                if columna in [
+                                    "FECHA_INSTALACION",
+                                    "FECHA",
+                                    "FECHA_REPORTE",
+                                    "FECHA_INTERVENCION",
+                                ]:  # Caso fecha
+                                    valor = dt.datetime.strptime(
+                                        "2018-12-31 00:00:00", "%Y-%m-%d %H:%M:%S"
+                                    )
+                                else:  # Otro caso
                                     valor = f"{id_val}-{columna}-ausente"
                                 break
-                            valor = take_atribute(df_dict, new_tab, columna, id_val) #Se ecnuebtra la tabla y se checkea el valor
-                            if valor is not None: break #Caso exitoso
-                            tachadas.append(new_tab) #Valor NaN, asi que se repite el proceso sin contar con al tabla encontrada
+                            valor = take_atribute(
+                                df_dict, new_tab, columna, id_val
+                            )  # Se ecnuebtra la tabla y se checkea el valor
+                            if valor is not None:
+                                break  # Caso exitoso
+                            tachadas.append(
+                                new_tab
+                            )  # Valor NaN, asi que se repite el proceso sin contar con al tabla encontrada
 
                     # Añadir al diccionario de asignación
                     if columna not in assignment_dict:
@@ -80,10 +105,14 @@ def empty_data(df_dict):
     print("Emp terminado")
 
 
-# Para el caso de direccion auxiliar, descomponerla en TIPO_VIA, NOM_VIA y NUM_VIA e insertar la que se 
+# Para el caso de direccion auxiliar, descomponerla en TIPO_VIA, NOM_VIA y NUM_VIA e insertar la que se
 # nombra como argumento
 def aux_dir(tabla_name, tabla, columna, i):
-    if tabla_name in ["Areas", "Juegos"] and columna in [ "TIPO_VIA", "NOM_VIA", "NUM_VIA"]:
+    if tabla_name in ["Areas", "Juegos"] and columna in [
+        "TIPO_VIA",
+        "NOM_VIA",
+        "NUM_VIA",
+    ]:
         if not pd.isna(tabla["DIRECCION_AUX"][i]):
             lista = tabla["DIRECCION_AUX"][i].split(" ")
             via = None
@@ -111,10 +140,18 @@ def aux_dir(tabla_name, tabla, columna, i):
     return None
 
 
-#Coge cualquier fecha y la pasa a formato %Y-%m-%d %H:%M:%S.
-#En caso de NaN se coloca la predeterminada (2018-12-31)
+# Coge cualquier fecha y la pasa a formato %Y-%m-%d %H:%M:%S.
+# En caso de NaN se coloca la predeterminada (2018-12-31)
 def reformatear_fecha(df: dict, table_name: str, column_name: str):
-    tablas = ["Areas", "Encuestas", "Incidencias", "Incidentes", "Juegos", "Mantenimiento", "meteo24"]
+    tablas = [
+        "Areas",
+        "Encuestas",
+        "Incidencias",
+        "Incidentes",
+        "Juegos",
+        "Mantenimiento",
+        "meteo24",
+    ]
     columnas = ["FECHA_INSTALACION", "FECHA", "FECHA_REPORTE", "FECHA_INTERVENCION"]
     if table_name in tablas and column_name in columnas:
         archivo = df[table_name]
@@ -130,23 +167,47 @@ def reformatear_fecha(df: dict, table_name: str, column_name: str):
             fechas_nuevas.append(f_formt)
         archivo[column_name] = fechas_nuevas
 
+
 # Elimina tildes y caracteres especiales
 def delete_special(df: dict):
-    #Columnas donde se eliminan los caracteres especiales
-    lista_tildes = ["DESC_CLASIFICACION", "BARRIO", "DISTRITO", "NOMBRE", "TIPO_INCIDENTE",
-                    "GRAVEDAD", "TIPO_INTERVENCION", "DIRECCION_AUX"]
+    # Columnas donde se eliminan los caracteres especiales
+    lista_tildes = [
+        "DESC_CLASIFICACION",
+        "BARRIO",
+        "DISTRITO",
+        "NOMBRE",
+        "TIPO_INCIDENTE",
+        "GRAVEDAD",
+        "TIPO_INTERVENCION",
+        "DIRECCION_AUX",
+    ]
     # Diccionario para reemplazar letras con tildes
-    replacements = {"á": "a", "é": "e", "í": "i", "ó": "o", "ú": "u", "Á": "A", "É": "E", "Í": "I", "Ó": "O", "Ú": "U",}
+    replacements = {
+        "á": "a",
+        "é": "e",
+        "í": "i",
+        "ó": "o",
+        "ú": "u",
+        "Á": "A",
+        "É": "E",
+        "Í": "I",
+        "Ó": "O",
+        "Ú": "U",
+    }
     for tabla_n in df:
         tabla = df[tabla_n]
         for columna in tabla:
             if columna in lista_tildes:
                 for accented_char, unaccented_char in replacements.items():
-                    tabla[columna] = tabla[columna].str.replace(accented_char, unaccented_char)
-                tabla[columna] = tabla[columna].str.replace( r"[^a-zA-Z0-9 ñÑ-]", "", regex=True)
+                    tabla[columna] = tabla[columna].str.replace(
+                        accented_char, unaccented_char
+                    )
+                tabla[columna] = tabla[columna].str.replace(
+                    r"[^a-zA-Z0-9 ñÑ-]", "", regex=True
+                )
 
 
-#Covierte todos los números de teléfono al formato int (número de 11 cifras)
+# Covierte todos los números de teléfono al formato int (número de 11 cifras)
 def formato_tlf(df: dict):
     columna = df["Usuarios"]["TELEFONO"]
     for i in range(len(columna)):
@@ -160,10 +221,12 @@ def formato_tlf(df: dict):
             numero = valor[j:]
             lista = numero.split(" ")
             new_tlf = "34"
-            for x in lista: new_tlf += x
+            for x in lista:
+                new_tlf += x
             columna[i] = new_tlf
 
-#Elimina duplicados
+
+# Elimina duplicados
 def no_duplicates(df: dict):
     for tabla_n in df:
         if tabla_n == "meteo24" or tabla_n == "Codigo":
@@ -234,6 +297,7 @@ def adjust_ETRS89(df: dict) -> None:
         lambda x: "{:3.3f}".format(x % 90)
     )
 
+
 # Verifica los enum básicos
 def enum_checker(db: dict):
     for n_tabla in db:
@@ -251,7 +315,7 @@ def enum_checker(db: dict):
 
             elif n_tabla == "Juegos" and n_columna == "ESTADO":
                 for valor in columna:
-                    if valor not in ["OPERATIVO, REPARACION"]:
+                    if valor not in ["OPERATIVO", "REPARACION"]:
                         new_columna.append(None)
                     else:
                         new_columna.append(valor)
@@ -317,7 +381,7 @@ def enum_checker(db: dict):
                 tabla.dropna(subset=n_columna)
 
 
-#Verifica el campo NIF
+# Verifica el campo NIF
 def nif_status(db: dict):
     columna = db["Usuarios"]["NIF"]
     new_columna = []
@@ -340,7 +404,8 @@ def nif_status(db: dict):
     db["Usuarios"]["NIF"] = new_columna
     db["Usuarios"].dropna(subset=["NIF"])
 
-#Verifica los id en cada tabla
+
+# Verifica los id en cada tabla
 def check_id(db: dict):
     lista = [
         "Areas",
@@ -371,6 +436,7 @@ def check_id(db: dict):
                     new_columna.append(valor)
         db[nombre]["ID"] = new_columna
         db[nombre].dropna(subset=["ID"])
+
 
 # Verifica los ids y nif en incidencias
 def incidencias_status(db: dict):
