@@ -44,11 +44,6 @@ class Creator:
                     obj[key] = (
                         f"{str(obj[key]).split(" ")[0]}T{str(obj[key]).split(" ")[1]}Z"
                     )
-                if key == "vientosFuertes":
-                    if obj[key]:
-                        obj[key] = "true"
-                    else:
-                        obj[key] = "false"
 
         # abrir fiechero y escribir datos
         with open(f"DatasetsNuevos/{collection_name}.js", "w") as file:
@@ -90,7 +85,7 @@ class Creator:
             self.encuestas.append(
                 {
                     "id": int(id[i]),
-                    "fechaEncuesta": fecha[i],
+                    "fechaEncuesta": str(fecha[i]),
                     "puntuacionAccesibilidad": accesibilidad[i],
                     "puntuacionCalidad": calidad[i],
                     "comentaraios": comantarios[i],
@@ -109,7 +104,7 @@ class Creator:
             self.incidentesSeguridad.append(
                 {
                     "id": int(id[i]),
-                    "fechaDeReporte": fecha[i],
+                    "fechaDeReporte": str(fecha[i]),
                     "tipoIncidente": tipo[i],
                     "gravedad": gravedad[i],
                 }
@@ -140,7 +135,7 @@ class Creator:
                 self.incidencias.append(
                     {
                         "id": int(id[i]),
-                        "fechaReporte": fecha[i],
+                        "fechaReporte": str(fecha[i]),
                         "tipo": tipo[i],
                         "estado": estado[i],
                         "tiempoResolucion": float(tiempo[i]),
@@ -154,6 +149,8 @@ class Creator:
         id = self.extraer_columna("Juegos", "ID")
         modelo = self.extraer_columna("Juegos", "MODELO")
         estado_op = self.extraer_columna("Juegos", "ESTADO")
+        print("Estados: ", estado_op)
+        pass
         accesibilidad = self.extraer_columna("Juegos", "ACCESIBLE")
         fecha_instalacion = self.extraer_columna("Juegos", "FECHA_INSTALACION")
         tipo = self.extraer_columna("Juegos", "tipo_juego")
@@ -176,14 +173,14 @@ class Creator:
             try:
                 self.juegos.append(
                     {
-                        "id": str(id[i]),
-                        "modelo": str(modelo[i]),
-                        "estadoOperativo": str(estado_op[i]),
+                        "id": id[i],
+                        "modelo": modelo[i],
+                        "estadoOperativo": estado_op[i],
                         "accesibilidad": bool(accesibilidad[i]),
-                        "fechaInstalacion": str(fecha_instalacion[i]),
-                        "tipo": str(tipo[i]),
-                        "desgasteAcumulado": int(desgaste[i]),
-                        "indicadorExposicion": str(indicador_exposicion[i]),
+                        "fechaInstalacion": fecha_instalacion[i],
+                        "tipo": tipo[i],
+                        "desgasteAcumulado": desgaste[i],
+                        "indicadorExposicion": indicador_exposicion[i],
                         "ultimaFechaMantenimiento": str(ultima_fecha_mant[i]),
                         "mantenimientos": [mantenimientos[str(id[i])]],
                         "incidencias": incidencias_a_insertar[i],
@@ -204,12 +201,12 @@ class Creator:
                         {
                             "id": str(id[i]),
                             "modelo": str(modelo[i]),
-                            "estadoOperativo": str(estado_op[i]),
+                            "estadoOperativo": estado_op[i],
                             "accesibilidad": bool(accesibilidad[i]),
                             "fechaInstalacion": str(fecha_instalacion[i]),
-                            "tipo": str(tipo[i]),
+                            "tipo": tipo[i],
                             "desgasteAcumulado": int(desgaste[i]),
-                            "indicadorExposicion": str(indicador_exposicion[i]),
+                            "indicadorExposicion": indicador_exposicion[i],
                             "ultimaFechaMantenimiento": str(ultima_fecha_mant[i]),
                             "mantenimientos": mantenimientos[str(id[i])],
                             "incidencias": nueva_incidencia,
@@ -251,7 +248,7 @@ class Creator:
                     "id": int(id[i]),
                     "fecha": fecha[i],
                     "temperatura": temp[i],
-                    "vientosFuertes": vent[i],
+                    "vientosFuertes": bool(vent[i]),
                     "precipitacion": prec[i],
                 }
             )
