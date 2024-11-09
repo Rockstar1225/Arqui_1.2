@@ -186,17 +186,16 @@ class Creator:
                     }
                 )
             # por si el juego no tiene ni mantenimiento ni incidencia
-            except (KeyError, IndexError):
-                mantenimientos[str(id[i])] = []
-                nueva_incidencia = []
-            # por si el juego no tiene mantenimiento
-            except KeyError:
-                mantenimientos[str(id[i])] = []
-            # por si el juego no tiene incidencia
-            except IndexError:
-                nueva_incidencia = []
+            except (KeyError, IndexError) as e:
+                if type(e) == KeyError:
+                    mantenimientos[str(id[i])] = []
+                elif type(e) == IndexError:
+                    nueva_incidencia = []
+                else:
+                    mantenimientos[str(id[i])] = []
+                    nueva_incidencia = []
             finally:
-                if nueva_incidencia != None:
+                if nueva_incidencia is None:
                     self.juegos.append(
                         {
                             "id": str(id[i]),
