@@ -159,7 +159,7 @@ class Creator:
         mantenimientos = self.juego_mantenimientos
         # generar resumen para la incidencia
         incidencias_a_insertar = []
-        for i in range(len(self.state["Juegos"])):
+        for i in range(len(self.state["Juegos"]["ID"])):
             for item in self.juego_incidencias.keys():
                 if item == self.state["Juegos"].loc[i, "ID"]:
                     for incidencia_id in self.juego_incidencias[item]:
