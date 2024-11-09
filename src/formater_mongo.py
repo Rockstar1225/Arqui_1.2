@@ -1,9 +1,5 @@
-import load
-import change
-import numpy as np
-import datetime as dt
-import random
 import json
+import os
 
 
 class Creator:
@@ -39,6 +35,25 @@ class Creator:
         self.usuarios = []  # generados
         self.mantenimientos = []
 
+    def get_json_data(self, objs: list, collection_name: str):
+
+        # Dar formato ISO 8601 a fechas
+        for obj in objs:
+            for key in obj:
+                if "fecha" in key:
+                    obj[key] = (
+                        f"{str(obj[key]).split(" ")[0]}T{str(obj[key]).split(" ")[1]}Z"
+                    )
+
+        # abrir fiechero y escribir datos
+        with open(f"DatasetsNuevos/{collection_name}.js", "w") as file:
+            file.write(
+                f"""db.{collection_name}.insertMany(
+                    { json.dumps(objs,indent=4) }
+                )"""
+            )
+        print(f"JSON creado para {collection_name}")
+
     def generar_usuarios(self):
 
         # extraer columnas de datos usuarios
@@ -70,7 +85,7 @@ class Creator:
             self.encuestas.append(
                 {
                     "id": int(id[i]),
-                    "fechaEncuesta": str(fecha[i]),
+                    "fechaEncuesta": fecha[i],
                     "puntuacionAccesibilidad": accesibilidad[i],
                     "puntuacionCalidad": calidad[i],
                     "comentaraios": comantarios[i],
@@ -89,7 +104,7 @@ class Creator:
             self.incidentesSeguridad.append(
                 {
                     "id": int(id[i]),
-                    "fechaDeReporte": str(fecha[i]),
+                    "fechaDeReporte": fecha[i],
                     "tipoIncidente": tipo[i],
                     "gravedad": gravedad[i],
                 }
@@ -120,7 +135,7 @@ class Creator:
                 self.incidencias.append(
                     {
                         "id": int(id[i]),
-                        "fechaReporte": str(fecha[i]),
+                        "fechaReporte": fecha[i],
                         "tipo": tipo[i],
                         "estado": estado[i],
                         "tiempoResolucion": float(tiempo[i]),
@@ -129,7 +144,7 @@ class Creator:
                     }
                 )
         print("Incidecias generadas!!")
-    
+
     def generar_juegos(self):
         id = self.extraer_columna("Juegos", "ID")
         # nombre = self.extraer_columna() TODO: fix validador juego
@@ -151,6 +166,7 @@ class Creator:
                         for incidencia in self.incidencias:
                             if incidencia["id"] == incidencia_id:
                                 incidencias_a_insertar.append(incidencia)
+
         for i in range(len(id)):
             try:
                 self.juegos.append(
@@ -165,8 +181,9 @@ class Creator:
                         "indicadorExposicion": str(indicador_exposicion[i]),
                         "ultimaFechaMantenimiento": str(ultima_fecha_mant[i]),
                         "mantenimientos": [mantenimientos[str(id[i])]],
-                        "incidencias": incidencias_a_insertar[i]
-                    })
+                        "incidencias": incidencias_a_insertar[i],
+                    }
+                )
             # por si el juego no tiene ni incidencia ni mantenimiento
             except IndexError and KeyError:
                 self.juegos.append(
@@ -181,8 +198,9 @@ class Creator:
                         "indicadorExposicion": str(indicador_exposicion[i]),
                         "ultimaFechaMantenimiento": str(ultima_fecha_mant[i]),
                         "mantenimientos": [],
-                        "incidencias": []
-                    })
+                        "incidencias": [],
+                    }
+                )
             # por si el juego no tiene mantenimiento
             except KeyError:
                 self.juegos.append(
@@ -197,8 +215,9 @@ class Creator:
                         "indicadorExposicion": str(indicador_exposicion[i]),
                         "ultimaFechaMantenimiento": str(ultima_fecha_mant[i]),
                         "mantenimientos": [],
-                        "incidencias": incidencias_a_insertar[i]
-                    })
+                        "incidencias": incidencias_a_insertar[i],
+                    }
+                )
             # por si el juego no tiene incidencia
             except IndexError:
                 self.juegos.append(
@@ -213,12 +232,11 @@ class Creator:
                         "indicadorExposicion": str(indicador_exposicion[i]),
                         "ultimaFechaMantenimiento": str(ultima_fecha_mant[i]),
                         "mantenimientos": [mantenimientos[str(id[i])]],
-                        "incidencias": []
-                    })
-                    
+                        "incidencias": [],
+                    }
+                )
+
         print("Juegos generados!!")
-                                
-        
 
     def generar_clima(self):
         id = self.extraer_columna("meteo24", "ID")

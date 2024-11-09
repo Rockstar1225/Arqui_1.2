@@ -50,6 +50,16 @@ def main():
     extractor.generar_area()
     extractor.generar_mantenimientos()
     extractor.generar_juegos()
+
+    # Formatear datos
+    extractor.get_json_data(extractor.incidentesSeguridad, "IncidenteSeguridad")
+    extractor.get_json_data(extractor.areas, "AreaRecreativaClima")
+    extractor.get_json_data(extractor.encuestas, "EncuestaSatisfaccion")
+    extractor.get_json_data(extractor.incidencias, "Incidencia")
+    extractor.get_json_data(extractor.juegos, "Juego")
+    extractor.get_json_data(extractor.mantenimientos, "Mantenimiento")
+    extractor.get_json_data(extractor.registrosClima, "RegistroClima")
+    extractor.get_json_data(extractor.usuarios, "Usuario")
     # print(base)
     # print(base["Areas"]["MeteoID"])
 
