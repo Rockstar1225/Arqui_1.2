@@ -1,0 +1,118 @@
+// Configuracion de un conjunto de replicacion
+
+// crear los directorios y asignar los permisos
+sudo mkdir -p /var/lib/data/node1 /var/lib/data/node2 /var/lib/data/node3
+sudo chown -R mongodb:mongodb /var/lib/data/node*
+
+// ajustes de nodo
+// nodo 1
+    sudo nano / etc / mongod1.conf
+# / etc / mongod1.conf
+# MongoDB replica set configuration file
+storage:
+dbPath: /var/lib / data / node1
+systemLog:
+destination: file
+logAppend: true
+path: /var/log / mongodb / mongod1.log
+replication:
+replSetName: "rs1"
+net:
+port: 27018
+bindIp: 0.0.0.0
+processManagement:
+timeZoneInfo: /usr/share / zoneinfo
+// nodo 2
+    sudo nano / etc / mongod2.conf
+# / etc / mongod2.conf
+# MongoDB replica set configuration file
+storage:
+dbPath: /var/lib / data / node2
+systemLog:
+destination: file
+logAppend: true
+path: /var/log / mongodb / mongod2.log
+replication:
+replSetName: "rs2"
+net:
+port: 27019
+bindIp: 0.0.0.0
+processManagement:
+timeZoneInfo: /usr/share / zoneinfo
+// nodo 3
+    sudo nano / etc / mongod3.conf
+# / etc / mongod3.conf
+# MongoDB replica set configuration file
+storage:
+dbPath: /var/lib / data / node3
+systemLog:
+destination: file
+logAppend: true
+path: /var/log / mongodb / mongod3.log
+replication:
+replSetName: "rs3"
+net:
+port: 27020
+bindIp: 0.0.0.0
+processManagement:
+timeZoneInfo: /usr/share / zoneinfo
+
+// arranque automatico de nodos del cluster
+// mongo cluster service
+sudo nano / lib / systemd / system / mongocluster@.service
+[Unit]
+Description = MongoDB cluster
+Documentation = https://docs.mongodb.org/manual
+After = network - online.target
+Wants = network - online.target
+[Service]
+User = mongodb
+Group = mongodb
+EnvironmentFile = -/etc/default / mongod
+ExecStart = /usr/bin / mongod--config / etc / mongod % i.conf
+PIDFile = /var/run / mongodb / mongod % i.pid
+# file size
+LimitFSIZE = infinity
+# cpu time
+LimitCPU = infinity
+# virtual memory size
+LimitAS = infinity
+# open files
+LimitNOFILE = 64000
+# processes / threads
+LimitNPROC = 64000
+# locked memory
+LimitMEMLOCK = infinity
+# total threads(user + kernel)
+TasksMax = infinity
+TasksAccounting = false
+[Install]
+WantedBy = multi - user.target
+// habiliter servicios
+sudo systemctl enable mongocluster @1
+sudo systemctl enable mongocluster @2
+sudo systemctl enable mongocluster @3
+
+sudo systemctl start mongocluster @{ 1, 2, 3}
+
+// construccion de conjunto de relicacion
+// arrancar nodo1
+mongosh--port 27018
+// configuracion de nodo primario
+rsconf = {
+    _id: "rs1",
+    members: [
+        { _id: 0, host: "localhost:27018" },
+        { _id: 1, host: "localhost:27019" },
+        { _id: 2, host: "localhost:27020" }
+    ]
+}
+rs.initiate(rsconf);
+
+// cambiar nodos2 y nodo3 para que puedan hacer lecturas
+// nodo2
+mongosh--port 27019
+db.getMongo().setReadPref('secondary');
+// nodo3
+mongosh--port 27020
+db.getMongo().setReadPref('secondary');
