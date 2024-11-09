@@ -152,7 +152,6 @@ class Creator:
 
     def generar_juegos(self):
         id = self.extraer_columna("Juegos", "ID")
-        # nombre = self.extraer_columna() TODO: fix validador juego
         modelo = self.extraer_columna("Juegos", "MODELO")
         estado_op = self.extraer_columna("Juegos", "ESTADO")
         accesibilidad = self.extraer_columna("Juegos", "ACCESIBLE")
