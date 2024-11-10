@@ -414,11 +414,9 @@ class Creator:
             valor_manten = tabla_mantenimiento.loc[i, "ID"]
 
             if valor_id not in self.juego_mantenimientos:
-                # print("Tipo de valor de mantenimiento: ", type(valor_manten))
-                # print("Valor a insertar", transform(valor_manten))
                 self.juego_mantenimientos[valor_id] = [transform(valor_manten)]
             else:
-                self.juego_mantenimientos[valor_id].append(valor_manten)
+                self.juego_mantenimientos[valor_id].append(transform(valor_manten))
 
         # Deducir las relaciones de juegos e incidencias. Mapa "JuegoID -> IncidenciasID"
         for juego in self.juego_mantenimientos.keys():
@@ -432,11 +430,8 @@ class Creator:
                             if juego not in self.juego_incidencias:
                                 self.juego_incidencias[juego] = [str(int(inc))]
                             else:
-                                self.juego_incidencias[juego].append(str(int(inc)))
-
-        print(
-            "Relaciones de juego_mantenimientos, mantenimiento_incdencias, juego_incidencias terminadas"
-        )
+                                if str(int(inc)) not in self.juego_incidencias[juego]:
+                                    self.juego_incidencias[juego].append(str(int(inc)))
 
     def crear_areas_incidentes(self) -> None:
         """Creating reference for Areas-Incidentes"""

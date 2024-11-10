@@ -1,0 +1,34 @@
+use ej1
+
+db.Juego.aggregate([
+    // juego
+    {
+        $lookup: {
+            from: "incidencias",           // Colección relacionada
+            localField: "J",     // Campo en 'ordenes' que se relaciona con 'productos'
+            foreignField: "_id",          // Campo en 'productos' que coincide
+            as: "detallesProducto"        // Nombre del campo de salida para los detalles del producto
+    },
+        $project:
+        {
+            "id": 1,
+            "modelo": 1,
+            "estadoOperativo": 1,
+            "accesibilidad": 1,
+            "fechaInstalacion": 1,
+            "tipo": 1,
+            "desgasteAcumulado": 1,
+            "indicadorExposicion": 1,
+            "ultimaFechaMantenimiento": 1,
+            "mantenimientos": 1,
+            "incidencias": 1,
+            //RefMantenimiento
+            RefMant:"$Mantenimiento",
+            //RefIncidencia
+            RefIncidencia:"$Incidencia"
+        }
+    },    
+    {
+        $out: {db:"ej1", coll: "Temp2"}
+    }
+])
