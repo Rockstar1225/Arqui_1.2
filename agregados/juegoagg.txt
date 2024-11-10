@@ -4,7 +4,7 @@ db.Juego.aggregate([
     // Etapa de $lookup para unir con la colección 'id'
     {
         $lookup: {
-            from: "id",
+            from: "Incidencia",
             localField: "incidencias", 
             foreignField: "id", 
             as: "Inc"
@@ -27,7 +27,9 @@ db.Juego.aggregate([
             //RefMantenimiento
             RefMant: "$Mantenimiento",
             //RefIncidencia - selecciona campos de 'Inc' obtenido en $lookup
-            "Inc":1
+            "Inc.fechaReporte": 1,
+            "Inc.tipo": 1,
+            "Inc.estado": 1
         }
     },
     // Etapa de $out para exportar los resultados a otra colección
