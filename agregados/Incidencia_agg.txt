@@ -13,7 +13,7 @@ db.Incidencia.aggregate([
         }
     },
     {
-        $out: {db:"ej1", coll: "tmp"}
+        $out: {db:"ej1", coll: "AgregadoIncidencia"}
     }
 
 ])

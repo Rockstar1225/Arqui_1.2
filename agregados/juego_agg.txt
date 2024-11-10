@@ -34,6 +34,6 @@ db.Juego.aggregate([
     },
     // Etapa de $out para exportar los resultados a otra colección
     {
-        $out: { db: "ej1", coll: "Temp2" }
+        $out: { db: "ej1", coll: "AgregadoJuego" }
     }
 ])
