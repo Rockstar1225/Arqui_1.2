@@ -159,7 +159,7 @@ class Creator:
         for i in range(len(id)):
             # si el juego no tiene incidencias
             if id[i] not in list(self.juego_incidencias.keys()):
-                incidencia = [""]
+                incidencia = []
             else:
                 incidencia = self.juego_incidencias[id[i]]
             # si el juego no tiene mantenimientos
@@ -428,10 +428,10 @@ class Creator:
                     if self.mantenimiento_incidencias[mantenimiento] == incidencia:
                         for inc in incidencia:
                             if juego not in self.juego_incidencias:
-                                self.juego_incidencias[juego] = [str(int(inc))]
+                                self.juego_incidencias[juego] = [int(inc)]
                             else:
-                                if str(int(inc)) not in self.juego_incidencias[juego]:
-                                    self.juego_incidencias[juego].append(str(int(inc)))
+                                if int(inc) not in self.juego_incidencias[juego]:
+                                    self.juego_incidencias[juego].append(int(inc))
 
     def crear_areas_incidentes(self) -> None:
         """Creating reference for Areas-Incidentes"""

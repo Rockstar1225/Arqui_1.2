@@ -1,16 +1,18 @@
 use ej1
 
 db.Juego.aggregate([
-    // juego
+    // Etapa de $lookup para unir con la colección 'id'
     {
         $lookup: {
-            from: "incidencias",           // Colección relacionada
-            localField: "J",     // Campo en 'ordenes' que se relaciona con 'productos'
-            foreignField: "_id",          // Campo en 'productos' que coincide
-            as: "detallesProducto"        // Nombre del campo de salida para los detalles del producto
+            from: "id",
+            localField: "incidencias", 
+            foreignField: "id", 
+            as: "Inc"
+        }
     },
-        $project:
-        {
+    // Etapa de $project para seleccionar y renombrar los campos deseados
+    {
+        $project: {
             "id": 1,
             "modelo": 1,
             "estadoOperativo": 1,
@@ -23,12 +25,13 @@ db.Juego.aggregate([
             "mantenimientos": 1,
             "incidencias": 1,
             //RefMantenimiento
-            RefMant:"$Mantenimiento",
-            //RefIncidencia
-            RefIncidencia:"$Incidencia"
+            RefMant: "$Mantenimiento",
+            //RefIncidencia - selecciona campos de 'Inc' obtenido en $lookup
+            "Inc":1
         }
-    },    
+    },
+    // Etapa de $out para exportar los resultados a otra colección
     {
-        $out: {db:"ej1", coll: "Temp2"}
+        $out: { db: "ej1", coll: "Temp2" }
     }
 ])
