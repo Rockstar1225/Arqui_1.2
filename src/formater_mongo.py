@@ -255,7 +255,6 @@ class Creator:
 
             # extraer juegos de la relación
             res_juegos = []
-            print("Area Juego: ", int(id[i]) in self.area_juegos)
             if int(id[i]) in self.area_juegos:
                 juegos = self.area_juegos[int(id[i])]
                 for juegoID in juegos:
