@@ -1,6 +1,4 @@
 import json
-import os
-
 
 class Creator:
     def __init__(self, bd: dict):
@@ -27,12 +25,12 @@ class Creator:
 
         # objetos_extraidos
         self.areas = []
-        self.encuestas = []  # generadoas
+        self.encuestas = []
         self.registrosClima = []
-        self.incidentesSeguridad = []  # generados
+        self.incidentesSeguridad = []
         self.juegos = []
         self.incidencias = []
-        self.usuarios = []  # generados
+        self.usuarios = []
         self.mantenimientos = []
 
     def get_json_data(self, objs: list, collection_name: str):
@@ -45,7 +43,7 @@ class Creator:
                         f"{str(obj[key]).split(" ")[0]}T{str(obj[key]).split(" ")[1]}Z"
                     )
 
-        # abrir fiechero y escribir datos
+        # abrir fichero y escribir datos
         with open(f"DatasetsNuevos/{collection_name}.js", "w") as file:
             file.write(
                 f"""db.{collection_name}.insertMany(
@@ -326,7 +324,7 @@ class Creator:
     def crear_area_clima(self):
         tabla_areas = self.state["Areas"]
 
-        # Extraer las areas de la tabla de juegos
+        # Extraer las estaciones meteorologicas de la tabla de areas
         for i in range(len(tabla_areas["MeteoID"])):
             valor_meteo = int(tabla_areas.loc[i, "MeteoID"])
             valor_id = int(tabla_areas.loc[i, "ID"])
@@ -338,7 +336,6 @@ class Creator:
                 self.area_meteo[valor_id] = [valor_meteo]
             else:
                 self.area_meteo[valor_id].append(valor_meteo)
-        print("Area-Meteo Completado")
 
     def crear_area_juegos(self):
 
@@ -353,7 +350,6 @@ class Creator:
                 self.area_juegos[int(valor_area)] = [int(valor_juego)]
             else:
                 self.area_juegos[int(valor_area)].append(int(valor_juego))
-        print("Area-Juegos Completado")
 
     def crear_juegos_tipo(self):
 

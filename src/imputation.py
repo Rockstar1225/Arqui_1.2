@@ -350,7 +350,7 @@ def nivelEscalamiento(db: pd.DataFrame):
     incidencias = db["Incidencias"]
     lista_rec = []
     for n in range(len(incidencias["ESTADO"])):
-        if incidencias["ESTADO"][n] == "ABIERTO":
+        if incidencias["ESTADO"][n] == "ABIERTA":
             numero = random.randint(1, 10)
             lista_rec.append(numero)
         else:
