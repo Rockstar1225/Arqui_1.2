@@ -1,0 +1,19 @@
+db.Incidencia.aggregate([
+    // Incidencias
+    {
+	$project:
+        {
+            "id": 1,
+            "fechaReporte": 1,
+	    "tipo": 1,
+	    "estado": 1,
+	    "tiempoResolucion": 1,
+	    "nivelEscalamiento": 1,
+	    RefUsuarios: "$usuarios"
+        }
+    },
+    {
+        $out: {db:"ej1", coll: "tmp"}
+    }
+
+])
