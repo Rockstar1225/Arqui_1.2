@@ -1,3 +1,0 @@
-Estrategias de replicación:
-  - 3 nodos de replicación
-  - un nodo de replicación por cada colección
