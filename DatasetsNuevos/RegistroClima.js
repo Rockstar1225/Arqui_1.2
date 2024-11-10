@@ -395,198 +395,198 @@ db.RegistroClima.insertMany(
     {
         "id": 57,
         "fecha": "2024-01-01T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 58,
         "fecha": "2024-02-01T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 59,
         "fecha": "2024-02-02T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 60,
         "fecha": "2024-03-01T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 61,
         "fecha": "2024-03-02T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 62,
         "fecha": "2024-03-03T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 63,
         "fecha": "2024-04-01T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 64,
         "fecha": "2024-04-02T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 65,
         "fecha": "2024-04-03T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 66,
         "fecha": "2024-04-04T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 67,
         "fecha": "2024-05-01T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 68,
         "fecha": "2024-05-02T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 69,
         "fecha": "2024-05-03T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 70,
         "fecha": "2024-05-04T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 71,
         "fecha": "2024-05-05T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 72,
         "fecha": "2024-06-01T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 73,
         "fecha": "2024-06-02T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 74,
         "fecha": "2024-06-03T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 75,
         "fecha": "2024-06-04T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 76,
         "fecha": "2024-06-05T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 77,
         "fecha": "2024-06-06T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 78,
         "fecha": "2024-07-01T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 79,
         "fecha": "2024-07-02T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 80,
         "fecha": "2024-07-03T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 81,
         "fecha": "2024-07-04T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 82,
         "fecha": "2024-07-05T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 83,
         "fecha": "2024-07-06T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 84,
         "fecha": "2024-07-07T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 85,
@@ -1181,588 +1181,588 @@ db.RegistroClima.insertMany(
         "fecha": "2024-01-01T00:00:00Z",
         "temperatura": 9,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 170,
         "fecha": "2024-02-01T00:00:00Z",
         "temperatura": 15,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 171,
         "fecha": "2024-02-02T00:00:00Z",
         "temperatura": 14,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 172,
         "fecha": "2024-03-01T00:00:00Z",
         "temperatura": 9,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 173,
         "fecha": "2024-03-02T00:00:00Z",
         "temperatura": 6,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 174,
         "fecha": "2024-03-03T00:00:00Z",
         "temperatura": 7,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 175,
         "fecha": "2024-04-01T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 176,
         "fecha": "2024-04-02T00:00:00Z",
         "temperatura": 10,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 177,
         "fecha": "2024-04-03T00:00:00Z",
         "temperatura": 14,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 178,
         "fecha": "2024-04-04T00:00:00Z",
         "temperatura": 16,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 179,
         "fecha": "2024-05-01T00:00:00Z",
         "temperatura": 11,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 180,
         "fecha": "2024-05-02T00:00:00Z",
         "temperatura": 11,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 181,
         "fecha": "2024-05-03T00:00:00Z",
         "temperatura": 14,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 182,
         "fecha": "2024-05-04T00:00:00Z",
         "temperatura": 17,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 183,
         "fecha": "2024-05-05T00:00:00Z",
         "temperatura": 16,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 184,
         "fecha": "2024-06-01T00:00:00Z",
         "temperatura": 21,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 185,
         "fecha": "2024-06-02T00:00:00Z",
         "temperatura": 22,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 186,
         "fecha": "2024-06-03T00:00:00Z",
         "temperatura": 23,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 187,
         "fecha": "2024-06-04T00:00:00Z",
         "temperatura": 25,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 188,
         "fecha": "2024-06-05T00:00:00Z",
         "temperatura": 27,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 189,
         "fecha": "2024-06-06T00:00:00Z",
         "temperatura": 28,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 190,
         "fecha": "2024-07-01T00:00:00Z",
         "temperatura": 25,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 191,
         "fecha": "2024-07-02T00:00:00Z",
         "temperatura": 25,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 192,
         "fecha": "2024-07-03T00:00:00Z",
         "temperatura": 27,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 193,
         "fecha": "2024-07-04T00:00:00Z",
         "temperatura": 30,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 194,
         "fecha": "2024-07-05T00:00:00Z",
         "temperatura": 31,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 195,
         "fecha": "2024-07-06T00:00:00Z",
         "temperatura": 30,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 196,
         "fecha": "2024-07-07T00:00:00Z",
         "temperatura": 25,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 197,
         "fecha": "2024-01-01T00:00:00Z",
         "temperatura": 7,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 198,
         "fecha": "2024-02-01T00:00:00Z",
         "temperatura": 12,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 199,
         "fecha": "2024-02-02T00:00:00Z",
         "temperatura": 12,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 200,
         "fecha": "2024-03-01T00:00:00Z",
         "temperatura": 8,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 201,
         "fecha": "2024-03-02T00:00:00Z",
         "temperatura": 6,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 202,
         "fecha": "2024-03-03T00:00:00Z",
         "temperatura": 6,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 203,
         "fecha": "2024-04-01T00:00:00Z",
         "temperatura": 8,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 204,
         "fecha": "2024-04-02T00:00:00Z",
         "temperatura": 10,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 205,
         "fecha": "2024-04-03T00:00:00Z",
         "temperatura": 13,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 206,
         "fecha": "2024-04-04T00:00:00Z",
         "temperatura": 15,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 207,
         "fecha": "2024-05-01T00:00:00Z",
         "temperatura": 11,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 208,
         "fecha": "2024-05-02T00:00:00Z",
         "temperatura": 10,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 209,
         "fecha": "2024-05-03T00:00:00Z",
         "temperatura": 13,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 210,
         "fecha": "2024-05-04T00:00:00Z",
         "temperatura": 16,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 211,
         "fecha": "2024-05-05T00:00:00Z",
         "temperatura": 16,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 212,
         "fecha": "2024-06-01T00:00:00Z",
         "temperatura": 20,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 213,
         "fecha": "2024-06-02T00:00:00Z",
         "temperatura": 20,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 214,
         "fecha": "2024-06-03T00:00:00Z",
         "temperatura": 22,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 215,
         "fecha": "2024-06-04T00:00:00Z",
         "temperatura": 24,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 216,
         "fecha": "2024-06-05T00:00:00Z",
         "temperatura": 27,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 217,
         "fecha": "2024-06-06T00:00:00Z",
         "temperatura": 28,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 218,
         "fecha": "2024-07-01T00:00:00Z",
         "temperatura": 24,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 219,
         "fecha": "2024-07-02T00:00:00Z",
         "temperatura": 24,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 220,
         "fecha": "2024-07-03T00:00:00Z",
         "temperatura": 26,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 221,
         "fecha": "2024-07-04T00:00:00Z",
         "temperatura": 30,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 222,
         "fecha": "2024-07-05T00:00:00Z",
         "temperatura": 30,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 223,
         "fecha": "2024-07-06T00:00:00Z",
         "temperatura": 28,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 224,
         "fecha": "2024-07-07T00:00:00Z",
         "temperatura": 24,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 225,
         "fecha": "2024-01-01T00:00:00Z",
         "temperatura": 6,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 226,
         "fecha": "2024-02-01T00:00:00Z",
         "temperatura": 12,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 227,
         "fecha": "2024-02-02T00:00:00Z",
         "temperatura": 12,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 228,
         "fecha": "2024-03-01T00:00:00Z",
         "temperatura": 8,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 229,
         "fecha": "2024-03-02T00:00:00Z",
         "temperatura": 6,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 230,
         "fecha": "2024-03-03T00:00:00Z",
         "temperatura": 6,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 231,
         "fecha": "2024-04-01T00:00:00Z",
         "temperatura": 8,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 232,
         "fecha": "2024-04-02T00:00:00Z",
         "temperatura": 10,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 233,
         "fecha": "2024-04-03T00:00:00Z",
         "temperatura": 13,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 234,
         "fecha": "2024-04-04T00:00:00Z",
         "temperatura": 15,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 235,
         "fecha": "2024-05-01T00:00:00Z",
         "temperatura": 10,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 236,
         "fecha": "2024-05-02T00:00:00Z",
         "temperatura": 10,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 237,
         "fecha": "2024-05-03T00:00:00Z",
         "temperatura": 13,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 238,
         "fecha": "2024-05-04T00:00:00Z",
         "temperatura": 16,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 239,
         "fecha": "2024-05-05T00:00:00Z",
         "temperatura": 16,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 240,
         "fecha": "2024-06-01T00:00:00Z",
         "temperatura": 19,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 241,
         "fecha": "2024-06-02T00:00:00Z",
         "temperatura": 20,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 242,
         "fecha": "2024-06-03T00:00:00Z",
         "temperatura": 22,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 243,
         "fecha": "2024-06-04T00:00:00Z",
         "temperatura": 24,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 244,
         "fecha": "2024-06-05T00:00:00Z",
         "temperatura": 27,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 245,
         "fecha": "2024-06-06T00:00:00Z",
         "temperatura": 27,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 246,
         "fecha": "2024-07-01T00:00:00Z",
         "temperatura": 24,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 247,
         "fecha": "2024-07-02T00:00:00Z",
         "temperatura": 24,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 248,
         "fecha": "2024-07-03T00:00:00Z",
         "temperatura": 27,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 249,
         "fecha": "2024-07-04T00:00:00Z",
         "temperatura": 30,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 250,
         "fecha": "2024-07-05T00:00:00Z",
         "temperatura": 30,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 251,
         "fecha": "2024-07-06T00:00:00Z",
         "temperatura": 28,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 252,
         "fecha": "2024-07-07T00:00:00Z",
         "temperatura": 24,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 253,
@@ -1965,588 +1965,588 @@ db.RegistroClima.insertMany(
         "fecha": "2024-01-01T00:00:00Z",
         "temperatura": 7,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 282,
         "fecha": "2024-02-01T00:00:00Z",
         "temperatura": 9,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 283,
         "fecha": "2024-02-02T00:00:00Z",
         "temperatura": 10,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 284,
         "fecha": "2024-03-01T00:00:00Z",
         "temperatura": 9,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 285,
         "fecha": "2024-03-02T00:00:00Z",
         "temperatura": 7,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 286,
         "fecha": "2024-03-03T00:00:00Z",
         "temperatura": 7,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 287,
         "fecha": "2024-04-01T00:00:00Z",
-        "temperatura": "-",
+        "temperatura": 0,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 288,
         "fecha": "2024-04-02T00:00:00Z",
         "temperatura": 11,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 289,
         "fecha": "2024-04-03T00:00:00Z",
         "temperatura": 14,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 290,
         "fecha": "2024-04-04T00:00:00Z",
         "temperatura": 15,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 291,
         "fecha": "2024-05-01T00:00:00Z",
         "temperatura": 11,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 292,
         "fecha": "2024-05-02T00:00:00Z",
         "temperatura": 11,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 293,
         "fecha": "2024-05-03T00:00:00Z",
         "temperatura": 14,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 294,
         "fecha": "2024-05-04T00:00:00Z",
         "temperatura": 17,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 295,
         "fecha": "2024-05-05T00:00:00Z",
         "temperatura": 17,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 296,
         "fecha": "2024-06-01T00:00:00Z",
         "temperatura": 21,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 297,
         "fecha": "2024-06-02T00:00:00Z",
         "temperatura": 21,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 298,
         "fecha": "2024-06-03T00:00:00Z",
         "temperatura": 23,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 299,
         "fecha": "2024-06-04T00:00:00Z",
         "temperatura": 25,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 300,
         "fecha": "2024-06-05T00:00:00Z",
         "temperatura": 27,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 301,
         "fecha": "2024-06-06T00:00:00Z",
         "temperatura": 27,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 302,
         "fecha": "2024-07-01T00:00:00Z",
         "temperatura": 25,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 303,
         "fecha": "2024-07-02T00:00:00Z",
         "temperatura": 25,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 304,
         "fecha": "2024-07-03T00:00:00Z",
         "temperatura": 27,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 305,
         "fecha": "2024-07-04T00:00:00Z",
         "temperatura": 29,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 306,
         "fecha": "2024-07-05T00:00:00Z",
         "temperatura": 31,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 307,
         "fecha": "2024-07-06T00:00:00Z",
         "temperatura": 29,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 308,
         "fecha": "2024-07-07T00:00:00Z",
         "temperatura": 25,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 309,
         "fecha": "2024-01-01T00:00:00Z",
         "temperatura": 7,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 310,
         "fecha": "2024-02-01T00:00:00Z",
         "temperatura": 12,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 311,
         "fecha": "2024-02-02T00:00:00Z",
         "temperatura": 12,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 312,
         "fecha": "2024-03-01T00:00:00Z",
         "temperatura": 8,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 313,
         "fecha": "2024-03-02T00:00:00Z",
         "temperatura": 6,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 314,
         "fecha": "2024-03-03T00:00:00Z",
         "temperatura": 6,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 315,
         "fecha": "2024-04-01T00:00:00Z",
         "temperatura": 8,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 316,
         "fecha": "2024-04-02T00:00:00Z",
         "temperatura": 10,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 317,
         "fecha": "2024-04-03T00:00:00Z",
         "temperatura": 13,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 318,
         "fecha": "2024-04-04T00:00:00Z",
         "temperatura": 15,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 319,
         "fecha": "2024-05-01T00:00:00Z",
         "temperatura": 11,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 320,
         "fecha": "2024-05-02T00:00:00Z",
         "temperatura": 11,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 321,
         "fecha": "2024-05-03T00:00:00Z",
         "temperatura": 13,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 322,
         "fecha": "2024-05-04T00:00:00Z",
         "temperatura": 17,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 323,
         "fecha": "2024-05-05T00:00:00Z",
         "temperatura": 16,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 324,
         "fecha": "2024-06-01T00:00:00Z",
         "temperatura": 19,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 325,
         "fecha": "2024-06-02T00:00:00Z",
         "temperatura": 20,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 326,
         "fecha": "2024-06-03T00:00:00Z",
         "temperatura": 22,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 327,
         "fecha": "2024-06-04T00:00:00Z",
         "temperatura": 24,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 328,
         "fecha": "2024-06-05T00:00:00Z",
         "temperatura": 27,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 329,
         "fecha": "2024-06-06T00:00:00Z",
         "temperatura": 27,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 330,
         "fecha": "2024-07-01T00:00:00Z",
         "temperatura": 24,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 331,
         "fecha": "2024-07-02T00:00:00Z",
         "temperatura": 24,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 332,
         "fecha": "2024-07-03T00:00:00Z",
         "temperatura": 27,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 333,
         "fecha": "2024-07-04T00:00:00Z",
         "temperatura": 29,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 334,
         "fecha": "2024-07-05T00:00:00Z",
         "temperatura": 30,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 335,
         "fecha": "2024-07-06T00:00:00Z",
         "temperatura": 28,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 336,
         "fecha": "2024-07-07T00:00:00Z",
         "temperatura": 24,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 337,
         "fecha": "2024-01-01T00:00:00Z",
         "temperatura": 7,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 338,
         "fecha": "2024-02-01T00:00:00Z",
         "temperatura": 11,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 339,
         "fecha": "2024-02-02T00:00:00Z",
         "temperatura": 11,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 340,
         "fecha": "2024-03-01T00:00:00Z",
         "temperatura": 8,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 341,
         "fecha": "2024-03-02T00:00:00Z",
         "temperatura": 6,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 342,
         "fecha": "2024-03-03T00:00:00Z",
         "temperatura": 6,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 343,
         "fecha": "2024-04-01T00:00:00Z",
         "temperatura": 8,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 344,
         "fecha": "2024-04-02T00:00:00Z",
         "temperatura": 10,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 345,
         "fecha": "2024-04-03T00:00:00Z",
         "temperatura": 13,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 346,
         "fecha": "2024-04-04T00:00:00Z",
         "temperatura": 15,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 347,
         "fecha": "2024-05-01T00:00:00Z",
         "temperatura": 10,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 348,
         "fecha": "2024-05-02T00:00:00Z",
         "temperatura": 10,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 349,
         "fecha": "2024-05-03T00:00:00Z",
         "temperatura": 13,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 350,
         "fecha": "2024-05-04T00:00:00Z",
         "temperatura": 17,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 351,
         "fecha": "2024-05-05T00:00:00Z",
         "temperatura": 16,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 352,
         "fecha": "2024-06-01T00:00:00Z",
         "temperatura": 20,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 353,
         "fecha": "2024-06-02T00:00:00Z",
         "temperatura": 20,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 354,
         "fecha": "2024-06-03T00:00:00Z",
         "temperatura": 22,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 355,
         "fecha": "2024-06-04T00:00:00Z",
         "temperatura": 24,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 356,
         "fecha": "2024-06-05T00:00:00Z",
         "temperatura": 26,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 357,
         "fecha": "2024-06-06T00:00:00Z",
         "temperatura": 26,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 358,
         "fecha": "2024-07-01T00:00:00Z",
         "temperatura": 24,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 359,
         "fecha": "2024-07-02T00:00:00Z",
         "temperatura": 24,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 360,
         "fecha": "2024-07-03T00:00:00Z",
         "temperatura": 26,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 361,
         "fecha": "2024-07-04T00:00:00Z",
         "temperatura": 28,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 362,
         "fecha": "2024-07-05T00:00:00Z",
         "temperatura": 29,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 363,
         "fecha": "2024-07-06T00:00:00Z",
         "temperatura": 28,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 364,
         "fecha": "2024-07-07T00:00:00Z",
         "temperatura": 24,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 365,
@@ -2749,196 +2749,196 @@ db.RegistroClima.insertMany(
         "fecha": "2024-01-01T00:00:00Z",
         "temperatura": 6,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 394,
         "fecha": "2024-02-01T00:00:00Z",
         "temperatura": 12,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 395,
         "fecha": "2024-02-02T00:00:00Z",
         "temperatura": 11,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 396,
         "fecha": "2024-03-01T00:00:00Z",
         "temperatura": 7,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 397,
         "fecha": "2024-03-02T00:00:00Z",
         "temperatura": 5,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 398,
         "fecha": "2024-03-03T00:00:00Z",
         "temperatura": 5,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 399,
         "fecha": "2024-04-01T00:00:00Z",
         "temperatura": 7,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 400,
         "fecha": "2024-04-02T00:00:00Z",
         "temperatura": 9,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 401,
         "fecha": "2024-04-03T00:00:00Z",
         "temperatura": 13,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 402,
         "fecha": "2024-04-04T00:00:00Z",
         "temperatura": 15,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 403,
         "fecha": "2024-05-01T00:00:00Z",
         "temperatura": 10,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 404,
         "fecha": "2024-05-02T00:00:00Z",
         "temperatura": 10,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 405,
         "fecha": "2024-05-03T00:00:00Z",
         "temperatura": 12,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 406,
         "fecha": "2024-05-04T00:00:00Z",
         "temperatura": 16,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 407,
         "fecha": "2024-05-05T00:00:00Z",
         "temperatura": 15,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 408,
         "fecha": "2024-06-01T00:00:00Z",
         "temperatura": 19,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 409,
         "fecha": "2024-06-02T00:00:00Z",
         "temperatura": 20,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 410,
         "fecha": "2024-06-03T00:00:00Z",
         "temperatura": 22,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 411,
         "fecha": "2024-06-04T00:00:00Z",
         "temperatura": 24,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 412,
         "fecha": "2024-06-05T00:00:00Z",
         "temperatura": 26,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 413,
         "fecha": "2024-06-06T00:00:00Z",
         "temperatura": 27,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 414,
         "fecha": "2024-07-01T00:00:00Z",
         "temperatura": 24,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 415,
         "fecha": "2024-07-02T00:00:00Z",
         "temperatura": 23,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 416,
         "fecha": "2024-07-03T00:00:00Z",
         "temperatura": 26,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 417,
         "fecha": "2024-07-04T00:00:00Z",
         "temperatura": 29,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 418,
         "fecha": "2024-07-05T00:00:00Z",
         "temperatura": 30,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 419,
         "fecha": "2024-07-06T00:00:00Z",
         "temperatura": 27,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 420,
         "fecha": "2024-07-07T00:00:00Z",
         "temperatura": 23,
         "vientosFuertes": false,
-        "precipitacion": "-"
+        "precipitacion": 0
     },
     {
         "id": 421,

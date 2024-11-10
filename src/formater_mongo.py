@@ -195,8 +195,13 @@ class Creator:
             # Solo pasa a entero los valores numéricos, no los -
             if temp[i] != "-":
                 temp[i] = int(temp[i])
+            else:
+                temp[i] = 0
             if prec[i] != "-":
                 prec[i] = int(prec[i])
+            else:
+                prec[i] = 0
+
             self.registrosClima.append(
                 {
                     "id": int(id[i]),
@@ -250,12 +255,11 @@ class Creator:
 
             # extraer juegos de la relación
             res_juegos = []
+            print("Area Juego: ", int(id[i]) in self.area_juegos)
             if int(id[i]) in self.area_juegos:
                 juegos = self.area_juegos[int(id[i])]
-                for juego in self.juegos:
-                    for juegoID in juegos:
-                        if juego["id"] == juegoID:
-                            res_juegos.append(int(juegoID))
+                for juegoID in juegos:
+                    res_juegos.append(int(juegoID))
 
             # extraer atributo juego_tipo
             res_juegos_tipo_valor = []
@@ -268,7 +272,7 @@ class Creator:
                     "id": int(id[i]),
                     "barrio": barrio[i],
                     "distrito": distr[i],
-                    "estadoGlobalArea": estado[i],
+                    "estadoOperativo": estado[i],
                     "coordenadasGPS": [lat[i], long[i]],
                     "fecha": fecha[i],
                     "capacidadMaxima": float(capmax[i]),
@@ -304,7 +308,7 @@ class Creator:
                 self.mantenimientos.append(
                     {
                         "id": transform(id[i]),
-                        "tipoIntervención": str(tipo[i]),
+                        "tipoIntervencion": str(tipo[i]),
                         "estadoPrevio": estado_previo[i],
                         "estadoPosterior": estado_posterior[i],
                         "fechaIntervencion": fecha[i],
@@ -346,13 +350,10 @@ class Creator:
             valor_area = tabla_juegos.loc[i, "AreaRecreativaID"]
             valor_juego = tabla_juegos.loc[i, "ID"]
 
-            if valor_area > 1000000:
-                continue
-
             if valor_area not in self.area_juegos:
-                self.area_juegos[valor_area] = [valor_juego]
+                self.area_juegos[int(valor_area)] = [int(valor_juego)]
             else:
-                self.area_juegos[valor_area].append(valor_juego)
+                self.area_juegos[int(valor_area)].append(int(valor_juego))
         print("Area-Juegos Completado")
 
     def crear_juegos_tipo(self):

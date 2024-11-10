@@ -36,7 +36,7 @@ SCHEME = {
       "bsonType": "string",
       "description": "Distrito al que pertenece el area recreativa"
     },
-    "estadoGlobalArea": {
+    "estadoOperativo": {
       "bsonType": "string",
       "description": "Estado global del area recreativa",
       "enum": ["OPERATIVO", "CERRADO", "INDISPUESTO"]

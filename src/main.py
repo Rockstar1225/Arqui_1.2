@@ -38,7 +38,6 @@ def main():
     extractor.crear_areas_incidentes()
     extractor.crear_area_encuestas()
     extractor.crear_area_juegos()
-    print("AreaJuegos: ",extractor.area_juegos)
     extractor.crear_juegos_tipo()
     extractor.crear_area_clima()
     extractor.crear_incidencia_usuario()
