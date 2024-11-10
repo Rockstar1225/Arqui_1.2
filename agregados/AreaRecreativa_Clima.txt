@@ -1,78 +1,20 @@
 use ej1
 
 db.AreaRecreativaClima.aggregate([
-    // area recreativa
+    // Encontrar los Incidentes
     {
-        $project:
+        $lookup:
         {
-            "id": 1,
-            "coordenadasGPS": 1,
-            "barrio": 1,
-            "distrito": 1,
-            "fecha": 1,
-            "estadoGlobalArea": 1,
-            "capacidadMaxima": 1,
-            "cantidadJuegosTipo": 1,
-            "juegos": 1,
-            "incidentesSeguridad": 1,
-            "registrosClima": 1,
-            "encuestas": 1
-        }
+            from: "IncidenteSeguridad",
+            localField: "incidentesSeguridad",
+            foreignField: "id",
+            as: "RefInc"
+        } 
     },
-    // Referencia Juegos
     {
         $project:
         {
-            RefJuego: "$juegos"
-        }
-    
-    },
-    
-    //{
-    //    $match:
-    //    {
-    //        _id: {"$IncidenteSeguridad" 
-    //        id: "$id",
-    //        tipoIncidente: "$tipoIncidente",
-    //        gravedad: "$gravedad",
-    //        fechaDeReporte: "$fechaDeReporte"
-    //        }
-    //    }
-    //}
-    // Registro Clima
-    {
-        $project:
-        {
-            RefClima: "$registrosClima"
-        }
-    
-    },
-    // Encuesta Satisfaccion
-    {
-        $project:
-        {
-            RefEncuestas: "$encuestas"
-        }
-    
-    },
-    // estado global area
-    //{
-    //    $group : {_id: "$Juego", _id: "$IncidenteSeguridad" estadoGlobalArea: {$sum: $or: [{ $cond: [ { $eq: [ "$estadoOperativo", "INDISPUESTO" ] }, 1, 0 ] },
-    //                                                                                        { $cond: [ { $eq: [ "$gravedad", "CRITICA" ] }, 1, 0 ] }]   }}
-    //}
-    {
-        $out: {db:"ej1", coll: "AgregadoAreaRecreativaClima"}
-    }
-])
-
-
-
-
-db.AreaRecreativaClima.aggregate([
-    // area recreativa
-    {
-        $project:
-        {
+            // area recreativa
             "id": 1,
             "coordenadasGPS": 1,
             "barrio": 1,
@@ -87,14 +29,23 @@ db.AreaRecreativaClima.aggregate([
             "encuestas": 1,
             // Referencia Juegos
             RefJuego: "$juegos",
+            // Referencia con resumen IncidenteSeguridad
+            "RefInc.fechaDeReporte": 1,
+            "RefInc.tipoIncidente": 1,
+            "RefInc.gravedad": 1,
             // Referencia Clima
             RefClima: "$registrosClima",
             // Encuesta Satisfaccion
             RefEncuestas: "$encuestas"
-
         }
-    },    
+    },
+    // estado global area
+    //{
+    //    $group : {_id: "$Juego", _id: "$IncidenteSeguridad" estadoGlobalArea: {$sum: $or: [{ $cond: [ { $eq: [ "$estadoOperativo", "INDISPUESTO" ] }, 1, 0 ] },
+    //                                                                                        { $cond: [ { $eq: [ "$gravedad", "CRITICA" ] }, 1, 0 ] }]   }}
+    //}
+       
     {
-        $out: {db:"ej1", coll: "Temp"}
+        $out: {db:"ej1", coll: "AgregadoAreaRecreativaClima"}
     }
 ])
