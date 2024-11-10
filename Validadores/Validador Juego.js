@@ -61,7 +61,7 @@ SCHEME = {
       "description": "array de referencias a las incidencias reportadas para este juego",
       "minItems": 0,
       "items": {
-        "bsonType": "string",
+        "bsonType": "number",
         "description": "objeto de referencia a la incidencia del juego"
       }
     },
