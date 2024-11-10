@@ -1,0 +1,56 @@
+1. Revisar la estructura de los directorios y ficheros y posicionarse en el directorio raiz
+(opcional) 2. Crear un entorno virtual de python usando: $ python -m venv venv
+(opcional) 3. Activar el entorno virual en linux usando: $ source venv/bin/activate
+4. instalar los requisitos usando: $ pip install requirements.txt
+5. Ejecutar el archivo main de python usando: $ python src/main.py
+6. Comprobar que se hayan generado los datasets nuevos en la carpeta "/DatasetsNuevos"
+7. Activar el servicio de mongodb usando: $ sudo systemctl start mongodb; sudo systemctl enable mongodb
+8. Crear una nueva conexion de Mongodb y una BBDD llamada "ej1"
+9. Crear las coleciones pegando los validadores que se encuentran en "/Validadores" en la terminal de Mongodb
+10. Insertar los nuevos datos que se encuentran en "/DatasetsNuevos" pegandolos en la terminal de Mongodb
+11. Crear las agregaciones (pipeline) usando el archivo "/Agregados/pipeline.txt" pegandolo en la terminal de Mongodb
+
+
+estructura del directorio:
+
+raiz
+    ->agregados
+        pipelines.txt
+    ->Clusters
+
+    ->DatasetsArquiViejos
+        AreasSucio.csv
+        EncuestasSatisfaccionSucio.csv 
+        estaciones_meteo_CodigoPostal.csv 
+        IncidenciasUsuariosSucio.csv 
+        IncidentesSeguridadSucio.csv 
+        JuegosSucio.csv 
+        MantenimientoSucio.csv 
+        meteo24.csv 
+        UsuariosSucio.csv
+    ->DatasetsNuevos (se deberian crear)
+        AreaRecreativaClima.js
+        EncuestaSatisfaccion.js
+        Incidencia.js
+        IncidenteSeguridad.js
+        Juego.js
+        Mantenimiento.js
+        RegistroClima.js
+        Usuario.js
+    ->src
+        change.py
+        formater_mongo.py
+        imputation.py
+        load.py
+        main.py
+    ->Validadores
+        Validador AreaRecreativaClima.js
+        Validador EncuestaSatisfaccion.js
+        Validador Incidencia.js
+        Validador IncidenteSeguridad.js
+        Validador Juego.js
+        Validador Mantenimiento.js
+        Validador RegistroClima.js
+        Validador Usuario.js
+    requirements.txt
+    pasos_ejecuccion.txt
