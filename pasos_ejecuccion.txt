@@ -62,5 +62,5 @@ raiz
     requirements.txt
     pasos_ejecuccion.txt
     declaración_ia.txt
-    parte_1.pdf
-    parte_2.pdf
+    Práctica.1.2.1.pdf
+    Práctica.1.2.2.pdf
