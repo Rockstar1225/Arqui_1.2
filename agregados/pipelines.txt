@@ -1,5 +1,7 @@
+
 use ej1
 
+// agregado Areas Recreativas
 db.AreaRecreativaClima.aggregate([
     // Encontrar los Incidentes
     {
@@ -64,7 +66,7 @@ db.AreaRecreativaClima.aggregate([
                             }
                         }
                     },
-                    then: "PELIGRO",  // Si hay "CRITICA", se asigna "PELIGRO"
+                    then: "PELIGROSO",  // Si hay "CRITICA", se asigna "PELIGRO"
                     else: {
                         $cond: {
                             if: {
@@ -83,8 +85,72 @@ db.AreaRecreativaClima.aggregate([
                 }
             }
         }
-    }, 
+    },
+    // Llevarlo a una colección nueva  
     {
         $out: {db:"ej1", coll: "AgregadoAreaRecreativaClima"}
     }
 ])
+
+// Agregado Incidencia
+db.Incidencia.aggregate([
+    // Crear atributos usando project
+    {
+	$project:
+        {
+            "id": 1,
+            "fechaReporte": 1,
+	    "tipo": 1,
+	    "estado": 1,
+	    "tiempoResolucion": 1,
+	    "nivelEscalamiento": 1,
+	    RefUsuarios: "$usuarios"
+        }
+    },
+    // Llevarlo a una colección nueva  
+    {
+        $out: {db:"ej1", coll: "AgregadoIncidencia"}
+    }
+
+])
+
+// Agregado Juego
+db.Juego.aggregate([
+    // Etapa de $lookup para unir con la colección 'id'
+    {
+        $lookup: {
+            from: "Incidencia",
+            localField: "incidencias", 
+            foreignField: "id", 
+            as: "Inc"
+        }
+    },
+    // Etapa de $project para seleccionar y renombrar los campos deseados
+    {
+        $project: {
+            "id": 1,
+            "modelo": 1,
+            "estadoOperativo": 1,
+            "accesibilidad": 1,
+            "fechaInstalacion": 1,
+            "tipo": 1,
+            "desgasteAcumulado": 1,
+            "indicadorExposicion": 1,
+            "ultimaFechaMantenimiento": 1,
+            "mantenimientos": 1,
+            "incidencias": 1,
+            //RefMantenimiento
+            RefMant: "$Mantenimiento",
+            //RefIncidencia - selecciona campos de 'Inc' obtenido en $lookup
+            "Inc.fechaReporte": 1,
+            "Inc.tipo": 1,
+            "Inc.estado": 1
+        }
+    },
+    // Etapa de $out para exportar los resultados a otra colección
+    {
+        $out: { db: "ej1", coll: "AgregadoJuego" }
+    }
+])
+
+
