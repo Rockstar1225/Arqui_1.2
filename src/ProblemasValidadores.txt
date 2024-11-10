@@ -1,7 +1,7 @@
 FIXED Areas
 FIXED Encuestas
 
-RegistroClima ERROR: atributo temperatura y precipitación con "-" en vez de un número
+FIXED RegistroClima
 FIXED JUEGO
 
 Fixed Mantenimiento
