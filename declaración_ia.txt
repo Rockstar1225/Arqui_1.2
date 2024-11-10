@@ -1,0 +1,4 @@
+DECLARACIÓN USO DE IA:
+
+Durante la realización de esta práctica, hemos estado usando ChatGPT para ayudarnos en la creación de algunas funciones de limpieza e 
+implementación de columnas. En las memorias hemos indicado qué funciones se han desarrollado con herramientas IA.
