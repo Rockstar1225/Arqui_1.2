@@ -16,8 +16,6 @@ estructura del directorio:
 raiz
     ->agregados
         pipelines.txt
-    ->Clusters
-
     ->DatasetsArquiViejos
         AreasSucio.csv
         EncuestasSatisfaccionSucio.csv 
@@ -28,7 +26,7 @@ raiz
         MantenimientoSucio.csv 
         meteo24.csv 
         UsuariosSucio.csv
-    ->DatasetsNuevos (se deberian crear)
+    ->DatasetsNuevos
         AreaRecreativaClima.js
         EncuestaSatisfaccion.js
         Incidencia.js
@@ -37,6 +35,15 @@ raiz
         Mantenimiento.js
         RegistroClima.js
         Usuario.js
+    ->DatasetsNuevosLinux (unos datasets alternativos iguales a los anteriores que se insertan con mayor velocidad en Mongodb)
+        AreaRecreativaClima.js
+        EncuestaSatisfaccion.js
+        Incidencia.js
+        IncidenteSeguridad.js
+        Juego.js
+        Mantenimiento.js
+        RegistroClima.js
+        Usuario.js 
     ->src
         change.py
         formater_mongo.py
@@ -54,3 +61,6 @@ raiz
         Validador Usuario.js
     requirements.txt
     pasos_ejecuccion.txt
+    declaración_ia.txt
+    parte_1.pdf
+    parte_2.pdf
