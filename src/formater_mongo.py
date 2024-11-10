@@ -88,7 +88,7 @@ class Creator:
                     "fechaEncuesta": str(fecha[i]),
                     "puntuacionAccesibilidad": accesibilidad[i],
                     "puntuacionCalidad": calidad[i],
-                    "comentaraios": comantarios[i],
+                    "comentarios": comantarios[i],
                 }
             )
         print("Encuestas generadas!!")
