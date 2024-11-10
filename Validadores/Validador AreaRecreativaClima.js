@@ -9,7 +9,7 @@ db.AreaRecreativaClima.createIndex({ "CantidadJuegosTipo.tipo": 1 }, { unique: 1
 SCHEME = {
   "bsonType": "object",
   "description": "Agregado de gestión del estado de las áreas recreativas, juegos, incidentes de seguridad y datos climáticos.",
-  "required": ["id", "coordenadasGPS", "barrio", "distrito", "fecha", "estadoGlobalArea", "capacidadMaxima", "cantidadJuegosTipo", "juegos", "incidentesSeguridad", "registrosClima", "encuestas"],
+  "required": ["id", "coordenadasGPS", "barrio", "distrito", "fecha", "estadoOperativo", "capacidadMaxima", "cantidadJuegosTipo", "juegos", "incidentesSeguridad", "registrosClima", "encuestas"],
   "properties": {
     "id": {
       "bsonType": "number",
@@ -71,14 +71,8 @@ SCHEME = {
       "description": "array de referencia a juegos incluidos en el area",
       "minItems": 0,
       "items": {
-        "bsonType": "object",
-        "description": "objeto de referencia al juego de un area",
-        "required": ["id"],
-        "properties": {
-          "id": {
-            "bsonType": "string"
-          }
-        }
+        "bsonType": "number",
+	"description": "juegos en un area",
       }
     },
     "incidentesSeguridad": {
